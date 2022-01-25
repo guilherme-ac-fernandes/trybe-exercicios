@@ -29,7 +29,7 @@ Para os exercícios 14 e 15, crie, de forma manual na parte gráfica do seu sist
 
 14. Mostre na tela as 5 primeiras skills do arquivo `skills,txt`.
 15. Mostre na tela as 4 últimas skills do arquivo `skills.txt`.
-16. Apague todos os arquivos que terminem em `.txt` (os arquivos estão presentes no diretório, mas o comando para apagar é `rm *.txt`).
+16. Apague todos os arquivos que terminem em `.txt`.
 
 
 ## Parte 2 - Manipulação & Busca
