@@ -1,0 +1,6 @@
+Passo 0 : Colocar o endereço do google no navegador
+Passo 1 : Enviar requisição via HTTP para o DNS
+Passo 2: DNS envia o endereço IP do google.
+Passo 3: Fazer requisição ao servidor do google.
+Passo 4: O Google retorna uma requisição através do IP informado no TCP/IP com o html no corpo.
+Passo 5: Navegador baixa arquivo HTML/CSS/JS e interpreta.
