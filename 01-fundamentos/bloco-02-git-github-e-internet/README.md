@@ -1,4 +1,4 @@
-##Git, GitHub e Internet
+## Git, GitHub e Internet
 
 Neste bloco foi introduzida o sistema de controle de versão distribuído (Git) capaz de gerenciar meus futuros projetos, bem como a sua disponibilização em um repositório remoto (GitHub). De forma a facilitar a colaboração de projetos de forma assíncrona, por meio de branch’s e Pull Request's.
 
