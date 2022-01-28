@@ -1,4 +1,5 @@
 ## Dinâmica com “Post-its”
+
 Agora você irá se juntar aos seus colegas, em grupos, para fazer uma dinâmica de forma bem interativa!
 > Vai ser assim:
 > Vocês irão se juntar em grupos via Zoom e utilizar uma ferramenta online para desenhar em conjunto um diagrama de como a internet funciona!
