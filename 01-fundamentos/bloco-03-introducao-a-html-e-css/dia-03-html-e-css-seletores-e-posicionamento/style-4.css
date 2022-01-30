@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+    line-height: 40px;
+}
+
+div:hover{
+    border: solid 2px black;
+}
+
+/* Ao utilizar o nth-of-type dentro de uma pseudoclass podemos informar qual dos itens desejamos alterar */
+div:nth-of-type(1){
+    background-color: blue;
+}
+
+div:nth-of-type(2){
+    background-color: purple;
+}
+
+div:nth-of-type(3){
+    background-color: yellow;
+    padding: 5px;
+}
+
+div:nth-of-type(4){
+    background-color: gray;
+}
+
+div:nth-of-type(5){
+    background-color: bisque;
+}
+
+div:nth-of-type(1) > h3{
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+div:nth-of-type(2) > h3{
+    color: violet;
+    font-family: monospace;
+}
+
+div:nth-of-type(3) > h3{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+div:nth-of-type(4) > h3{
+    color: rgb(38, 172, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:nth-of-type(5) > h3{
+    color: purple;
+    font-family: cursive;
+}
+
+div:nth-of-type(5) > h3{
+    color: purple;
+    font-family: cursive;
+}
+
+/* Neste elemento também podemos utlizar odd=ímpar e even=par */
+div:nth-of-type(odd) > h3{
+    font-style: italic;
+}

@@ -1,0 +1,76 @@
+*{
+    margin: 10px;
+    border: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: red
+}
+
+/* A tag <em> marca ênfase no texto, desta forma podemos utilizar a descendência*/
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em{
+    font-size: 40px;
+    border: solid 1px black;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+li{
+    font-size: 20px;
+}
+
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-of-type(even){
+    color: green;
+}
+
+li:nth-of-type(odd){
+    text-transform: uppercase;
+}
+
+li em{
+    font-weight: bold;
+}
+
+li:nth-of-type(1,2,3){
+    color: blue;
+}
+
+.list-top3{
+    color: blue;
+} 
+
+.java{
+    background-color: pink;
+}
+
+.link:hover{
+    font-weight: bold;
+}
+
+.orange:hover{
+    color: orange;
+}
+
+.green:hover{
+    color: green;
+}
+
+.black:hover{
+    color: black;
+}
+
+.yellow:hover{
+    color: yellow;
+}
+
+.greenyellow:hover{
+    color: greenyellow;
+}

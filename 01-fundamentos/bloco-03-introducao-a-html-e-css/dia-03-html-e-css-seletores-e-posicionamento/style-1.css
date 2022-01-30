@@ -1,0 +1,47 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+
+.width-and-height-a {
+  height: 50px;
+  width: 50px;
+}
+
+.width-and-height {
+  height: 80px;
+  width: 80px;
+}
+
+.caixa-a {
+  color: white;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  
+  /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+  .padding {
+    padding: 2px;
+  }
+  
+  /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+  .margin {
+    margin: 30px;
+  }
+  
+  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+  .border {
+    border: 5px solid black;
+  }

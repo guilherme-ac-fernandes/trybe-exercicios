@@ -1,0 +1,26 @@
+.body{
+    text-align: center;
+    line-height: 30px;
+    font-family: monospace;
+}
+
+p{
+    text-decoration: underline;
+}
+
+.list{
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    list-style: none;
+}
+
+li:hover{
+    background-color: wheat;
+}
+
+li:active{
+    font-family: cursive;
+}
