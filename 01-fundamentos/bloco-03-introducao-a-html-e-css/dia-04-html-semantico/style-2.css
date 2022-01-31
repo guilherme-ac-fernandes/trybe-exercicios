@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ADD8E6;
+}
+
+header{
+    padding: 30px 70px;
+    background-color: #4682B4;
+}
+
+header h1{
+    font-size: 50px;
+    text-align: center;
+    background-color: #4682B4;
+    color: whitesmoke;
+}
+
+nav ul{
+    border-bottom: solid 3px white;
+    border-top: solid 3px white;
+    margin-bottom: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+article.introdução p{
+    display: inline;
+
+}
+
+.imagem1{
+    width: 300px;
+    display: inline-block;
+    float: right;
+    margin: 30px;
+}
+
+.imagem2{
+    width: 350px;
+    float: left;
+    margin: 30px;
+    margin-top: 70px;
+}
+
+.cartoon-image{
+    width: 300px;
+}
+
+#introdução{
+    margin: 30px;
+    margin-bottom: 60px;
+}
+
+#fatos-cientificos h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#fatos-cientificos ul{
+    margin: 50px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#descrição h3{
+    text-align: center;
+    margin: 20px;
+}
+
+#descrição p{
+    text-align: justify;
+    margin: 30px;
+}
