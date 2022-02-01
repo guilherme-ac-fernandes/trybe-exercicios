@@ -34,4 +34,4 @@ Para uma melhor organização, faça commit`s a cada tarefa concluída. Vamos ao
 
 > “Conteúdo compilado por <insere seu nome>, <ano atual>".
 
-Obs: para esse exercício, é obrigatório fazer uso de, no mínimo , 6 elementos com as seguintes tags: `<header>`, `<nav>`, `<article>`, `<section>`, `<h1>`, `<h2>`, `<h3>`, `<aside>`, `<footer>`, `<table>` e `<img>.
+Obs: para esse exercício, é obrigatório fazer uso de, no mínimo , 6 elementos com as seguintes tags: `<header>`, `<nav>`, `<article>`, `<section>`, `<h1>`, `<h2>`, `<h3>`, `<aside>`, `<footer>`, `<table>` e `<img>`.
