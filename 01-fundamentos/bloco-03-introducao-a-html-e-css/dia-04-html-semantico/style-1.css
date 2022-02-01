@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+  }
+
+  h3{
+      text-align: center;
+      clear: both;
+  }
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    float: left;
+    margin-left: 28%;
+    margin-bottom: 30px;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    float: right;
+    margin-right: 28%;
+  }
+
+  section.premio ul li{
+      display: inline-block;
+      text-align: center;
+  }
+
+  section.premio {
+        text-align: center;
+  }
