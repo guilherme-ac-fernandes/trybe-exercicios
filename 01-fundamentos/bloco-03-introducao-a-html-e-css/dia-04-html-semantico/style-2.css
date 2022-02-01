@@ -32,6 +32,7 @@ nav ul li{
 
 h2{
     text-align: center;
+    margin-bottom: 40px;
 }
 
 article.introdução p{
@@ -41,9 +42,9 @@ article.introdução p{
 
 .imagem1{
     width: 300px;
-    display: inline-block;
-    float: right;
-    margin: 30px;
+    text-align: center;
+    margin: auto;
+    display: block;
 }
 
 .imagem2{
@@ -51,10 +52,6 @@ article.introdução p{
     float: left;
     margin: 30px;
     margin-top: 70px;
-}
-
-.cartoon-image{
-    width: 300px;
 }
 
 #introdução{
@@ -88,4 +85,63 @@ article.introdução p{
 #descrição p{
     text-align: justify;
     margin: 30px;
+}
+
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#super-powers {
+    margin: 30px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.cartoon-image {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.super-powers-text{
+    line-height: 40px;
+    text-align: justify;
+    width: 700px;
+}
+
+.super-powers-title1{
+    margin: 30px 10px 30px 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.super-powers-title{
+    margin: 60px 10px 30px 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #4682B4;
+    height: 40px;
+}
+
+footer section p{
+    color: white;
+    background-color: #4682B4;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#rf{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rf{
+    text-align: center;
+    margin: 30px 50px;
 }
