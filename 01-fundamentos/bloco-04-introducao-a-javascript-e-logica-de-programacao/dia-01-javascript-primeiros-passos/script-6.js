@@ -1,26 +1,31 @@
-let pecaXadrex = "Cavalo";
+let pecaXadrex = "cavalo";
+let pecaXadrezPadronizacao = pecaXadrex.toLowerCase(pecaXadrex);
+let pecaXadrezUniforme = pecaXadrezPadronizacao[0].toUpperCase()+pecaXadrezPadronizacao.substring(1);
 
 // Informa os movimentos da peça proveniente do jogo de Xadrez
 
-switch(pecaXadrex){
+switch (pecaXadrezUniforme){
     case "Rei":
-        console.log(pecaXadrex, "= Move em qualquer direção (vertical, horizontal e diagonal), uma casa por vez");
+        console.log(pecaXadrezUniforme, "= Move em qualquer direção (vertical, horizontal e diagonal), uma casa por vez");
         break;
     case "Rainha":
-        console.log(pecaXadrex, "= Move em qualquer direção (vertical, horizontal e diagonal), porém quantas casa quiser");
+        console.log(pecaXadrezUniforme, "= Move em qualquer direção (vertical, horizontal e diagonal), porém quantas casa quiser");
         break;
     case "Torre":
-        console.log(pecaXadrex, "= Move linha reta (vertical e horizontal), quantas casas quiser");
+        console.log(pecaXadrezUniforme, "= Move linha reta (vertical e horizontal), quantas casas quiser");
         break;
     case "Bispo":
-        console.log(pecaXadrex, "= Move na diagnoal, quantas casas quiser");
+        console.log(pecaXadrezUniforme, "= Move na diagnoal, quantas casas quiser");
         break;
     case "Cavalo":
-        console.log(pecaXadrex, "= Única peça que pode saltar sobre as demais, movimenta em formato de L");
+        console.log(pecaXadrezUniforme, "= Única peça que pode saltar sobre as demais, movimenta em formato de L");
         break;
     case "Peão":
-        console.log(pecaXadrex, "= Move sempre uma casa a frente, exceto no primeiro movimento que pode mover-se duas casas. Não pode retroceder e ataca na diagonal");
+        console.log(pecaXadrezUniforme, "= Move sempre uma casa a frente, exceto no primeiro movimento que pode mover-se duas casas. Não pode retroceder e ataca na diagonal");
         break;
+    case "Peao":
+        console.log(pecaXadrezUniforme, "= Move sempre uma casa a frente, exceto no primeiro movimento que pode mover-se duas casas. Não pode retroceder e ataca na diagonal");
+        break;  
     default:
-        console.log(pecaXadrex, "= Essa peça não faz parte do jogo de Xadrez");
+        console.log(pecaXadrezUniforme, "= Essa peça não faz parte do jogo de Xadrez");
 }
