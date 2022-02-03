@@ -1,5 +1,5 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let menorValor = 100000000000;
+let menorValor = numbers[0];
 
 // Encontrando o Menor valor no Array
 
