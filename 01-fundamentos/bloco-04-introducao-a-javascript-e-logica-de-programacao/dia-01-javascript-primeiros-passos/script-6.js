@@ -1,4 +1,4 @@
-let pecaXadrex = "Peão";
+let pecaXadrex = "Cavalo";
 
 // Informa os movimentos da peça proveniente do jogo de Xadrez
 
