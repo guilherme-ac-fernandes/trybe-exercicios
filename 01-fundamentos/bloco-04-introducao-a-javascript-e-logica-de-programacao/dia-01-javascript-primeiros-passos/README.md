@@ -32,12 +32,12 @@ Nos exercícios de hoje, você vai fazer onze pequenos programas. Todos trabalha
 
 > Criar arquivo `script-7.js`
 7. Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
-> Porcentagem >= 90 tem nota igual a A
-> Porcentagem >= 80 tem nota igual a B
-> Porcentagem >= 70 tem nota igual a C
-> Porcentagem >= 60 tem nota igual a D
-> Porcentagem >= 50 tem nota igual a E
-> Porcentagem < 50 tem nota igual a F
+> - Porcentagem >= 90 tem nota igual a A
+> - Porcentagem >= 80 tem nota igual a B
+> - Porcentagem >= 70 tem nota igual a C
+> - Porcentagem >= 60 tem nota igual a D
+> - Porcentagem >= 50 tem nota igual a E
+> - Porcentagem < 50 tem nota igual a F
 * O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 
 > Criar arquivo `script-8.js`
@@ -53,8 +53,8 @@ Nos exercícios de hoje, você vai fazer onze pequenos programas. Todos trabalha
 * Atente que, sobre o custo do produto, incide um imposto de 20%.
 * Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
 * O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
-> `valorCustoTotal = valorCusto + impostoSobreOCusto`
-> `lucro = valorVenda - valorCustoTotal (lucro de um produto)`
+> - `valorCustoTotal = valorCusto + impostoSobreOCusto`
+> - `lucro = valorVenda - valorCustoTotal (lucro de um produto)`
 
 > Criar arquivo `script-11.js`
 11. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
