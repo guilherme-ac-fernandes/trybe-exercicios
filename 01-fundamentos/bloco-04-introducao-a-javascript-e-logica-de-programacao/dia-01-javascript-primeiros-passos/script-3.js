@@ -1,6 +1,6 @@
-const a = 40;
-const b = 40;
-const c = 40;
+const a = 16;
+const b = 27;
+const c = 54;
 
 // Comparando três valores
 

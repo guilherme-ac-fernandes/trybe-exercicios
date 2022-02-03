@@ -19,7 +19,7 @@ else if (imposto < 0){
     console.log("ERRO - Percentual de imposto inválido")
 }
 else{
-    console.log("Observação: Valor válidos")
+    console.log("Observação: Valor são válidos")
 
     let impostoSobreOCusto = 30 * imposto/100;
     console.log("Imposto sobre o produto = R$", impostoSobreOCusto, "reais")

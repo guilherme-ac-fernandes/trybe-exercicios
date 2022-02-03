@@ -1,4 +1,4 @@
-const valorDefinido = 0;
+const valorDefinido = 56;
 
 // Informa se valor é positivo, negativo ou igual a zero
 

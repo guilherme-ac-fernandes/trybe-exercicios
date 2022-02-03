@@ -1,9 +1,9 @@
 const salarioBruto = 3000;
-let aliquotaINSS = 0;
-let aliquotaIR = 0;
-let impostoIR = 0;
-let salarioAposINSS = 0;
-let salarioLiquido = 0;
+let aliquotaINSS = null;
+let aliquotaIR = null;
+let impostoIR = null;
+let salarioAposINSS = null;
+let salarioLiquido = null;
 
 // Cálculo do Salário líquido (descontando INSS e IR)
 

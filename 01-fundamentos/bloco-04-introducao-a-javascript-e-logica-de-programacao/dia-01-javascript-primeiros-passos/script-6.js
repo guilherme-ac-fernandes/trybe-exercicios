@@ -1,4 +1,4 @@
-let pecaXadrex = "cavalo";
+let pecaXadrex = "Bispo";
 let pecaXadrezPadronizacao = pecaXadrex.toLowerCase(pecaXadrex);
 let pecaXadrezUniforme = pecaXadrezPadronizacao[0].toUpperCase()+pecaXadrezPadronizacao.substring(1);
 
@@ -24,7 +24,7 @@ switch (pecaXadrezUniforme){
         console.log(pecaXadrezUniforme, "= Move sempre uma casa a frente, exceto no primeiro movimento que pode mover-se duas casas. Não pode retroceder e ataca na diagonal");
         break;
     case "Peao":
-        console.log(pecaXadrezUniforme, "= Move sempre uma casa a frente, exceto no primeiro movimento que pode mover-se duas casas. Não pode retroceder e ataca na diagonal");
+        console.log("Peão = Move sempre uma casa a frente, exceto no primeiro movimento que pode mover-se duas casas. Não pode retroceder e ataca na diagonal");
         break;  
     default:
         console.log(pecaXadrezUniforme, "= Essa peça não faz parte do jogo de Xadrez");

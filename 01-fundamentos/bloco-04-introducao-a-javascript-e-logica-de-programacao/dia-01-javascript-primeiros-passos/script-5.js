@@ -1,6 +1,6 @@
 const anguloA = 90;
-const anguloB = 49;
-const anguloC = 45;
+const anguloB = 30;
+const anguloC = 60;
 
 /* Verificando triângulos válidos,
 onde soma dos ângulos deve ser igual a 180 graus */
