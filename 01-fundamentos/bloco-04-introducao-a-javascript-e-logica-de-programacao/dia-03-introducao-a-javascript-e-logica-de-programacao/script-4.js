@@ -1,22 +1,23 @@
 let number = 50;
-let div = null;
+let div = 0;
+let numberOdd = [];
 
 
-// Encontrar números primos entre um intervalo (0 e 50) e informar o Maior
-
+// Encontrar números Primos e informar o maior do intervalo [1,50]
 for (let j = 1; j <= number; j+=1) {
-    
+    div = 0; 
     for (let i = 1; i <= j; i+=1) {
         if(j % i == 0){
-                div+=1; 
-        } 
-             
+            div+=1; 
+        }  
     }
     if(div == 2) {
-        console.log("É primo");
-    }
-    else{
-        console.log("Não é primo");
+        numberOdd.push(j)
     } 
-
 }
+
+console.log("Valores Primos no intervalo =", numberOdd);
+
+console.log("Maior valores primos no intervalo =", numberOdd[numberOdd.length-1]);
+
+
