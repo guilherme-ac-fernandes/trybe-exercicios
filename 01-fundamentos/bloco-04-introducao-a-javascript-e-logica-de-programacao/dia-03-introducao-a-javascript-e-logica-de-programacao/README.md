@@ -24,34 +24,34 @@ Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que 
 
 n = 5
 
-*****
-*****
-*****
-*****
-*****
-
+#####
+#####
+#####
+#####
+#####
 
 > Criar arquivo `script-6.js`
 6. Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com `5` asteriscos de base. Por exemplo:
 
 n = 5
 
-*
-**
-***
-****
-*****
+#
+##
+###
+####
+#####
+
 
 > Criar arquivo `script-7.js`
 7. Agora inverta o lado do triângulo. Por exemplo:
 
 n = 5
 
-    *
-   **
-  ***
- ****
-*****
+    #
+   ##
+  ###
+ ####
+#####
 
 - Atenção! Note que esse exercício é bem mais complexo que o anterior! Não basta, aqui, imprimir somente asteriscos. Você precisará de uma lógica para imprimir espaços também.
 
