@@ -37,11 +37,13 @@ n = 5
 
 n = 5
 
+```
 #
 ##
 ###
 ####
 #####
+```
 
 
 > Criar arquivo `script-7.js`
@@ -49,11 +51,13 @@ n = 5
 
 n = 5
 
+```
     #
    ##
   ###
  ####
 #####
+```
 
 - Atenção! Note que esse exercício é bem mais complexo que o anterior! Não basta, aqui, imprimir somente asteriscos. Você precisará de uma lógica para imprimir espaços também.
 
@@ -62,9 +66,12 @@ n = 5
 
 n = 5
 
-  *
- ***
-*****
+```
+  #  
+ ### 
+##### 
+```
+
 
 > Criar arquivo `script-9.js`
 9- Faça uma pirâmide com `n` asteriscos de base que seja vazia no meio. Assuma que o valor de `n será sempre ímpar:
@@ -73,10 +80,12 @@ n = 5
 
 n = 7
 
-   *
-  * *
- *   *
-*******
+```
+   #
+  # #
+ #   #
+#######
+```
 
 > Criar arquivo `script-10.js`
 10. Faça um programa que diz se um número definido numa variável é primo ou não.
