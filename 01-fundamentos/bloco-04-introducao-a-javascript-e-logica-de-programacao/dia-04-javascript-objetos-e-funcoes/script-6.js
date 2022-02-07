@@ -21,7 +21,3 @@ leitor["fullName"] = leitor.nome + " " + leitor.sobrenome;
 
 
 console.log("O livro favorito de " + leitor.fullName + " se chama " + leitor.livrosFavoritos[0].titulo);
-
-
-
-
