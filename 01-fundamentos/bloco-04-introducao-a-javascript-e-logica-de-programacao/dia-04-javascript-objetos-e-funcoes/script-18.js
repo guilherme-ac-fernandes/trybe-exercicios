@@ -18,24 +18,44 @@ const basket = [
   'Banana', 'Pera', 'Abacate', 'Uva',
 ];
 
-
+let organizeBasket = {
+	Melancia: 0,
+	Abacate: 0,
+	Uva: 0,
+	Laranja: 0,
+	Jaca: 0,
+	Pera: 0,
+	Banana: 0,
+}
 
 // Criar um objeto com a quantidade de itens na cesta
 
 
-function countBasket (array) {
-	let basketSummary = {};
-
-
-	for (let i = 0; i < array.length; i++) {
-		
-		for (let j = 0; j < array.length; j++) {
-			if (array[i] === array[j]){
-				basketSummary["Melancia"] = 1;
-			}
-		}
+for (let i = 0; i < basket.length; i+=1) {
+	if (basket[i] == 'Melancia') {
+		organizeBasket.Melancia +=1;
 	}
-	console.log(basketSummary)
+	else if (basket[i] == 'Abacate') {
+		organizeBasket.Abacate +=1;
+	}
+	else if (basket[i] == 'Uva') {
+		organizeBasket.Uva +=1;
+	}
+	else if (basket[i] == 'Laranja') {
+		organizeBasket.Laranja +=1;
+	}
+	else if (basket[i] == 'Jaca') {
+		organizeBasket.Jaca +=1;
+	}
+	else if (basket[i] == 'Pera') {
+		organizeBasket.Pera +=1;
+	}
+	else if (basket[i] == 'Banana') {
+		organizeBasket.Banana +=1;
+	}
 }
 
-countBasket(basket);
+console.log("Sua cesta possui:", );
+for (const key in organizeBasket) {
+	console.log(organizeBasket[key], key);
+}
