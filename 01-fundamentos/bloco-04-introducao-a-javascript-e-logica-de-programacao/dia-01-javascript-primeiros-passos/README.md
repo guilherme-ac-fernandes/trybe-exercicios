@@ -2,7 +2,7 @@
 
 Nos exercícios de hoje, você vai fazer onze pequenos programas. Todos trabalham a lógica condicional (`if/else` e `switch/case`), operadores aritméticos ( `+` , `-` , `*` , `/` , `%` ) e operadores lógicos ( `>`, `<`, `&&`, `||`). Para que consiga executar seus códigos recomendamos que utilize a extensão `Code Runner`.
 
-> Criar arquivo `script-1.js`
+> Criar arquivo `script-01.js`
 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, `a` e `b`, definidas no começo com os valores que serão operados. Faça programas para:
 * Adição (a + b)
 * Subtração (a - b)
@@ -10,27 +10,27 @@ Nos exercícios de hoje, você vai fazer onze pequenos programas. Todos trabalha
 * Divisão (a / b)
 * Módulo (a % b)
 
-> Criar arquivo `script-2.js`
+> Criar arquivo `script-02.js`
 2. Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
 
-> Criar arquivo `script-3.js`
+> Criar arquivo `script-03.js`
 3. Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
 
-> Criar arquivo `script-4.js`
+> Criar arquivo `script-04.js`
 4. Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
-> Criar arquivo `script-5.js`
+> Criar arquivo `script-05.js`
 5. Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne `true` se os ângulos representarem os ângulos de um triângulo e `false`, caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 * Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 * Um ângulo será considerado inválido se não tiver um valor positivo.
 
-> Criar arquivo `script-6.js`
+> Criar arquivo `script-06.js`
 6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 * Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
 * Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas `lowercase`.
 * Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 
-> Criar arquivo `script-7.js`
+> Criar arquivo `script-07.js`
 7. Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
 > - Porcentagem >= 90 tem nota igual a A
 > - Porcentagem >= 80 tem nota igual a B
@@ -40,11 +40,11 @@ Nos exercícios de hoje, você vai fazer onze pequenos programas. Todos trabalha
 > - Porcentagem < 50 tem nota igual a F
 * O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 
-> Criar arquivo `script-8.js`
+> Criar arquivo `script-08.js`
 8. Escreva um programa que defina três números em constantes e retorne `true` se pelo menos uma das três for par. Caso contrário, ele retorna `false`.
 * Bonus: use somente um `if`.
 
-> Criar arquivo `script-9.js`
+> Criar arquivo `script-09.js`
 9. Escreva um programa que defina três números em constantes e retorne `true` se pelo menos uma das três for ímpar. Caso contrário, ele retorna `false`.
 * Bonus: use somente um `if`.
 
