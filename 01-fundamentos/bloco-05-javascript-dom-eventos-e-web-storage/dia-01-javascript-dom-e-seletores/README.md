@@ -5,11 +5,17 @@
 > A partir do arquivo `index-01.html`, realize as seguintes modificações:
 
 1.1. Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
+
 1.2. Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
+
 1.3. Por fim, recupere o subtítulo e altere-o também.
+
 1.4. Adicione uma classe igual para os dois parágrafos.
+
 1.5. Recupere os seus parágrafos via código JavaScript , usando a função `getElementsByClassName`.
+
 1.6. Altere algum estilo do primeiro deles.
+
 1.7. Recupere o subtítulo e altere a cor dele usando a função `getElementsByTagName`.
 
 
