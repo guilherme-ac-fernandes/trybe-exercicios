@@ -63,23 +63,21 @@
       changeTitle("title");
 
 			// Requisito 5
-
-			function pUpperCase(idName) {
-				document.getElementById(idName).style.textTransform = "uppercase";
-			};
-			pUpperCase("text-1");
-			pUpperCase("text-2");
-			pUpperCase("text-3");
+			function pUpperCase(paragraph) {
+        let paragraphUpperCase = document.getElementsByTagName(paragraph);
+        for (let i = 0; i < paragraphUpperCase.length; i += 1) {
+          paragraphUpperCase[i].style.textTransform = "uppercase";;
+        }
+      };
+      pUpperCase("p");
 
 			// Requisito 6
-
 			function showOnTheConsole(paragraph) {
 				let paragraphArray = document.getElementsByTagName(paragraph);
 				for (let i = 0; i < paragraphArray.length; i += 1) {
 					console.log(paragraphArray[i].innerText);
 				}
 			};
-
 			showOnTheConsole("p");
 
     </script>
