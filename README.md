@@ -36,7 +36,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 4.2: JavaScript - Array e loop For
 - [X] 4.3: JavaScript - Lógica de Programação e Algoritmos
 - [X] 4.4: JavaScript - Objetos e funções
-- [ ] 4.5: Projeto - Playground Functions
+- [X] 4.5: Projeto - Playground Functions
 
 #### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
