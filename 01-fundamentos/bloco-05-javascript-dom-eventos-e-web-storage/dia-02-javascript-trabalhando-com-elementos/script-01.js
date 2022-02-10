@@ -45,17 +45,34 @@ newChildChild.appendChild(newChildChildContent);
 document.getElementById("primeiroFilhoDoFilho").firstElementChild.parentElement.parentElement.nextElementSibling
 
 // Remover todos os elementos "filhos de paiDoPai", exceto "pai"; "elementoOndeVoceEsta" e "primeiroFilhoDoFilho"
-let dad = document.querySelectorAll("#pai section");
 
-
-
-for (let i = 0; i < dad.length; i += 1) {
-    console.log(dad[i]);
-    if (dad[i].id !== "pai" || dad[i].id !== "elementoOndeVoceEsta" ||dad[i].id !== "primeiroFilhoDoFilho") {
-        dad[i].remove()
-    }
+// Solução 1
+// let dad = document.querySelectorAll("#pai section");
+// for (let i = 0; i < dad.length; i += 1) {
     
+//     if (dad[i].id === "primeiroFilhoDoFilho"){
+
+//     }
+//     else if (dad[i].id !== "elementoOndeVoceEsta") {
+//         dad[i].remove();
+//     }
+    
+// }
+
+// Solução 2
+// Remove todos os filhos da seção pai
+let dad = document.querySelector("#pai");
+let dadChildren = dad.childNodes;
+for (let j = dadChildren.length - 1; j >= 0; j -= 1) {
+    
+    let currentChild = dadChildren[j];
+
+    if (currentChild.id !== "elementoOndeVoceEsta") {
+        currentChild.remove();
+    }
     
 }
 
-
+// Remove irmão do "primeiroFilhoDoFilho"
+let secondChild = document.getElementById("elementoOndeVoceEsta").lastChild;
+secondChild.remove();
