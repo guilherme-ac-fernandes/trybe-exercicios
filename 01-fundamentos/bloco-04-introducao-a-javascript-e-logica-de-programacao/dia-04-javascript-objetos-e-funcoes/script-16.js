@@ -11,6 +11,9 @@ const romanNumber = {
 
 // Código que recebe uma string em algoritmos romanos e retorne o valor númerico
 
+// Resolução proveniente do course da Trybe
+// source: https://app.betrybe.com/course/fundamentals/introducao-a-javascript-e-logica-de-programacao/javascript-objetos-e-funcoes-gabarito/solutions/ef3e9fa4-a8e5-44e9-95be-02c46ad7ddd7/conteudos/722331e5-1456-4228-be11-ae909862d5a5?use_case=calendar
+
 
 function findingRomanNumber (number) {
   number = number.toUpperCase()
