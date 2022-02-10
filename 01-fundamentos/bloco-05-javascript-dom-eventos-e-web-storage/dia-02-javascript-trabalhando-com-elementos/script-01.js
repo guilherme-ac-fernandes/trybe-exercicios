@@ -45,11 +45,17 @@ newChildChild.appendChild(newChildChildContent);
 document.getElementById("primeiroFilhoDoFilho").firstElementChild.parentElement.parentElement.nextElementSibling
 
 // Remover todos os elementos "filhos de paiDoPai", exceto "pai"; "elementoOndeVoceEsta" e "primeiroFilhoDoFilho"
-let dad = document.getElementById("pai");
+let dad = document.querySelectorAll("#pai section");
 
-// for (let i = dad.childNodes.length - 1; i >= 0; i -= 1) {
-//     let currentChildren = dad.childNodes[i];
-//     if (currentChildren !== "elementoOndeVoceEsta") {
-//         currentChildren.remove();
-//     }
-// }
+
+
+for (let i = 0; i < dad.length; i += 1) {
+    console.log(dad[i]);
+    if (dad[i].id !== "pai" || dad[i].id !== "elementoOndeVoceEsta" ||dad[i].id !== "primeiroFilhoDoFilho") {
+        dad[i].remove()
+    }
+    
+    
+}
+
+
