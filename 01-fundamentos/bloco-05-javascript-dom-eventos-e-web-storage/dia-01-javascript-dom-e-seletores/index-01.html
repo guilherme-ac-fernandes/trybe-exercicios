@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="text">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="text">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = "Dune";
+      document.getElementById("paragraph").innerText = "E a franquia de Marvel, é mil vezes melhor";
+      document.getElementById("second-paragraph").innerText = "Acho Harry Potter muito melhor!";
+      document.getElementById("subtitle").innerText = "Prefiro Senhor dos Anéis!";
+			document.getElementsByClassName("text")[0].style.background = "yellow";
+			document.getElementsByTagName("p")[1].style.background = "lightblue";
+
+
+
+    </script>
+  </body>
+</html>

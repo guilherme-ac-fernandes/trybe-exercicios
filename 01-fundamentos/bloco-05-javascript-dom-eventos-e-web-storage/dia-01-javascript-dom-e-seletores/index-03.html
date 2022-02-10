@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+      .main-content {
+        background-color: yellow;
+      }
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p id="text-1">Texto padrão do nosso site</p>
+        <p id="text-2">-----</p>
+        <p id="text-3">Trybe</p>
+      </section>
+    </main>
+    <script> 
+
+			// Requisito 1
+			function pChangeText(paragraph) {
+        document.getElementsByTagName(paragraph)[0].innerText = "Um super desenvolvedor web";
+      };
+      pChangeText("p");
+
+			// Requisito 2
+      function changeColorToGreenTrybe (position, arrayNumber = 0) {
+        document.getElementsByClassName(position)[arrayNumber].style.background = "rgb(76,164,109)";
+      };
+      changeColorToGreenTrybe("main-content");
+			
+			// Requisito 3
+			function changeColorToWhite(position, arrayNumber = 0) {
+        document.getElementsByClassName(position)[arrayNumber].style.background = "white";
+      };
+      changeColorToWhite("center-content");
+			
+			// Requisito 4
+			function changeTitle(titlePosition, arrayNumber = 0) {
+        document.getElementsByClassName(titlePosition)[arrayNumber].innerText = "Exercício 5.1 - JavaScript Dom e Seletores";
+      };
+      changeTitle("title");
+
+			// Requisito 5
+			function pUpperCase(paragraph) {
+        let paragraphUpperCase = document.getElementsByTagName(paragraph);
+        for (let i = 0; i < paragraphUpperCase.length; i += 1) {
+          paragraphUpperCase[i].style.textTransform = "uppercase";;
+        }
+      };
+      pUpperCase("p");
+
+			// Requisito 6
+			function showOnTheConsole(paragraph) {
+				let paragraphArray = document.getElementsByTagName(paragraph);
+				for (let i = 0; i < paragraphArray.length; i += 1) {
+					console.log(paragraphArray[i].innerText);
+				}
+			};
+			showOnTheConsole("p");
+
+    </script>
+  </body>
+</html>
