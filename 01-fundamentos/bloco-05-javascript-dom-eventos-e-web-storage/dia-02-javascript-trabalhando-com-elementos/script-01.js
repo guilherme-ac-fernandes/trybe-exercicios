@@ -58,6 +58,7 @@ document.getElementById("primeiroFilhoDoFilho").firstElementChild.parentElement.
 
 // Solução 2
 // Remove todos os filhos da seção pai
+// Resolução com grande auxílio do Frederico Leles (Turma 20, Tribo B) e do mentor técnico Matheus Guedes 
 let dad = document.querySelector("#pai");
 let dadChildren = dad.childNodes;
 for (let j = dadChildren.length - 1; j >= 0; j -= 1) {
