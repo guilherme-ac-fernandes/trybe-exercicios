@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+      // Adicionar h1 como filho de body
+      let titleH1Position = document.body;
+      let titleH1 = document.createElement("h1");
+      titleH1.innerText = "Exercício 5.2 - JavaScript DOM";
+      titleH1Position.appendChild(titleH1);
+
+      // Adicionar main (com class="main-content") no body
+      let mainPosition = document.body;
+      let mainContent = document.createElement("main");
+      mainContent.className = "main-content";
+      mainPosition.appendChild(mainContent);
+      
+      // Adicionar section (com class="center-content") como filgo de main
+      let sectionPosition = document.body.firstElementChild.nextElementSibling.nextElementSibling
+      let sectionContent = document.createElement("section");
+      sectionContent.className = "center-content";
+      sectionPosition.appendChild(sectionContent);
+
+      // Adicionar p como filho da section e incluir um texto
+      let paragraphPosition = document.getElementsByClassName("center-content")[0];
+      let paragraphContent = document.createElement("p");
+      paragraphContent.innerText = "Harry Potter e a Pedra Filosofal; Capítulo 1 - O menino que sobreviveu O Sr. e a Sra. Dursley, da Rua dos Alfeneiros, nº 4, se orgulhavam de dizer que eram perfeitamente normais, muito bem, obrigado. Eram as últimas pessoas no mundo que se esperaria que se metessem em alguma coisa estranha ou misteriosa, porque simplesmente não (https://doworld-pro.webnode.com/livros/a01-harry-potter-e-a-pedra-filosofal/).";
+      paragraphPosition.appendChild(paragraphContent);
+
+      // Adicionar section (com class="left-content") como filho de main
+      let leftPosition = document.querySelector(".main-content");
+      let leftContent = document.createElement("section");
+      leftContent.className = "left-content";
+      // leftContent.innerText = "Left";
+      leftPosition.appendChild(leftContent);
+
+      // Adicionar section (com class="right-content") como filho de main
+      let rightPosition = document.getElementsByClassName("main-content")[0];
+      let rightContent = document.createElement("section");
+      rightContent.className = "right-content";
+      // rightContent.innerText = "Right";
+      rightPosition.appendChild(rightContent);
+
+      // Adicionar uma imagem (com class="small-image") como filho da section "left-content"
+      let imagePosition = document.getElementsByClassName("left-content")[0];
+      let imageContent = document.createElement("img");
+      imageContent.className = "small-image";
+      // Referência de onde encontrei a forma de colocar o url da imagem 
+      // source: https://softauthor.com/javascript-working-with-images/
+      imageContent.src = "https://picsum.photos/200";
+      imagePosition.appendChild(imageContent);
+
+      // Adicionar lista não ordenada com números de 1 a 10 (escrito) dentro da section "right-content"
+      
+      // Criando a lista não ordenada
+      let listPosition = document.getElementsByClassName("right-content")[0];
+      let listNotOrdened = document.createElement("ol");
+      listPosition.appendChild(listNotOrdened);
+      
+      // Criando as listas por for
+      let arrayNumber = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      let listItemPosition = document.getElementsByClassName("right-content")[0].firstChild;
+      for (let i = 0; i < arrayNumber.length; i += 1) {
+        let listItemContent = arrayNumber[i];
+        let individualContent = document.createElement("li");
+        individualContent.innerText = listItemContent;
+        individualContent.className = "list";
+        listItemPosition.appendChild(individualContent);
+      }
+
+      // Adicionar três tags h3 filhas de main class="main-content"
+      let arrayH3 = ["HTML", "CSS", "JavaScript"];
+      let titleH3Position = document.getElementsByClassName("main-content")[0];
+      for (let j = 0; j < arrayH3.length; j += 1) {
+        let title = arrayH3[j];
+        let titleContent = document.createElement("h3");
+        titleContent.innerText = title;
+        // Adicionar class a tag H3
+        titleContent.className = "description";
+        titleH3Position.appendChild(titleContent);
+      }
+
+      // Adicionar class a tag H1
+      titleH1.className = "title";
+
+      // Adicionar class no H3 está dentro do for acima
+
+      // Remover a section "left-content" usando .removeChild()
+      let fatherLeft = document.querySelector(".main-content");
+      let removeLeft = document.querySelector(".left-content");
+      fatherLeft.removeChild(removeLeft);
+
+      // Centralizar section "right-content"
+      let centerSection = document.querySelector(".right-content");
+      // Formatação encontrado na documentação (https://www.w3schools.com/jsref/prop_style_marginright.asp)
+      centerSection.style.marginRight = "auto";
+
+      // Alterar a cor do pai da section "center-content" para verde
+      document.querySelector(".main-content").style.background = "rgb(76,164,109)";
+
+      // Remover os elementos "nove" e "dez" da lista criada
+      let removeListPosition = document.querySelectorAll(".list");
+
+      for (let z = 0; z < removeListPosition.length; z++) {
+        let listItem = removeListPosition[z];
+
+        if (listItem.innerText.includes("nove") || listItem.innerText.includes("dez")) {
+          removeListPosition.removeChild(listItem);
+        }
+
+
+        
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    </script>
+  </body>
+</html>

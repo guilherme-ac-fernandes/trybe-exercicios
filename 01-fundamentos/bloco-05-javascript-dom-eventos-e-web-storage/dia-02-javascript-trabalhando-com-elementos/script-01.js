@@ -49,14 +49,11 @@ document.getElementById("primeiroFilhoDoFilho").firstElementChild.parentElement.
 // Solução 1
 // let dad = document.querySelectorAll("#pai section");
 // for (let i = 0; i < dad.length; i += 1) {
-    
 //     if (dad[i].id === "primeiroFilhoDoFilho"){
-
 //     }
 //     else if (dad[i].id !== "elementoOndeVoceEsta") {
 //         dad[i].remove();
 //     }
-    
 // }
 
 // Solução 2
@@ -64,15 +61,11 @@ document.getElementById("primeiroFilhoDoFilho").firstElementChild.parentElement.
 let dad = document.querySelector("#pai");
 let dadChildren = dad.childNodes;
 for (let j = dadChildren.length - 1; j >= 0; j -= 1) {
-    
     let currentChild = dadChildren[j];
-
     if (currentChild.id !== "elementoOndeVoceEsta") {
         currentChild.remove();
     }
-    
 }
-
 // Remove irmão do "primeiroFilhoDoFilho"
 let secondChild = document.getElementById("elementoOndeVoceEsta").lastChild;
 secondChild.remove();
