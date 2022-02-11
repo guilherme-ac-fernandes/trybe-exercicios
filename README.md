@@ -29,7 +29,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 3.3: HTML & CSS - Seletores e posicionamento
 - [X] 3.4: HTML Semântico
 - [X] 3.5: Projeto - Lessons Learned
-[comment]: <(https://github.com/tryber/sd-020-b-project-lessons-learned/pull/97)>
+<!--- (https://github.com/tryber/sd-020-b-project-lessons-learned/pull/97) --->
 
 #### Bloco 04: Introdução à JavaScript e Lógica de Programação
 
@@ -38,7 +38,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 4.3: JavaScript - Lógica de Programação e Algoritmos
 - [X] 4.4: JavaScript - Objetos e funções
 - [X] 4.5: Projeto - Playground Functions
-[comment]: <(https://github.com/tryber/sd-020-b-project-playground-functions/pull/36#partial-pull-merging)>
+<!--- (https://github.com/tryber/sd-020-b-project-playground-functions/pull/36#partial-pull-merging) --->
 
 #### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
@@ -52,6 +52,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 5.7: Projeto - Meme Generator
 - [ ] 5.7: Projeto - Adivinhe a Cor
 - [ ] 5.7: Projeto - Carta Misteriosa
+<!--- just --->
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
@@ -61,6 +62,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 6.4: CSS Flexbox - Parte 2
 - [ ] 6.5: CSS Responsivo - Mobile First
 - [ ] 6.6: Projeto - Trybewarts
+<!--- just --->
 
 #### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
@@ -68,6 +70,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 7.2: JavaScript ES6 - Fluxo de exceção e Objetos
 - [ ] 7.3: Primeiros passos em Jest
 - [ ] 7.4: Projeto - JavaScript Testes Unitários
+<!--- just --->
 
 #### Bloco 08: Higher Order Functions do JavaScript ES6
 
@@ -77,6 +80,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 8.4: JavaScript ES6 - Higher Order Functions - reduce
 - [ ] 8.5: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 - [ ] 8.6: Projeto - Zoo functions
+<!--- just --->
 
 #### Bloco 09: JavaScript e Testes Assíncronos
 
@@ -84,7 +88,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 9.2: JavaScript Assíncrono - Fetch API e async/await
 - [ ] 9.3: Jest - Testes Assíncronos
 - [ ] 9.4: Projeto - Carrinho de Compras
-
+<!--- just --->
 
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
@@ -96,24 +100,28 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 10.1: ‘Hello, world!’ no React!
 - [ ] 10.2: Componentes React
 - [ ] 10.3: Projeto - Sistema Solar
+<!--- just --->
 
 #### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
 - [ ] 11.1: Componentes com estado e eventos
 - [ ] 11.2: Formulários no React
 - [ ] 11.3: Projeto - Tryunfo
+<!--- just --->
 
 #### Bloco 12: Ciclo de Vida de Componentes e React Router
 
 - [ ] 12.1: Ciclo de vida de componentes
 - [ ] 12.2: React Router
 - [ ] 12.3: Projeto - TrybeTunes
+<!--- just --->
 
 #### Bloco 13: Metodologias Ágeis
 
 - [ ] 13.1: Metodologias Ágeis
 - [ ] 13.2: P
 Projeto - Frontend Online Store
+<!--- just --->
 
 #### Bloco 14: Testes automatizados com React Testing Library
 
@@ -121,6 +129,7 @@ Projeto - Frontend Online Store
 - [ ] 14.2: RTL - Mocks e Inputs
 - [ ] 14.3: RTL - Testando React Routes
 - [ ] 14.4: Projeto - Teste em React
+<!--- just --->
 
 #### Bloco 15: Gerenciamento de estado com Redux
 
@@ -130,10 +139,12 @@ Projeto - Frontend Online Store
 - [ ] 15.4: Usando o Redux no React - Actions Assíncronas
 - [ ] 15.5: Testes em React-Redux
 - [ ] 15.6: Projeto - Trybe Wallet
+<!--- just --->
 
 #### Bloco 16: Projeto Jogo de Trivia
 
 - [ ] 16.1: Projeto - Jogo de Trivia
+<!--- just --->
 
 #### Bloco 17: Context API e React Hooks
 
@@ -141,11 +152,12 @@ Projeto - Frontend Online Store
 - [ ] 17.2: React Hooks - useState e useContext
 - [ ] 17.3: React Hooks - useEffect e Hooks customizados
 - [ ] 17.4: Projeto - StarWars Datatable com Contextualizáreis API e Hooks
+<!--- just --->
 
 #### Bloco 18: Projeto App de Receitas
 
 - [ ] 18.1: Projeto - App de Receitas
-
+<!--- just --->
 
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
@@ -158,6 +170,7 @@ Projeto - Frontend Online Store
 - [ ] 19.2: Manipulação e Criação de Imagens no Docker
 - [ ] 19.3: Orquestrando Containers com Docker Compose
 - [ ] 19.4: Projeto - Docker Todo-List
+<!--- just --->
 
 #### Bloco 20: Introdução à SQL
 
@@ -166,6 +179,7 @@ Projeto - Frontend Online Store
 - [ ] 20.3: Filtrando dados de forma específica
 - [ ] 20.4: Manipulando tabelas
 - [ ] 20.5: Projeto - All For One
+<!--- just --->
 
 #### Bloco 21: Funções SQL, JOINs e Normalização
 
@@ -173,6 +187,7 @@ Projeto - Frontend Online Store
 - [ ] 21.2: Descomplicando JOINs
 - [ ] 21.3: Transformando ideias em um modela de banco de dados
 - [ ] 21.4: Projeto - One For All
+<!--- just --->
 
 #### Bloco 22: Introdução ao desenvolvimentos Web com Node.js
 
@@ -182,6 +197,7 @@ Projeto - Frontend Online Store
 - [ ] 22.4: Express - HTTP com Nome.js
 - [ ] 22.5: Express - Middlewares
 - [ ] 22.6: Projeto - Talker Manager
+<!--- just --->
 
 #### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
@@ -190,6 +206,7 @@ Projeto - Frontend Online Store
 - [ ] 23.3: Arquitetura Web - Rest e Restful
 - [ ] 23.4: Arquitetura de Software - Testando as Camadas
 - [ ] 23.5: Projeto - Store Manager
+<!--- just --->
 
 #### Bloco 24: Node.js: ORM e Autenticação
 
@@ -198,12 +215,14 @@ Projeto - Frontend Online Store
 - [ ] 24.2: ORM: Associations
 - [ ] 24.3: JWT - (JSON Web Token)
 - [ ] 24.4: Projeto - API de Blogs
+<!--- just --->
 
 #### Bloco 25: Deployment
 
 - [ ] 25.1: Infraestrutura - Deploy com Heroku
 - [ ] 25.2: Deploy Docker & Heroku
 - [ ] 25.3: Projeto - Stranger Things
+<!--- just --->
 
 #### Bloco 26: TypeScript
 
@@ -211,6 +230,7 @@ Projeto - Frontend Online Store
 - [ ] 26.2: Tipagem ao TypeScript
 - [ ] 26.3: Express com TypeScript
 - [ ] 26.4: Projeto - Trybe Smith
+<!--- just --->
 
 #### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
@@ -220,10 +240,12 @@ Projeto - Frontend Online Store
 - [ ] 27.4: SOLID - Introdução
 - [ ] 27.5: SOLID - Continuação
 - [ ] 27.6: Projeto - Trybers and Dragons
+<!--- just --->
 
 #### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
 - [ ] 28.1: Projeto - TFC - Trybe Futebol Clube
+<!--- just --->
 
 #### Bloco 29: Introdução ao MongoDB
 
@@ -231,6 +253,7 @@ Projeto - Frontend Online Store
 - [ ] 29.1: MongoDB - Introdução
 - [ ] 29.2: Filter Operators
 - [ ] 29.3: Projeto - Data Flights
+<!--- just --->
 
 #### Bloco 30: MongoDB: Updates Simples e Complexos
 
@@ -238,16 +261,18 @@ Projeto - Frontend Online Store
 - [ ] 30.2: Updates Complexos - Arrays - Parte 1
 - [ ] 30.3: Updates Complexos - Arrays - Parte 2
 - [ ] 30.4: Projeto - Commerce
+<!--- just --->
 
 #### Bloco 31: MasterClass - VPS, CI/CD
 
 - [ ] 31.1: Dia 1
 - [ ] 31.2: Dia 2
+<!--- just --->
 
 #### Bloco 32: Projeto - App de Delivery
 
 - [ ] 32.1: Projeto - App de Delivery
-
+<!--- just --->
 
 
 ## Ciência da Computação :hourglass_flowing_sand:
@@ -260,6 +285,7 @@ Projeto - Frontend Online Store
 - [ ] 33.2: Entrada e Saída de Dados
 - [ ] 33.3: Testes
 - [ ] 33.4: Projeto - Job Insights
+<!--- just --->
 
 #### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
 
@@ -267,6 +293,7 @@ Projeto - Frontend Online Store
 - [ ] 34.2: Herança, Composição e Interfaces
 - [ ] 34.3: Padrões de projeto
 - [ ] 34.4:Projeto - Relatórios de Estoque
+<!--- just --->
 
 #### Bloco 35: Redes e Raspagem de Dados
 
@@ -274,6 +301,7 @@ Projeto - Frontend Online Store
 - [ ] 35.2: Redes de computadores, ferramentas e segurança
 - [ ] 35.3: Raspagem de Dados
 - [ ] 35.4: Projeto - Tech News
+<!--- just --->
 
 #### Bloco 36: Algoritmos
 
@@ -281,6 +309,7 @@ Projeto - Frontend Online Store
 - [ ] 36.2: Recursividade e Estratégias para solução de problemas
 - [ ] 36.3: Algoritmos de ordenação e busca
 - [ ] 36.4: Projeto - Algoritmos
+<!--- just --->
 
 #### Bloco 37: Estrutura de Dados I: Array, Hashmaps e Sets
 
@@ -289,9 +318,11 @@ Projeto - Frontend Online Store
 - [ ] 37.3: Hashmap e Dict
 - [ ] 37.4: Set
 - [ ] 37.5: Projeto - Restaurant Odres
+<!--- just --->
 
 #### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
 
 - [ ] 38.1: Nó e Listas Encadeadas
 - [ ] 38.2: Pilhas e Filas
 - [ ] 38.3: Projeto - TING - Trybe Is Not Google
+<!--- just --->
