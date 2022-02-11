@@ -29,6 +29,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 3.3: HTML & CSS - Seletores e posicionamento
 - [X] 3.4: HTML Semântico
 - [X] 3.5: Projeto - Lessons Learned
+[comment]: <(https://github.com/tryber/sd-020-b-project-lessons-learned/pull/97)>
 
 #### Bloco 04: Introdução à JavaScript e Lógica de Programação
 
@@ -37,6 +38,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 4.3: JavaScript - Lógica de Programação e Algoritmos
 - [X] 4.4: JavaScript - Objetos e funções
 - [X] 4.5: Projeto - Playground Functions
+[comment]: <(https://github.com/tryber/sd-020-b-project-playground-functions/pull/36#partial-pull-merging)>
 
 #### Bloco 05: JavaScript: DOM, Eventos e Web Storage
 
