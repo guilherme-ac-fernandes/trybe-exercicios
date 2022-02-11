@@ -36,16 +36,20 @@ function createDaysOfTheWeek() {
     }
 
     // Exercício 2
+    function createButton(stringId, stringText) {
+      let buttonPosition = document.querySelector(".buttons-container");
+      let button = document.createElement("button");
+      button.id = stringId;
+      button.innerText = stringText;
+      buttonPosition.appendChild(button);
+    };
+    createButton("btn-holiday", "Feriado");
 
-    let holidayButtonPosition = document.querySelector(".buttons-container");
-    let holidayButton = document.createElement("button");
-    holidayButton.id = "btn-holiday";
-    holidayButton.innerText = "Feriado";
-    holidayButtonPosition.appendChild(holidayButton);
+    // Exercício 3
 
-    function createButton(string) {
-        
-    }
-
+    let holidayButton = document.getElementById("btn-holiday");
+    holidayButton.addEventListener("click", function (event) {
+      event.innerText = "Gui"; 
+    });
 
 
