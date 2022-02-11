@@ -155,33 +155,12 @@
 
       // Remover os elementos "nove" e "dez" da lista criada
       let removeListPosition = document.querySelectorAll(".list");
-
-      for (let z = 0; z < removeListPosition.length; z++) {
+      for (let z = 0; z < removeListPosition.length; z += 1 ) {
         let listItem = removeListPosition[z];
-
-        if (listItem.innerText.includes("nove") || listItem.innerText.includes("dez")) {
-          removeListPosition.removeChild(listItem);
+        if (listItem.innerText.includes('nove') || listItem.innerText.includes("dez")) {
+          listItemPosition.removeChild(listItem);
         }
-
-
-        
       }
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
     </script>
   </body>
 </html>
