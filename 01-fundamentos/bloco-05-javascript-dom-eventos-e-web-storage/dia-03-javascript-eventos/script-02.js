@@ -72,15 +72,40 @@ createButton("btn-friday", "Sexta-Feira");
 buttonChange("btn-friday", ".friday");
 
 // Exercício 6
-let focusDay
+// Função de colocar e remover destaque individuamente nos dias do calendário proveniente do course da Trybe, mas modificado para virar uma função apenas
+// source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
+function mouseOver() {
+  let days = document.querySelector("#days");
+
+  days.addEventListener("mouseover", function (event) {
+    event.target.style.fontSize = "30px";
+    event.target.style.fontWeight = "600";
+  })
+};
+function mouseOut() {
+  let days = document.querySelector("#days");
+
+  days.addEventListener("mouseout", function (event) {
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = "200";
+  })
+};
+mouseOver();
+mouseOut();
+
+// Exercício 7
+function addTask(string) {
+  let taskFather = document.querySelector(".my-tasks");
+  let position = document.createElement("span");
+  position.className = "my-task-item";
+  position.innerText = string;
+  taskFather.appendChild(position);
+}
+addTask("Harry Potter");
+
+// Exercício 8
 
 
 
-individualDayPosition.addEventListener("mouseover", function () {
-  individualDayPosition.style.color = "blue";
-});
-individualDayPosition.addEventListener("mouseleave", function () {
-  individualDayPosition.style.color = "black";
-});
 
 
