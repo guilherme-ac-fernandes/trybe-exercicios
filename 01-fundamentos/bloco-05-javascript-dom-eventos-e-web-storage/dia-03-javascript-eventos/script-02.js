@@ -44,16 +44,16 @@ function createButton(stringId, stringText) {
 createButton("btn-holiday", "Feriado");
 
 // Exercício 3
-// Função inversa de colocar e remover destaque proveniente do course da Trybe
+// Função inversa de colocar e remover destaque proveniente do course da Trybe, mas modificado para virar uma função apenas
 // source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
-function holidayChange () {
-  let holidayButton = document.getElementById("btn-holiday");
-  let holiday = document.querySelectorAll(".holiday");
+function buttonChange (buttonIdString, individualClassString) {
+  let buttonPosition = document.getElementById(buttonIdString);
+  let button = document.querySelectorAll(individualClassString);
   let backgroundColor = "rgb(238,238,238)";
   let newBackgroundColorChange = "white";
-  holidayButton.addEventListener("click", function () {
-    for (let i = 0; i < holiday.length; i += 1) {
-      let position = holiday[i];
+  buttonPosition.addEventListener("click", function () {
+    for (let i = 0; i < button.length; i += 1) {
+      let position = button[i];
       if (position.style.background === newBackgroundColorChange) {
         position.style.background = backgroundColor;
       } else {
@@ -62,14 +62,25 @@ function holidayChange () {
     }
   })
 };
-
-holidayChange();
+buttonChange("btn-holiday", ".holiday");
 
 // Exercício 4
 // Já tinha criado a função criar botão, apenas alterei as strings de entrada
 createButton("btn-friday", "Sexta-Feira");
 
 // Exercício 5
+buttonChange("btn-friday", ".friday");
 
+// Exercício 6
+let focusDay
+
+
+
+individualDayPosition.addEventListener("mouseover", function () {
+  individualDayPosition.style.color = "blue";
+});
+individualDayPosition.addEventListener("mouseleave", function () {
+  individualDayPosition.style.color = "black";
+});
 
 
