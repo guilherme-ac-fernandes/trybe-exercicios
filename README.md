@@ -42,7 +42,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 5.1: JavaScript - DOM e seletores
 - [X] 5.2: JavaScript - Trabalhando com elementos
-- [ ] 5.3: JavaScript - Eventos
+- [X] 5.3: JavaScript - Eventos
 - [ ] 5.4: JavaScript - Web Storage
 - [ ] 5.5: Fundamentos - JavaScript - Projetos
 - [ ] 5.5: Projeto - Arte com Pixels
