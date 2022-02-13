@@ -152,7 +152,7 @@ function setDayColor() {
 };
 setDayColor();
 
-// Exercício 10
+// Exercício bônus
 // Resolução proveniente do course da Trybe
 // source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
 function addNewTask () {
