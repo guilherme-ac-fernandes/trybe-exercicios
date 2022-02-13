@@ -1,7 +1,7 @@
 ## JavaScript - Eventos
 
 
-- Atividade de fixação 1:
+#### Atividade de fixação 1:
 > A partir dos códigos fornecidos crie `index-01.html`, `style-01.css` e `script-01.js`, para realizar as seguintes modificações utilize apenas o Javascript:
 
 1. Copie esse arquivo e edite apenas ele.
@@ -19,7 +19,7 @@
 5. Crie uma função que, ao passar o mouse sobre `Meu top 3 do Spotrybefy`, altere a cor do mesmo.
 
 
-- Atividade de fixação 2:
+#### Atividade de fixação 2:
 > A partir dos códigos fornecidos crie `index-02.html`, `style-02.css` e `script-02.js`, para realizar as seguintes modificações utilize apenas o Javascript:
 
 
