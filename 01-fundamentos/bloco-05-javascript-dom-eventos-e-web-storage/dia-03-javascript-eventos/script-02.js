@@ -123,7 +123,43 @@ function legend(color) {
 legend("green");
 
 // Exercício 9
+// Resolução proveniente do course da Trybe
+// source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
+function setTaskClass() {
+  let selectedTask = document.getElementsByClassName("task selected");
+  let myTasks = document.querySelector(".task");
+  myTasks.addEventListener("click", function (event) {
+    if (selectedTask.length === 0) {
+      event.target.className = "task selected";
+    } else {
+      event.target.className = "task";
+    }
+  })
+};
+setTaskClass();
 
+// Exercício 10
+// Resolução proveniente do course da Trybe
+// source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
+
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName("task selected");
+  let days = document.querySelector("#days");
+  let taskDiv = document.querySelector(".task");
+  let taskColor = taskDiv.style.backgroundColor;
+
+  days.addEventListener("click", function (event) {
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (selectedTask.length !== 0 && eventTargetColor === taskColor){
+      event.target.style.color = "rgb(119,119,119)";
+    }
+  })
+};
+
+setDayColor();
 
 
 
