@@ -99,11 +99,31 @@ function addTask(string) {
   let position = document.createElement("span");
   position.className = "my-task-item";
   position.innerText = string;
+  position.style.verticalAlign = "middle";
+  position.style.display = "inline-block";
   taskFather.appendChild(position);
+  
 }
-addTask("Harry Potter");
+addTask("Projeto:");
 
 // Exercício 8
+function legend(color) {
+  let taskFather = document.querySelector(".my-tasks");
+  let circleColor = document.createElement("div");
+  circleColor.className = "task";
+  circleColor.style.borderRadius = "100%";
+  circleColor.style.width = "25px";
+  circleColor.style.height = "25px";
+  circleColor.style.verticalAlign = "middle";
+  circleColor.style.background = color;
+  circleColor.style.display = "inline-block";
+  circleColor.style.border = "solid 2px black";
+  taskFather.appendChild(circleColor);
+};
+legend("green");
+
+// Exercício 9
+
 
 
 
