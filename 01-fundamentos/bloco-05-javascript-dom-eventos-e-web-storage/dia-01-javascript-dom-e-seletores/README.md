@@ -1,7 +1,7 @@
 ## JavaScript - Dom e Seletores
 
 
-- Atividade de fixação 1:
+#### Atividade de fixação 1:
 > A partir do arquivo `index-01.html`, realize as seguintes modificações:
 
 Requisito 1 - Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
@@ -19,7 +19,7 @@ Requisito 6 - Altere algum estilo do primeiro deles.
 Requisito 7 - Recupere o subtítulo e altere a cor dele usando a função `getElementsByTagName`.
 
 
-- Atividade de fixação 2:
+#### Atividade de fixação 2:
 > A partir do arquivo `index-02.html` e `style-02.css`, crie o `script-02.js` e realize as seguintes modificações:
 
 Realize manipulações nos elementos HTML , colocando a cor do Administrador de Tempo da Trybe como na imagem abaixo usando apenas o JavaScript!
@@ -27,7 +27,7 @@ Realize manipulações nos elementos HTML , colocando a cor do Administrador de 
 ![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/javascript/images/time-exercise-808be0ece63a2ab6b8801ce6f5e5636c.png)
 
 
-- Atividade de fixação 3:
+#### Atividade de fixação 3:
 > A partir do arquivo `index-03.html`, realize as seguintes modificações:
 
 Sendo que as alterações devem ser realizadas utilizando apenas as funções:
