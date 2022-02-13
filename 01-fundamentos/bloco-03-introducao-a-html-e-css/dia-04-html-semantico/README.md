@@ -1,6 +1,6 @@
 ## HTML Semântico 
 
-- Atividade de fixação 1:
+#### Atividade de fixação 1:
 > Utilize os arquivos `index-01.html` e `style-01.css`
 - Para realizar o exercício, leia atentamente o enunciado. Após entender o que foi pedido, desenvolva a solução e então verifique se você conseguiu cumprir com o que foi solicitado.
 1. Para realizar este exercício copie o código `HTML` abaixo. Em seguida, faça a implementação das propriedades `CSS` e, se necessário, faça adições à estrutura `HTML` existente, para que o resultado final seja similar à imagem referência.
@@ -10,7 +10,7 @@ Imagem - Podium and prizes final structure
 
 ![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/html-css/images/podium-final-fdcdc425aade8216b9e3c4b0eab234fc.png)
 
-- Atividade de fixação 2:
+#### Atividade de fixação 2:
 > Utilize os arquivos `index-02.html` e `style-02.css`
 
 O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre HTML semântico .
