@@ -1,19 +1,19 @@
 ## Introdução ao CSS
 
-- Atividade de fixação 1:
+#### Atividade de fixação 1:
 > Utilize os arquivos `index-01.html` e `style-01.css`
 1. Reproduzir o esquema de itens no browser seguindo a imagem, por meio do código fornecido (copie o código abaixo e modifique utilizando o VS Code).
 
 ![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/html-css/images/css-box-model-example-a9ff30a667b5b5ac7e412931ed9b2afc.png)
 
-- Atividade de fixação 2:
+#### Atividade de fixação 2:
 > Utilize os arquivos `index-02.html` e `style-02.css`
 Organize as imagens no arquivo HTML disponibilizado, seguindo os seguintes requisitos:
 1. Posicione o Mario acima do Goomba.
 2. Posicione a tag `<p>` para que fique dentro do balão de fala.
 3. Posicione o balão para que se torne uma fala de Bowser.
 
-- Atividade de fixação 3:
+#### Atividade de fixação 3:
 > Utilize o arquivo `index-03.html` e crie `style-03.css`
 Modifique o código HTML fornecido seguindo os seguintes passos:
 1. Adicione uma lista ordenada dos 3 melhores sites que você conhece.
@@ -26,7 +26,7 @@ Modifique o código HTML fornecido seguindo os seguintes passos:
 5. No `style.css`, adicione a propriedade `list-style: none` para ambas as listas.
 **Dica:** Nesse _[link](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)_, você irá encontrar a documentação sobre todas as pseudoclasses do CSS.
 
-- Atividade de fixação 4:
+#### Atividade de fixação 4:
 > Utilize o arquivo `index-04.html` e crie `style-04.css`
 Para o próximo exercício, você não deve atribuir nenhuma `classe` ou `id` aos componentes, mas apenas utilizar pseudoclasses para individualizar cada elemento!
 A partir do código fornecido, realize as seguintes modificações:
@@ -36,7 +36,7 @@ A partir do código fornecido, realize as seguintes modificações:
 4. Faça a terceira `<div>` ser maior que as demais.
 5. Deixe as tags ímpares `<h3>` com o texto em itálico.
 
-- Atividade de fixação 5:
+#### Atividade de fixação 5:
 > Utilize o arquivo `index-05.html` e crie `style-05.css`
 A partir do código disponibilizado, realize os seguintes requisitos:
 1. Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade `text-transform` para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
