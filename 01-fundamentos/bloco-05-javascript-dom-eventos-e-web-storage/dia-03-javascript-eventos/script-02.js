@@ -1,16 +1,13 @@
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
   const weekDaysList = document.querySelector('.week-days');
-  
   for (let index = 0; index < weekDays.length; index += 1) {
     const days = weekDays[index];
     const dayListItem = document.createElement('li');
     dayListItem.innerHTML = days;
-  
     weekDaysList.appendChild(dayListItem);
   };
 };
-  
 createDaysOfTheWeek();
   
 // Escreva seu código abaixo.
@@ -76,7 +73,6 @@ buttonChange("btn-friday", ".friday");
 // source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
 function mouseOver() {
   let days = document.querySelector("#days");
-
   days.addEventListener("mouseover", function (event) {
     event.target.style.fontSize = "30px";
     event.target.style.fontWeight = "600";
@@ -84,7 +80,6 @@ function mouseOver() {
 };
 function mouseOut() {
   let days = document.querySelector("#days");
-
   days.addEventListener("mouseout", function (event) {
     event.target.style.fontSize = "20px";
     event.target.style.fontWeight = "200";
@@ -102,8 +97,7 @@ function addTask(string) {
   position.style.verticalAlign = "middle";
   position.style.display = "inline-block";
   taskFather.appendChild(position);
-  
-}
+};
 addTask("Projeto:");
 
 // Exercício 8
@@ -141,13 +135,11 @@ setTaskClass();
 // Exercício 10
 // Resolução proveniente do course da Trybe
 // source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
-
 function setDayColor() {
   let selectedTask = document.getElementsByClassName("task selected");
   let days = document.querySelector("#days");
   let taskDiv = document.querySelector(".task");
   let taskColor = taskDiv.style.backgroundColor;
-
   days.addEventListener("click", function (event) {
     let eventTargetColor = event.target.style.color;
     if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
@@ -158,10 +150,32 @@ function setDayColor() {
     }
   })
 };
-
 setDayColor();
 
-
-
-
-
+// Exercício 10
+// Resolução proveniente do course da Trybe
+// source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
+function addNewTask () {
+  let getInputField = document.querySelector("#task-input");
+  let addInputButton = document.querySelector("#btn-add");
+  let getTaskList = document.querySelector(".task-list");
+  addInputButton.addEventListener("click", function () {
+    if (getInputField.value.length > 0){
+      let newLi = document.createElement("li");
+      newLi.innerText = getInputField.value;
+      getTaskList.appendChild(newLi);
+      getInputField.value = "";
+    } else {
+      alert("Erro: Digite ao menos um caractere")
+    }
+  })
+  getInputField.addEventListener("keyup", function (event) {
+    if (event.key === "Enter" && getInputField.value.length > 0){
+      let newLi = document.createElement("li");
+      newLi.innerText = getInputField.value;
+      getTaskList.appendChild(newLi);
+      getInputField.value = "";
+    }
+  }
+)};
+addNewTask();

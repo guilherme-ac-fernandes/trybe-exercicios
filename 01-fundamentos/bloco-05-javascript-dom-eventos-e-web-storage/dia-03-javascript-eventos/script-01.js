@@ -20,7 +20,7 @@ function addClassTech(event) {
   event.target.classList.add("tech");
   // A linha abaixo tem a função de limpar o input
   input.value = "";
-}
+};
 firstLi.addEventListener("click", addClassTech);
 secondLi.addEventListener("click", addClassTech);
 thirdLi.addEventListener("click", addClassTech);
@@ -39,7 +39,7 @@ input.addEventListener("input",function(event) {
 // Resolução com auxílio do gabarito no course da Trybe (source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar)
 myWebpage.addEventListener("dblclick", function (event) {
   window.location.replace("https://guilherme-ac-fernandes.github.io");
-})
+});
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
@@ -56,7 +56,7 @@ function resetText(event) {
   event.target.innerText = 'Opção reiniciada';
   // O event possui várias propriedades, porém a mais usada é o event.target,
   // que retorna o objeto que disparou o evento.
-}
+};
 
 firstLi.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
