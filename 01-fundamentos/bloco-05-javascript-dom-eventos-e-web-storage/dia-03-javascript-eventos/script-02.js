@@ -14,21 +14,25 @@ createDaysOfTheWeek();
 
 // Exercício 1
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-let individualDayPosition = document.getElementById("days");
-for (let i = 0; i < dezDaysList.length; i += 1) {
-  let individualDay = dezDaysList[i];
-  let individualDayElement = document.createElement("li");
-  individualDayElement.className = "day";
-  individualDayElement.innerText = individualDay;
-  individualDayPosition.appendChild(individualDayElement);
-  if (individualDay === 25){
-    individualDayElement.className = "day holiday friday";
-  } else if (individualDay === 24 || individualDay === 31){
-    individualDayElement.className = "day holiday";
-  } else if (individualDay === 4 || individualDay === 11 || individualDay === 18) {
-    individualDayElement.className = "day friday";
+function dayOftheWeek(array) {
+  let individualDayPosition = document.getElementById("days");
+  for (let i = 0; i < array.length; i += 1) {
+    let individualDay = array[i];
+    let individualDayElement = document.createElement("li");
+    individualDayElement.className = "day";
+    individualDayElement.innerText = individualDay;
+    individualDayPosition.appendChild(individualDayElement);
+    if (individualDay === 25){
+      individualDayElement.className = "day holiday friday";
+    } else if (individualDay === 24 || individualDay === 31){
+      individualDayElement.className = "day holiday";
+    } else if (individualDay === 4 || individualDay === 11 || individualDay === 18) {
+      individualDayElement.className = "day friday";
+    }
   }
 };
+dayOftheWeek(dezDaysList);
+
 
 // Exercício 2
 function createButton(stringId, stringText) {
@@ -41,7 +45,7 @@ function createButton(stringId, stringText) {
 createButton("btn-holiday", "Feriado");
 
 // Exercício 3
-// Função inversa de colocar e remover destaque proveniente do course da Trybe, mas modificado para virar uma função apenas
+// Função inversa de colocar e remover destaque proveniente do course da Trybe, mas modificado para virar apenas uma função 
 // source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
 function buttonChange (buttonIdString, individualClassString) {
   let buttonPosition = document.getElementById(buttonIdString);
@@ -179,3 +183,17 @@ function addNewTask () {
   }
 )};
 addNewTask();
+
+// Teste - Riscar texto ao clicar
+// function riscado () {
+//   let dezembro = document.getElementById("month");
+//   dezembro.addEventListener("click", function (event) {
+//     let riscado = event.target.style.textDecoration = "none";
+//     if (dezembro === riscado) {
+//       event.target.style.fontDecoration = "line-through";
+//     } else {
+//       event.target.style.fontDecoration = "none";
+//     }
+//   })
+// };
+// riscado();
