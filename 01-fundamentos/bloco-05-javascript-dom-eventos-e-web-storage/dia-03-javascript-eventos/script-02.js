@@ -185,16 +185,15 @@ function addNewTask () {
 )};
 addNewTask();
 
-// Teste - Riscar texto ao clicar
-// function riscado () {
-//   let dezembro = document.getElementById("month");
-//   dezembro.addEventListener("click", function (event) {
-//     let riscado = event.target.style.textDecoration = "none";
-//     if (dezembro === riscado) {
-//       event.target.style.fontDecoration = "line-through";
-//     } else {
-//       event.target.style.fontDecoration = "none";
-//     }
-//   })
-// };
-// riscado();
+// Teste Bônus - Riscar texto (neste caso o mês) ao clicar
+function riscado () {
+  let dezembro = document.getElementById("month");
+  dezembro.addEventListener("click", function (event) {
+    if (dezembro.className === "month-não-riscado") {
+      event.target.className = "month-riscado";
+    } else {
+      event.target.className = "month-não-riscado";
+    }
+  })
+};
+riscado();

@@ -153,3 +153,11 @@
     margin: 0px;
     padding: 10px 0;
   }
+
+  .month-riscado{
+    text-decoration: line-through;
+  }
+
+  .month-não-riscado{
+    text-decoration: none;
+  }
