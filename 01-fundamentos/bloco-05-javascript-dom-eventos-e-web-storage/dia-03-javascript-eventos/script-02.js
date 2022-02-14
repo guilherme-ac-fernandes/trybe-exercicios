@@ -140,6 +140,7 @@ setTaskClass();
 // Resolução proveniente do course da Trybe
 // source: https://app.betrybe.com/course/fundamentals/javascript-dom-eventos-e-web-storage/javascript-eventos-gabarito/solutions/700128ff-5150-4320-9b33-875c7e6d5a2e/gabarito-dos-exercicios/b1d700e5-2b66-48c3-8af0-310cb17eacda?use_case=calendar
 function setDayColor() {
+  // Esse "task selected" representa a div selecionada que guarda a informação da cor a ser aplicada
   let selectedTask = document.getElementsByClassName("task selected");
   let days = document.querySelector("#days");
   let taskDiv = document.querySelector(".task");
