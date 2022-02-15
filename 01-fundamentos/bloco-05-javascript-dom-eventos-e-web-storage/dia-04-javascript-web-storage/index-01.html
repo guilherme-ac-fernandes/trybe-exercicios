@@ -43,6 +43,12 @@
 			h4 {
 				font-size: 1em;
 			}
+			.axial{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.times{
+				font-family: 'Times New Roman', Times, serif;
+			}
 		</style>
 	</head>
 	<body>
@@ -57,7 +63,7 @@
 
 			<aside id="preferences">
 				<h3 class="text">Estilização:</h3>
-				<h4>Cor de Fundo:</h4>
+				<h4 class="text">Cor de Fundo:</h4>
 				<select name="" id="color">
 					<option value="white">White</option>
 					<option value="red">Red</option>
@@ -65,7 +71,7 @@
 					<option value="purple">Purple</option>
 					<option value="blue">Blue</option>
 				</select>
-				<h4>Cor do Texto:</h4>
+				<h4 class="text">Cor do Texto:</h4>
 				<select name="" id="text-color">
 					<option value="black">Preto</option>
 					<option value="blue">Blue</option>
@@ -73,7 +79,7 @@
 					<option value="purple">Purple</option>
 					<option value="red">Red</option>
 				</select>
-				<h4>Tamanho da Fonte:</h4>
+				<h4 class="text">Tamanho da Fonte:</h4>
 				<select name="" id="font-size">
 					<option value="10px">10px</option>
 					<option value="15px">15px</option>
@@ -81,7 +87,7 @@
 					<option value="25px">25px</option>
 					<option value="30px">30px</option>
 				</select>
-				<h4>Espaçamento:</h4>
+				<h4 class="text">Espaçamento:</h4>
 				<select name="" id="line-height">
 					<option value="20px">20px</option>
 					<option value="30px">30px</option>
@@ -89,17 +95,13 @@
 					<option value="50px">50px</option>
 					<option value="60px">60px</option>
 				</select>
-				<h4>Tipo de Fonte:</h4>
-				<select name="" id="font-family">
-					<option value="option1">'Courier New'</option>
-					<option value="option2">'Times New Roman'</option>
-					<option value="option3">'Verdana'</option>
-					<option value="option4">'Arial'</option>
-					<option value="option5">'Georgia'</option>
-				</select>
+				<h4 class="text">Tipo de Fonte:</h4>
+				<div id="font-family">
+					<button id="axial">Axial</button>
+					<button id="times">Times</button>
+				</div>
 			</aside>
 		</main>
-
 		<script src="/script-01.js"></script>
 	</body>
 </html>
