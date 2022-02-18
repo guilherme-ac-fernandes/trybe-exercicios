@@ -2,7 +2,7 @@
 
 
 #### Atividade de fixação 1:
-
+> Criar arquivos `index-01.html` e `scrip-01.js`
 Imagine que você é a pessoa responsável por desenvolver uma página que servirá como um leitor de conteúdo escrito. Esse conteúdo escrito pode ser uma página de livro, uma reportagem de revista ou uma nota de jornal online. Até aqui, nenhuma novidade, mas essa demanda exige que você aplique preferências das pessoas leitoras na página para melhorar a experiência de leitura dessas pessoas.
 As pessoas devem ter o poder de alterar:
 
