@@ -46,10 +46,10 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 5.4: JavaScript - Web Storage
 - [X] 5.5: Fundamentos - JavaScript - Projetos
 - [X] 5.5: Projeto - Arte com Pixels
-- [ ] 5.6: Projeto - Lista de tarefa
-- [ ] 5.7: Projeto - Meme Generator
+- [X] 5.6: Projeto - Lista de tarefa
+- [X] 5.7: Projeto - Meme Generator
 - [ ] 5.7: Projeto - Adivinhe a Cor
-- [ ] 5.7: Projeto - Carta Misteriosa
+- [X] 5.7: Projeto - Carta Misteriosa
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
