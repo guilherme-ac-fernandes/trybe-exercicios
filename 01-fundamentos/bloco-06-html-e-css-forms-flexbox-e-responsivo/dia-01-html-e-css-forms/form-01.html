@@ -19,21 +19,21 @@
         <br>
         <div>
           <label for="input-email">Email:</label>
-          <input type="email" name="input-email" id="input-email" min="10" max="50" required>
+          <input type="email" name="input-email" id="input-email" max="50" required>
         </div>
         <br>
-        <div>
+        <div id="opcaoDiv">
           <label for="opcao1">
-            <input type="radio" name="opcao" value="op1" id="opcao1">Cidade
+            <input class="opcao" type="radio" name="opcao" value="op1" id="opcao1">Cidade
           </label>
           <label for="opcao2">
-            <input type="radio" name="opcao" value="op2" id="opcao2">Campo
+            <input class="opcao" type="radio" name="opcao" value="op2" id="opcao2">Campo
           </label>
           <label for="opcao3">
-            <input type="radio" name="opcao" value="op3" id="opcao3">Praia
+            <input class="opcao" type="radio" name="opcao" value="op3" id="opcao3">Praia
           </label>
           <label for="opcao4">
-            <input type="radio" name="opcao" value="op4" id="opcao4">Montanhas
+            <input class="opcao" type="radio" name="opcao" value="op4" id="opcao4">Montanhas
           </label>
         </div>
         <br>
@@ -57,6 +57,12 @@
             <legend>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</legend>
             <label for="concordo2">Concordo</label>
             <input type="checkbox" name="concordo" value="concordo2" id="concordo2">
+          </fieldset>
+          <br>
+          <fieldset id="imageFieldset">
+            <legend>Autoriza o uso de imagens?</legend>
+            <label for="concordo3">Concordo</label>
+            <input type="checkbox" name="concordo" value="concordo3" id="concordo3">
           </fieldset>
         </div>
         <br>

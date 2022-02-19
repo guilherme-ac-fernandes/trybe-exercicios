@@ -26,4 +26,10 @@ Requisito 3 - Agora vamos utilizar um pouco de javascript, para isso crie o arqu
 
 Requisito 4 - Crie um botão que limpe as informações contidas nos campos;
 
+#### Atividade de fixação 2:
+> Utilizando os arquivos `form-01.html` e `form-01.js`
+
+Requisito 1 - A `TrybeTrip` precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar o uso de imagens possa enviar suas informações.
+
+Requisito 2 - Faça a validação dos campos com limite de caracteres. Caso não estejam dentro do esperado ao clicar no botão de `submit`, um alerta deve ser mostrado com a mensagem: `Dados Inválidos`. Caso contrário, a mensagem `Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.` deverá aparecer na tela.
 
