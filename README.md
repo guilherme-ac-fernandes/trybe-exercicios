@@ -53,7 +53,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
-- [ ] 6.1: HTML & CSS - Forms
+- [X] 6.1: HTML & CSS - Forms
 - [ ] 6.2: Bibliotecas JavaScript e Frameworks CSS
 - [ ] 6.3: CSS Flexbox - Parte 1
 - [ ] 6.4: CSS Flexbox - Parte 2
