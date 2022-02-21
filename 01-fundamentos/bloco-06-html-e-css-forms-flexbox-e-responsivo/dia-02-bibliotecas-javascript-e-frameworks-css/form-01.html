@@ -1,77 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrybeTrip</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   </head>
   <body>
     <header>
-      <h1>Formulário</h1>
+      <h1 class="text-center">Formulário</h1>
     </header>
-    <main>
-      <form action="" method="get">
-        <div>
+    <main class="container">
+      <form action="" method="get" id="form">
+        <div class="form-group mb-3">
           <label for="input-nome">Nome completo:</label>
-          <input type="text" name="input-nome" id="input-nome" min="10" max="40" required>
+          <input class="form-control" type="text" name="input-nome" id="input-nome" min="10" max="40" required>
         </div>
-        <br>
-        <div>
+        <div class="form-group mb-3">
           <label for="input-email">Email:</label>
-          <input type="email" name="input-email" id="input-email" max="50" required>
+          <input class="form-control" type="email" name="input-email" id="input-email" max="50" required>
         </div>
-        <br>
-        <div id="opcaoDiv">
-          <label for="opcao1">
-            <input class="opcao" type="radio" name="opcao" value="op1" id="opcao1">Cidade
-          </label>
-          <label for="opcao2">
-            <input class="opcao" type="radio" name="opcao" value="op2" id="opcao2">Campo
-          </label>
-          <label for="opcao3">
-            <input class="opcao" type="radio" name="opcao" value="op3" id="opcao3">Praia
-          </label>
-          <label for="opcao4">
-            <input class="opcao" type="radio" name="opcao" value="op4" id="opcao4">Montanhas
-          </label>
+        <div id="opcaoDiv" class="form-group mb-3">
+          <div class="form-check">
+            <input class="opcao form-check-input" type="radio" name="opcao" value="op1" id="opcao1" checked>
+            <label for="opcao1" class="form-check-label">Cidade</label>
+          </div>
+          <div class="form-check">
+            <input class="opcao form-check-input" type="radio" name="opcao" value="op2" id="opcao2">
+            <label for="opcao2" class="form-check-label">Campo</label>
+          </div>
+          <div class="form-check">
+            <input class="opcao form-check-input" type="radio" name="opcao" value="op3" id="opcao3">
+            <label for="opcao3">Praia</label>
+          </div>
+          <div class="form-check">
+            <input class="opcao form-check-input" type="radio" name="opcao" value="op4" id="opcao4">
+            <label for="opcao4">Montanhas</label>
+          </div>
         </div>
-        <br>
-        <div>
+        <div class="form-group mb-3">
           <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?:</p>
-          <textarea placeholder="Espaço para digitar a resposta" name="input-texto-longo" id="input-texto-longo" cols="40" rows="8" maxlength="500"></textarea>
+          <textarea class="form-control" placeholder="Espaço para digitar a resposta" name="input-texto-longo" id="input-texto-longo" cols="40" rows="4" maxlength="500"></textarea>
         </div>
-        <div>
+        <div class="form-group mb-3">
           <label for="data">Qual a melhor data para realizar sua viagem?</label>
-          <input type="date" name="data" id="data">
+          <input class="form-control" type="text" name="data" id="data">
         </div>
-        <br>
-        <div>
-          <fieldset>
-            <legend>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</legend>
-            <label for="concordo1">Concordo</label>
-            <input type="checkbox" name="concordo" value="concordo1" id="concordo1">
-          </fieldset>
-          <br>
-          <fieldset>
-            <legend>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</legend>
-            <label for="concordo2">Concordo</label>
-            <input type="checkbox" name="concordo" value="concordo2" id="concordo2">
-          </fieldset>
-          <br>
-          <fieldset id="imageFieldset">
-            <legend>Autoriza o uso de imagens?</legend>
-            <label for="concordo3">Concordo</label>
-            <input type="checkbox" name="concordo" value="concordo3" id="concordo3">
-          </fieldset>
+        <div class="form-group mb-3">
+          <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+          <div class="form-check form-switch mb-3">
+            <label for="concordo1" class="form-check-label">Concordo</label>
+            <input type="checkbox" name="concordo" value="concordo1" id="concordo1" class="form-check-input">
+          </div>
+          <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+          <div class="form-check form-switch mb-3">
+            <label for="concordo2" class="form-check-label">Concordo</label>
+            <input type="checkbox" name="concordo" value="concordo2" id="concordo2" class="form-check-input">
+          </div>
+          <p>Autoriza o uso de imagens?</p>
+          <div class="form-check form-switch" id="div-img">
+            <label for="concordo3" class="form-check-label">Concordo</label>
+            <input type="checkbox" name="concordo" value="concordo3" id="concordo3" class="form-check-input">
+          </div>
         </div>
-        <br>
-        <div>
-          <button type="submit" id="submitButton">Enviar</button>
-          <button type="reset">Apagar</button>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit" id="submitButton">Enviar</button>
+          <button class="btn btn-secondary" type="reset" id="resetButton">Apagar</button>
         </div>
       </form>
     </main>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="/form-01.js"></script>
   </body>
 </html>
