@@ -3,6 +3,7 @@
 
 #### Atividade de fixação:
 > Utilizando os arquivos `form-01.html` e `form-01.js` do dia anterior, realize as seguintes modificações:
+
 Requisito 1 - Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
 * Sugestões: `Bulma`, `Bootstrap`, `Semantic UI` e `Materialize`.
 
