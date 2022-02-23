@@ -45,11 +45,11 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 5.3: JavaScript - Eventos
 - [X] 5.4: JavaScript - Web Storage
 - [X] 5.5: Fundamentos - JavaScript - Projetos
-- [X] 5.5: Projeto - Arte com Pixels
-- [X] 5.6: Projeto - Lista de tarefa
-- [X] 5.7: Projeto - Meme Generator
-- [X] 5.7: Projeto - Adivinhe a Cor
-- [X] 5.7: Projeto - Carta Misteriosa
+- [X] 5.5: [Projeto - Arte com Pixels](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/pixel-art)
+- [X] 5.6: [Projeto - Lista de tarefa](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/todo-list)
+- [X] 5.7: [Projeto - Meme Generator](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/meme-generator)
+- [X] 5.7: [Projeto - Adivinhe a Cor](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/color-guess)
+- [X] 5.7: [Projeto - Carta Misteriosa](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/mistery-letter)
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
