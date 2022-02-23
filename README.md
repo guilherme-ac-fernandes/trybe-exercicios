@@ -48,14 +48,14 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 5.5: Projeto - Arte com Pixels
 - [X] 5.6: Projeto - Lista de tarefa
 - [X] 5.7: Projeto - Meme Generator
-- [ ] 5.7: Projeto - Adivinhe a Cor
+- [X] 5.7: Projeto - Adivinhe a Cor
 - [X] 5.7: Projeto - Carta Misteriosa
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [X] 6.1: HTML & CSS - Forms
-- [ ] 6.2: Bibliotecas JavaScript e Frameworks CSS
-- [ ] 6.3: CSS Flexbox - Parte 1
+- [X] 6.2: Bibliotecas JavaScript e Frameworks CSS
+- [X] 6.3: CSS Flexbox - Parte 1
 - [ ] 6.4: CSS Flexbox - Parte 2
 - [ ] 6.5: CSS Responsivo - Mobile First
 - [ ] 6.6: Projeto - Trybewarts
