@@ -39,7 +39,9 @@ header{
 }
 
 .tech div{
-  border: outset 2px #f1f1f1;
+  /* border: outset 2px #f1f1f1; */
+  /* Documentação para Box-Shadow (source: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp) */
+  box-shadow: 2px 2px 4px gray;
   background-color: #f1f1f1;
   width: 170px;
   height: 200px;
