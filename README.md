@@ -56,7 +56,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 6.1: HTML & CSS - Forms
 - [X] 6.2: Bibliotecas JavaScript e Frameworks CSS
 - [X] 6.3: CSS Flexbox - Parte 1
-- [ ] 6.4: CSS Flexbox - Parte 2
+- [X] 6.4: CSS Flexbox - Parte 2
 - [ ] 6.5: CSS Responsivo - Mobile First
 - [ ] 6.6: Projeto - Trybewarts
 
