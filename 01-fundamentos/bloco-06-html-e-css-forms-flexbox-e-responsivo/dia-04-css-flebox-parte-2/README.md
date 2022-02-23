@@ -17,14 +17,14 @@ Requisito 4 - Utilize a propriedade align-self para que a tag `nav` esteja no ce
 
 ##### Modificações na Main:
 
-Requisito 1 - Aplique uma base de 350px para seu container aside.
+Requisito 5 - Aplique uma base de 350px para seu container aside.
 
-Requisito 2 - Aplique no container aside um alinhamento para centralizar e outro para expandir.
+Requisito 6 - Aplique no container aside um alinhamento para centralizar e outro para expandir.
 
-Requisito 3 - Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card.
+Requisito 7 - Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card.
 
-Requisito 4 - Aplique uma propriedade com o valor 10 que expanda o container de filmes.
+Requisito 8 - Aplique uma propriedade com o valor 10 que expanda o container de filmes.
 
-Requisito 5 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco.
+Requisito 9 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco.
 
 
