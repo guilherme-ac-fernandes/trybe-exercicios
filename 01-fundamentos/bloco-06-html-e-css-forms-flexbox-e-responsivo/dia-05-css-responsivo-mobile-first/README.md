@@ -76,9 +76,8 @@ Requisito 1 -  Adicione uma `media query` no arquivo CSS e as regras necessária
 > Os elementos com id `header`, `navigation` e `footer` devem desaparecer.
 > O elemento com id `aside` deve ser mostrado abaixo do conteúdo principal.
 
-Visualização da página antes da impressão
-![Visualização da página antes da impressão](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/css-responsive/images/exercise_3_before_print-2d4180a7f515daebab4ee1c78fe51cfd.png)
 
+![Visualização da página antes da impressão](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/css-responsive/images/exercise_3_before_print-2d4180a7f515daebab4ee1c78fe51cfd.png)
 
 
 Requisito 2 -  Adicione uma `media query` no arquivo CSS e as regras necessárias para que a página se pareça com as imagens abaixo quando a tela for redimensionada para larguras menores. 
@@ -90,7 +89,6 @@ Requisito 2 -  Adicione uma `media query` no arquivo CSS e as regras necessária
 > Os itens dentro do elemento `navigation` devem aparecer cada um em sua própria linha.
 > O elemento com id `header` deve ser fixo, de forma que ele fique aparecendo sempre no topo da tela mesmo após o usuário rolar a página.
 
-Tela do Smartphone 360X640
 ![Tela do Smartphone 360X640](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/css-responsive/images/exercise_3_before_android-a59ce8b1d1a965e51c661e0999db28bb.png)
 
 
