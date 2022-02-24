@@ -93,7 +93,7 @@ figcaption {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1800px) {
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
 	
   body {
 	  margin: 0px 50px;
@@ -125,7 +125,7 @@ figcaption {
 	  justify-content: center;
 	  flex-wrap: wrap;
 	  align-items: center;
-  }
+    }
 
   figcaption {
 	  margin-top: 10px;
