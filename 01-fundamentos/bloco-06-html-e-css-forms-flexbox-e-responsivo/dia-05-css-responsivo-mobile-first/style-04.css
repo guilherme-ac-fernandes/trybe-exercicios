@@ -47,6 +47,7 @@ body {
 #content-container {
   width: 100%;
   background: #FFF;
+  display: flex;
 }
 
 #content {
@@ -77,4 +78,37 @@ body {
   text-align: right;
   padding: 20px;
   height: 1%;
+}
+
+@media print {
+  #header, #navigation, #footer{
+    display: none;
+  }
+
+  #content-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px){
+  
+  #content-container {
+    flex-direction: column;
+  }
+
+  #content {
+    width: 90%;
+  }
+
+  #content img{
+    width: 80%;
+  }
+  
+  #navigation ul {
+    flex-direction: column;
+  }
+
+  #navigation li a {
+    border-right: none;
+  }
 }

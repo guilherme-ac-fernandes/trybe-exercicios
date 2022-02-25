@@ -9,7 +9,7 @@ html {
 }
 
 
-header{
+header {
   background-color: purple;
   text-align: center;
   color: azure;
@@ -21,15 +21,15 @@ header{
   margin-bottom: 30px;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
 }
 
-header nav ul li{
+header nav ul li {
   padding: 0 10px;
 }
 
-.aside-one, .aside-two{
+.aside-one, .aside-two {
   background-color: #fcd9c5;
   margin: 10px;
   height: 400px;
@@ -37,15 +37,15 @@ header nav ul li{
   border-radius: 10px;
 }
 
-.aside-one{
+.aside-one {
   background-color: #fcd9c5;
 }
 
-.aside-two{
+.aside-two {
   background-color: #d4cae2;
 }
 
-main article{
+main article {
   text-align: justify;
 }
 
@@ -54,7 +54,7 @@ li {
   list-style: none;
 }
 
-footer{
+footer {
   max-height: 120px;
   text-align: center;
   background-color: #debdd6;
@@ -63,22 +63,22 @@ footer{
 
 /* Smartphones */
 @media screen and (max-width: 767px) {
-  header p{
+  header p {
     font-size: larger;
   }
 
-  header nav ul{
+  header nav ul {
     display: none;
     justify-content: center;
   }
 
-  main{
+  main {
     display: flex;
     flex-direction: column;
     margin: 10px 30px;
   
   }
-  main aside{
+  main aside {
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -86,34 +86,35 @@ footer{
     line-height: 25px;
   }
   
-  main article{
+  main article {
     padding: 30px;
   }
 
-  main article p{
+  main article p {
     font-size: 20px;
   }
 
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px){
-  header p{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header p {
     font-size: x-large;
   }
 
-  header nav ul li{
+  header nav ul li {
     font-size: medium;
 
   }
 
-  main{
+  main {
     display: flex;
     flex-direction: column;
     margin: 10px 30px;
   
   }
-  main aside{
+
+  main aside {
     padding: 30px;
     display: flex;
     margin: 0 auto;
@@ -121,40 +122,37 @@ footer{
     line-height: 25px;
   }
 
-  .aside-one, .aside-two{
+  .aside-one, .aside-two {
     max-width: 500px;
     
   }
   
-  main article{
+  main article {
     padding: 30px;
     font-size: 25px;
   }
 
-  main article p{
+  main article p {
     font-size: 23px;
   }
-
-
 }
 
 /* Desktop */
-@media screen and (min-width: 1024px){
-  header p{
+@media screen and (min-width: 1024px) {
+  header p {
     font-size: xx-large;
   }
 
-  header nav ul li{
+  header nav ul li {
     font-size: large;
-
   }
 
-  main{
+  main {
     display: flex;
     margin: 10px 30px;
   }
 
-  main aside{
+  main aside {
     padding: 30px;
     display: flex;
     align-content: flex-start;
@@ -163,12 +161,11 @@ footer{
     line-height: 25px;
   }
   
-  main article{
+  main article {
     padding: 30px;
   }
 
-  main article p{
+  main article p {
     font-size: 25px;
   }
-
 }

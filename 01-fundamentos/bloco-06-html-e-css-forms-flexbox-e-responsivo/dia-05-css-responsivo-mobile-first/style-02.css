@@ -44,23 +44,23 @@ img {
 	align-items: center;
 }
 
-.cat-image figcaption{
+.cat-image figcaption {
 	text-align: center;
 }
 
 figcaption {
 	margin-top: 10px;
-  font-size: 18px;
+	font-size: 18px;
 }
 
 @media screen and (min-width: 700px) {
 	
   body {
-	  margin: 0px 40px;
+    margin: 0px 40px;
   }
-
+  
   article {
-	  text-align: justify;
+    text-align: justify;
 	  font-size: 20px;
 	  line-height: 30px;
   }
@@ -69,7 +69,7 @@ figcaption {
 	  font-size: 40px;
   }
 
-  h2{
+  h2 {
 	  font-size: 30px;
   }
 
@@ -109,7 +109,7 @@ figcaption {
 	  font-size: 50px;
   }
 
-  h2{
+  h2 {
 	  font-size: 40px;
   }
 

@@ -55,34 +55,34 @@ body {
   }
   
   /* Primeira Div */
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     .card:nth-of-type(1) {
       display: block;
     }
   }
   
   /* Segunda Div */
-  @media screen and (max-width: 1000px) and (min-width: 600px){
+  @media screen and (max-width: 1000px) and (min-width: 600px) {
     .card:nth-of-type(2) {
       display: grid;
     }
   }
   
   /* Terceira Div */
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: 650px) {
     .card:nth-of-type(3) {
       display: grid;
     }
   }
   
-  @media screen and (min-width: 950px){
+  @media screen and (min-width: 950px) {
     .card:nth-of-type(3) {
       display:grid;
     }
   }
   
   /* Classe Trick */
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     p.trick {
       color: black;
     }
