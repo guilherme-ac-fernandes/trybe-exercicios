@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: purple;
+  text-align: center;
+  color: azure;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  padding: 0 10px;
+}
+
+.aside-one, .aside-two {
+  background-color: #fcd9c5;
+  margin: 10px;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.aside-one {
+  background-color: #fcd9c5;
+}
+
+.aside-two {
+  background-color: #d4cae2;
+}
+
+main article {
+  text-align: justify;
+}
+
+li {
+  list-style-position: inside;
+  list-style: none;
+}
+
+footer {
+  max-height: 120px;
+  text-align: center;
+  background-color: #debdd6;
+  font-size: 16px;
+}
+
+/* Smartphones */
+@media screen and (max-width: 767px) {
+  header p {
+    font-size: larger;
+  }
+
+  header nav ul {
+    display: none;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+  
+  }
+  main aside {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 25px;
+  }
+  
+  main article {
+    padding: 30px;
+  }
+
+  main article p {
+    font-size: 20px;
+  }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header p {
+    font-size: x-large;
+  }
+
+  header nav ul li {
+    font-size: medium;
+
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+  
+  }
+
+  main aside {
+    padding: 30px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    line-height: 25px;
+  }
+
+  .aside-one, .aside-two {
+    max-width: 500px;
+    
+  }
+  
+  main article {
+    padding: 30px;
+    font-size: 25px;
+  }
+
+  main article p {
+    font-size: 23px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  header p {
+    font-size: xx-large;
+  }
+
+  header nav ul li {
+    font-size: large;
+  }
+
+  main {
+    display: flex;
+    margin: 10px 30px;
+  }
+
+  main aside {
+    padding: 30px;
+    display: flex;
+    align-content: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    line-height: 25px;
+  }
+  
+  main article {
+    padding: 30px;
+  }
+
+  main article p {
+    font-size: 25px;
+  }
+}
