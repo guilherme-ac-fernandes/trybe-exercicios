@@ -58,7 +58,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 6.3: CSS Flexbox - Parte 1
 - [X] 6.4: CSS Flexbox - Parte 2
 - [X] 6.5: CSS Responsivo - Mobile First
-- [ ] 6.6: Projeto - Trybewarts
+- [X] 6.6: Projeto - Trybewarts
 
 #### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
@@ -261,7 +261,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 34.1: Introdução à programação orientada a objetos
 - [ ] 34.2: Herança, Composição e Interfaces
 - [ ] 34.3: Padrões de projeto
-- [ ] 34.4:Projeto - Relatórios de Estoque
+- [ ] 34.4: Projeto - Relatórios de Estoque
 
 #### Bloco 35: Redes e Raspagem de Dados
 
