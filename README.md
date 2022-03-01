@@ -58,7 +58,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 6.3: CSS Flexbox - Parte 1
 - [X] 6.4: CSS Flexbox - Parte 2
 - [X] 6.5: CSS Responsivo - Mobile First
-- [X] 6.6: Projeto - Trybewarts
+- [X] [6.6: Projeto - Trybewarts](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/trybewarts)
 
 #### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
