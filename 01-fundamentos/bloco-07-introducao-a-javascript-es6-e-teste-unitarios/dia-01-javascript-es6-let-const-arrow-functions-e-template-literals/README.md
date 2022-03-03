@@ -1,6 +1,6 @@
 ## JavaScript ES6 - let, const, arrow functions e template literals
 
-- Atividade de fixação 1:
+#### Atividade de fixação 1:
 > Utilizando o arquivo `script-01.js` fornecido, realize as seguintes modificações:
 
 Requisito 1 - Faça as modificações necessárias na função para que o seu comportamento respeite o escopo no qual cada variável foi declarada.
@@ -10,7 +10,7 @@ Requisito 2 - Modifique a estrutura da função para que ela seja uma `arrow fun
 Requisito 3 - Modifique as concatenações para `template literals`.
 
 
-- Atividade de fixação 2:
+#### Atividade de fixação 2:
 > Utilizando o arquivo `script-02.js` fornecido, realize as seguintes modificações:
 
 Requisito 1 - Copie o código abaixo e faça uma função que retorne o array `oddsAndEvens` em ordem crescente.
@@ -20,7 +20,7 @@ Requisito 1 - Copie o código abaixo e faça uma função que retorne o array `o
 * Bônus: tente fazer o mesmo exercício utilizando o método array.sort() . Spoiler: É possível realizar uma função que ordene qualquer array de números.
 
 
-- Atividade de fixação 3:
+#### Atividade de fixação 3:
 > Crie o arquivo `script-03.js`:
 
 Requisito 1 - Crie uma função que receba um número e retorne seu fatorial.
@@ -30,7 +30,7 @@ Requisito 1 - Crie uma função que receba um número e retorne seu fatorial.
 * Bônus: tente fazer o mesmo exercício de forma recursiva.
 
 
-- Atividade de fixação 4:
+#### Atividade de fixação 4:
 > Crie o arquivo `script-04.js`:
 
 Requisito 1 - Crie uma função que receba uma frase e retorne qual a maior palavra.
@@ -38,7 +38,7 @@ Requisito 1 - Crie uma função que receba uma frase e retorne qual a maior pala
 Exemplo: ` longestWord('Antônio foi no banheiro e não sabemos o que aconteceu') // retorna 'aconteceu’ `
 
 
-- Atividade de fixação 5:
+#### Atividade de fixação 5:
 > Crie os arquivos ìndex-05.html` e `script-05.js`:
 
 Requisito 1 - Crie uma página que contenha:
@@ -50,7 +50,7 @@ Requisito 1 - Crie uma página que contenha:
 * Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável `clickCount` é atualizada.
 
 
-- Atividade de fixação 6:
+#### Atividade de fixação 6:
 > Crie o arquivo `script-06.js`:
 
 Requisito 1 - (Função 1) Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string.
