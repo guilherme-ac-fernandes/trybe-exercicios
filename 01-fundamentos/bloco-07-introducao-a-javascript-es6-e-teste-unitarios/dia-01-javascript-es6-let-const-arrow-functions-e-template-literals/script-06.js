@@ -9,4 +9,4 @@ const arraySkills = ['Git', 'GitHub', 'HTML', 'CSS', 'JavaScript'];
 // Função para concatenar a função 1 com o array ordenado acima
 let concatenate = (function1, array) => `${function1} Minhas cinco principais habilidades são: ${array.sort()} #goTrybe`
 
-console.log(concatenate(stringFixed('Bebeto'), arraySkills));
+console.log(concatenate(stringFixed('Guilherme'), arraySkills));
