@@ -98,3 +98,5 @@ const verifyPair = (object, key, value) => {
 
 console.log(verifyPair(lesson1, 'materia', 'Matemática'));
 console.log(verifyPair(lesson1, 'materia', 'manhã'));
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
