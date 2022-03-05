@@ -48,11 +48,11 @@ const createReport = (object, teacher) => {
     if (object[`${lesson[i]}`]['professor'] === teacher) {
       students += object[`${lesson[i]}`]['numeroEstudantes'];
       arrayClass.push(object[`${lesson[i]}`]['materia']);
-      report['professor'] = teacher;
-      report['aulas'] = arrayClass;
-      report['numeroEstudantes'] = students;
     } 
   }
+  report['professor'] = teacher;
+  report['aulas'] = arrayClass;
+  report['numeroEstudantes'] = students;
   return console.log(report);
 }
 
