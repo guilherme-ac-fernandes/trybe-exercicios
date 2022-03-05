@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Calculadora</title>
+	</head>
+	<body>
+		<p>Informe dois números para realizar a soma:</p>
+		<label for='value1'>Valor 1:</label>
+		<input type='text' id='value1'>
+		<label for='value2'>Valor 2:</label>
+		<input type='text' id='value2'>
+		<button id='button'>Somar</button>
+		<p id='result'></p>
+		<script>
+			function check(number1, number2) {
+				if (number1 === '' || number2 === '') {
+					throw new Error('Digite dois número para realizar a operação')
+				}
+				// Aplicação e compreensão do retorno da função isNaN proveniente do course da Trybe
+				// source: https://app.betrybe.com/course/fundamentals/introducao-a-javascript-es6-e-testes-unitarios/javascript-es6-fluxo-de-excecao-e-objetos/solutions/069bdfff-c92d-4c55-9e90-94cd03d7553e/gabarito-dos-exercicios/7d2ec100-7848-4dcb-b781-b4d9b2551c55?use_case=calendar
+				if (isNaN(number1) || isNaN(number1)) {
+					throw new Error('Digite apenas números')
+				}
+			}
+
+			function sum() {
+				const value1 = document.getElementById('value1').value;
+				const value2 = document.getElementById('value2').value;
+				try {
+					check(value1, value2);
+					const result = parseInt(value1) + parseInt(value2);
+					document.getElementById('result').innerHTML = `Resultado: ${result}`;
+				} catch (error) {
+					document.getElementById('result').innerHTML = `Erro: ${error.message}`;
+					
+					throw error.message;
+				} finally {
+					document.getElementById('value1').value = '';
+					document.getElementById('value2').value = '';
+				}
+			}
+
+			window.onload = () => {
+				const button = document.getElementById('button');
+				button.addEventListener('click', sum);
+			}
+		</script>
+	</body>
+</html>
