@@ -20,8 +20,31 @@ describe('Teste Encode/Decode', () => {
 
 	// Segundo Teste
 	it('Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
-		expect(encode('aeiou')).toMatch('12345')
+		expect(encode('aeiou')).toMatch('12345');
 	});
 
+	// Terceiro Teste
+	it('Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente', () => {
+		expect(decode('12345')).toMatch('aeiou');
+	});
+
+	// Quarto Teste - encode
+	it('Encode - Teste se as demais letras/números não são convertidos para cada caso', () => {
+		expect(encode('bcdfghjklmnpqrstvwxyz')).toMatch('bcdfghjklmnpqrstvwxyz');
+	});
 	
+	// Quarto Teste - decode
+	it('Decode - Teste se as demais letras/números não são convertidos para cada caso', () => {
+		expect(decode('bcdfghjklmnpqrstvwxyz')).toMatch('bcdfghjklmnpqrstvwxyz');
+	});
+
+	// Quinto Teste - Encode
+	it('Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro', () => {
+		expect(encode('hello').length).toBe(5);
+	});
+
+	// Quinto Teste - Decode
+	it('Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro', () => {
+		expect(decode('h2ll4').length).toBe(5);
+	});
 });
