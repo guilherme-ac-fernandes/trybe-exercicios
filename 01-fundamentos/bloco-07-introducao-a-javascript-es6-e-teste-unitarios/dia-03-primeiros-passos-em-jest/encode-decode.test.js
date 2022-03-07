@@ -1,4 +1,4 @@
-// As funções que serão submetidas aos testes
+// As funções serão submetidas aos testes em seguida
 const {encode, decode} = require('./encode-decode');
 
 describe('Teste Encode/Decode', () => {

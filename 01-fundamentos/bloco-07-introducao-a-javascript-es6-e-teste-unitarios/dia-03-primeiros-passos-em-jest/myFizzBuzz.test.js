@@ -1,4 +1,4 @@
-// As funções que serão submetidas aos testes
+// A função será submetida aos testes em seguida
 const myFizzBuzz = require('./myFizzBuzz.js');
 
 describe('Teste FizzBuzz', () => {

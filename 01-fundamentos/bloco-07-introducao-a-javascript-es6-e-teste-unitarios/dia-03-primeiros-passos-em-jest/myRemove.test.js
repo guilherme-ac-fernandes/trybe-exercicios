@@ -1,4 +1,4 @@
-// Os teste das funções
+// A função será submetida aos testes em seguida
 const myRemove = require('./myRemove.js')
 
 describe('Primeiro Teste - myRemove', () => {

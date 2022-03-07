@@ -1,4 +1,4 @@
-// Arquivos com as funções que serão submetidas aos testes
+// Arquivo com a função que sera submetida aos testes
 function myFizzBuzz(num) {
   if (typeof num !== 'number') return false;
   if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';

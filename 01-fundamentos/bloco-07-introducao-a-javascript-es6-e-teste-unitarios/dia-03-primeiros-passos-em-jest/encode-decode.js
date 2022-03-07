@@ -40,5 +40,3 @@ function decode(string) {
 }
 
 module.exports = {encode, decode};
-
-console.log(encode('hello'));

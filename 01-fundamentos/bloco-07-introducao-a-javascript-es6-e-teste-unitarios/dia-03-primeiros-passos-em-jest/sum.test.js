@@ -1,4 +1,4 @@
-// Arquivos com os testes
+// A função será submetida aos testes em seguida
 const sum = require('./sum');
 
 describe('Teste Sum', () => {
@@ -17,7 +17,7 @@ describe('Teste Sum', () => {
 		expect(() => {sum(4, "5")}).toThrow();
 	});
 
-	// Quarto Teste
+	// Quarto Teste 
 	it('Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")', () => {
 		expect(() => {sum(4, "5").toThrowError(new Error ('parameters must be numbers'))});
 	});
