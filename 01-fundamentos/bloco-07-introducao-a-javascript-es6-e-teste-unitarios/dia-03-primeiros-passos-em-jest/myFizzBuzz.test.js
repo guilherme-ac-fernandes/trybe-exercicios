@@ -23,7 +23,7 @@ describe('Teste FizzBuzz', () => {
 	});
 
 	// Quinto Teste
-	it ('Quinto - Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
+	it ('Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
 		expect(false).toBe(myFizzBuzz('4'));
 	});
 });
