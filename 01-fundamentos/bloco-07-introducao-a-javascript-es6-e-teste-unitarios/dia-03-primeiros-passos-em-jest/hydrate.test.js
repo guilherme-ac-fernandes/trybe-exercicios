@@ -3,17 +3,17 @@
 const hydrate = require('./hydrate.js');
 
 describe('Testa a função hydrate', () => {
-  
+  // Primeiro Teste
 	it('Testa se a função hydrate é definida', () => {
     expect(hydrate).toBeDefined();
   });
   
-
+  // Segundo Teste
 	it('Testa se hydrate é uma função', () => {
     expect(typeof hydrate).toBe('function');
   });
   
-	
+	// Terceiro Teste
 	it('Ao receber uma string retorne a sugestão de quantos copos de água deve-se beber', () => {
     expect(hydrate('1 cerveja')).toBe('1 copo de água');
     expect(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho')).toBe('7 copos de água');
