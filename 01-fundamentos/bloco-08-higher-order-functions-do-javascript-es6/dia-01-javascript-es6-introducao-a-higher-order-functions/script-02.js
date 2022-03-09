@@ -15,7 +15,7 @@ const newEmployees = (func) => {
     id2: func('Luiza Drumond'),
     id3: func('Carla Paiva'), 
   }
-  return employees;
+  return console.log(employees);
 };
 
-console.log(newEmployees(objectEmployees));
+newEmployees(objectEmployees);
