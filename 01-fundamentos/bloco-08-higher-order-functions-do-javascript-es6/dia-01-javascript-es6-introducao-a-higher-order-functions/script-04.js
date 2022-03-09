@@ -3,30 +3,31 @@
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-function checkAnswers (array1, array2) {
-  if (array1.length !== array2.length) {
+// Função para avaliar combinação de números
+function checkAnswers (value1, value2) {
+  const points = {
+    right: 1,
+    wrong: -0.5,
+    empty: 0,
+  }
+  let result = 0;
+  if (value1 === value2) return points.right;
+  if (value1 !== value2) {
+    if (value2 === 'N.A') return points.empty;
+    return points.wrong
+  }
+}
+
+// Função para atribuir comparação aos arrays
+const compareAnsWersHOF = (answersRight, answersStudent, callback) => {
+  if (answersRight.length !== answersStudent.length) {
     return 'Erro: as respostas contém números de questões diferentes';
   }
   let sum = 0;
-  const points = {
-    right: 1,
-    wrong: 0.5,
-    empty: 0,
-  }
-  for (let i = 0; i < array1.length; i += 1) {
-    if (array1[i] === array2[i]) sum += points.right;
-    if (array1[i] !== array2[i]) {
-      if (array2[i] === 'N.A') {
-        sum += points.empty;
-      } else {
-        sum += points.wrong
-      }
-    }
+  for (let i = 0; i < answersRight.length; i++) {
+    sum += callback(answersRight[i], answersStudent[i]);
   }
   return console.log(`Nota do Aluno: ${sum} pontos`);
-}
-
-const compareAnsWersHOF = (answersRight, answersStudent, callback) => callback(answersRight, answersStudent);
-
+} 
 
 compareAnsWersHOF(RIGHT_ANSWERS, STUDENT_ANSWERS, checkAnswers);

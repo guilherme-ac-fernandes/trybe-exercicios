@@ -15,3 +15,5 @@ const randomNumber = (number, func) => {
 }
 
 randomNumber(4, checkNumber);
+randomNumber(2, checkNumber);
+randomNumber(5, checkNumber);

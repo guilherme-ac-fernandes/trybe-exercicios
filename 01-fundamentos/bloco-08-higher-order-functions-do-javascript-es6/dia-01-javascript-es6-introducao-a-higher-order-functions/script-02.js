@@ -8,14 +8,14 @@ const objectEmployees = (name) => {
   return {name, email};
 }
 
-// Função
+// Função para imprimir dados dos funcionário
 const newEmployees = (func) => {
   const employees = {
     id1: func('Pedro Guerra'),
     id2: func('Luiza Drumond'),
     id3: func('Carla Paiva'), 
   }
-  return console.log(employees);
+  return console.table(employees);
 };
 
 newEmployees(objectEmployees);
