@@ -3,7 +3,7 @@
 
 #### Atividade de fixação 1:
 > Utilizando os arquivos `index-01.html` e `style-01.css` fornecidos, realize as seguintes modificações:
-
+> 
 > Observação: Para os seguintes exercícios você não precisará alterar o arquivo HTML, apenas o CSS.
 
 Requisito 1 - A primeira div só poderá aparecer se nossa tela possuir **largura mínima de 500px**.
