@@ -80,15 +80,42 @@ const startGame = () => {
   dragon.damage = 0;
 }
 
+// Função de avaliação healthPoints e ver quem ganhou
+const statusMembers = () => {
+  const warriorStatus = (warrior.healthPoints <= 0) ? 'Warrior perdeu ❌ ' : 'Warrior em batalha ✅ ';
+  const mageStatus = (mage.healthPoints <= 0) ? 'Mago perdeu ❌ ' : 'Mago em batalha ✅ ';
+  const dragonStatus = (dragon.healthPoints <= 0) ? 'Dragão perdeu ❌ ' : 'Dragão em batalha ✅ ';
+  const status = `
+  ${mageStatus}
+  ${warriorStatus}
+  ${dragonStatus}`; 
+  return console.log(status);
+}
+
+// Função para não ter números negativos proveniente do staroverflow, mas com alterações para simplicar
+// source: https://stackoverflow.com/questions/5842747/how-can-i-use-javascript-to-limit-a-number-between-a-min-max-value
+function limitNumberWithinRange(num, max = 350){
+  return Math.min(Math.max(num, 0), max)
+}
+
+// Função mudança healthPoints para valores não negativos
+const alwaysPositive = () => {
+  warrior.healthPoints = limitNumberWithinRange(warrior.healthPoints);
+  mage.healthPoints = limitNumberWithinRange(mage.healthPoints);
+  dragon.healthPoints = limitNumberWithinRange(dragon.healthPoints);
+}
+
 // Função que realiza os ataques
 const battleTurn = (number = 1) => {
-  startGame(); 
+  startGame(); // Remove undefined de damage no objeto dos membros da batalha
   for (let i = 0; i < number; i += 1) {
     gameActions.warrior(warriorAttack);
     gameActions.mage(mageAttack);
     gameActions.dragon(dragonAttack);
-  }
-  gameActions.result();
+  } // Loop de repetição da batalha
+  alwaysPositive(); // Introduz um limite inferior (zero) dos healthPoints dos membros
+  gameActions.result(); // Imprime as especificações de cada membro
+  statusMembers(); // Informa o status de todos os membros
 }
 
-battleTurn(3);
+battleTurn(6);
