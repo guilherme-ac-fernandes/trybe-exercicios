@@ -118,4 +118,4 @@ const battleTurn = (number = 1) => {
   statusMembers(); // Informa o status de todos os membros
 }
 
-battleTurn(6);
+battleTurn(4);
