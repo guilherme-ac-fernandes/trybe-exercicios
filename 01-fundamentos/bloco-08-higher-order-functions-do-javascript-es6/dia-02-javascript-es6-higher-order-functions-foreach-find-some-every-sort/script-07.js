@@ -61,9 +61,28 @@ const books = [
   },
 ];
 
-// Função para avaliar se todos os autores nasceram no século XX (true/false)
-const everyoneWasBornOnSecXX = (array) => {
-  return array.every((element) => (element.author.birthYear > 1900 && element.author.birthYear < 2000));
+// Função para comparar anos de nascimento (true - se forem diferentes)
+function authorUnique(array) {
+  let nameYear= [];
+  array.forEach((element) => {
+    nameYear.push({
+      name: element.author.name,
+      birthYear: element.author.birthYear,
+    });
+  });
+  let year;
+  let result = [];
+  nameYear.forEach((element) => {
+    year = element.birthYear;
+    nameYear.forEach((element2) => {
+      if (year === element2.birthYear && element.name !== element2.name) {
+        result.push(false)
+      }
+      result.push(true)
+    })
+  })
+  // console.log(result); // Vai conter dois false - mostrando que dois nasceram no mesmo ano e retornar false na linha de baixo
+  return console.log(result.every((element) => element === true));
 };
 
-console.log(everyoneWasBornOnSecXX(books));
+authorUnique(books);

@@ -61,9 +61,9 @@ const books = [
   },
 ];
 
-// Função para avaliar se todos os autores nasceram no século XX (true/false)
-const everyoneWasBornOnSecXX = (array) => {
-  return array.every((element) => (element.author.birthYear > 1900 && element.author.birthYear < 2000));
-};
+// Função que retorne true se algum livro é lançado na década de 80
+function someBookWasReleaseOnThe80s(array) {
+  return array.some((element) => (element.releaseYear > 1980 && element.releaseYear < 1989))
+}
 
-console.log(everyoneWasBornOnSecXX(books));
+console.log(someBookWasReleaseOnThe80s(books));
