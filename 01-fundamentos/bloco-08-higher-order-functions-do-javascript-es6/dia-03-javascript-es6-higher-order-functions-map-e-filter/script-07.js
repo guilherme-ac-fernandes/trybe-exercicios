@@ -64,12 +64,15 @@ const books = [
 // Encontrar nome do livro escrito pelo autor que começa com três iniciais
 function authorWith3DotsOnName(array) {
   // Utilização do .test (Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
-  // Resolução com auxílio do MAteus Santos (colega de sala da Trybe e Tiago Quadros (Instrutor))
-  return array.find((element) => /^.\. .\. .\./.test(element.author.name)).name;
+  // Resolução com auxílio do Mateus Santos (colega de sala da Trybe e Tiago Quadros (Instrutor))
   // Expressões Regulares (Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions#escrevendo_um_padrão_de_expressão_regular)
   // ^ => referência para testar condição no início
   // . => qualquer caracter
   // \ => faz referência que o próximo caracter é especial e não deve ser interpretado de forma literal
+  // return array.find((element) => /^.\. .\. .\./.test(element.author.name)).name;
+
+  // Utilização de .match (Documentação: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+  return array.find((element) => element.author.name.match(/^.\. .\. .\./)).name;
 };
 
 console.log(authorWith3DotsOnName(books));
