@@ -17,7 +17,7 @@ function flatten() {
 }
 ```
 
-Utilize o código a seguir para realização das atividades:
+Utilize o código a seguir para realização das atividades 2 a 4:
 
 ```
 const books = [
