@@ -6,7 +6,7 @@ function studentAverage(array1, array2) {
   return array1.map((element, index) => {
     return {
       name: element,
-      average: array2[index].reduce((acc, curr, index2) => acc += curr, 0) / array2[index].length,
+      average: array2[index].reduce((acc, curr) => acc + curr, 0) / array2[index].length,
     };
   });
 };
