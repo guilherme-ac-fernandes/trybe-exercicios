@@ -1,4 +1,4 @@
-// 
+// Modifique o código para retornar as áreas em sequência (usando spread operator)
 const rectangleArea = (width, height) => width * height;
 
 const rectangle1 = [1, 2];
