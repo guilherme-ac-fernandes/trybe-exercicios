@@ -64,10 +64,10 @@ const books = [
 // Calcular a média de idade dos autores tinham quando os seus respectivos livros foram lançados
 function averageAge(array) {
   const sum =  array.reduce((acc, curr, index, arr) => {
-    if (index < arr.length - 1) return acc += (curr.releaseYear - curr.author.birthYear)
-    return acc += (curr.releaseYear - curr.author.birthYear) 
+    if (index < arr.length - 1) return acc + (curr.releaseYear - curr.author.birthYear)
+    return acc + (curr.releaseYear - curr.author.birthYear) 
   }, 0);
-  return sum / array.length; // o array é o mesmo
+  return `Média das idades dos autores quando lançaram seus livros: ${sum / array.length}`; // o array é o mesmo
 }
 
 console.log(averageAge(books));
