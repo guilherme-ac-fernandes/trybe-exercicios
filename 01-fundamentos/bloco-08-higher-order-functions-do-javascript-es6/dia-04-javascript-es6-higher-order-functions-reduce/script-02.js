@@ -64,8 +64,8 @@ const books = [
 // Criar string com o nome de todos os autores
 function reduceNames(array) {
   return array.reduce((acc, curr, index, arr) => {
-    if (index < arr.length - 1) return acc += `${curr.author.name}, `
-    return acc += `${curr.author.name}.`
+    if (index < arr.length - 1) return acc + `${curr.author.name}, `
+    return acc + `${curr.author.name}.` // a atríbuição já esta sendo realizada pela HOF reduce
   }, '');
 }
 
