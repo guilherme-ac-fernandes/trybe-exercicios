@@ -1,4 +1,6 @@
 // Criar a função filterPeople para retornar todas as pessoas australianas que nasceram no século XX (object destructuring)
+
+// Observação => Século XX é a partir de 1901 até 2000
 const people = [
   {
     name: 'Nicole',

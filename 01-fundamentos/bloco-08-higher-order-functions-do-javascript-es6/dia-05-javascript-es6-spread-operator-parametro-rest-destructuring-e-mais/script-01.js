@@ -8,15 +8,15 @@ const rectangles = [rectangle1, rectangle2, rectangle3];
 
 const triangleArea = () => {
   let result = 'Áreas dos triângulos: ';
-  rectangles.forEach((rectangle, index, arr) => {
+  rectangles.forEach((rectangle) => {
     const area = rectangleArea(...rectangle);
-    if (index < arr.length - 1) {
-      result += `${area}, `
-    } else {
-      result += `${area}. `
-    }
+    result += `${area}, `
   });
-  console.log(result);
+  // Utilização do replace com expressões regulares proveniente do site Masteringjs
+  // source: https://masteringjs.io/tutorials/fundamentals/remove-last-character
+  // $ - significa no final da string
+  // . - significa qualquer caracter
+  return result.replace(/..$/, '.');
 };
 
-triangleArea();
+console.log(triangleArea());
