@@ -1,3 +1,4 @@
+// Criar a função filterPeople para retornar todas as pessoas australianas que nasceram no século XX (object destructuring)
 const people = [
   {
     name: 'Nicole',
@@ -25,8 +26,6 @@ const people = [
     nationality: 'Brazilian',
   },
 ];
-
-// Criar a função filterPeople para retornar todas as pessoas australianas que nasceram no século XX
 
 // Resolução com filter:
 const filterPeopleHOF = (array) => {

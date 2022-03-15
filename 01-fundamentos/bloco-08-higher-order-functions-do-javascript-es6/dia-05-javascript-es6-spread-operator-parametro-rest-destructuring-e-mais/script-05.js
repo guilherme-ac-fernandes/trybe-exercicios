@@ -1,4 +1,4 @@
-// Criar a função swap - dado um array de 3 elementos, trocar o primeiro com o último em apenas uma linha
+// Criar a função swap - dado um array de 3 elementos, trocar o primeiro com o último em apenas uma linha (array destructuring)
 
 // Resolução inicial
 const myList = [1, 2, 3];

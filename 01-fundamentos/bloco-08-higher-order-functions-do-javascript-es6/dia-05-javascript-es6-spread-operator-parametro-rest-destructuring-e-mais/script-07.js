@@ -1,4 +1,4 @@
-// Criar função shipLength que dado um objeto, retorne o nome, comprimento e unidade de medida em uma única linha
+// Criar função shipLength que dado um objeto, retorne o nome, comprimento e unidade de medida em uma única linha (object destructuring)
 const ships = [
   {
     name: 'Titanic',

@@ -1,4 +1,4 @@
-// Criar função toObject que transforma os array com as informações de carros em um objeto
+// Criar função toObject que transforma os array com as informações de carros em um objeto (array destructuring e abbreviation object literal)
 const palio = ['Palio', 'Fiat', 2019];
 const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
 const chiron = ['Chiron', 'Bugatti', 2016];
