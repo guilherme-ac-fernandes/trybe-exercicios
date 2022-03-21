@@ -31,6 +31,7 @@ function getPokemonDetails(filter, callback) {
   }, 2000);
 }
 
+// Solução da função filter resolvida com a ajuda da Amanda Soares (Colega de turma) e Instrutor Tiago
 const filterPokemon = (pokemonName) => ((pokemon) => pokemon.name === pokemonName);
 
 getPokemonDetails(filterPokemon('Squirtle'), (erro, result) => {
