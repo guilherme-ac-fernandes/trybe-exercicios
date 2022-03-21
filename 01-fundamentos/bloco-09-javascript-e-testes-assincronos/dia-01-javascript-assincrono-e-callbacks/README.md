@@ -179,7 +179,7 @@ sendMarsTemperature(greet, handleError);
 
 
 ####  Atividade de fixação 7:
-> Crie o arquivo `script-07.js` e realize o seguinte requisito:
+> Crie os arquivos `script-07.js` e `script-07.test.js`, e realize o seguinte requisito:
 
 Requisito 1 - Escreva um teste que verifique a chamada da `callback` de uma função `uppercase`, que transforma as letras de uma palavra em letras maiúsculas. Lembre-se de ter cuidado com os falso-positivos em testes assíncronos.
 
@@ -239,7 +239,7 @@ module.exports = {
 
 
 ####  Atividade de fixação 9:
-> Crie o arquivo `script-09.js` e realize o seguinte requisito:
+> Crie os arquivos `script-09.js` e `script-09.test.js`, e realize o seguinte requisito:
 
 Requisito 1 - A fim de evitar que futuros treinadores sejam prejudicados, o Professor Carvalho pediu que você o ajude a escrever testes para o sistema que distribui os pokémons. Crie um novo arquivo `.test.js` ou `.spec.js` e copie o código abaixo. Complete os testes para a função `getPokemonDetails` de acordo com as especificações.
 
@@ -260,7 +260,7 @@ describe("A função getPokemonDetails", () => {
 
 
 ####  Atividade de fixação 10:
-> Crie o arquivo `script-10.js` e realize o seguinte requisito:
+> Crie os arquivos `script-10.js` e `script-10.test.js`, e realize o seguinte requisito:
 
 Requisito 1 - Para este exercício, tente adivinhar a saída dos `console.log` dos testes abaixo sem executá-los, e veja se compreendeu bem o funcionamento do `beforeEach` e do `afterEach`.
 
