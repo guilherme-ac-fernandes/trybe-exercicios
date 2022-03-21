@@ -24,9 +24,9 @@ const jupiter = {
   },
 };
 
-console.log(planetDistanceFromSun(mars));
-console.log(planetDistanceFromSun(venus));
-console.log(planetDistanceFromSun(jupiter));
+console.log(planetDistanceFromSun(mars)); // A
+console.log(planetDistanceFromSun(venus)); // B
+console.log(planetDistanceFromSun(jupiter)); // C
 
 // Resposta: 
-// Como todas as operações acima são síncronas a ordem de finalização das execuções é síncrona, ou seja, uma deve terminar para que a outra seja executada. Sendo assim a sequência chamada é a sequência de execução: 1º mars, 2º venus e 3º jupiter.
+// Como todas as operações acima são síncronas a ordem de finalização das execuções é síncrona, ou seja, uma deve terminar para que a outra seja executada. Sendo assim a sequência chamada é a sequência de execução: 1º mars, 2º venus e 3º jupiter (A - B - C).
