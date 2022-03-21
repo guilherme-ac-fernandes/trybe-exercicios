@@ -36,4 +36,5 @@ describe('Scoped / Nested block', () => {
 });
 
 // Solução: A - C - B - A - D - F - E - C
-//OBSERVAÇÃO: O beforeEach e afterEach iniciais executam sempre antes e depois de todos os testes (respectivamente), uma vez que estão no escopo global
+//OBSERVAÇÃO: O beforeEach e afterEach iniciais executam sempre antes e depois de todos os testes (respectivamente), uma vez que estão no escopo global (Conceito observado no gabarito proveniente do course da trybe)
+// source: https://app.betrybe.com/course/fundamentals/javascript-e-testes-assincronos/javascript-assincrono-e-callbacks-gabarito/solutions/05d29a3c-85f0-44be-989b-3b6d78e46e86/conteudos/73ef56d5-cfdb-49e1-99f5-6b5d9c02ef4d?use_case=calendar
