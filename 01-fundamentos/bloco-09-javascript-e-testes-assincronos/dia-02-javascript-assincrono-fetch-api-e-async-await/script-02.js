@@ -18,7 +18,6 @@ const fetchCoins = async () => {
       })
     })
     .catch((error) => error.toString());
-
 }
 
 window.onload = () => fetchCoins();
