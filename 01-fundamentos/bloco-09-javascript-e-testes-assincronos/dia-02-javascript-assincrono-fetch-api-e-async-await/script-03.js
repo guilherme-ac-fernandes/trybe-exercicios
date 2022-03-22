@@ -30,12 +30,12 @@ const setCoins = async () => {
 
   // Resolução baseada no exercício anterior 
   const list = document.getElementById('coinContainer');
-  coins.forEach((element, index) => {
-    if (index < 10) {
-      const li = document.createElement('li');
-      li.innerHTML = `${element.name} (${element.symbol}): ${(parseFloat(element.priceUsd) * currency.brl).toFixed(2)}`;
-      list.appendChild(li);
-    }
+
+  const filter = coins.filter((_, index) => index < 10); // Não preciso do element (Notação vista no gabarito da Trybe - source já informado acima)
+  filter.forEach((element) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${element.name} (${element.symbol}): ${(parseFloat(element.priceUsd) * currency.brl).toFixed(2)}`;
+    list.appendChild(li);
   })
 }
 
