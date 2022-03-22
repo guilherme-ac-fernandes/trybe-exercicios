@@ -53,13 +53,13 @@ Requisito 1 - Recebemos um objeto, certo? A partir daí, faça a piada aparecer 
 > Crie os arquivos `index-02.html` e `script-02.js`,  e realize o seguintes requisitos:
 
 > Agora que tal um exercício menos guiado? Vamos consultar uma API que fornece os valores de crypto moedas e mostrar as 10 primeiras.
-> 
+>
 > A documentação para a API que vamos utilizar esta disponível nesse https://docs.coincap.io.
-> 
+>
 > Tente descobrir qual url vamos utilizar para buscar as informações que precisamos (um array com uma listagem das crypto moedas).
-> 
+>
 > Se ficou na dúvida veja a seguir (spoiler alert!)
-> 
+>
 > ```
 > url: `https://api.coincap.io/v2/assets`
 > ```
@@ -78,5 +78,16 @@ Requisito 5 - Não se esqueça de estilizar a página conforme o seu estilo (tan
 
 
 
+####  Atividade de fixação 3:
+> A partir do código do exercício anterior, crie os arquivos `index-03.html` e `script-03.js`,  e realize o seguinte requisito:
+
+Requisito 1 - Que tal usarmos uma API para converter o preço das crypto moedas do exercício anterior para a nossa moeda local ao invés de mostrar o seu valor em dólar?
+Para este exercício vamos utilizar a Currency API. Tente descobrir qual url retorna os dados necessários para este exercício, mas caso fique na dúvida pode consultar a informação abaixo:
+
+> URL (spoiler alert!)
+> ```
+> baseUrl: `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest`  
+> endpoint: `/currencies/usd.min.json`
+> ```
 
 
