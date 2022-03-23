@@ -10,13 +10,13 @@
 > **Dica de ouro**: leia e entenda cada parte da implementação da função `getMagicCard` que está no arquivo `src/magic.js`. Isso te ajudará a implementar os testes.
 >
 > **Outra dica de ouro**: a função `getMagicCard` com o argumento que vamos usar durante esse exercício, "**130550**", vai retornar o seguinte objeto:
-```javascript
-{
-  name: "Ancestor's Chosen",
-  manaCost: "{5}{W}{W}",
-  types: [ "Creature" ],
-  subtypes: [ "Human", "Cleric" ],
-  rarity: "Uncommon",
-}
-```
+> ```javascript
+> {
+>   name: "Ancestor's Chosen",
+>   manaCost: "{5}{W}{W}",
+>   types: [ "Creature" ],
+>   subtypes: [ "Human", "Cleric" ],
+>   rarity: "Uncommon",
+> }
+> ```
 >
