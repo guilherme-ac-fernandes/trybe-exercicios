@@ -1,4 +1,4 @@
-####  Atividade de fixação 2:
+###  Atividade de fixação 2:
 > Antes de começar:
 >
 > * Dentro da pasta `data`, você encontrará o arquivo `favoriteCards`, leia e compreenda sua estrutura para realizar os exercícios.
@@ -11,7 +11,7 @@
 >
 
 
-##### Requisitos:
+### Requisitos:
 
 Agora temos um arquivo com algumas das cartas preferidas do nosso jogador. Você pode verificar a sua estrutura no arquivo `data/favoriteCards.js`. Utilizaremos este arquivo para os próximos passos.
 
@@ -29,5 +29,16 @@ Requisito 4 - Após descomentar o teste dentro do segundo it, rode os testes.
 
 Requisito 5 - Implemente a função `retrievesFavoriteCards` com uma lógica capaz de restaurar o array `favoriteCards`, depois chame essa função dentro do método `afterEach` para os testes poderem passar.
 
+### Bônus:
 
+> * Este exercício deve ser realizado após a implementação da função `afterEach`.
+>
+> * Implemente o teste solicitado dentro do escopo do segundo `it`.
 
+Requisito 6 - Utilizando a função `map`, crie um array contendo apenas a propriedade `name` de todos os cards presentes no deck original, ou seja, no `favoriteCards`. Este array deve conter quatro nomes e deve ser salvo em uma nova variável.
+
+Requisito 7 - Implemente um teste que verifique que o array que você obteve com o `map` do exercício anterior contém a seguinte estrutura e valores:
+
+```js
+['Ancestor\'s Chosen', 'Angel of Mercy', 'Aven Cloudchaser', 'Ballista Squad']
+```
