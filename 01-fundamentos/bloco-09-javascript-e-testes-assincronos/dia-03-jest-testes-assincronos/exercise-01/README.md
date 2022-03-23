@@ -21,7 +21,7 @@
 > ```
 
 
-##### Requisitos:
+#### Requisitos:
 
 Requisito 1 - Complete a sintaxe do `async/await`. Abra o arquivo `tests/magic.test.js`, nele você encontrará a estrutura inicial dos testes já montada. Essa estrutura no entanto está incompleta e precisa de ajustes para funcionar corretamente.
 
