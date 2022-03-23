@@ -80,7 +80,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 9.1: JavaScript Assíncrono e Callbacks
 - [X] 9.2: JavaScript Assíncrono - Fetch API e async/await
-- [ ] 9.3: Jest - Testes Assíncronos
+- [X] 9.3: Jest - Testes Assíncronos
 - [ ] 9.4: Projeto - Carrinho de Compras
 
 
