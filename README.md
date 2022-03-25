@@ -8,7 +8,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 
 
-## Fundamentos do Desenvolvimentos Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimentos Web :white_check_mark:
 
 
 #### Bloco 01: Unix & Bash
@@ -81,7 +81,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 9.1: JavaScript Assíncrono e Callbacks
 - [X] 9.2: JavaScript Assíncrono - Fetch API e async/await
 - [X] 9.3: Jest - Testes Assíncronos
-- [ ] 9.4: Projeto - Carrinho de Compras
+- [X] 9.4: Projeto - Carrinho de Compras
 
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
