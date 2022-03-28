@@ -1,4 +1,4 @@
-## Fundamentos do Desenvolvimento Web
+# Fundamentos do Desenvolvimento Web
 
 Neste primeiro módulo iniciei minha jornada no desenvolvimento web através da preparação para os módulos de Front-End e Back-End, por meio do estudo sobre:
 
