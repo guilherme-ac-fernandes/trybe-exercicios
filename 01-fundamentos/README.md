@@ -13,5 +13,5 @@ Neste primeiro módulo iniciei minha jornada no desenvolvimento web através da 
 * JavaScript e Testes Assíncronos
 
 <p align="center">
-  <img src="https://ryse.radiantthemes.com/wp-content/uploads/2019/07/webdevelopment-banner.png" alt="Imagem Web Development"/>
+  <img src="https://itslink.in/img/ho/h1.png" alt="Imagem Web Development"/>
 </p>
