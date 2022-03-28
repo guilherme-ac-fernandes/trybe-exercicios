@@ -12,6 +12,6 @@ Neste primeiro módulo iniciei minha jornada no desenvolvimento web através da 
 * Higher Order Functions do JavaScript ES6
 * JavaScript e Testes Assíncronos
 
-![Imagem Web Development](https://ryse.radiantthemes.com/wp-content/uploads/2019/07/webdevelopment-banner.png)
-
-
+<p align="center">
+  <img src="https://ryse.radiantthemes.com/wp-content/uploads/2019/07/webdevelopment-banner.png" alt="Imagem Web Development"/>
+</p>
