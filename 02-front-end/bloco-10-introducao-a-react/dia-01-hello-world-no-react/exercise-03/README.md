@@ -61,7 +61,9 @@ Requisito 3 - Crie um novo arquivo `Footer.jsx`. Neste arquivo, crie uma classe 
 * Importe e renderize o componente `Footer` no `App.js`.
 
 
-Requisito 4 - (**Bônus**) Estilize a aplicação do requisito 3. Para isso, adicione classes para estilização dos seus componentes de forma que cada conteúdo listado seja um Card.
+Requisito 4 - (**Bônus**) Estilize a página criada. 
+
+* Para isso, adicione classes para estilização dos seus componentes de forma que cada conteúdo listado seja um Card.
 
 * Para adicionar uma classe de estilização em um elemento HTML, utilize o atributo className:
 

@@ -28,7 +28,7 @@ const conteudos = [
 class Content extends React.Component {
   render() {
     return (
-      <section>
+      <main className="main">
         {conteudos.map((element) => ( // Posso utilizar () na HOF também
           <div key={element.conteudo} className='card'>
             <h4>{`O conteúdo é: ${element.conteudo}`}</h4>
@@ -36,7 +36,7 @@ class Content extends React.Component {
             <p>{`Bloco: ${element.bloco}`}</p>
           </div>
         ))}
-      </section>
+      </main>
     );
   }
 };
