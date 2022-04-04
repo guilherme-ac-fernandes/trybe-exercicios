@@ -3,7 +3,7 @@
 
 Requisito 1 - Na pasta `src`, crie um novo arquivo chamado `Header.jsx`, que representará o componente Header. Neste arquivo, crie uma classe React, chamada `Header`. Essa classe deve renderizar uma tag `<h1>` com o texto `Conteúdos de Front-End`. 
 
-* Não esqueça de exportar esse componente;.
+* Não esqueça de exportar esse componente.
 
 * No arquivo `App.js`, importe o componente `Header` criado anteriormente.
 
@@ -72,7 +72,3 @@ Requisito 4 - (**Bônus**) Estilize a página criada.
   ...
 </footer>
 ```
-
-
-
-
