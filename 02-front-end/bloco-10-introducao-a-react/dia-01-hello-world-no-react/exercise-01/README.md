@@ -4,15 +4,15 @@
 Requisito 1 - Na pasta src`, acesse `App.js` e remova todo o conteúdo da função App, de modo que ela fique assim:
 
 ```
-    import React from 'react';
-    import logo from './logo.svg';
-    import './App.css';
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-    function App() {
-      return ();
-    }
+function App() {
+  return ();
+}
 
-    export default App;
+export default App;
 ```
 
 Requisito 2 - Na pasta `src`, crie um arquivo chamado `Component.js` crie um componente que retorne um `<h1>` com o seu nome um paragráfo `<p>` , com uma breve descrição sobre você.
