@@ -1,7 +1,7 @@
 ###  Atividade de fixação 1:
 > A partir do comando `npx create-react-app nome-app` crie a pasta `exercise-01` e realize os seguintes requisitos:
 
-Requisito 1 - Na pasta src`, acesse `App.js` e remova todo o conteúdo da função App, de modo que ela fique assim:
+Requisito 1 - Na pasta `src`, acesse `App.js` e remova todo o conteúdo da função App, de modo que ela fique assim:
 
 ```
     import React from 'react';
