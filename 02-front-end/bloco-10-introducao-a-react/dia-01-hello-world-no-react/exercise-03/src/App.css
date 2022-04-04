@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 100px;
+  background-image: url('https://wallpaperaccess.com/full/1311165.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.main .card {
+  border: solid 2px black;
+  width: 350px;
+  text-align: center;
+  line-height: 40px;
+  margin: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url('https://wallpaperaccess.com/full/1311165.jpg');
+}
