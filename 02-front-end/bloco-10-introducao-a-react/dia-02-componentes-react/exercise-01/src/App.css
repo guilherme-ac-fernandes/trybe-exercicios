@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main ul {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 850px;
+}
+
+.list-item {
+  margin: 10px;
+  border: solid 2px grey;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  line-height: 30px;
+  list-style: none;
+}
