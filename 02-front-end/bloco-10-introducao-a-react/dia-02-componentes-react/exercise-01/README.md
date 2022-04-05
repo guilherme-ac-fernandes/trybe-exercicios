@@ -109,8 +109,8 @@ const pokemons = [
 export default pokemons;
 ```
 
-Você vai implementar de forma simplificada uma Pokedex! Para os que não estão familiarizados com o universo Pokemon, a Pokedex é uma enciclopédia de todos os pokemon na natureza. Para o seu caso, a sua aplicação precisa mostrar todos os pokemon presentes no arquivo `data.js` mencionado acima.
-Você pode usar a imaginação para estilizar a sua aplicação. Entretanto, é obrigatório que você implemente pelo menos estes dois componentes:
+> Você vai implementar de forma simplificada uma Pokedex! Para os que não estão familiarizados com o universo Pokemon, a Pokedex é uma enciclopédia de todos os pokemon na natureza. Para o seu caso, a sua aplicação precisa mostrar todos os pokemon presentes no arquivo `data.js` mencionado acima.
+> Você pode usar a imaginação para estilizar a sua aplicação. Entretanto, é obrigatório que você implemente pelo menos estes dois componentes:
 
 Requisito 1 - Pokemon: como o próprio nome diz, esse componente representa um `pokemon`. Esse componente recebe como entrada um objeto que contém informações referentes a um pokemon específico. Esse componente precisa retornar as seguintes informações obrigatórias para serem mostradas para quem usar a aplicação, essas informações devem ser validadas utilizando `PropTypes`:
 
