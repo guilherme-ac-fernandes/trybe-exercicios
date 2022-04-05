@@ -5,7 +5,7 @@ import data from './data';
 
 function App() {
   return (
-    <>
+    <section className='section'>
       <header className="header">
         <h1>Pokedex</h1>
       </header>
@@ -14,7 +14,7 @@ function App() {
           <Pokedex pokemon={data}/>
         </ul>
       </main>
-    </>
+    </section>
   );
 }
 

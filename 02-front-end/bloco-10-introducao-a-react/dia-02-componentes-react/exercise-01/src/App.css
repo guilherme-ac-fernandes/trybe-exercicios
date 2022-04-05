@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 #root {
@@ -8,6 +9,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png');
+  /* Informações proveniente do blog da Trybe
+  source: https://blog.betrybe.com/css/css-background-image/ */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  width: 80%;
+}
+
+.header {
+  background-color: #f1f1f1;
+  border: solid 3px #b7b7b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-size: 50px;
 }
 
 .main ul {
@@ -16,15 +46,23 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 850px;
 }
 
 .list-item {
+  box-shadow: 2px 2px 4px gray;
+  background-color: #f1f1f1;
+  border: solid 1px grey;
   margin: 10px;
-  border: solid 2px grey;
   border-radius: 20px;
-  width: 250px;
   text-align: center;
+  min-width: 35%;
   line-height: 30px;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  /* Utização do flex oriundo do gabarito da Trybe
+  source: https://app.betrybe.com/course/front-end/introducao-a-react/componentes-react-gabarito/solutions/cf9a4fee-8e14-4ea8-b8f2-15b3e1bc083f/exercicios-de-fixacao/a8bb99ac-ef40-43ee-99ce-94e4839a077f?use_case=calendar */
+  flex: 1 1 0;
 }
