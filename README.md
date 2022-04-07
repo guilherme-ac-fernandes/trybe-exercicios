@@ -91,7 +91,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 10.1: ‘Hello, world!’ no React!
 - [X] 10.2: Componentes React
-- [ ] 10.3: Projeto - Sistema Solar
+- [X] 10.3: Projeto - Sistema Solar
 
 #### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
