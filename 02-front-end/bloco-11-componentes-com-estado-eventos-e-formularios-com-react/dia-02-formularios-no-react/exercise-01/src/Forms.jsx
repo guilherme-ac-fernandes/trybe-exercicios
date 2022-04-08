@@ -1,45 +1,32 @@
 import React from "react";
+import Input from "./Input";
+import arrayEstados from './arrayEstados';
 
 class Forms extends React.Component {
   render() {
     return (
-      <>
+      <forms className='forms-container'>
         <fieldset>
 
-          <label>
-            Nome:
-            <input type="text" />
-          </label>
-
-          <label>
-            Email:
-            <input type="text" />
-          </label>
-
-          <label>
-            CPF:
-            <input type="number" />
-          </label>
-
-          <label>
-            Endereço:
-            <input type="text" />
-          </label>
-
-          <label>
-            Cidade:
-            <input type="text" />
-          </label>
-
-          <label>
+          <Input label='Nome:' type='text' name='name' max='40' />
+          <Input label='Email:' type='text' name='email' max='40' />
+          <Input label='CPF:' type='number' name='cpf' max='11' />
+          <Input label='Endereço:' type='text' name='endereco' max='200' />
+          <Input label='Cidade:' type='text' name='cidade' max='28'/>
+          
+          <label htmlFor="">
             Estado:
-            <input type="text" />
+            <select name="estado" >
+              {arrayEstados.map(({ nome, uf }) => (
+                <option key={uf} value={uf}>{ nome }</option>
+              ))}
+            </select>
           </label>
-
+          
           <label>
             Tipo:
-            <input type="radio" />Casa
-            <input type="radio" />Apartamento
+            <input type="radio" name ='tipo' value='casa' />Casa
+            <input type="radio" name ='tipo' value='apto' />Apartamento
           </label>
 
         </fieldset>
@@ -64,7 +51,7 @@ class Forms extends React.Component {
         
           
         </fieldset>
-      </>
+      </forms>
     );
   }
 }

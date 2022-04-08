@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.forms-container fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  line-height: 40px;
+}
