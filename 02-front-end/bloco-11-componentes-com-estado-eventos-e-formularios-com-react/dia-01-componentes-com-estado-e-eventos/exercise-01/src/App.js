@@ -1,16 +1,20 @@
 import React from 'react';
 import './App.css';
-import pokemons from './data';
 import Pokedex from './Pokedex';
 
 function App() {
   return (
-    <div className="App">
-      <h1> Pokedex </h1>
-      <Pokedex pokemons={pokemons} />
-    </div>
+    <section className='section'>
+      <header className="header">
+        <h1>Pokedex</h1>
+      </header>
+      <main className="main">
+        <ul>
+          <Pokedex />
+        </ul>
+      </main>
+    </section>
   );
 }
-
 
 export default App;
