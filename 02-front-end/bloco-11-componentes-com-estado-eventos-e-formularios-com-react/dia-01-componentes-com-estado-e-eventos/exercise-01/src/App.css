@@ -68,10 +68,14 @@
 
 .button-section {
   margin: 30px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button-section button {
-  margin: 5px;
+  margin: 10px;
   width: 50px;
   height: 30px;
   text-align: center;
@@ -112,4 +116,5 @@
 
 .button-section button:nth-child(9) {
   background-color: burlywood;
+  width: 120px;
 }

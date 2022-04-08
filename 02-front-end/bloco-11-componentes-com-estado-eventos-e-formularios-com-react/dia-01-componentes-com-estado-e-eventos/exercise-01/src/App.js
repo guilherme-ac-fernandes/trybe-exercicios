@@ -10,6 +10,7 @@ function App() {
       </header>
       <main className="main">
         <ul>
+          {/* Componente pokedex não recebe mais prop que contem todos os dados */}
           <Pokedex />
         </ul>
       </main>

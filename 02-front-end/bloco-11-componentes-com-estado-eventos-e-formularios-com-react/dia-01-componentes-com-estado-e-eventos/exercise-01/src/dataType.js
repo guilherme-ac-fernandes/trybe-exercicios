@@ -1,5 +1,6 @@
 import data from './data';
 
+// Seleciona todos os typos do array
 const typesMap = data.map((element) => element.type)
 
 // Resolução para remover valores duplicados do array proveniente do site Dev.to
