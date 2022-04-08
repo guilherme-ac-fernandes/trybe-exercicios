@@ -4,6 +4,7 @@ import Button from './Button';
 import data from './data';
 import types from './dataType';
 
+// Resolução proveniente da resolução da Michele Gusmão realizada durante a monitoria com o Especialista Gabriel Espindola e Intrutor Ander
 class Pokedex  extends React.Component {
   constructor() {
     super()
