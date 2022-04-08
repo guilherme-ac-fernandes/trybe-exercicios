@@ -66,7 +66,7 @@ class Pokedex  extends React.Component {
           {/* Botão que retorna todos os pokemon para a lista */}
           <Button onClick={this.handleClick} name='All'/>
           {types.map((type) => (<Button onClick={this.handleClick} key={type} name={type}/>))}
-          {/* Botão que troca para o próximo pokemon incrementando um no state.index e é desabilidado caso não haja mais de um pokemon */}
+          {/* Botão que troca para o próximo pokemon incrementando um no state.index e é desabilidado caso não haja mais de um pokemon. Observação: onClick revebe uma função com parâmetro, por isso utiliza arrow function */}
           <Button onClick={() => this.handleClickNext(currentList.length)} name='Next' disabled={currentList.length <= 1} />
         </div>
       </>
