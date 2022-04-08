@@ -1,22 +1,73 @@
 import React from "react";
 import Input from "./Input";
+import TextArea from './TextArea'
 import arrayEstados from './arrayEstados';
 
 class Forms extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      cpf: '',
+      endereco: '',
+      cidade: '',
+      estado: '',
+      tipo: '',
+      curriculo: '',
+      cargo: '',
+      descricao: ''
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    this.setState({
+      [name]: value
+    });
+  };
+
   render() {
     return (
-      <forms className='forms-container'>
+      <section className="forms-container">
         <fieldset>
 
-          <Input label='Nome:' type='text' name='name' max='40' />
-          <Input label='Email:' type='text' name='email' max='40' />
-          <Input label='CPF:' type='number' name='cpf' max='11' />
-          <Input label='Endereço:' type='text' name='endereco' max='200' />
-          <Input label='Cidade:' type='text' name='cidade' max='28'/>
+          <Input
+            handleChange={this.handleChange}
+            label='Nome:' 
+            type='text' 
+            name='name' 
+            max='40' />
+          <Input
+            handleChange={this.handleChange} 
+            label='Email:' 
+            type='text' 
+            name='email' 
+            max='40' />
+          <Input 
+            handleChange={this.handleChange}
+            label='CPF:' 
+            type='number' 
+            name='cpf' 
+            max='11' />
+          <Input 
+            handleChange={this.handleChange}
+            label='Endereço:' 
+            type='text' 
+            name='endereco' 
+            max='200' />
+          <Input 
+            handleChange={this.handleChange}
+            label='Cidade:' 
+            type='text' 
+            name='cidade' 
+            max='28'/>
           
-          <label htmlFor="">
+          <label>
             Estado:
-            <select name="estado" >
+            <select onChange={this.handleChange} name="estado" >
               {arrayEstados.map(({ nome, uf }) => (
                 <option key={uf} value={uf}>{ nome }</option>
               ))}
@@ -25,33 +76,32 @@ class Forms extends React.Component {
           
           <label>
             Tipo:
-            <input type="radio" name ='tipo' value='casa' />Casa
-            <input type="radio" name ='tipo' value='apto' />Apartamento
+            <input onChange={this.handleChange} type="radio" name ='tipo' value='casa' />Casa
+            <input onChange={this.handleChange} type="radio" name ='tipo' value='apto' />Apartamento
           </label>
 
         </fieldset>
 
         <fieldset>
 
-          <label>
-            Resumo do Currículo:
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </label>
-
-          <label>
-            Cargo:
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </label>
-
-          <label>
-            Descrição do cargo:
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </label>
-
-        
+          <TextArea
+            handleChange={this.handleChange}
+            name='curriculo' 
+            label='Resumo do Currículo:' 
+            max='1000' />
+          <TextArea 
+            handleChange={this.handleChange}
+            name='cargo' 
+            label='Cargo:' 
+            max='40' />
+          <TextArea 
+            handleChange={this.handleChange}
+            name='descricao' 
+            label='Descrição do cargo:' 
+            max='500' />
           
         </fieldset>
-      </forms>
+      </section>
     );
   }
 }
