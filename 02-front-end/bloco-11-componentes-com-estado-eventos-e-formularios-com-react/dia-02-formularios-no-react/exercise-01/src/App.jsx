@@ -4,6 +4,9 @@ import FormError from './FormError';
 import FormDisplay from './FormDisplay';
 import './App.css';
 
+// Resolução proveniente do course da Trybe com modificações de funcionalidade e correção de bugs
+// source: https://app.betrybe.com/course/front-end/componentes-com-estado-eventos-e-formularios-com-react/eventos-e-formularios-no-react/solutions/306d9a98-87b4-445b-9256-482909f5e918/conteudo/a675c67e-b553-4390-9904-82f6ed07ab20?use_case=calendar
+
 const inicialState = {
   name: '',
   email: '',
