@@ -83,22 +83,28 @@ class PersonalForm extends Component {
             ))}
           </select>
         </label>
-        <label>
-          Tipo:
-          <input
-            type="radio"
-            name="addressType"
-            value="house"
-            onChange={changeHandler}
-          />Casa
-          <input
-            type="radio"
-            name="addressType"
-            value="apartment"
-            onChange={changeHandler}
-          />
-          Apartamento
-        </label>
+        <div className="container-radio">
+          <p>Tipo:</p>
+          <label htmlFor="house">
+            <input
+              type="radio"
+              name="addressType"
+              value="house"
+              id="house"
+              onChange={changeHandler}
+            />Casa
+          </label>
+
+          <label htmlFor="apto">
+            <input
+              type="radio"
+              name="addressType"
+              value="apartment"
+              id="apto"
+              onChange={changeHandler}
+            />Apartamento
+          </label>
+        </div>
       </fieldset>
     );
   }
