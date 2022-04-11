@@ -5,7 +5,7 @@ Crie um formulário de cadastro de currículo com base na especificação seguin
 
 Requisito 1 - Crie um `<fieldset>` para os dados pessoais a seguir:
 
- - Nome - Texto
+Nome - Texto
 ```
 Limite de 40 caracteres
 Todos os caracteres devem ser transformados para UPPER CASE assim que forem digitados.
@@ -13,12 +13,16 @@ Campo obrigatório
 ```
 
 Email - Texto
-* Limite de 50 caracteres
-* Campo obrigatório
+```
+Limite de 50 caracteres
+Campo obrigatório
+```
 
-- CPF - Texto
+CPF - Texto
+```
 * Limite de 11 caracteres
 * Campo obrigatório
+```
 
 Endereço - Texto
 Limite de 200 caracteres
