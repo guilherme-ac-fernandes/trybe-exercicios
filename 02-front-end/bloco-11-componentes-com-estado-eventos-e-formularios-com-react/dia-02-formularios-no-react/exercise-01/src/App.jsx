@@ -49,7 +49,7 @@ class App extends Component {
   onBlurHandler = ({ target }) => {
     let { name, value } = target;
     if (name === 'city') {
-      // ^ = no início da strind
+      // ^ = no início da string
       // \d/ ou /[0-9]/ = Encontra correspondência com um número. Equivalente a [0-9]
       value = value.match(/^\d/) ? '' : value;
     }
@@ -84,6 +84,16 @@ class App extends Component {
       // qualquer string = /\S+@\S+\.\S+/
       // anystring@anystring.anystring = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       const isValid = value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+      return isValid ? empty : 'is invalid';
+    }
+    if (name === 'cpf') {
+      // Validação para apenas valores números proveniente do W3resource
+      // link: https://www.w3resource.com/javascript/form/all-numbers.php
+      // ^ = no início da string
+      // \d/ ou /[0-9]/ = Encontra correspondência com um número. Equivalente a [0-9]
+      // + = Corresponde a expressão que o precede repetido 1 ou mais vezes
+      // $ = no final do sring
+      const isValid = value.match(/^[0-9]+$/);
       return isValid ? empty : 'is invalid';
     }
     return empty;

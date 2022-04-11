@@ -40,6 +40,7 @@ class PersonalForm extends Component {
             maxLength="11" 
             required
             className="input"
+            pattern="[0-9]+"
             onChange={changeHandler}
           />
         </label>
@@ -77,7 +78,7 @@ class PersonalForm extends Component {
             className="select"
             onChange={changeHandler} 
           >
-            <option>Selecione</option>
+            <option selected>Selecione</option>
             {arrayEstados.map(({ uf, nome}) => (
               (<option key={uf}>{`${uf} - ${nome}`}</option>)
             ))}
