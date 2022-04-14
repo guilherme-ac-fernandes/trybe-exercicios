@@ -97,6 +97,9 @@ class App extends Component {
   saveName() {
     const { name } = this.state;
     this.changeNameForLastUrlOnLocalStorage(name);
+    this.setState({
+      name: '',
+    });
   }
 
   createNewUrlOnLocalStorage(url) {
