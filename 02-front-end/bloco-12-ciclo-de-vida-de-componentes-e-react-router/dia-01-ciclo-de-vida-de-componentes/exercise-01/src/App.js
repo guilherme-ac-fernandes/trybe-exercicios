@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Resolução proveniente da monitoria com o Especialista da Turma 20B de Desenvolvimento a Front-End Gabriel Espindola
 class App extends Component {
   
   constructor() {
