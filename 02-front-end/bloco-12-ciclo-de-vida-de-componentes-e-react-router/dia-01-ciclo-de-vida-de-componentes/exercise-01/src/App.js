@@ -72,11 +72,12 @@ class App extends Component {
   getPuppyFromLocalStorage() {
     const urlInLocalStorage = localStorage.getItem('urls');
     let myUrls = [];
-    if (urlInLocalStorage) {
+    if (urlInLocalStorage !== null) {
       myUrls = JSON.parse(urlInLocalStorage);
+      if (urlInLocalStorage.length === 0) return
+      return myUrls[myUrls.length - 1] // se tiver informações no localStorage retorna os dados do último cão
     }
-    if (urlInLocalStorage.length === 0) return
-    return myUrls[myUrls.length - 1] // se tiver informações no localStorage retorna os dados do último cão
+    
   }
 
   // updateLocalStorage(url) {
