@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.App .flex{
+  display: flex;
+  flex-direction: column;
+}
+.App .flex *{
+  margin: 10px;
+}
+
+.App .flex .dog-image{
+  width: 300px;
+  max-height: 500px;
+}
