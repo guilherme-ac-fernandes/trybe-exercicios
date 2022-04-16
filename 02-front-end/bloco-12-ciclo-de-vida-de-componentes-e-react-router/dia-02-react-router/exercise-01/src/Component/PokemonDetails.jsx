@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import data from '../data';
 import Pokemon from "../Component/Pokemon";
+import React, { Component } from "react";
 
 class PokemonDetails extends Component {
   render() {
     const { id } = this.props.match.params;
-    const {checked, handleChange } = this.props;
+    const { data, favorites, onChangeFavorite } = this.props;
     const pokemon = data.find((element) => element.id === Number(id));
+    const isFavorite = favorites.some((favorite) => favorite.id === pokemon.id);
 
     return (
       <>
         <div className="pokemon-details-container">
-          <Pokemon element={pokemon} checked={ checked }/>
+          <Pokemon element={pokemon} isFavorite={ isFavorite } />
         </div>
 
         <div className="summary-location-container">
@@ -33,9 +33,10 @@ class PokemonDetails extends Component {
             <input 
               type="checkbox" 
               id="favorite" 
-              value={ checked } 
-              name="checked" 
-              onChange={ handleChange } 
+              value={ 1 } 
+              name="checked"
+              onChange={ () => onChangeFavorite(pokemon, isFavorite) }
+              checked={ isFavorite }
             />
           </label>
 

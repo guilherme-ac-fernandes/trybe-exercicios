@@ -1,8 +1,6 @@
 import React from 'react';
 import Pokemon from '../Component/Pokemon';
 import Button from '../Component/Button';
-import data from '../data';
-import types from '../dataType';
 import PropTypes from 'prop-types';
 
 class Pokedex  extends React.Component {
@@ -35,21 +33,20 @@ class Pokedex  extends React.Component {
       })
     }
   }
-
-  pokemonFilter = (array, info) => array.filter((item) => item.type === info);
    
   render() {
     const {index, pokeType} = this.state;
+    const { data, types, favorites } = this.props;
     const currentList = data.filter((item) => {
       if (pokeType === '' || pokeType === 'All') return true 
-      return item.type === pokeType 
+      return item.type === pokeType
     });
     const currentIndex = currentList[index];
-    const { checked } = this.props;
-    
+    const isFavorite = favorites.some((favorite) => favorite.id === currentIndex.id);
+
     return (
       <>
-        {<Pokemon element={currentIndex} className="list-item" checked={ checked } />}
+        {<Pokemon element={currentIndex} className="list-item" isFavorite={ isFavorite } />}
         <div className="button-section">
           <Button onClick={this.handleClick} name='All'/>
           {types.map((type) => (<Button onClick={this.handleClick} key={type} name={type}/>))}
