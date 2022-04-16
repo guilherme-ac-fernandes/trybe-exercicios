@@ -5,7 +5,7 @@ Nesse repositório ja foi instalado o `react-router-dom`, só é necessário exe
 
 #### Demostração
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/12.2/02-front-end/bloco-12-ciclo-de-vida-de-componentes-e-react-router/dia-02-react-router/exercise-01/public/pokedex-react-router.gif" alt="Pokedex React-Router - Demostração"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/02-front-end/bloco-12-ciclo-de-vida-de-componentes-e-react-router/dia-02-react-router/exercise-01/public/pokedex-react-router.gif" alt="Pokedex React-Router - Demostração"/>
 </p>
 
 Requisito 1 - Ao carregar a aplicação no caminho de URL "/", é preciso que seja mostrada a Pokédex.
