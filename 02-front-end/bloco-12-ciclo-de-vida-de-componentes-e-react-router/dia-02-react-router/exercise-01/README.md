@@ -3,6 +3,11 @@
 
 Nesse repositório ja foi instalado o `react-router-dom`, só é necessário executar `npm install` uma vez dentro da pasta raiz para utilizá-lo.
 
+#### Demostração
+<p align="center">
+  <img src="" alt="Pokedex React-Router - Demostração"/>
+</p>
+
 Requisito 1 - Ao carregar a aplicação no caminho de URL "/", é preciso que seja mostrada a Pokédex.
 
 Requisito 2 - Adicione um link de navegação para o pokemon sendo mostrado pela Pokedex, de forma que quem usar a aplicação consiga clicar no link para ver mais detalhes do pokemon em questão. O nome do caminho da URL fica a seu critério. Lembre-se de que é preciso passar para a URL um identificador do pokemon, de forma que cada pokemon seja unicamente associado com o caminho de URL. Ou seja, se você quer que os detalhes de um pokemon se encontrem no caminho de URL `/pokemon`, você precisa passar para esse caminho um parâmetro de URL para que somente um pokemon seja visualizado. Todo pokemon tem um `id` na Pokedex, logo você poderia usá-lo como parâmetro de URL para permitir que quem usar sua aplicação consiga acessar detalhes do pokemon Pikachu via caminho de URL `/pokemon/25`, onde 25 é o id do Pikachu.
