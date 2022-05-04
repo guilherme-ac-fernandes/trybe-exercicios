@@ -24,9 +24,11 @@ describe('Testando a aplicação, testando botão, e sua funcionalidade', () => 
 
     const inputTask = screen.getByLabelText('Tarefa:');
     const button = screen.getByRole('button');
+    // Primeiro verifica se não tem nada antes de clicar no botão
+    // Utilizar o screen.queryByText para buscar o elemento com o texto e avaliar se está presente na página
+    expect(screen.queryByText(TASKS_1)).not.toBeInTheDocument();
     userEvent.type(inputTask, TASKS_1);
     userEvent.click(button);
-    // Primeiro buscar o elemento com o texto e avaliar se está presente na página
     expect(screen.queryByText(TASKS_1)).toBeInTheDocument();
   });
 });
