@@ -21,14 +21,17 @@ class App extends Component {
   }
 
   selectTodo(indexTodo) {
+    this.setState({ selectedTodo: indexTodo })
   }
 
   removeTodo(indexTodo) {
+    const { listTodo } = this.state;
+    const newArray = listTodo.filter((item) => item !== indexTodo);
+    this.setState({ listTodo: newArray })
   }
 
   render() {
-    const { listTodo } = this.state;
-
+    const { listTodo, selectedTodo } = this.state;
     return (
       <main className="App">
         <InputTodo
@@ -37,9 +40,20 @@ class App extends Component {
         <ul>
           { listTodo.map((todo, index) => (
             <li key={ index + 1 }>
-
               <Item content={ todo } />
-              {/* Colocar os botões aqui */}
+              <button
+                type="button"
+                onClick={ () => this.selectTodo(todo) }
+              >
+                Selecionar
+              </button>
+              <button
+                type="button"
+                onClick={ () => this.removeTodo(todo) }
+                disabled={ selectedTodo !== todo }
+              >
+                Remover
+              </button>
             </li>
           )) }
         </ul>
