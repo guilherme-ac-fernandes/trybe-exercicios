@@ -2,7 +2,6 @@
 // Proveniente do CodeGreeper (link: https://www.codegrepper.com/code-examples/javascript/js+random+number+between+0+and+100)
 const randomNumber = () => Math.floor(Math.random() * 101);
 
-
 // Função que recebe string e retorna em caixa alta
 const uppercase = (string) => string.toUpperCase();
 

@@ -102,6 +102,7 @@ describe('Testes de implementações nas funções uppercase, firstLetter e conc
     expect(mockUpperCase).toHaveBeenLastCalledWith('PALAVRA');
   });
 
+  // Como foi utilizado o spyOn nesta função é possível utilizar o mockRestore()
   it('verifica se a função uppercase foi restaurada', () => {
     service.uppercase.mockRestore();
     expect(service.uppercase('palavra')).toBe('PALAVRA');
