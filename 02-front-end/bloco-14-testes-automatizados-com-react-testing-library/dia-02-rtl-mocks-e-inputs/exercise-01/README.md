@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+###  Atividade de fixação 1:
+> Crie a pasta `exercise-01` e realize os seguintes requisitos:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Inicialmente crie um arquivo chamado `service.js`: é nele que você irá criar as funções que são pedidas nos exercícios.
+> E também crie um arquivo chamado `service.test.js`: é ele que vai conter os testes das funções do arquivo anterior.
 
-## Available Scripts
 
-In the project directory, you can run:
+Requisito 1 - Crie uma função que gere um número aleatório:
 
-### `npm start`
+* Defina uma função que gere um número aleatório entre 0 e 100.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Desenvolva os testes para essa função.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Utilize o mock e defina o retorno padrão como 10.
 
-### `npm test`
+* Teste se a função foi chamada, qual seu retorno e quantas vezes foi chamada.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Requisito 2 - Com a mesma função do exercício anterior, utilizando o mock, crie uma nova implementação, que deve receber dois parâmetros e retornar a divisão do primeiro pelo segundo. Essa implementação deve ocorrer uma única vez.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Defina o mock da função para a nova funcionalidade da função.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Teste se a função foi chamada e a nova implementação de divisão foi aplicada.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Verifique se a aplicação da nova implementação acontece apenas uma vez.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Requisito 3 - Use a mesma função do primeiro exercício:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Utilize o mock e desenvolva uma nova implementação que receba três parâmetros
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Retorne a multiplicação dos parâmetros.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Realize os testes que achar necessário.
 
-## Learn More
+* Resete sua implementação e crie uma nova, que receba apenas um parâmetro e retorne o dobro.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Faça os testes que achar necessário.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Requisito 4 - Crie três funções: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Desenvolva a primeira função: essa função deve recebe uma string e retorná-la em caixa alta.
 
-### Analyzing the Bundle Size
+* Crie a segunda função: ela recebe uma string e deve retornar só a primeira letra.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Elabore a terceira função: essa função deve receber duas strings e concatená-las.
 
-### Making a Progressive Web App
+A. Faça o mock das funções para com os seguintes casos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> * Desenvolva uma nova implementação para a primeira função: agora ela deve retornar a string em caixa baixa.
 
-### Advanced Configuration
+> * Defina, para a segunda função, uma nova implementação: ela deve retornar a última letra de uma string.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> * Implemente, na terceira função: ela deve receber três strings e concatená-las.
 
-### Deployment
+B. Após criar os mocks, faça os testes necessários para garantir que os mocks estão funcionando.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+C. Após criar os testes, restaure a implementação da primeira função.
 
-### `npm run build` fails to minify
+> * Faça o teste necessário para garantir que a implementação da função foi restaurado.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Requisito 5 - Crie uma função que faça requisição para a _[API dog pictures](https://dog.ceo/dog-api/)_.
+
+* Mocke a requisição e crie dois testes.
+
+> * O primeiro deve interpretar que a requisição se resolveu e teve como valor "request sucess".
+
+> * O segundo deve interpretar que a requisição falhou e ter como valor "request failed".
+
+* Crie todos os testes que achar necessário. 
+
+
