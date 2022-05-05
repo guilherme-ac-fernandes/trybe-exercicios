@@ -51,7 +51,7 @@ A. Faça o mock das funções para com os seguintes casos:
 > * Desenvolva uma nova implementação para a primeira função: agora ela deve retornar a string em caixa baixa.
 
 > * Defina, para a segunda função, uma nova implementação: ela deve retornar a última letra de uma string.
-
+>
 > * Implemente, na terceira função: ela deve receber três strings e concatená-las.
 
 B. Após criar os mocks, faça os testes necessários para garantir que os mocks estão funcionando.
@@ -66,7 +66,7 @@ Requisito 5 - Crie uma função que faça requisição para a _[API dog pictures
 * Mocke a requisição e crie dois testes.
 
 > * O primeiro deve interpretar que a requisição se resolveu e teve como valor "request sucess".
-
+>
 > * O segundo deve interpretar que a requisição falhou e ter como valor "request failed".
 
 * Crie todos os testes que achar necessário. 
