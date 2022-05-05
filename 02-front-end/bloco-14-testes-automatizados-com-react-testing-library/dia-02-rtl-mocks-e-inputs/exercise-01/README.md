@@ -49,7 +49,7 @@ Requisito 4 - Crie três funções:
 A. Faça o mock das funções para com os seguintes casos:
 
 > * Desenvolva uma nova implementação para a primeira função: agora ela deve retornar a string em caixa baixa.
-
+>
 > * Defina, para a segunda função, uma nova implementação: ela deve retornar a última letra de uma string.
 >
 > * Implemente, na terceira função: ela deve receber três strings e concatená-las.
