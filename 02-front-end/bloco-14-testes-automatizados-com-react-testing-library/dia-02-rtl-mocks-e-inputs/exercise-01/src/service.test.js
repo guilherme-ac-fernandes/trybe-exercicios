@@ -71,27 +71,25 @@ describe('Teste de novas implementações em cima da função randomNumber com m
 
 // Requisito 4
 describe('Testes de implementações nas funções uppercase, firstLetter e concatenate', () => {
-  it('verifica a implementação de nova funcionalidade a função uppercase', () => {
-    // Implementação da funcionalidade 
-    service.uppercase = jest.fn()
-      .mockImplementation((string) => string.toLowerCase());
+  // Se fizer com jest.fn() não é possível aplicar a mockRestore, a resolução é utilizar o spyOn
+  // it('verifica a implementação de nova funcionalidade a função uppercase', () => {
+  //   // Implementação da funcionalidade 
+  //   service.uppercase = jest.fn()
+  //     .mockImplementation((string) => string.toLowerCase());
     
-    service.uppercase('PALAVRA');
-    expect(service.uppercase).toHaveBeenCalled();
-    expect(service.uppercase).toHaveBeenCalledTimes(1);
-    expect(service.uppercase('PALAVRA')).toBe('palavra');
-    expect(service.uppercase).toHaveBeenCalledTimes(2);
-    expect(service.uppercase).toHaveBeenLastCalledWith('PALAVRA');
+  //   service.uppercase('PALAVRA');
+  //   expect(service.uppercase).toHaveBeenCalled();
+  //   expect(service.uppercase).toHaveBeenCalledTimes(1);
+  //   expect(service.uppercase('PALAVRA')).toBe('palavra');
+  //   expect(service.uppercase).toHaveBeenCalledTimes(2);
+  //   expect(service.uppercase).toHaveBeenLastCalledWith('PALAVRA');
 
-    // Reset da funcionalidade
-    service.uppercase.mockReset();
-    expect(service.uppercase('PALAVRA')).toBe(undefined);
-    expect(service.uppercase).toHaveBeenCalledTimes(1);
-    expect(service.uppercase).toHaveBeenLastCalledWith('PALAVRA');
-
-    // service.uppercase.mockRestore();
-    // expect(service.uppercase('palavra')).toBe('PALAVRA');
-  });
+  //   // Reset da funcionalidade
+  //   service.uppercase.mockReset();
+  //   expect(service.uppercase('PALAVRA')).toBe(undefined);
+  //   expect(service.uppercase).toHaveBeenCalledTimes(1);
+  //   expect(service.uppercase).toHaveBeenLastCalledWith('PALAVRA');
+  // });
 
   it('verifica a implementação de nova funcionalidade a função uppercase com jest.spyOn', () => {
     // Implementação da funcionalidade 
@@ -102,10 +100,11 @@ describe('Testes de implementações nas funções uppercase, firstLetter e conc
     expect(mockUpperCase).toHaveBeenCalled();
     expect(mockUpperCase).toHaveBeenCalledTimes(1);
     expect(mockUpperCase).toHaveBeenLastCalledWith('PALAVRA');
+  });
 
-    expect(mockUpperCase('PALAVRA')).toBe(undefined);
-    expect(mockUpperCase).toHaveBeenCalledTimes(2);
-    expect(mockUpperCase).toHaveBeenLastCalledWith('PALAVRA');
+  it('verifica se a função uppercase foi restaurada', () => {
+    service.uppercase.mockRestore();
+    expect(service.uppercase('palavra')).toBe('PALAVRA');
   });
 
   it('verifica a implementação de nova funcionalidade a função firstLetter', () => {
