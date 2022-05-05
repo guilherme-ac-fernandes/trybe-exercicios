@@ -154,7 +154,7 @@ describe('Testes que verifica o retorno de uma API', () => {
   afterEach(service.fetchAPI.mockReset)
   
   it('verifica se o retorno da API foi bem sucessida', async () => {
-    service.fetchAPI.mockReturnValue('request sucess');
+    service.fetchAPI.mockResolvedValue('request sucess'); // Valor retornado é uma Promise
     
     service.fetchAPI();
     expect(service.fetchAPI).toHaveBeenCalled();
@@ -164,9 +164,10 @@ describe('Testes que verifica o retorno de uma API', () => {
   });
 
   it('verifica se o retorno da API apresentou falha', async () => {
-    service.fetchAPI.mockReturnValue('request sucess');
+    service.fetchAPI.mockRejectedValue('request failed'); // Valor retornado é uma Promise
+    
     expect(service.fetchAPI).toHaveBeenCalledTimes(0);
-    await expect(service.fetchAPI()).rejects.toBe('request sucess');
+    await expect(service.fetchAPI()).rejects.toBe('request failed');
     expect(service.fetchAPI).toHaveBeenCalledTimes(1);
   });
 });
