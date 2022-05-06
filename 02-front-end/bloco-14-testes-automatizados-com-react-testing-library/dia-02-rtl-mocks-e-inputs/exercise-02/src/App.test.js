@@ -105,8 +105,6 @@ describe('Teste da aplicação toda', () => {
       json: jest.fn().mockRejectedValue(error)
     });
 
-    console.log = jest.fn();
-
     render(<App />);
     const input = screen.getByLabelText(/digimon/i);
     const button = screen.getByRole('button', { name: /search digimon/i });
@@ -114,7 +112,6 @@ describe('Teste da aplicação toda', () => {
     userEvent.type(input, 'erro');
     userEvent.click(button);
 
-    console.log(global.fetch);
     expect(global.fetch).toBeCalledTimes(1);
   });
 
