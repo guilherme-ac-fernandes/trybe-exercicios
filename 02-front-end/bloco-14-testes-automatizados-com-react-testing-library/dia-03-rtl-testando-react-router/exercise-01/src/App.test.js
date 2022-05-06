@@ -2,7 +2,9 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event'
 import renderWithRouter from './helpers/renderWithRouter';
+import { act } from 'react-dom/test-utils';
 import App from './App';
+import Home from './pages/Home';
 
 describe('Teste de renderização das rotas do portfólio', () => {
   it('verifica a renderização do componente App', () => {
@@ -79,5 +81,50 @@ describe('Teste de renderização das rotas do portfólio', () => {
     const projectsTitle = screen.getByTestId('projects-title');
     expect(projectsTitle).toBeInTheDocument();
   });
+
+  // Elementos no Home
+  it('verifica a renderização dos elementos na página home', () => {
+    const name = /guilherme/i;
+    const { history } = renderWithRouter(<Home />);
+
+    const { location: { pathname } } = history;
+    expect(pathname).toBe('/');
+
+    // Avalia nome do Guilherme
+    const profileName = screen.getByRole('heading', { name, level: 2 });
+    expect(profileName).toBeInTheDocument();
+
+    // Avalia presença da foto
+    const profilePhoto = screen.getByAltText(name);
+    expect(profilePhoto).toBeInTheDocument();
+
+    // Avalia presença da foto
+    const profileDescription = screen.getByText(/contagem/i);
+    expect(profileDescription).toBeInTheDocument();
+
+    // Avalia presença das habilidades
+    const skills = ['HTML', 'CSS', 'Javascript', 'Jest', 'React']
+    skills.forEach((skill) => {
+      const profileSkill = screen.getByText(skill);
+    expect(profileSkill).toBeInTheDocument();
+    });
+
+  });
+
+  // Avalia se o link rediciona para o link do gitHub
+  // https://reactjs.org/docs/test-utils.html#act
+  // it('verifica a renderização da página do gitHub', async () => {
+  //   const { history, debug } = renderWithRouter(<Home/>);
+  //   const linkGitHub = screen.getByRole('link', { name: /GitHub/i });
+  //   userEvent.click(linkGitHub);
+  //   history.push = jest.fn();
+  //   act(() => {
+  //     history.push('https://github.com/guilherme-ac-fernandes');
+  //   })
+
+  //   console.log(debug);
+  //   const profileGitHub = await screen.findtByText(/guilherme fernandes/i);
+  //   expect(profileGitHub).toBeInTheDocument();
+  // })
   
 });

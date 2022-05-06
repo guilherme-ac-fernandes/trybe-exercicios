@@ -1,15 +1,19 @@
 import React from 'react';
-import guilherme from '../../public/guilherme-fernandes.jpeg';
+import photo from '../image/guilherme-fernandes.jpeg';
 
 class Home extends React.Component {
   render() {
+    const skills = ['HTML', 'CSS', 'Javascript', 'Jest', 'React']
     return (
       <div data-testid="home-title">
         <h2>Guilherme Augusto do Carmo Fernandes</h2>
-        <img src={ guilherme } alt="Guilherme Fernandes" />
-        <p>Descrição</p>
-        <p>Habilidades</p>
-        <a  href="https://github.com/guilherme-ac-fernandes" target="_blank" rel="noreferrer">GitHub</a>
+        <img src={photo} alt="Guilherme Fernandes" width="200px" />
+        <p>Brasileiro, atualmente em Contagem/MG</p>
+        <h4>Habilidades</h4>
+        <ul>
+          {skills.map((skill, index) => <li key={ index }>{skill}</li> )}
+        </ul>
+        <a  href="https://github.com/guilherme-ac-fernandes">GitHub</a>
       </div>
     );
   }
