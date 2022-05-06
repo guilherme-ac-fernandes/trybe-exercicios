@@ -1,92 +1,70 @@
-Esse é um exercício para o conteúdo de `React Testing Library`.
+# Getting Started with Create React App
 
-### Antes de iniciar
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
+## Available Scripts
 
-Após feito o fork, clone o repositório criado para o seu computador.
+In the project directory, you can run:
 
-Rode o `npm install`.
+### `npm start`
 
-_Caso tenha problemas em dar o `npm install`, delete o arquivo `package-lock.json` e rode o comando novamente_
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Vá para a branch master do seu projeto e execute o comando:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-`git branch`
+### `npm test`
 
-Mude para uma branch `portfolio-web` com o comando `git checkout -b portfolio-web`. É nessa branch que você realizará a solução para o exercício.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Observe o que deve ser feito nas instruções abaixo.
+### `npm run build`
 
-Após a solução dos exercícios, abra um PR no seu repositório forkado e, se quiser, mergeie para a master, sinta-se a vontade!
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Atenção!** Quando for criar o PR você irá se deparar com essa tela:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-![PR do exercício](images/example-pr.png)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-É necessário realizar uma mudança. Clique no *base repository* como na imagem abaixo:
+### `npm run eject`
 
-![Mudando a base do repositório](images/change-base.png)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Mude para o seu repositório. Seu nome estará na frente do nome dele, por exemplo: `antonio/exercise-portfolio-web`. Depois desse passo a página deve ficar assim:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-![Após mudança](images/after-change.png)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Agora basta criar o PULL REQUEST clicando no botão `Create Pull Request`.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Para cada PR realize esse processo.
+## Learn More
 
-### O QUE SERÁ FEITO?
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Faremos um portfólio usando React e TDD! Com isso, teremos um portfólio atrativo para pessoas recrutadoras, mostrando que também sabemos programar testes automatizados :heart:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### COMEÇANDO OS EXERCÍCIOS
+### Code Splitting
 
-À primeira vista, pode parecer uma tarefa gigante construir o próprio Portfólio com React e testes. Então, para ajudar, vamos sugerir uma sequência do que fazer, passo a passo, para que você possa seguir com mais confiança:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-* Comece construindo as rotas com _React Router_ e os componentes base (que são componentes sem as funcionalidades completas, apenas com um texto pequeno dentro para renderizarem na tela), e após isso teste tudo. Exemplos de rotas para seu portfólio seriam: `Início`, `Projetos`, `Sobre mim` e `Contato`.
+### Analyzing the Bundle Size
 
-  * Teste que o clique em cada rota renderiza os textos esperados na tela.
-  * Teste com o histórico que as urls corretas são acessadas após cada clique.
-  * Teste que, ao clicar num componente, o texto do componente que estava renderizado some da tela!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-* Daqui em diante, para cada um dos itens abaixo, você deve escrever os testes antes de ir para o próximo. **É muito importante testar a sua aplicação aos poucos, ao longo do desenvolvimento.** Você pode fazer a funcionalidade dos itens primeiro e depois testar. Ou, você pode, também, fazer TDD, escrevendo os testes primeiro e depois a funcionalidade do item, que é necessária para passar nos testes. A escolha é sua, ok?
+### Making a Progressive Web App
 
-### Escolha três itens para incluir no seu portfólio, e inclua os demais como bônus:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-* Seu nome completo e uma foto atual sua, onde o texto alternativo deve ser a descrição da foto que você está exibindo;
+### Advanced Configuration
 
-  * Teste o nome normalmente e, na imagem, não esqueça de verificar o `src` e o `alt`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-* Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
+### Deployment
 
-* Uma lista de habilidades que você possui e destacar a que você mais se orgulha;
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-  * Para testar o destaque, você poderá usar a classe dele ou o tipo de tag que usou. Caso existam mais elementos com a mesma `classe` ou `tag`, você poderá usar o `datatest-id` para certificar que o elemento é o correto.
+### `npm run build` fails to minify
 
-* Um link externo para o seu github, que abra em uma nova aba;
-
-  * Teste se o link realmente direciona para a sua página do github. Importante buscar elementos na página que alteram pouco, como o seu próprio `nome` ou `apelido`.
-
-  * Utilize _mocks_ para testes em links externos.
-
-* Um índice com links internos para as diferentes seções do seu portfólio, agora separadas por páginas, utilizando _React Router_.
-
-  * Teste cada um separadamente, não se esqueça de usar o `history` para reiniciar o estado de cada teste.
-
-* Um formulário com campo de e-mail e mensagem para que as pessoas possam entrar em contato com você [EmailJS](href="https://www.emailjs.com/docs/introduction/how-does-emailjs-work/).
-
-  * Utilize _mocks_ para garantir o funcionamento desse teste, uma vez que essa aplicação comporta-se como uma API e é um link externo. 
-
-
-### Dicas gerais para os testes:
-
-  * Comece seus testes por algum elemento fixo e bem previsível na tela inicial, um título por exemplo é o ideal, pois assim você já verifica se seus testes estão funcionando devidamente.
-  
-  * Verifique antes de tudo se o elemento a ser testado existe, depois verifique seu conteúdo e por fim, verifique suas funcionalidades (caso existam).
-
-  * Faça um describe para organizar o conjunto de testes e mantenha os nomes dos `its` ou `tests` sempre coerente sobre o que está sendo testado.
-
-  * Use _mocks_ para o envio de e-mail, testes de rotas e de formulários.
-
-Divirta-se codando! :rocket:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
