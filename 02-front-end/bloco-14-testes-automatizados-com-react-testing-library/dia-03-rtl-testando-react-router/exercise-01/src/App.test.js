@@ -148,4 +148,112 @@ describe('Teste de renderização das rotas do portfólio', () => {
     const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
     expect(buttonSubmit).toBeInTheDocument();
   });
+
+  // Avalia comportamento dos inputs
+  it('verifica o comportamento dos inputs na tela com os valores válidos', () => {
+    renderWithRouter(<Contact />);
+
+    const inputName = screen.getByLabelText(/nome/i);
+    expect(inputName).toHaveValue('');
+    userEvent.type(inputName, 'name');
+    expect(inputName).toHaveValue('name');
+
+    const inputEmail = screen.getByLabelText(/email/i);
+    expect(inputEmail).toHaveValue('');
+    userEvent.type(inputEmail, 'test@test.com');
+    expect(inputEmail).toHaveValue('test@test.com');
+    
+
+    const inputTextArea = screen.getByLabelText(/mensagem de contato/i);
+    expect(inputTextArea).toHaveValue('');
+    userEvent.type(inputTextArea, 'message');
+    expect(inputTextArea).toHaveValue('message');
+    
+
+    const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
+    userEvent.click(buttonSubmit);
+    expect(inputName).toHaveValue('');
+    expect(inputEmail).toHaveValue('');
+    expect(inputTextArea).toHaveValue('');
+  });
+
+  it('verifica o comportamento do input name com valor inválido', () => {
+    renderWithRouter(<Contact />);
+
+    const inputName = screen.getByLabelText(/nome/i);
+    expect(inputName).toHaveValue('');
+
+    const inputEmail = screen.getByLabelText(/email/i);
+    expect(inputEmail).toHaveValue('');
+    userEvent.type(inputEmail, 'test@test.com');
+    expect(inputEmail).toHaveValue('test@test.com');
+    
+
+    const inputTextArea = screen.getByLabelText(/mensagem de contato/i);
+    expect(inputTextArea).toHaveValue('');
+    userEvent.type(inputTextArea, 'message');
+    expect(inputTextArea).toHaveValue('message');
+    
+
+    const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
+    userEvent.click(buttonSubmit);
+    const invalidNameMessage = screen.getByText(/O campo "Nome" é obrigatório/i);
+    expect(invalidNameMessage).toBeInTheDocument();
+    expect(inputEmail).not.toHaveValue('');
+    expect(inputTextArea).not.toHaveValue('');
+  });
+
+  it('verifica o comportamento do input email com valor inválido', () => {
+    renderWithRouter(<Contact />);
+
+    const inputName = screen.getByLabelText(/nome/i);
+    expect(inputName).toHaveValue('');
+    userEvent.type(inputName, 'name');
+    expect(inputName).toHaveValue('name');
+
+    const inputEmail = screen.getByLabelText(/email/i);
+    expect(inputEmail).toHaveValue('');
+    userEvent.type(inputEmail, 'test.com');
+    expect(inputEmail).toHaveValue('test.com');
+    
+    const inputTextArea = screen.getByLabelText(/mensagem de contato/i);
+    expect(inputTextArea).toHaveValue('');
+    userEvent.type(inputTextArea, 'message');
+    expect(inputTextArea).toHaveValue('message');
+    
+
+    const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
+    userEvent.click(buttonSubmit);
+    const invalidEmailMessage = screen.getByText(/Email inválido/i);
+    expect(invalidEmailMessage).toBeInTheDocument();
+    expect(inputName).not.toHaveValue('');
+    expect(inputTextArea).not.toHaveValue('');
+  });
+
+  it('verifica o comportamento do textarea com valor inválido', () => {
+    renderWithRouter(<Contact />);
+
+    const inputName = screen.getByLabelText(/nome/i);
+    expect(inputName).toHaveValue('');
+    userEvent.type(inputName, 'name');
+    expect(inputName).toHaveValue('name');
+
+    const inputEmail = screen.getByLabelText(/email/i);
+    expect(inputEmail).toHaveValue('');
+    userEvent.type(inputEmail, 'test@test.com');
+    expect(inputEmail).toHaveValue('test@test.com');
+    
+
+    const inputTextArea = screen.getByLabelText(/mensagem de contato/i);
+    expect(inputTextArea).toHaveValue('');
+    
+
+    const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
+    userEvent.click(buttonSubmit);
+
+    const invalidMessageMessage = screen.getByText(/O campo "Mensagem de Contato" é obrigatório/i);
+    expect(invalidMessageMessage).toBeInTheDocument();
+    expect(inputName).not.toHaveValue('');
+    expect(inputEmail).not.toHaveValue('');
+  });
 });

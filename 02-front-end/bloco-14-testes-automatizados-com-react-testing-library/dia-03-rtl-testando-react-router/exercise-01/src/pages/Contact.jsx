@@ -20,7 +20,6 @@ class Contact extends React.Component {
     }, () => {
       const { email } = this.state; 
       const emailValidation = !!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-      console.log(this.state.invalidEmail)
       if(emailValidation) {
         this.setState({ invalidEmail: emailValidation })
       }
