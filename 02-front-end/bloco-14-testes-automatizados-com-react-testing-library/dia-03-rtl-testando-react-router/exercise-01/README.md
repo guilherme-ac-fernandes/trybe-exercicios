@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+###  Atividade de fixação 1:
+> Crie a pasta `exercise-01` e realize os seguintes requisitos:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A partir do _[repositório](https://github.com/tryber/exercise-portfolio-web)_ crie a pasta `exercise-01` e realize os seguintes requisitos:
 
-## Available Scripts
+Requisito 1 - Comece construindo as rotas com React Router e os componentes base (que são componentes sem as funcionalidades completas, apenas com um texto pequeno dentro para renderizarem na tela), e após isso teste tudo. Exemplos de rotas para seu portfólio seriam: Início, Projetos, Sobre mim e Contato.
 
-In the project directory, you can run:
+* Teste que o clique em cada rota renderiza os textos esperados na tela.
 
-### `npm start`
+* Teste com o histórico que as urls corretas são acessadas após cada clique.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Teste que, ao clicar num componente, o texto do componente que estava renderizado some da tela!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Observação:  Daqui em diante, para cada um dos requisitos abaixo, você deve escrever os testes antes de ir para o próximo. É muito importante testar a sua aplicação aos poucos, ao longo do desenvolvimento. 
 
-### `npm test`
+**Escolha três itens para incluir no seu portfólio, e inclua os demais como bônus:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Requisito 2 - Seu nome completo e uma foto atual sua, onde o texto alternativo deve ser a descrição da foto que você está exibindo;
 
-### `npm run build`
+* Teste o nome normalmente e, na imagem, não esqueça de verificar o `src` e o `alt`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Requisito 3 - Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Requisito 4 - Uma lista de habilidades que você possui e destacar a que você mais se orgulha;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Para testar o destaque, você poderá usar a classe dele ou o tipo de tag que usou. Caso existam mais elementos com a mesma classe ou tag, você poderá usar o `datatest-id` para certificar que o elemento é o correto.
 
-### `npm run eject`
+Requisito 5 - Um link externo para o seu `github`, que abra em uma nova aba;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Requisito 6 - Um índice com links internos para as diferentes seções do seu portfólio, agora separadas por páginas, utilizando React Router.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Teste cada um separadamente, não se esqueça de usar o `history` para reiniciar o estado de cada teste.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
