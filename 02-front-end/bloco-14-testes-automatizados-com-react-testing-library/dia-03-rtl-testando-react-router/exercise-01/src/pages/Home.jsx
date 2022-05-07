@@ -18,7 +18,7 @@ class Home extends React.Component {
             return <li key={ index }>{skill}</li>
           } )}
         </ul>
-        <a  href="https://github.com/guilherme-ac-fernandes">GitHub</a>
+        <a  href="https://github.com/guilherme-ac-fernandes" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     );
   }

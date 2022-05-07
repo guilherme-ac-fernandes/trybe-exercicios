@@ -1,10 +1,11 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 import userEvent from '@testing-library/user-event'
 import renderWithRouter from './helpers/renderWithRouter';
-import { act } from 'react-dom/test-utils';
 import App from './App';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 describe('Teste de renderização das rotas do portfólio', () => {
   it('verifica a renderização do componente App', () => {
@@ -108,9 +109,43 @@ describe('Teste de renderização das rotas do portfólio', () => {
       const profileSkill = screen.getByText(skill);
     expect(profileSkill).toBeInTheDocument();
     });
-
   });
 
- 
-  
+  // Avalia os Elementos no Contact renderizando o componente
+  it('verifica a renderização dos elementos na página contact', () => {
+    renderWithRouter(<Contact />);
+
+    const inputName = screen.getByLabelText(/nome/i);
+    expect(inputName).toBeInTheDocument();
+
+    const inputEmail = screen.getByLabelText(/email/i);
+    expect(inputEmail).toBeInTheDocument();
+
+    const inputTextArea = screen.getByLabelText(/mensagem de contato/i);
+    expect(inputTextArea).toBeInTheDocument();
+
+    const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
+    expect(buttonSubmit).toBeInTheDocument();
+  });
+
+  // Avalia os Elementos no Contact a partir do App
+  it('verifica a renderização dos elementos na página contact a partir do App', () => {
+    const { history } = renderWithRouter(<App />);
+
+    act(() => {
+      history.push('/contact');
+    });
+
+    const inputName = screen.getByLabelText(/nome/i);
+    expect(inputName).toBeInTheDocument();
+
+    const inputEmail = screen.getByLabelText(/email/i);
+    expect(inputEmail).toBeInTheDocument();
+
+    const inputTextArea = screen.getByLabelText(/mensagem de contato/i);
+    expect(inputTextArea).toBeInTheDocument();
+
+    const buttonSubmit = screen.getByRole('button', { name: /enviar/i });
+    expect(buttonSubmit).toBeInTheDocument();
+  });
 });

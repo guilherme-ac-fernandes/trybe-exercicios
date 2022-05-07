@@ -68,7 +68,7 @@ class Contact extends React.Component {
 
         <br />
 
-        <label htmlFor="eamil">
+        <label htmlFor="email">
           Email:
           <input 
             type="email" 
@@ -94,7 +94,7 @@ class Contact extends React.Component {
           />
         </label>
         {message.length === 0 && buttonStatus && <span>O campo "Mensagem de Contato" é obrigatório</span>}
-        <button type="submit" onClick={ this.handleClick } >Enviar</button>
+        <button type="submit" onClick={ this.handleClick }>Enviar</button>
       </div>
     );
   }
