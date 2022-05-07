@@ -5,7 +5,7 @@ class Home extends React.Component {
   render() {
     const skills = ['HTML', 'CSS', 'Javascript', 'Jest', 'React']
     return (
-      <div data-testid="home-title">
+      <div data-testid="home-container">
         <h2>Guilherme Augusto do Carmo Fernandes</h2>
         <img src={photo} alt="Guilherme Fernandes" width="200px" />
         <p>Brasileiro, atualmente em Contagem/MG</p>

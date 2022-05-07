@@ -26,7 +26,7 @@ describe('Teste de renderização das rotas do portfólio', () => {
     const { location: { pathname } } = history;
     expect(pathname).toBe('/about');
 
-    const homeTitle = screen.queryByTestId('home-title');
+    const homeTitle = screen.queryByTestId('home-container');
     expect(homeTitle).not.toBeInTheDocument();
 
     const aboutTitle = screen.getByTestId('about-title');
@@ -44,7 +44,7 @@ describe('Teste de renderização das rotas do portfólio', () => {
     const { location: { pathname } } = history;
     expect(pathname).toBe('/contact');
 
-    const homeTitle = screen.queryByTestId('home-title');
+    const homeTitle = screen.queryByTestId('home-container');
     expect(homeTitle).not.toBeInTheDocument();
 
     const contactTitle = screen.getByTestId('contact-title');
@@ -61,7 +61,7 @@ describe('Teste de renderização das rotas do portfólio', () => {
 
     const { location: { pathname } } = history;
     expect(pathname).toBe('/');
-    const homeTitle = screen.getByTestId('home-title');
+    const homeTitle = screen.getByTestId('home-container');
     expect(homeTitle).toBeInTheDocument();
   });
 
@@ -76,7 +76,7 @@ describe('Teste de renderização das rotas do portfólio', () => {
     const { location: { pathname } } = history;
     expect(pathname).toBe('/projects');
 
-    const homeTitle = screen.queryByTestId('home-title');
+    const homeTitle = screen.queryByTestId('home-container');
     expect(homeTitle).not.toBeInTheDocument();
 
     const projectsTitle = screen.getByTestId('projects-title');

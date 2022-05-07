@@ -50,8 +50,8 @@ class Contact extends React.Component {
   render() {
     const { name, email, invalidEmail, message, buttonStatus } = this.state;
     return (
-      <div data-testid="contact-title">
-
+      <div>
+        <h3 data-testid="contact-title">Contact</h3>
         <label htmlFor="name">
           Nome:
           <input 
