@@ -111,20 +111,6 @@ describe('Teste de renderização das rotas do portfólio', () => {
 
   });
 
-  // Avalia se o link rediciona para o link do gitHub
-  // https://reactjs.org/docs/test-utils.html#act
-  // it('verifica a renderização da página do gitHub', async () => {
-  //   const { history, debug } = renderWithRouter(<Home/>);
-  //   const linkGitHub = screen.getByRole('link', { name: /GitHub/i });
-  //   userEvent.click(linkGitHub);
-  //   history.push = jest.fn();
-  //   act(() => {
-  //     history.push('https://github.com/guilherme-ac-fernandes');
-  //   })
-
-  //   console.log(debug);
-  //   const profileGitHub = await screen.findtByText(/guilherme fernandes/i);
-  //   expect(profileGitHub).toBeInTheDocument();
-  // })
+ 
   
 });

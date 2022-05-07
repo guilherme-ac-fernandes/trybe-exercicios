@@ -11,7 +11,12 @@ class Home extends React.Component {
         <p>Brasileiro, atualmente em Contagem/MG</p>
         <h4>Habilidades</h4>
         <ul>
-          {skills.map((skill, index) => <li key={ index }>{skill}</li> )}
+          {skills.map((skill, index) => {
+            if(skill === 'Javascript') {
+              return <li key={ index } className="skills-decoration">{skill}</li>
+            }
+            return <li key={ index }>{skill}</li>
+          } )}
         </ul>
         <a  href="https://github.com/guilherme-ac-fernandes">GitHub</a>
       </div>

@@ -21,3 +21,7 @@
 .App-link {
   color: #61dafb;
 }
+
+.skills-decoration {
+  text-decoration: underline;
+}
