@@ -107,8 +107,12 @@ describe('Teste de renderização das rotas do portfólio', () => {
     const skills = ['HTML', 'CSS', 'Javascript', 'Jest', 'React']
     skills.forEach((skill) => {
       const profileSkill = screen.getByText(skill);
-    expect(profileSkill).toBeInTheDocument();
+      expect(profileSkill).toBeInTheDocument();
     });
+
+    // Avalia destaque em uma habilidade
+    const skill = screen.getByTestId('skills');
+    expect(skill).toBeInTheDocument();
   });
 
   // Avalia os Elementos no Contact renderizando o componente

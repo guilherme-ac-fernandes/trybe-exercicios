@@ -13,7 +13,7 @@ class Home extends React.Component {
         <ul>
           {skills.map((skill, index) => {
             if(skill === 'Javascript') {
-              return <li key={ index } className="skills-decoration">{skill}</li>
+              return <li key={ index } className="skills-decoration" data-testid="skills">{skill}</li>
             }
             return <li key={ index }>{skill}</li>
           } )}
