@@ -17,7 +17,7 @@ Requisito 1 - Comece construindo as rotas com React Router e os componentes base
 
 Requisito 2 - Seu nome completo e uma foto atual sua, onde o texto alternativo deve ser a descrição da foto que você está exibindo;
 
-* Teste o nome normalmente e, na imagem, não esqueça de verificar o `src` e o `alt`.
+* Teste o nome normalmente e a imagem.
 
 Requisito 3 - Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
 
