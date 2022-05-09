@@ -115,7 +115,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 14.1: RTL - Primeiros passos
 - [X] 14.2: RTL - Mocks e Inputs
 - [X] 14.3: RTL - Testando React Routes
-- [ ] 14.4: Projeto - Teste em React
+- [X] 14.4: Projeto - Teste em React
 
 #### Bloco 15: Gerenciamento de estado com Redux
 
