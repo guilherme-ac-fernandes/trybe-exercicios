@@ -43,6 +43,8 @@
               ...state,
               nome: action.nome,
               sobrenome: action.sobrenome,
+              endereco: action.endereco,
+              cidade: action.cidade,
             }
           default:
             return state;
@@ -56,6 +58,8 @@
               ...state,
               nome: action.nome,
               sobrenome: action.sobrenome,
+              endereco: action.endereco,
+              cidade: action.cidade,
             }
           default:
             return state;
@@ -70,18 +74,41 @@
       const store = Redux.createStore(reducerCombinado);
 
       window.onload = () => {
+        // Inverte os valores
+        setTimeout(() => {
+        store.dispatch({ 
+          type: 'UPDATE-FIRST-NAME-LASTNAME', 
+          nome: ESTADO_INICIAL_2.nome,
+          sobrenome: ESTADO_INICIAL_2.sobrenome,
+          endereco: ESTADO_INICIAL_2.endereco,
+          cidade: ESTADO_INICIAL_2.cidade,
+        })
+        store.dispatch({ 
+          type: 'UPDATE-SECOND-NAME-LASTNAME', 
+          nome: ESTADO_INICIAL_1.nome,
+          sobrenome: ESTADO_INICIAL_1.sobrenome,
+          endereco: ESTADO_INICIAL_1.endereco,
+          cidade: ESTADO_INICIAL_1.cidade,
+        })
+        }, 4000);
+
+        // Retorna as informações iniciais
         setTimeout(() => {
           store.dispatch({ 
             type: 'UPDATE-FIRST-NAME-LASTNAME', 
-            nome: ESTADO_INICIAL_2.nome,
-            sobrenome: ESTADO_INICIAL_2.sobrenome,
+            nome: ESTADO_INICIAL_1.nome,
+            sobrenome: ESTADO_INICIAL_1.sobrenome,
+            endereco: ESTADO_INICIAL_1.endereco,
+            cidade: ESTADO_INICIAL_1.cidade,
           })
           store.dispatch({ 
             type: 'UPDATE-SECOND-NAME-LASTNAME', 
-            nome: ESTADO_INICIAL_1.nome,
-            sobrenome: ESTADO_INICIAL_1.sobrenome,
+            nome: ESTADO_INICIAL_2.nome,
+            sobrenome: ESTADO_INICIAL_2.sobrenome,
+            endereco: ESTADO_INICIAL_2.endereco,
+            cidade: ESTADO_INICIAL_2.cidade,
           })
-        }, 2000);
+        }, 8000);
       };
 
       store.subscribe(() => {
@@ -89,16 +116,23 @@
         // Primeiro Reducer
         const firstName1 = document.getElementById('nome-1');
         const secondName1 = document.getElementById('sobrenome-1');
+        const address1 = document.getElementById('endereco-1');
+        const city1 = document.getElementById('cidade-1');
         firstName1.innerText = meuPrimeiroReducer.nome;
         secondName1.innerText = meuPrimeiroReducer.sobrenome;
+        address1.innerText = meuPrimeiroReducer.endereco;
+        city1.innerText = meuPrimeiroReducer.cidade;
 
         // Segundo Reducer
         const firstName2 = document.getElementById('nome-2');
         const secondName2 = document.getElementById('sobrenome-2');
+        const address2 = document.getElementById('endereco-2');
+        const city2 = document.getElementById('cidade-2');
         firstName2.innerText = meuSegundoReducer.nome;
         secondName2.innerText = meuSegundoReducer.sobrenome;
+        address2.innerText = meuSegundoReducer.endereco;
+        city2.innerText = meuSegundoReducer.cidade;
       });
-
     </script>
   </body>
 </html>

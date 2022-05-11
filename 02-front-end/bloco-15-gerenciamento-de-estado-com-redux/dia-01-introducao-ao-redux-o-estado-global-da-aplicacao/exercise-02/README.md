@@ -77,7 +77,3 @@ window.onload = () => {
 ```
 
 Requisito 5 - Adicione um `store.subscribe()` para atualizar as informações na página de acordo com o que temos armazenado na store. Quando a página carregar o nome renderizado deve ser alterado após alguns segundos.
-
-
-
-
