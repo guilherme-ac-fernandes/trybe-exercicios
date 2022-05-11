@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p id="value-text">Color: <span id="value">white</span></p>
+      <button id="previous">Previous color</button>
+      <button id="next">Next color</button>
+      <button id="random-color">Random color</button>
+    </div>
+    <script>
+
+      const previousButton = document.getElementById('previous');
+      const nextButton = document.getElementById('next');
+      const container = document.getElementById('container');
+      const colorText = document.getElementById('value');
+      const paragraph = document.getElementById('value-text');
+      const randomButton = document.getElementById('random-color');
+      
+      const ESTADO_INICIAL = {
+        colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+        index: 0,
+      };
+
+      function criarCor() {
+        const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        let cor = '#';
+        const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+        for (let i = 0; i < 6; i += 1) {
+            cor += oneChar[aleatorio()];
+        }
+        return cor;
+      }
+
+      const reducer = (state = ESTADO_INICIAL, action) => {
+        // Função do reducer case next e previous color proveniente do course da Trybe (source: https://app.betrybe.com/course/front-end/gerenciamento-de-estado-com-redux/introducao-ao-redux/solutions/7d8fc01a-2613-45a7-89f0-9273cf0bee76/conteudo/78c6e22e-ef73-4a69-8ce8-bd534dcbc32f?use_case=calendar)
+        const { index, colors } = state;
+        switch (action.type) {
+          case 'NEXT_COLOR':
+            return {
+              ...state,
+              index: index === colors.length - 1 ? 0 : index + 1,
+            }
+          case 'PREVIOUS_COLOR':
+            return {
+              ...state,
+              index: index === 0 ? colors.length - 1 : index - 1,
+            }
+            case 'NEW_COLOR':
+            const newColor = criarCor();
+            return {
+              colors: [...colors, newColor],
+              index: colors.length,
+            }
+          default:
+            return state;
+        }
+      }
+
+      const store = Redux.createStore(reducer);
+
+      previousButton.addEventListener('click', () => {
+        store.dispatch({ type: 'PREVIOUS_COLOR' });
+      });
+
+      nextButton.addEventListener('click', () => {
+        store.dispatch({ type: 'NEXT_COLOR' });
+      });
+
+      randomButton.addEventListener('click', () => {
+        store.dispatch({ type: 'NEW_COLOR' });
+      });
+
+      store.subscribe(() => {
+        const { colors, index } = store.getState();
+        console.log(colors, index)
+        const selectColor = colors[index];
+        if (selectColor === 'black') {
+          paragraph.style.color = 'white';
+          colorText.style.color = 'white';
+        } else {
+          paragraph.style.color = 'black';
+          colorText.style.color = 'black';
+        }
+        container.style.backgroundColor = selectColor;
+        colorText.innerText = selectColor;
+      });
+
+    </script>
+  </body>
+</html>
