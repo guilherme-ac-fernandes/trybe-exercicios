@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux';
+import { updatePersonalAction } from '../redux/actions/action';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import Select from '../components/Select';
@@ -31,6 +32,8 @@ class PersonalForm extends Component {
       'Rio de Janeiro',
       'Minas Gerais',
       'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
+    const { onSubmitPersonal } = this.props;
+    const personalFormsObject = { nome, email, cpf, endereco, cidade, estado };
     return (
       <fieldset>
         <Input
@@ -84,11 +87,15 @@ class PersonalForm extends Component {
         <Button
           type="button"
           label="Enviar"
-          onClick={ () => console.log('Ao clicar, envie a informação do formulário') }
+          onClick={ () => onSubmitPersonal(personalFormsObject) }
         />
       </fieldset>
     );
   }
 }
 
-export default PersonalForm;
+const mapDispatchToProps = (dispatch) => ({
+  onSubmitPersonal: (payload) => dispatch(updatePersonalAction(payload))
+});
+
+export default connect(null, mapDispatchToProps)(PersonalForm);
