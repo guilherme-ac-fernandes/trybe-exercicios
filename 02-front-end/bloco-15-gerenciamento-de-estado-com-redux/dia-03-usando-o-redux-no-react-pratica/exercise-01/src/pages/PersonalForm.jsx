@@ -32,7 +32,7 @@ class PersonalForm extends Component {
       'Rio de Janeiro',
       'Minas Gerais',
       'Amapá', 'Amazonas', 'São Paulo', 'Ceará', 'Distrito Federal'];
-    const { onSubmitPersonal } = this.props;
+    const { onSubmitPersonal, history } = this.props;
     const personalFormsObject = { nome, email, cpf, endereco, cidade, estado };
     return (
       <fieldset>
@@ -87,7 +87,10 @@ class PersonalForm extends Component {
         <Button
           type="button"
           label="Enviar"
-          onClick={ () => onSubmitPersonal(personalFormsObject) }
+          onClick={ () => {
+            onSubmitPersonal(personalFormsObject);
+            history.push('/professionalform');
+          }}
         />
       </fieldset>
     );
@@ -95,7 +98,7 @@ class PersonalForm extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  onSubmitPersonal: (payload) => dispatch(updatePersonalAction(payload))
+  onSubmitPersonal: (payload) => dispatch(updatePersonalAction(payload)),
 });
 
 export default connect(null, mapDispatchToProps)(PersonalForm);

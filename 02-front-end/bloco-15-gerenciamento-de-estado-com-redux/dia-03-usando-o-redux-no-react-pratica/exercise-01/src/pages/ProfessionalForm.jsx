@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux';
+import { updateProfissionalAction } from '../redux/actions/action';
 import Input from '../components/Input';
 import TextArea from '../components/TextArea';
 import Button from '../components/Button';
@@ -22,6 +23,8 @@ class ProfessionalForm extends Component {
 
   render() {
     const { curriculo, cargo, descricao } = this.state;
+    const { onSubmitProfissional, history } = this.props;
+    const profissionalFormsObject = { curriculo, cargo, descricao };
     return (
       <fieldset>
         <TextArea
@@ -50,11 +53,18 @@ class ProfessionalForm extends Component {
         />
         <Button
           label="enviar"
-          onClick={ () => console.log('Envia as informações para a store') }
+          onClick={ () => {
+            onSubmitProfissional(profissionalFormsObject);
+            history.push('/formdisplay');
+          }}
         />
       </fieldset>
     );
   }
 }
 
-export default ProfessionalForm;
+const mapDispatchToProps = (dispatch) => ({
+  onSubmitProfissional: (payload) => dispatch(updateProfissionalAction(payload)),
+});
+
+export default connect(null, mapDispatchToProps)(ProfessionalForm);

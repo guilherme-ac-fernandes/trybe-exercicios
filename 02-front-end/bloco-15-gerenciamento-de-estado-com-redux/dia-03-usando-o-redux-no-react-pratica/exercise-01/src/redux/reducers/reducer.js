@@ -1,7 +1,8 @@
-import { SUBMIT_PERSONAL } from '../actions/action';
+import { SUBMIT_PERSONAL, SUBMIT_PROFISSIONAL } from '../actions/action';
 
 const INICIAL_STATE = {
   personalForms: {},
+  profissionalForms: {},
 };
 
 const reducer = (state = INICIAL_STATE, action) => {
@@ -10,7 +11,12 @@ const reducer = (state = INICIAL_STATE, action) => {
     case SUBMIT_PERSONAL:
       return {
         ...state,
-        personalForms: { ...action.payload }
+        personalForms: { ...action.payload },
+      };
+    case SUBMIT_PROFISSIONAL:
+      return {
+        ...state,
+        profissionalForms: { ...action.payload },
       };
     default:
       return state;
