@@ -1,5 +1,10 @@
 import { createStore } from 'redux';
+import { combineReducers } from 'redux';
+import carsReducer from './carsReducer';
+import TrafficSignalReducer from './TrafficSignalReducer';
 
-const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const rootReducer = combineReducers({ carsReducer, TrafficSignalReducer });
+
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default store;
