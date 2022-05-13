@@ -1,5 +1,5 @@
 ###  Atividade de fixação 2:
-> A partir da _[branch exercise-two(https://github.com/tryber/exercise-react-with-redux-intro/tree/exercise-two)_ crie a pasta `exercise-02` e realize o seguinte requisito:
+> A partir da _[branch exercise-two](https://github.com/tryber/exercise-react-with-redux-intro/tree/exercise-two)_ crie a pasta `exercise-02` e realize o seguinte requisito:
 
 Requisito 1 - Como segunda tarefa, você deve usar o `Redux` para gerenciar o estado do componente `Cars`. As funções `mapStateToProps` e `mapDispatchToProps` devem ser usadas para conectar o componente ao estado do `Redux`.
 
