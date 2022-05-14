@@ -1,85 +1,25 @@
-# Exercício de fixação
-Vamos criar formulários utilizando `Redux`! \o/
-# Antes de iniciar
-
-Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
-
-Após feito o fork, clone o repositório criado para o seu computador.
-
-Rode o `npm install`.
-
-Vá para a branch master do seu projeto e execute o comando:
-
-`git branch` ou `git branch -a`
-
-Verifique se a a branch `master` apareceu:
-
-* O exercício deverá ser feito na branch `master`.
 
 
-Observe o que deve ser feito nas instruções.
+###  Atividade de fixação 2:
+> Crie a pasta `exercise-02` e realize o seguinte requisito:
 
-Após a solução dos exercícios, abra um PR no seu repositório forkado e, se quiser, mergeie para a master, sinta-se a vontade!
+Essa aplicação consiste na criação de um sistema de cadastro de clientes. Esse sistema deve ser composto por 4 páginas.
 
-**Atenção**! Quando for criar o PR você irá se deparar com essa tela:
+Requisito 1 - A primeira página deve ser a `Home`. Ela deverá ter um `Link` que possibilite ao usuário navegar para a página de login.
 
-![exemple-pr](images/examplepr.png)
+Requisito 2 - A segunda página será a de `Login`. Devem existir 2 campos para pegar os dados do usuário (email e senha). Após o login ser efetuado, o usuário deve ser redirecionado para a página de `Clientes Cadastrados`.
 
-É necessário realizar uma mudança. Clique no base repository como na imagem abaixo:
+Requisito 3 - Caso o login não seja feito, ou seja, o usuário tenha mudado à mão o link do sistema e ido para a página de cadastro ou de clientes, a única mensagem exibida deve ser: `Login não efetuado`.
 
-![exemple-pr](images/change-base.png)
+Requisito 4 - A página de `Clientes Cadastrados` deverá listar todos os clientes. Caso não haja cliente, a mensagem `Nenhum cliente cadastrado` deve aparecer na tela, juntamente com um botão para ir à pagina de cadastro. Esse botão deve permanecer na tela mesmo caso hajam clientes.
 
-Mude para o seu repositório. Seu nome estará na frente do nome dele, por exemplo: `antonio/forms-redux`. Depois desse passo a página deve ficar assim:
+Requisito 5 - A página de cadastro deve conter 3 inputs, para pegar 3 dados do cliente: nome, idade e email. Um botão deve gerar o cadastro. Deve haver também na página um botão que leve o usuário para a página de `Clientes Cadastrados`.
 
-![exemple-pr](images/after-change.png)
+> Observação: Estados que não necessitem navegar para outros componentes, podem ser guardados internamente. Todos os outros devem ser trafegados via Redux.
 
-Agora basta criar o PULL REQUEST clicando no botão `Create Pull Request`.
+Requisito 6 - Na página de `Clientes Cadastrados, crie um botão que ordene os clientes em ordem alfabética a partir do campo nome. Caso o botão seja clicado novamente, a ordenação original deve ser mostrada.
 
-Para cada PR realize esse processo.
+Requisito 7 - Cada cadastro deve ser acompanhado de um botão com o texto `X`. Caso o botão seja clicado, o cadastro deve ser excluído.
 
----
 
-# COMEÇANDO O EXERCÍCIO
 
-**Atenção**! A branch `master` possui a estrutura do formulário pronta, necessitando apenas da implementação do Redux. Se preferirem criar os formulários desde o início, basta acessar a branch `exercise-react-redux` e seguir as instruções descritas no README.
-
-Vocês implementarão o Redux para dois formulários, cada um em uma etapa, um para dados pessoais e outro para dados profissionais e exibí-los na tela.
-
-Lembrando que os formulários já estão criados, não é necessário criar novos arquivos além dos propostos para a execução do exercício.
-
-![forms-redux](form-redux.gif)
-
-Para isso, é preciso salvar as informações de cada formulário no gerenciador de estados e, por fim, numa outra página, acessar esses dados para que sejam renderizados.
-
-Você vai precisar de:
-
-* Gerenciador de estados (Reeeedux), para salvar as informações na `store` e também para acessá-las.
-
-Então, mãos ao código!!
-
-**1 - Implemente o Redux:**
-- Dentro de uma pasta "redux", crie as pastas "actions", "reducers" e "store".
-- Dentro de "actions" crie um arquivo chamado `action.js`.
-- Dentro de "reducers" crie um arquivo chamado `reducer.js` e, caso necessário, um arquivo `index.js` para usar o `combineReducers`.
-- Dentro de "store" crie um arquivo chamado `store.js`.
-- Implemente o `reducer`.
-- Implemente a `store`.
-- Implemente as `actions`.
-
-**Dicas:** 
-- De início, você pode implementar seu reducer apenas com o valor `default`.
--  O `composeWithDevTools` pode te ajudar.
-
-_Lembre-se que, ao montar a estrutura do Redux, é preciso importar o `Provider`, que recebe a `store`, no `index.js`._
-
-**Dica:** Caso esteja tendo dificuldades para montar a estrutura do Redux, você pode consultar o passo a passo que está nesse [link!](https://app.betrybe.com/course/front-end/gerenciamento-de-estado-com-redux/usando-o-redux-no-react/a2dac445-434c-4690-83da-7ebef1aad2cd/conteudos/cfc29dbb-9243-4450-baa6-6da6ac0d0674/fluxo-de-dados-no-redux/4341ae67-1e44-4a06-84dc-0f1f87a56f0f?use_case=side_bar)
-
-_Lembre-se de fazer as importações corretas para o bom funcionamento da sua aplicação._
-
-**2 - Salve as informações das páginas `PersonalForm` e `ProfessionalForm` na `store`.**
-
-**Dica:** Lembre-se que o `mapStateToProps` lê as informações da `store` e o `mapDispatchToProps` envia as informações para a `store`.
-
-**3 - Renderize, em `FormDataDisplay`, todas as informações que estão salvas na `store`.**
-
----
