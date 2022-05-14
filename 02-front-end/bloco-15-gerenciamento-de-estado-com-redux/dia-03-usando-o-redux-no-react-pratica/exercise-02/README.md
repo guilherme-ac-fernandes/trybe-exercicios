@@ -17,7 +17,7 @@ Requisito 5 - A página de cadastro deve conter 3 inputs, para pegar 3 dados do 
 
 > Observação: Estados que não necessitem navegar para outros componentes, podem ser guardados internamente. Todos os outros devem ser trafegados via Redux.
 
-Requisito 6 - Na página de `Clientes Cadastrados, crie um botão que ordene os clientes em ordem alfabética a partir do campo nome. Caso o botão seja clicado novamente, a ordenação original deve ser mostrada.
+Requisito 6 - Na página de `Clientes Cadastrados`, crie um botão que ordene os clientes em ordem alfabética a partir do campo nome. Caso o botão seja clicado novamente, a ordenação original deve ser mostrada.
 
 Requisito 7 - Cada cadastro deve ser acompanhado de um botão com o texto `X`. Caso o botão seja clicado, o cadastro deve ser excluído.
 
