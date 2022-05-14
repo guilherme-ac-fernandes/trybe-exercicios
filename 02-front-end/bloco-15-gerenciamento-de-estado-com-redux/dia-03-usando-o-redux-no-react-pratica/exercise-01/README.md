@@ -28,7 +28,7 @@ Requisito 1 -  Implemente o Redux:
 * Implemente as `actions`.
 
 
-Requisito 2 - Salve as informações das páginas PersonalForm e ProfessionalForm na store.
+Requisito 2 - Salve as informações das páginas `PersonalForm` e `ProfessionalForm` na store.
 
 > Dica: Lembre-se que o `mapStateToProps` lê as informações da `store` e o `mapDispatchToProps` envia as informações para a `store`.
 
