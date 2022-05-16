@@ -10,7 +10,7 @@ Já o componente `characterInfo` exibe na tela informações obtidas através da
 
 Requisito 1 -  Crie o `thunk` que fará a requisição para a API e as `actions` referentes ao retorno com sucesso ou falha na dita requisição.
 
-Requisito 2 -  Crie o `Reducer` que tratará as `actions criadas no passo 1 e insira-o no `combineReducers`. 
+Requisito 2 -  Crie o `Reducer` que tratará as `actions criadas no passo 1 e insira-o no` combineReducers`. 
 
 * Importante: a API retorna uma array com um único objeto, logo você precisa acessar a posição correta do array para, em seguida, se utilizar do objeto.
 
