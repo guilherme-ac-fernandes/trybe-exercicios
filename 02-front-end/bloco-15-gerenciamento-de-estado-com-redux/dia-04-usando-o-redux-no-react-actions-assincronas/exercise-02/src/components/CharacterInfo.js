@@ -5,8 +5,9 @@ import { connect } from 'react-redux';
 class CharacterInfo extends React.Component {
   render() {
     const { loading, character, error } = this.props;
+    console.log(character);
 
-    if (!loading && character) {
+    if (!loading && ('name' in character)) {
       return (
         <ul>
           <li>Name: {character.name}</li>
@@ -30,7 +31,7 @@ const mapStateToProps = (state) => ({
 
 CharacterInfo.propTypes = {
   loading: PropTypes.bool.isRequired,
-  character: PropTypes.arrayOf(PropTypes.object).isRequired,
+  character: PropTypes.objectOf(PropTypes.object).isRequired,
   error: PropTypes.string.isRequired,
 };
 

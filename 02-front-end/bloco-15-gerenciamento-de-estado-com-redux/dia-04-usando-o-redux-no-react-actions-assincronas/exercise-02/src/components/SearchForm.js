@@ -25,17 +25,17 @@ class SearchForm extends React.Component {
 
   submitName(e) {
     e.preventDefault();
-    const { inputText, fetchCharacter } = this.state;
-    //desestruture a ação do thunk como propriedade aqui
-    console.log(inputText, fetchCharacter);
+    const { inputText } = this.state;
+    const { apiRequest } = this.props;
     
-
     this.setState({
       inputText: '',
       characterSearched: inputText,
+    }, () => {
+      const { characterSearched } = this.state;
+      console.log(characterSearched);
+      apiRequest(characterSearched);
     })
-    // insira a action a ser despachada para o thunk
-    fetchCharacter(inputText);
   }
 
   render() {
@@ -59,12 +59,12 @@ class SearchForm extends React.Component {
 
 
 SearchForm.propTypes = {
-  //faça as proptypes da ação oriunda do thunk
+  apiRequest: PropTypes.func.isRequired,
 };
 
 // mapeie as ações despachadas como propriedade do componente
 const mapDispatchToProps = (dispatch) => ({
-  fetchCharacter: (inputText) => dispatch(fetchCharacter(inputText)),
+  apiRequest: (char) => dispatch(fetchCharacter(char)),
 });
 
 
