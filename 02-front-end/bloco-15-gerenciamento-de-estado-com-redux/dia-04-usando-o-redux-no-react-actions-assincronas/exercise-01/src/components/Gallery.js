@@ -23,7 +23,7 @@ Gallery.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  imgPath: state.gallery.imgURL.file,
+  imgPath: state.gallery.imgURL.url,
   isLoading: state.gallery.isLoading,
   useDefaultImg: state.gallery.defaultImg,
 });

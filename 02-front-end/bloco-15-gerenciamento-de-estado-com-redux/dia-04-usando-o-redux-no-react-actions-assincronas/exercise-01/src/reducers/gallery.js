@@ -18,7 +18,7 @@ function gallery(state = INITIAL_STATE, action) {
     return {
       ...state,
       isLoading: false,
-      imgURL: action.data,
+      imgURL: action.data[0],
       defaultImg: false,
     };
   default:
