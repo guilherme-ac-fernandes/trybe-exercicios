@@ -13,7 +13,7 @@ Requisito 1 - Faça as implementações necessárias na `store`.
 
 Requisito 1 - No arquivo `actions/index.js`, desenvolva a `action` assíncrona necessária para a aplicação rodar adequadamente. Essa `action` assíncrona deverá fazer o uso de outras duas `actions`:
 
-> Da requestAPI: para informar ao usuário que a informação solicitada está carregando
+> Da requestAPI: para informar ao usuário que a informação solicitada está carregando.
 >
 > Da getPicture: para salvar no estado global da aplicação a URL da imagem solicitada da API.
 >
