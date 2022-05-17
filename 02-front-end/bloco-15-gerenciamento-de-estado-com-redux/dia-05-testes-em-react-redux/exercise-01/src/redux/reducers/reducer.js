@@ -6,7 +6,6 @@ const INICIAL_STATE = {
 };
 
 const reducer = (state = INICIAL_STATE, action) => {
-  console.log(action)
   switch (action.type) {
     case SUBMIT_PERSONAL:
       return {

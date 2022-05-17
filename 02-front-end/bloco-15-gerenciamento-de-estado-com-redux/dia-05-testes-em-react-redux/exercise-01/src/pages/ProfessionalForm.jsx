@@ -33,6 +33,8 @@ class ProfessionalForm extends Component {
           name="curriculo"
           maxLength="1000"
           onChange={ this.handleChange }
+          id="curriculo"
+          testId="resumo-curriculo"
           required
         />
         <Input
@@ -41,6 +43,7 @@ class ProfessionalForm extends Component {
           type="text"
           value={ cargo }
           onChange={ this.handleChange }
+          id="cargo"
           required
         />
         <TextArea
@@ -49,6 +52,8 @@ class ProfessionalForm extends Component {
           maxLength="500"
           onChange={ this.handleChange }
           value={ descricao }
+          id="descricao"
+          testId="descricao"
           required
         />
         <Button
