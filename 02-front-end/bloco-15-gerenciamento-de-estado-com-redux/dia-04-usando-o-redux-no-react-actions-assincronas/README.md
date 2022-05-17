@@ -1,4 +1,4 @@
-### Gerenciamento de estado com Redux
+### Usando o Redux no React - Actions Assíncronas
 
 ####  Atividade de fixação:
 > Crie as pastas `exercise-01`, `exercise-02` e `exercise-03` para conter o exercício.
