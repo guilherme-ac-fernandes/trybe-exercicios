@@ -5,9 +5,9 @@
 
 O Reddit é uma comunidade na qual pessoas conseguem criar grupos de discussão acerca de algum assunto. Tal grupo é chamado de `subreddit`. Para cada `subreddit` pessoas podem fazer postagens. Como exercício, você vai fazer uma aplicação que permite a quem usá-la ver posts referentes a 2 `subreddits`:
 
-* 1. reactjs
+1. reactjs
 
-* 2. frontend
+2. frontend
 
 Sua aplicação deve permitir a quem usá-la poder escolher de qual `subreddit` se deseja ver as postagens. No momento que selecionar o `subreddit`, uma requisição precisa ser feita no `reddit` para buscar os posts referentes ao `subreddit` escolhido. Para cada postagem você precisa mostrar pelo menos o título do post. Além disso, sua aplicação deve permitir a quem usá-la a possibilidade de atualizar a lista de postagens referentes ao `subreddit` escolhido.
 
