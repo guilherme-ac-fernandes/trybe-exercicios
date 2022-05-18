@@ -1,13 +1,92 @@
 import { screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderWithRedux from './helpers/renderWithRedux';
+import renderWithRouterAndRedux from './helpers/renderWithRouterAndRedux';
 import PersonalForm from './pages/PersonalForm';
 import ProfessionalForm from './pages/ProfessionalForm';
 import App from './App';
 import FormDataDisplay from './pages/FormDataDisplay';
 import userEvent from '@testing-library/user-event';
 
-describe('Testes para avaliar comportamento do formuário que verifica', () => {
+describe('Testes para avaliar comportamento do formulário com renderWithRouterAndRedux', () => {
+  it('renderização do App sem nenhum dado no store', () => {
+    renderWithRouterAndRedux(<App />);
+  
+    const button = screen.getByRole('button', { name: /enviar/i });
+    expect(button).toBeInTheDocument();
+  });
+
+  it('renderização do FormDataDisplay a partir do App sem nenhum dado no store', () => {
+    renderWithRouterAndRedux(<FormDataDisplay />);
+
+    const title = screen.getByRole('heading', { name: /dados enviados/i, level: 2 });
+    expect(title).toBeInTheDocument();
+
+    const stringsForm = [
+      /Guilherme Fernandes/i,
+      /test@test.com/i,
+      /12345678910/i,
+      /Rua teste/i, 
+      /Belo Horizonte/i,
+      /Minas Gerais/i,
+      /Engenheiro Químico/i, 
+      /Futuro Dev/i,
+      /Estudante da Trybe/i,
+    ];
+
+    stringsForm.forEach((string) => {
+      const stringElement = screen.queryByText(string);
+      expect(stringElement).not.toBeInTheDocument();
+    });
+  });
+  
+  it('renderização do FormDataDisplay com os dados', () => {
+    renderWithRouterAndRedux(
+      <FormDataDisplay />, 
+      {
+        initialState: { 
+          reducer: {
+            personalForms: {
+              nome: 'Guilherme Fernandes',
+              email: 'test@test.com',
+              cpf: '12345678910',
+              endereco: 'Rua teste', 
+              cidade: 'Belo Horizonte',
+              estado: 'Minas Gerais',
+            },
+            profissionalForms: {
+              curriculo: 'Engenheiro Químico', 
+              cargo: 'Futuro Dev',
+              descricao: 'Estudante da Trybe',
+            },
+          }
+        }
+      }
+    );
+
+    const title = screen.getByRole('heading', { name: /dados enviados/i, level: 2 });
+    expect(title).toBeInTheDocument();
+
+    const stringsForm = [
+      /Guilherme Fernandes/i,
+      /test@test.com/i,
+      /12345678910/i,
+      /Rua teste/i, 
+      /Belo Horizonte/i,
+      /Minas Gerais/i,
+      /Engenheiro Químico/i, 
+      /Futuro Dev/i,
+      /Estudante da Trybe/i,
+    ];
+
+    stringsForm.forEach((string) => {
+      const stringElement = screen.getByText(string);
+      expect(stringElement).toBeInTheDocument();
+    });
+  });
+});
+
+describe('Testes para avaliar comportamento do formulário que verifica', () => {
   it('existe todos os inputs no componente PersonalForm', () => {
     renderWithRedux(<PersonalForm />);
    
@@ -144,3 +223,5 @@ describe('Testes para avaliar comportamento do formuário que verifica', () => {
     });
   });
 });
+
+
