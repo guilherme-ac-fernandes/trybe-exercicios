@@ -4,8 +4,6 @@ import { toggleAction } from '../actions/action';
 
 const getTodos = (todos, filter) => {
   switch (filter) {
-    case 'all':
-      return todos;
     case 'done':
       return todos.filter(({completed}) => completed);
     case 'progress':
@@ -21,11 +19,11 @@ const TodoList = (props) => {
     <ul>
       {getTodos(listTodo, filter).map((todo) => (
         <li 
-        key={ todo.id } 
-        onClick={() => toggle(todo.id)} 
-        style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
-        { todo.text }
-      </li>
+          key={ todo.id } 
+          onClick={() => toggle(todo.id)} 
+          style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+          { todo.text }
+        </li>
       ))}
     </ul>
   );

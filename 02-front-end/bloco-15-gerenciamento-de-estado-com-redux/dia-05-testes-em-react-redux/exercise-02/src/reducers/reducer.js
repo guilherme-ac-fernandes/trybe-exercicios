@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux';
 import { ADD_TODO, FILTER_TODOS, TOGGLE_TODOS } from "../actions/action";
 
 const INICIAL_STATE = {
@@ -35,4 +36,6 @@ const reducer = (state = INICIAL_STATE, action) => {
   }
 }
 
-export default reducer;
+const rootReducer = combineReducers({ reducer })
+
+export default rootReducer;
