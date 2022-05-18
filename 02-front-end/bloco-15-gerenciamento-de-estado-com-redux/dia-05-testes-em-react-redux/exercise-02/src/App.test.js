@@ -11,6 +11,14 @@ describe('Verifica o comportamento da aplicação em relação', () => {
 
     const listItem = screen.queryAllByRole('listitem');
     expect(listItem).toHaveLength(0);
+
+    const inputText = screen.getByLabelText(/tarefa/i);
+    userEvent.type(inputText, 'Lavar Roupa');
+    const addButton = screen.getByRole('button', { name: /adicionar/i });
+    userEvent.click(addButton);
+    
+    const listItemUpdate = screen.queryAllByRole('listitem');
+    expect(listItemUpdate).toHaveLength(1);
   });
   
   it('avalia a renderização do componente App', () => {
