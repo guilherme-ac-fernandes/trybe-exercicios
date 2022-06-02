@@ -5,5 +5,5 @@ O objetivo desse bloco foi a formação de um grupo para a construção de um jo
 <br>
 
 <p align="center">
-  <img src="https://www.qualitylogic.com/wp-content/uploads/2019/04/Agile-Test-Automation.png" alt="Metodologias ágeis"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/17.1/02-front-end/bloco-16-projeto-jogo-de-trivia/project-trivia-demo.png" alt="Projeto Trivia"/>
 </p>
