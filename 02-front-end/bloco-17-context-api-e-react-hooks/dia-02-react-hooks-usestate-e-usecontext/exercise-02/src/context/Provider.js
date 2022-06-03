@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import CarsContext from './CarsContext';
 
-function Provider({ children }) {
+function Provider({ children }){
   const [cars, setCars] = useState({
     red: false,
     blue: false,
@@ -14,7 +14,7 @@ function Provider({ children }) {
   };
   
   const contextValue = { cars, moveCar };
-  
+
   return (
     <CarsContext.Provider value={ contextValue }>
       {children}
