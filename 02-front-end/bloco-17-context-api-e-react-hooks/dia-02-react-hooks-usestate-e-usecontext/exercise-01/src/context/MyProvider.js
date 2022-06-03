@@ -3,13 +3,11 @@ import PropTypes from 'prop-types';
 import MyContext from './MyContext';
 
 function MyProvider({ children }) {
-  /* Passo 1 */
   const [orderList, setOrderList] = useState({
     comida: [],
     bebida: [],
     sobremesa: [],
   });
-
   const [updateCart, setUpdateCart] = useState(false);
 
   const showCart = () => {
@@ -20,17 +18,29 @@ function MyProvider({ children }) {
     }
   };
 
-  /* Passo 8 */
   const removeItemFromList = (orderState, indexPresentInList, itemType) => {
-    setOrderList();
+    setOrderList({
+      ...orderList,
+      [itemType]: orderState.filter((_, index) => index !== indexPresentInList),
+    });
+    // Resolução da Trybe
+    // orderState.splice(indexPresentInList, 1);
+    // setOrderList({ ...orderList, [itemType]: orderState });
   };
 
-  /* Passo 9 */
   const updateValueItemInList = (orderState, indexPresentInList, newItem) => {
-    setOrderList();
+    setOrderList({
+      ...orderList,
+      [newItem.itemType]: orderState.map((order, index) => {
+        if (index === indexPresentInList) return newItem;
+        return order;
+      })
+    });
+    // Resolução da Trybe
+    // orderState.splice(indexPresentInList, 1, newItem);
+    // setOrderList({ ...orderList, [newItem.itemType]: orderState });
   };
 
-  /* Passo 7 */
   const manageItemsInList = (newItem) => {
     const noQuantity = 0;
     const orderState = orderList[newItem.itemType];
@@ -41,16 +51,15 @@ function MyProvider({ children }) {
     updateValueItemInList(orderState, indexPresentInList, newItem);
   };
 
-  /* Passo 6 */
   const addItemToList = (newItem) => {
-    setOrderList();
+    setOrderList({
+      ...orderList,
+      [newItem.itemType]: orderList[newItem.itemType].concat(newItem),
+    });
   };
 
-  /* Passo 2 */
   const handleChange = ({ target }, itemName, itemPrice, itemType) => {
-    /* Passo 3 */
     const { value } = target;
-
     const newItem = {
       id: itemName,
       quantity: value,
@@ -58,13 +67,8 @@ function MyProvider({ children }) {
       itemType,
     };
 
-    /* Passo 4 */
-    const isPresentInList = '';
-
-    /* Passo 5 */
-    if (!isPresentInList) {
-      return addItemToList(newItem);
-    }
+    const isPresentInList = orderList[itemType].some((order) => order.id === itemName);
+    if (!isPresentInList) return addItemToList(newItem);
     manageItemsInList(newItem);
   };
 
