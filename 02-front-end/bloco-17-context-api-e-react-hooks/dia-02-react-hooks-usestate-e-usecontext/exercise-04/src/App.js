@@ -1,8 +1,6 @@
-// src/App.js
-
 import React from 'react';
 import TicTacToe from './TicTacToe';
-import './App.css';
+import './style/App.css';
 
 function App() {
   return <TicTacToe />;

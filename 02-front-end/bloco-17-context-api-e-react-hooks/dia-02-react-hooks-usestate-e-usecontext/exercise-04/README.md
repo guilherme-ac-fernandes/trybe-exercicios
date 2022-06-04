@@ -1,4 +1,3 @@
-
 ###  Atividade de fixação 4:
 > A partir da _[branch exercise-three](https://github.com/tryber/exercise-react-hooks-refactoring/tree/exercise-three)_ crie a pasta `exercise-04` e realize o seguinte requisito:
 
