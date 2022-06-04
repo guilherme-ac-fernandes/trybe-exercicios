@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import redSignal from './images/redSignal.jpeg';
-import yellowSignal from './images/yellowSignal.jpeg';
-import greenSignal from './images/greenSignal.jpeg';
-import MyContext from './context/MyContext';
+import redSignal from '../images/redSignal.jpeg';
+import yellowSignal from '../images/yellowSignal.jpeg';
+import greenSignal from '../images/greenSignal.jpeg';
+import MyContext from '../context/MyContext';
 
 const renderSignal = (signalColor) => {
   if (signalColor === 'red') return redSignal;

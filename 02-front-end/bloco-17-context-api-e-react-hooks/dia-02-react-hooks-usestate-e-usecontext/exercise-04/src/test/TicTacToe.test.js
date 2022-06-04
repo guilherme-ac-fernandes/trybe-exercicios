@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
-import TicTacToe from './TicTacToe';
+import TicTacToe from '../component/TicTacToe';
 
 afterEach(cleanup);
 

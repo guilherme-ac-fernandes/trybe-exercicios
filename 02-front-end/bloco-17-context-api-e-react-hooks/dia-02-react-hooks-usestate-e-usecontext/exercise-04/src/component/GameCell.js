@@ -1,7 +1,7 @@
 import React from 'react';
-import xImage from './image/x.png';
-import oImage from './image/o.svg';
-import './style/GameCell.css';
+import xImage from '../image/x.png';
+import oImage from '../image/o.svg';
+import '../style/GameCell.css';
 
 function GameCell({ content, onClick, id }) {
   if (content === 1) {

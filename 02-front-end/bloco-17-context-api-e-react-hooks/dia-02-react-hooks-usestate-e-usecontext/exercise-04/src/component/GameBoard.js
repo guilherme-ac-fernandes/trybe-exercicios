@@ -1,6 +1,6 @@
 import React from 'react';
 import GameCell from './GameCell';
-import './style/GameBoard.css';
+import '../style/GameBoard.css';
 
 function GameBoard({ gameState, updateGame }) {
 

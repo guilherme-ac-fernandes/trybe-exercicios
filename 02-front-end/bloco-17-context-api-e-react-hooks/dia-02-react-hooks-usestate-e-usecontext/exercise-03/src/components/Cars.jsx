@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import carBlue from './images/carBlue.jpeg';
-import carRed from './images/carRed.jpeg';
-import carYellow from './images/carYellow.jpeg';
-import MyContext from './context/MyContext';
+import carBlue from '../images/carBlue.jpeg';
+import carRed from '../images/carRed.jpeg';
+import carYellow from '../images/carYellow.jpeg';
+import MyContext from '../context/MyContext';
 
 function Cars() {
   const { cars, moveCar } = useContext(MyContext);
