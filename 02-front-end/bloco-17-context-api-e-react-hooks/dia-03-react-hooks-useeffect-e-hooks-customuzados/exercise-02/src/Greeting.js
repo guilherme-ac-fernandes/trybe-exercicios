@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 function Greeting({ initialName = '' }) {
-  const storageName = window.localStorage.getItem('name') || initialName;
+  // const storageName = window.localStorage.getItem('name') || initialName;
+  const storageName = localStorage.getItem('name') || initialName;
   const [name, setName] = useState(storageName);
 
   useEffect(() => {
-    window.localStorage.setItem('name', name);
+    // window.localStorage.setItem('name', name);
+    localStorage.setItem('name', name);
   }, [name]);
 
   function handleChange({ target: { value } }) {
