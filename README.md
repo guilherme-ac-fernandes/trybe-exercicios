@@ -28,7 +28,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 3.2: HTML & CSS - Primeiros passos em CSS
 - [X] 3.3: HTML & CSS - Seletores e posicionamento
 - [X] 3.4: HTML Semântico
-- [X] 3.5: Projeto - Lessons Learned
+- [X] 3.5: [Projeto - Lessons Learned](https://github.com/guilherme-ac-fernandes/lessons-learned)
 
 #### Bloco 04: Introdução à JavaScript e Lógica de Programação
 
