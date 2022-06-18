@@ -74,7 +74,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 8.3: JavaScript ES6 - Higher Order Functions - map e filter
 - [X] 8.4: JavaScript ES6 - Higher Order Functions - reduce
 - [X] 8.5: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
-- [X] 8.6: Projeto - Zoo functions
+- [X] 8.6: [Projeto - Zoo functions](https://github.com/guilherme-ac-fernandes/zoo-functions)
 
 #### Bloco 09: JavaScript e Testes Assíncronos
 
