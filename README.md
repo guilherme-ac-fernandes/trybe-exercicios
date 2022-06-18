@@ -108,14 +108,14 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 #### Bloco 13: Metodologias Ágeis
 
 - [X] 13.1: Metodologias Ágeis
-- [X] 13.2: Projeto - Frontend Online Store
+- [X] 13.2: [Projeto - Frontend Online Store](https://github.com/guilherme-ac-fernandes/frontend-online-store)
 
 #### Bloco 14: Testes automatizados com React Testing Library
 
 - [X] 14.1: RTL - Primeiros passos
 - [X] 14.2: RTL - Mocks e Inputs
 - [X] 14.3: RTL - Testando React Routes
-- [X] 14.4: Projeto - Teste em React
+- [X] 14.4: [Projeto - Teste em React](https://github.com/guilherme-ac-fernandes/react-testing-library)
 
 #### Bloco 15: Gerenciamento de estado com Redux
 
@@ -124,7 +124,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 15.3: Usando o Redux no React - Prática
 - [X] 15.4: Usando o Redux no React - Actions Assíncronas
 - [X] 15.5: Testes em React-Redux
-- [X] 15.6: Projeto - Trybe Wallet
+- [X] 15.6: [Projeto - Trybe Wallet](https://github.com/guilherme-ac-fernandes/trybewallet)
 
 #### Bloco 16: Projeto Jogo de Trivia
 
@@ -135,7 +135,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 17.1: Context API do React
 - [X] 17.2: React Hooks - useState e useContext
 - [X] 17.3: React Hooks - useEffect e Hooks customizados
-- [X] 17.4: Projeto - StarWars Datatable com Contextualizáreis API e Hooks
+- [X] 17.4: [Projeto - StarWars Datatable com Contextualizáreis API e Hooks](https://github.com/guilherme-ac-fernandes/starwars-planets-search)
 
 #### Bloco 18: Projeto App de Receitas
 
