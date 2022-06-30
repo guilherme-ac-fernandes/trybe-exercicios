@@ -84,7 +84,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 9.4: [Projeto - Carrinho de Compras](https://github.com/guilherme-ac-fernandes/shopping-cart)
 
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 
 #### Bloco 10: Introdução à React
@@ -139,7 +139,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 18: Projeto App de Receitas
 
-- [ ] 18.1: Projeto - App de Receitas
+- [X] 18.1: Projeto - App de Receitas
 
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
