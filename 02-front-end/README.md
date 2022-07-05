@@ -1,17 +1,15 @@
-# Fundamentos do Desenvolvimento Web
+# Desenvolvimento Front-End
 
-No segundo módulo da minha jornada no desenvolvimento web através da preparação para os módulos de Front-End e Back-End, por meio do estudo sobre:
+O segundo módulo da minha jornada no desenvolvimento web foi focado em Front-End, por meio do estudo sobre:
 
-* Unix & Bash
-* Git, GitHub e Internet
-* Introdução à HTML e CSS
-* Introdução à JavaScript e Lógica de Programação
-* JavaScript: DOM, Eventos e Web Storage
-* HTML e CSS: Forms, Flexbox e Responsivo
-* Introdução à JavaScript ES6 e Testes Unitários
-* Higher Order Functions do JavaScript ES6
-* JavaScript e Testes Assíncronos
+* Introdução à React
+* Componentes com Estados, Eventos e Formulários com React
+* Ciclo de Vida de Componentes e React Router
+* Metodologias Ágeis
+* Testes automatizados com React Testing Library
+* Gerenciamento de estado com Redux
+* Context API e React Hooks
 
 <p align="center">
-  <img src="https://itslink.in/img/ho/h1.png" alt="Imagem Web Development"/>
+  <img src="https://cdni.iconscout.com/illustration/premium/thumb/linking-website-backend-4566863-3798294.png" alt="Imagem Front-End Development"/>
 </p>
