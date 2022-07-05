@@ -149,12 +149,13 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [ ] 19.1: Introdução - Back-end
 - [ ] 19.1: Utilizando Containers - Docker
-- [ ] 19.2: Manipulação e Criação de Imagens no Docker
+- [ ] 19.2: Manipulando Imagens no Docker
 - [ ] 19.3: Orquestrando Containers com Docker Compose
 - [ ] 19.4: Projeto - Docker Todo-List
 
 #### Bloco 20: Introdução à SQL
 
+- [ ] 20.1: Introdução - Bancos de dados relacionais
 - [ ] 20.1: Banco de dados SQL
 - [ ] 20.2: Encontrando dados em um banco de dados
 - [ ] 20.3: Filtrando dados de forma específica
@@ -168,17 +169,19 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 21.3: Transformando ideias em um modela de banco de dados
 - [ ] 21.4: Projeto - One For All
 
-#### Bloco 22: Introdução ao desenvolvimentos Web com Node.js
+#### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
+- [ ] 22.1: Introdução - Node.js
 - [ ] 22.1: Node.js - Um motor JavaScript
 - [ ] 22.2: Node.js - Fluxo Assíncrono
 - [ ] 22.3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
-- [ ] 22.4: Express - HTTP com Nome.js
+- [ ] 22.4: Express - HTTP com Node.js
 - [ ] 22.5: Express - Middlewares
 - [ ] 22.6: Projeto - Talker Manager
 
 #### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
+- [ ] 23.1: Introdução - Arquitetura de Software
 - [ ] 23.1: Arquitetura de Software - Camada de Model
 - [ ] 23.2: Arquitetura de Software - Camada de Controller e Service
 - [ ] 23.3: Arquitetura Web - Rest e Restful
@@ -191,10 +194,12 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 24.1: ORM: Interface da aplicação com o banco de dados
 - [ ] 24.2: ORM: Associations
 - [ ] 24.3: JWT - (JSON Web Token)
-- [ ] 24.4: Projeto - API de Blogs
+- [ ] 24.4: Testando APIs com Testes de Integração
+- [ ] 24.5: Projeto - API de Blogs
 
 #### Bloco 25: Deployment
 
+- [ ] 25.1: Introdução - Deploy
 - [ ] 25.1: Infraestrutura - Deploy com Heroku
 - [ ] 25.2: Deploy Docker & Heroku
 - [ ] 25.3: Projeto - Stranger Things
@@ -202,7 +207,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 #### Bloco 26: TypeScript
 
 - [ ] 26.1: Introdução ao TypeScript
-- [ ] 26.2: Tipagem ao TypeScript
+- [ ] 26.2: Tipagem Estática e Generics
 - [ ] 26.3: Express com TypeScript
 - [ ] 26.4: Projeto - Trybe Smith
 
@@ -211,8 +216,8 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 27.1: Introdução à Orientação a Objetos
 - [ ] 27.2: Herança e Interfaces
 - [ ] 27.3: Polimorfismo
-- [ ] 27.4: SOLID - Introdução
-- [ ] 27.5: SOLID - Continuação
+- [ ] 27.4: SOLID - Introdução e Princípios S, O e D
+- [ ] 27.5: SOLID - Princípios L e I
 - [ ] 27.6: Projeto - Trybers and Dragons
 
 #### Bloco 28: Projeto - TFC - Trybe Futebol Clube
@@ -224,23 +229,25 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 29.1: Introdução - NoSQL
 - [ ] 29.1: MongoDB - Introdução
 - [ ] 29.2: Filter Operators
-- [ ] 29.3: Projeto - Data Flights
+- [ ] 29.3: Operadores de consulta
+- [ ] 29.4: Updates Simples
+- [ ] 29.5: Updates Complexos - Arrays
+- [ ] 29.6: Projeto - Commerce
 
-#### Bloco 30: MongoDB: Updates Simples e Complexos
+#### Bloco 30: MongoDB com Node.js e POO
 
-- [ ] 30.1: Updates Simples
-- [ ] 30.2: Updates Complexos - Arrays - Parte 1
-- [ ] 30.3: Updates Complexos - Arrays - Parte 2
-- [ ] 30.4: Projeto - Commerce
+- [ ] 30.1: MongoDB e arquitetura MSC
+- [ ] 30.2: MongoDB e POO
+- [ ] 30.3: Projeto - Car Shop
 
-#### Bloco 31: MasterClass - VPS, CI/CD
+#### Bloco 31: Projeto - App de Delivery
 
-- [ ] 31.1: Dia 1
-- [ ] 31.2: Dia 2
+- [ ] 31.1: Projeto - App de Delivery
 
-#### Bloco 32: Projeto - App de Delivery
+#### Bloco 33: MasterClass - VPS, CI/CD
 
-- [ ] 32.1: Projeto - App de Delivery
+- [ ] 32.1: Dia 1 - VPS
+- [ ] 32.2: Dia 2
 
 
 ## Ciência da Computação :hourglass_flowing_sand:
@@ -254,19 +261,18 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 33.3: Testes
 - [ ] 33.4: Projeto - Job Insights
 
-#### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
+#### Bloco 34: Padrões de Projeto
 
-- [ ] 34.1: Introdução à programação orientada a objetos
-- [ ] 34.2: Herança, Composição e Interfaces
-- [ ] 34.3: Padrões de projeto
+- [ ] 34.1: POO em Python
+- [ ] 34.2: Padrões - Iterator, Adapter, Strategy
+- [ ] 34.3: Padrões - Decorator, Observer, Factory 
 - [ ] 34.4: Projeto - Relatórios de Estoque
 
 #### Bloco 35: Redes e Raspagem de Dados
 
-- [ ] 35.1: Arquitetura de redes
-- [ ] 35.2: Redes de computadores, ferramentas e segurança
-- [ ] 35.3: Raspagem de Dados
-- [ ] 35.4: Projeto - Tech News
+- [ ] 35.1: Arquitetura de redes, ferramentas e segurança
+- [ ] 35.2: Raspagem de Dados
+- [ ] 35.3: Projeto - Tech News
 
 #### Bloco 36: Algoritmos
 
@@ -275,16 +281,16 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [ ] 36.3: Algoritmos de ordenação e busca
 - [ ] 36.4: Projeto - Algoritmos
 
-#### Bloco 37: Estrutura de Dados I: Array, Hashmaps e Sets
+#### Bloco 37: Estrutura de Dados I: Array, Listas, Filas e Pilhas
 
 - [ ] 37.1: Arquitetura de Computadores
 - [ ] 37.2: Arrays
-- [ ] 37.3: Hashmap e Dict
-- [ ] 37.4: Set
-- [ ] 37.5: Projeto - Restaurant Odres
+- [ ] 37.3: Nó e Listas Encadeadas
+- [ ] 37.4: Pilhas e Filas
+- [ ] 37.5: Projeto - TING - Trybe Is Not Google
 
-#### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
+#### Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 38.1: Nó e Listas Encadeadas
-- [ ] 38.2: Pilhas e Filas
-- [ ] 38.3: Projeto - TING - Trybe Is Not Google
+- [ ] 38.1: Hashmap e Dict
+- [ ] 38.2: Set
+- [ ] 38.3: Projeto - Restaurant Orders
