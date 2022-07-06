@@ -1,0 +1,2 @@
+Comando para construir a image: docker build -t cowsay-19.2.1 .
+Comando para criar o container a partir da imagem alterando CMD: docker container run cowsay-19.2.1 Muuuh
