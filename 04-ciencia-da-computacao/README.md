@@ -9,5 +9,5 @@ O último módulo fdo curso foi abordado as seguintes conceitos:
 * Estruturas de Dados: Arraysm Listas, Filas, Pilhas, Hashmaps e Sets
 
 <p align="center">
-  <img src="https://i0.wp.com/www.codelivly.com/wp-content/uploads/2021/12/backend-developer-technical-skills-1.png?resize=950%2C605&ssl=1" alt="Imagem Back-End Development"/>
+  <img src="https://letsmobility.com/content/images/size/w600/2019/07/web-icon.png" alt="Imagem Computer Science Development"/>
 </p>
