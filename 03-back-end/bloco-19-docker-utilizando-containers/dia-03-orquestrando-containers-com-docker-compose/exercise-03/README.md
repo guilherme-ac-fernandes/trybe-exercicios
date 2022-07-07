@@ -1,5 +1,4 @@
 ###  Atividade de fixação 3:
-
 > Baseado na atividade de fixação 2, realize os seguintes requisito.
 
 Por padrão, o `ghost` utiliza um `sqlite` interno para salvar as informações, porém vamos alterar esse comportamento para exercitar nossos conhecimentos:
