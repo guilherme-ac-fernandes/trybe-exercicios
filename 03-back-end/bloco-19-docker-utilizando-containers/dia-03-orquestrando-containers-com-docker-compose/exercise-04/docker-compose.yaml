@@ -1,0 +1,36 @@
+# Resolução proveniente do gabarito presente no course da Trybe (source: https://app.betrybe.com/course/back-end/docker/orquestrando-containers-com-docker-compose-gabarito/solutions/31c36455-f55f-49c8-84f4-1dac04dd6395/exercicios/a1cdcaf8-9f7e-4329-8146-045f1f4263a1?use_case=calendar)
+
+version: "3"
+
+services:
+  ghost:
+    image: ghost:1-alpine
+    restart: always
+    ports:
+      - 2368:2368
+    depends_on:
+        - "database"
+    environment:
+        # Dados abaixo proveniente do link: https://ghost.org/docs/config/
+        database__client: mysql
+        database__connection__host: db
+        database__connection__user: root
+        database__connection__password: password
+        database__connection__database: ghost
+    networks:
+      - my-network
+  database:
+    platform: linux/x86_64
+    image: mysql:5.7
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - my-network
+volumes:
+  db-data:
+networks:
+  my-network:
+  
