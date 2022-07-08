@@ -1,0 +1,1 @@
+Para realizar a alteração desejado no Requisito 6, é necessário refazer o build da imagem com o comando: docker-compose up --build
