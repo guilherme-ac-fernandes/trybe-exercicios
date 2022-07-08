@@ -13,3 +13,5 @@ Requisito 4 - Defina um serviço no arquivo para nosso app. Para isso, utilize a
 
 Requisito 5 - Publique a porta exposta no `Dockerfile` fazendo `bind` para a porta `8080` do `localhost`.
 
+Requisito 6 - Para simularmos o processo de desenvolvimento, faça a alteração em alguma parte do código do `app react. Então, execute o comando para subir o serviço novamente, "rebuildando" a imagem para aplicar as alterações
+
