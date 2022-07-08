@@ -1,4 +1,7 @@
-## Docker: Utilizando Containers
+### Orquestrando Containers com Docker Compose
 
-No primeiro bloco de Desenvolvimento Back-End foi introduzido o conceito de empacotamento de aplicações através da introdução de Docker. Onde foram abordados seus comandos; criação e conceito de imagens e containers; utilização da ferramenta `docker-compose`; usabilidade e aplicação de `services`, `network` e `volumes`; gerenciamento de redes virtuais e criação de arquivos `compose`.
+####  Atividade de fixação:
+> Crie as pastas `exercise-01`, `exercise-02`, `exercise-03`, `exercise-04`, `exercise-05` e `exercise-06` para conter o exercício.
+
+Observação: Os README’s destes exercícios constam todos os requisitos necessários para realização.
 
