@@ -2,6 +2,6 @@ version: '3'
 services:
 
   frontend:
-    build: ./Dockerfile
+    build: ./frontend/
     ports:
       - 8080:80
