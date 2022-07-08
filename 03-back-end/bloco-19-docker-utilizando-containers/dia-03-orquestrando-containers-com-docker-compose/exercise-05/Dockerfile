@@ -1,12 +1,9 @@
-# Resolução baseada na resolução presente no site Tiangolo
-# source: https://tiangolo.medium.com/react-in-docker-with-nginx-built-with-multi-stage-docker-builds-including-testing-8cc49d6ec305
+# Resolução baseada na resolução do Summer de Instrução Luá
+# source: https://trybecourse.slack.com/archives/C02TH6V3MC5/p1657298198437299
 
-FROM node AS build-stage
+FROM node:16-alpine
 WORKDIR /app
-COPY package*.json .
+COPY . .
 RUN npm install
-COPY ./ /app/
-RUN npm run build
-
-FROM nginx:1.21-alpine AS deploy-stage
-COPY --from=build-stage /app/build /usr/share/nginx/html
+CMD ["npm", "start"]
+EXPOSE 3000
