@@ -2,6 +2,6 @@ version: '3'
 services:
 
   frontend:
-    build: ./frontend
+    build: .
     ports:
       - 8080:80
