@@ -1,10 +1,10 @@
 ### Banco de Dados SQL
 
-O momento inicial de Desenvolvimento Back-End foram introduzidos os conceitos de imagens e contamines, bem como a instalação do Docker e aplicação de seus comandos.
+Este dia consistiu na introdução dos conceitos de banco de dados; compreensão de como a linguagem de consulta estruturada (SQL) é usada; instalação do MySQL Server e MySQL Workbench para estruturar um ambiente de desenvolvimento local.
 
 
 <br>
 
 <p align="center">
-  <img src="https://aws.amazon.com/pt/rds/mysql/" alt="Imagem MySQL" width="60%"/>
+  <img src="https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png" alt="Imagem MySQL" width="60%"/>
 </p>
