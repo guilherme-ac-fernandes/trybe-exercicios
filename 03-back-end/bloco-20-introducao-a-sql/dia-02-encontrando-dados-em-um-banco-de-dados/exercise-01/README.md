@@ -1,5 +1,5 @@
 ###  Atividade de fixação 1:
-> Para realizar os exercícios do 1 ao 15, restaure o seguinte banco de dados de uso livre (licenciado de acordo com desse _[termo](https://creativecommons.org/licenses/by-sa/3.0/)_):
+> Para realizar os requisitos abaixo, restaure o seguinte banco de dados de uso livre (licenciado de acordo com desse _[termo](https://creativecommons.org/licenses/by-sa/3.0/)_):
 
 ```
 DROP SCHEMA IF EXISTS Scientists;
