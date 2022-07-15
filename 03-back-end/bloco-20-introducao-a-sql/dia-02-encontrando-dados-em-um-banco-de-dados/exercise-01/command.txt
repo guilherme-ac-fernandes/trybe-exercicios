@@ -1,15 +1,57 @@
-Requisito 1: SELECT "This is SQL Exercise, Practice and Solution";
-Requisito 2: SELECT 1, 2, 3;
-Requisito 3: SELECT 10 + 15;
-Requisito 4: SELECT 100 + (5 * 3);
-Requisito 5: SELECT * FROM Scientists.Scientists;
-Requisito 6: SELECT name AS nome_do_projeto, hours AS tempo_de_trabalho FROM Scientists.Projects;
-Requisito 7: SELECT name FROM Scientists.Scientists ORDER BY name;
-Requisito 8: SELECT name FROM Scientists.Projects ORDER BY name DESC;
-Requisito 9: SELECT CONCAT('O projeto ', name, ' precisou de ', hours, ' horas para ser concluído') AS setences FROM Scientists.Projects;
-Requisito 10: SELECT name, hours FROM Scientists.Projects ORDER BY hours DESC LIMIT 3;
-Requisito 11: SELECT DISTINCT project FROM Scientists.AssignedTo;
-Requisito 12: SELECT name FROM Scientists.Projects ORDER BY hours DESC LIMIT 1;
-Requisito 13: SELECT name FROM Scientists.Projects ORDER BY hours LIMIT 1 OFFSET 1;
-Requisito 14: SELECT * FROM Scientists.Projects ORDER BY hours LIMIT 5;
-Requisito 15: SELECT CONCAT('Existem ', COUNT(name) ,' cientistas na tabela Scientists.') AS result FROM Scientists.Scientists;
+Requisito 1: 
+  SELECT "This is SQL Exercise, Practice and Solution";
+
+Requisito 2: 
+  SELECT 1, 2, 3;
+
+Requisito 3: 
+  SELECT 10 + 15;
+
+Requisito 4: 
+  SELECT 100 + (5 * 3);
+
+Requisito 5: 
+  SELECT * FROM Scientists.Scientists;
+
+Requisito 6: 
+  SELECT name AS nome_do_projeto, hours 
+  AS tempo_de_trabalho FROM Scientists.Projects;
+
+Requisito 7: 
+  SELECT name FROM Scientists.Scientists 
+  ORDER BY name;
+
+Requisito 8: 
+  SELECT name FROM Scientists.Projects 
+  ORDER BY name DESC;
+
+Requisito 9: 
+  SELECT CONCAT('O projeto ', name, ' precisou de ', hours, ' horas para ser concluído') 
+  AS setences FROM Scientists.Projects;
+
+Requisito 10: 
+  SELECT name, hours FROM Scientists.Projects 
+  ORDER BY hours DESC LIMIT 3;
+
+Requisito 11: 
+  SELECT DISTINCT project FROM Scientists.AssignedTo;
+
+Requisito 12: 
+  SELECT name FROM Scientists.Projects 
+  ORDER BY hours DESC 
+  LIMIT 1;
+
+Requisito 13: 
+  SELECT name FROM Scientists.Projects 
+  ORDER BY hours 
+  LIMIT 1 
+  OFFSET 1;
+
+Requisito 14: 
+  SELECT * FROM Scientists.Projects 
+  ORDER BY hours 
+  LIMIT 5;
+
+Requisito 15: 
+  SELECT CONCAT('Existem ', COUNT(name) ,' cientistas na tabela Scientists.') 
+  AS result FROM Scientists.Scientists;

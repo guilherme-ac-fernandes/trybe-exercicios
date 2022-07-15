@@ -1,8 +1,35 @@
-Requisito 1: SELECT * FROM Scientists.Scientists WHERE name LIKE '%e%';
-Requisito 2: SELECT name FROM Scientists.Projects WHERE code LIKE 'A%' ORDER BY name;
-Requisito 3: SELECT code, name FROM Scientists.Projects WHERE code LIKE '%3%' ORDER BY code;
-Requisito 4: SELECT * FROM Scientists.AssignedTo WHERE project IN ('AeH3', 'Ast3', 'Che1');
-Requisito 5: SELECT * FROM Scientists.Projects WHERE hours > 500 ORDER BY hours;
-Requisito 6: SELECT * FROM Scientists.Projects WHERE hours BETWEEN 250 AND 800 ORDER BY hours;
-Requisito 7: SELECT code, name FROM Scientists.Projects WHERE name NOT LIKE 'A%';
-Requisito 8: SELECT name FROM Scientists.Projects WHERE code LIKE '%H%';
+Requisito 1: 
+  SELECT * FROM Scientists.Scientists 
+  WHERE name LIKE '%e%';
+
+Requisito 2: 
+  SELECT name FROM Scientists.Projects 
+  WHERE code LIKE 'A%' 
+  ORDER BY name;
+
+Requisito 3: 
+  SELECT code, name FROM Scientists.Projects 
+  WHERE code LIKE '%3%' 
+  ORDER BY code;
+
+Requisito 4: 
+  SELECT * FROM Scientists.AssignedTo 
+  WHERE project IN ('AeH3', 'Ast3', 'Che1');
+
+Requisito 5: 
+  SELECT * FROM Scientists.Projects 
+  WHERE hours > 500 
+  ORDER BY hours;
+
+Requisito 6: 
+  SELECT * FROM Scientists.Projects 
+  WHERE hours BETWEEN 250 AND 800 
+  ORDER BY hours;
+
+Requisito 7: 
+  SELECT code, name FROM Scientists.Projects 
+  WHERE name NOT LIKE 'A%';
+
+Requisito 8: 
+  SELECT name FROM Scientists.Projects 
+  WHERE code LIKE '%H%';

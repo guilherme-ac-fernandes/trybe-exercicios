@@ -1,5 +1,23 @@
-Requisito 1: SELECT piece, price FROM PiecesProviders.Provides WHERE provider = 'RBT';
-Requisito 2: SELECT * FROM PiecesProviders.Provides ORDER BY price DESC LIMIT 5;
-Requisito 3: SELECT DISTINCT provider, price FROM PiecesProviders.Provides ORDER BY price DESC LIMIT 4 OFFSET 2;
-Requisito 4: SELECT * FROM PiecesProviders.Provides WHERE provider = 'HAL' ORDER BY price DESC;
-Requisito 5: SELECT COUNT(provider) FROM PiecesProviders.Provides WHERE piece = '1';
+Requisito 1: 
+  SELECT piece, price FROM PiecesProviders.Provides 
+  WHERE provider = 'RBT';
+
+Requisito 2: 
+  SELECT * FROM PiecesProviders.Provides 
+  ORDER BY price DESC 
+  LIMIT 5;
+
+Requisito 3: 
+  SELECT DISTINCT provider, price FROM PiecesProviders.Provides 
+  ORDER BY price DESC 
+  LIMIT 4 
+  OFFSET 2;
+
+Requisito 4: 
+  SELECT * FROM PiecesProviders.Provides 
+  WHERE provider = 'HAL' 
+  ORDER BY price DESC;
+
+Requisito 5: 
+  SELECT COUNT(provider) FROM PiecesProviders.Provides 
+  WHERE piece = '1';

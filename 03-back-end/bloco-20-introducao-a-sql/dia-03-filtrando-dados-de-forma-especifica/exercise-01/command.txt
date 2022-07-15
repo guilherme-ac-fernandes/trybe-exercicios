@@ -1,7 +1,30 @@
-Requisito 1: SELECT * FROM PecasFornecedores.Pecas WHERE name LIKE 'GR%';
-Requisito 2: SELECT * FROM PecasFornecedores.Fornecimentos WHERE peca = 2 ORDER BY fornecedor;
-Requisito 3: SELECT peca, preco, fornecedor FROM PecasFornecedores.Fornecimentos WHERE fornecedor LIKE '%N%';
-Requisito 4: SELECT * FROM PecasFornecedores.Fornecedores WHERE name LIKE '%LTDA' ORDER BY name DESC;
-Requisito 5: SELECT COUNT(name) AS result FROM PecasFornecedores.Fornecedores WHERE code LIKE '%F%';
-Requisito 6: SELECT * FROM PecasFornecedores.Fornecimentos WHERE preco BETWEEN 15 AND 40 ORDER BY preco;
-Requisito 7: SELECT COUNT(code) FROM PecasFornecedores.Vendas WHERE DATE(order_date) BETWEEN '2018/04/15' AND '2019/07/30';
+Requisito 1: 
+  SELECT * FROM PecasFornecedores.Pecas 
+  WHERE name LIKE 'GR%';
+
+Requisito 2: 
+  SELECT * FROM PecasFornecedores.Fornecimentos 
+  WHERE peca = 2 
+  ORDER BY fornecedor;
+
+Requisito 3: 
+  SELECT peca, preco, fornecedor FROM PecasFornecedores.Fornecimentos 
+  WHERE fornecedor LIKE '%N%';
+
+Requisito 4: 
+  SELECT * FROM PecasFornecedores.Fornecedores 
+  WHERE name LIKE '%LTDA' 
+  ORDER BY name DESC;
+
+Requisito 5: 
+  SELECT COUNT(name) AS result FROM PecasFornecedores.Fornecedores 
+  WHERE code LIKE '%F%';
+
+Requisito 6: 
+  SELECT * FROM PecasFornecedores.Fornecimentos 
+  WHERE preco BETWEEN 15 AND 40 
+  ORDER BY preco;
+
+Requisito 7: 
+  SELECT COUNT(code) FROM PecasFornecedores.Vendas 
+  WHERE DATE(order_date) BETWEEN '2018/04/15' AND '2019/07/30';
