@@ -45,11 +45,11 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 5.3: JavaScript - Eventos
 - [X] 5.4: JavaScript - Web Storage
 - [X] 5.5: Fundamentos - JavaScript - Projetos
-- [X] 5.5: [Projeto - Arte com Pixels](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/pixel-art)
-- [X] 5.6: [Projeto - Lista de tarefa](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/todo-list)
-- [X] 5.7: [Projeto - Meme Generator](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/meme-generator)
-- [X] 5.7: [Projeto - Adivinhe a Cor](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/color-guess)
-- [X] 5.7: [Projeto - Carta Misteriosa](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/mistery-letter)
+- [X] 5.5: [Projeto - Arte com Pixels](https://github.com/guilherme-ac-fernandes/pixel-art)
+- [X] 5.6: [Projeto - Lista de tarefa](https://github.com/guilherme-ac-fernandes/todo-list)
+- [X] 5.7: [Projeto - Meme Generator](https://github.com/guilherme-ac-fernandes/meme-generator)
+- [X] 5.7: [Projeto - Adivinhe a Cor](https://github.com/guilherme-ac-fernandes/color-guess)
+- [X] 5.7: [Projeto - Carta Misteriosa](https://github.com/guilherme-ac-fernandes/mistery-letter)
 
 #### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
@@ -58,7 +58,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 6.3: CSS Flexbox - Parte 1
 - [X] 6.4: CSS Flexbox - Parte 2
 - [X] 6.5: CSS Responsivo - Mobile First
-- [X] 6.6: [Projeto - Trybewarts](https://github.com/guilherme-ac-fernandes/trybe-projetos/tree/main/trybewarts)
+- [X] 6.6: [Projeto - Trybewarts](https://github.com/guilherme-ac-fernandes/trybewarts)
 
 #### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
