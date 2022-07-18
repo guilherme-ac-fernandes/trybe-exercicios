@@ -139,7 +139,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 18: Projeto App de Receitas
 
-- [X] 18.1: Projeto - App de Receitas
+- [X] 18.1: [Projeto - App de Receitas](https://github.com/guilherme-ac-fernandes/recipes-app)
 
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
