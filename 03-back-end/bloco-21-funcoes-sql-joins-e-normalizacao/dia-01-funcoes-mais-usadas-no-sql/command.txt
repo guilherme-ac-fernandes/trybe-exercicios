@@ -1,5 +1,74 @@
-Requisito 1:
+Requisito 1: 
+  SELECT MAX(salary) FROM hr.employees;
 
 Requisito 2: 
+  SELECT MAX(salary) - MIN(salary) FROM hr.employees;
 
 Requisito 3: 
+  SELECT job_id, AVG(salary) AS 'average_salary' FROM hr.employees
+  GROUP BY job_id
+  ORDER BY 'average_salary' DESC;
+
+Requisito 4: 
+  SELECT SUM(salary) FROM hr.employees;
+
+Requisito 5: 
+  SELECT MAX(salary), MIN(salary), SUM(salary), AVG(salary) FROM hr.employees;
+
+Requisito 6: 
+  SELECT job_id, COUNT(*) FROM hr.employees
+  WHERE job_id = 'IT_PROG';
+
+Requisito 7: 
+  SELECT job_id, SUM(salary) FROM hr.employees
+  GROUP BY job_id;
+
+Requisito 8:
+  SELECT job_id, SUM(salary) FROM hr.employees
+  GROUP BY job_id
+  HAVING job_id = 'IT_PROG';
+
+Requisito 9:
+  SELECT job_id, AVG(salary) FROM hr.employees
+  GROUP BY job_id
+  HAVING job_id <> 'IT_PROG'
+  ORDER BY SUM(salary) DESC;
+
+Requisito 10:
+  SELECT department_id, COUNT(department_id), AVG(salary) FROM hr.employees
+  GROUP BY department_id
+  HAVING COUNT(department_id) > 10;
+
+Requisito 11:
+  SET SQL_SAFE_UPDATES = 0;
+
+  UPDATE hr.employees
+  SET phone_number = REPLACE(phone_number, 515, 777)
+  WHERE phone_number LIKE '515%';
+
+  SET SQL_SAFE_UPDATES = 1;
+
+Requisito 12: 
+  SELECT * FROM hr.employees
+  WHERE CHAR_LENGTH(first_name) > 7;
+
+Requisito 13:
+  SELECT employee_id, first_name, YEAR(hire_date) FROM hr.employees;
+
+Requisito 14:
+  SELECT employee_id, first_name, DAY(hire_date) FROM hr.employees; 
+
+Requisito 15:
+  SELECT employee_id, first_name, MONTH(hire_date) FROM hr.employees;
+
+Requisito 16:
+  SELECT UCASE(CONCAT(first_name, ' ', last_name))
+  AS fullname FROM hr.employees;
+
+Requisito 17:
+  SELECT last_name, hire_date FROM hr.employees
+  WHERE DATE(hire_date) BETWEEN '1987-07-01' AND '1987-07-31'; 
+
+Requisito 18:
+  SELECT first_name, last_name, DATEDIFF(NOW(), hire_date)
+  AS days_worked FROM hr.employees;
