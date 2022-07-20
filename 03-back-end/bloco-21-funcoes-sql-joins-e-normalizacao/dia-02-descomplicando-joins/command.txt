@@ -1,0 +1,40 @@
+Requisito 1:
+  SELECT m.title, b.domestic_sales, b.international_sales
+  FROM pixar.movies AS m
+  INNER JOIN pixar.box_office AS b
+  ON m.id = b.movie_id;
+
+Requisito 2:
+  SELECT m.title, b.domestic_sales, b.international_sales
+  FROM pixar.movies AS m
+  INNER JOIN pixar.box_office AS b
+  ON m.id = b.movie_id
+  WHERE b.international_sales > b.domestic_sales;
+
+Requisito 3:
+  SELECT m.title, b.rating
+  FROM pixar.movies AS m
+  INNER JOIN pixar.box_office AS b
+  ON m.id = b.movie_id
+  ORDER BY b.rating DESC;
+
+Requisito 4:
+  SELECT t.id, t.name, t.location, m.title, m.director, m.year, m.length_minutes
+  FROM pixar.theater AS t
+  LEFT JOIN pixar.movies AS m
+  ON t.id = m.theater_id
+  ORDER BY t.name;
+
+Requisito 5:
+  SELECT t.id, t.name, t.location, m.title, m.director, m.year, m.length_minutes
+  FROM pixar.theater AS t
+  RIGHT JOIN pixar.movies AS m
+  ON t.id = m.theater_id
+  ORDER BY t.name;
+
+Requisito 6:
+  SELECT m.id, m.title, m.director, m.year, m.length_minutes, m.theater_id, b.rating
+  FROM pixar.movies AS m
+  INNER JOIN pixar.box_office AS b
+  ON m.id = b.movie_id
+  WHERE m.theater_id IS NOT NULL AND b.rating > 8;
