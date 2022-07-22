@@ -9,7 +9,7 @@ Então, você se depara com um anúncio do concurso `TrybeTrip`, que premia com 
 Concorda que seria uma espécie de formulário?
 O exercício hoje será desenvolver uma página web com o formulário da `TrybeTrip`. Desenvolva-o em um arquivo chamado `form.html`. A estruturação de sua página deverá ficar semelhante com a imagem abaixo.
 
-![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/html-forms/images/Excalidraw-forms-94cb593582e99fd08f284274fd8b50ab.png)
+![alt text](https://assets.app.betrybe.com/fundamentals/html-forms/images/Excalidraw-forms-94cb593582e99fd08f284274fd8b50ab.png)
 
 Requisito 1 - O formulário deverá permitir que o usuário insira os seguintes campos:
 
@@ -28,7 +28,7 @@ Requisito 3 - Agora vamos utilizar um pouco de javascript, para isso crie o arqu
 Requisito 4 - Crie um botão que limpe as informações contidas nos campos;
 
 #### Atividade de fixação 2:
-> Utilizando os arquivos `form-01.html` e `form-01.js`
+> Utilizando os arquivos `form-02.html` e `form-02.js`
 
 Requisito 1 - A `TrybeTrip` precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar o uso de imagens possa enviar suas informações.
 
