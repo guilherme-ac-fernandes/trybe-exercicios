@@ -5,5 +5,5 @@ O foco deste bloco consiste na introdução das metodologias ágeis aplicada em 
 <br>
 
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/19.1/02-front-end/bloco-13-metodologias-ageis/agile.png" alt="Metodologias ágeis"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/02-front-end/bloco-13-metodologias-ageis/agile.png" alt="Metodologias ágeis"/>
 </p>
