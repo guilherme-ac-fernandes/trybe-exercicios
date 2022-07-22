@@ -1,0 +1,3 @@
+## Funções SQL, JOINs e Normalização
+
+Esse bloco foi abordado muitas novas informações sobre o uso do SQL, sendo elas:  formas de criar condicionais no SQL utilizando `IF` e `CASE`; manipulação de `strings` e datas; aplicação de funções matemáticas; utilização de funções de agregação (`AVG`, `MIN`, `MAX`, `SUM` e `COUNT`); exibição e filtragem de dados de forma agrupada; utilização de `JOIN` para combinação de duas ou mais tabelas, abordando o `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` e `SELF JOIN`; e aplicação de `Formas Normais` para modelagem de banco de dados de forma a evitar redundância de informações.

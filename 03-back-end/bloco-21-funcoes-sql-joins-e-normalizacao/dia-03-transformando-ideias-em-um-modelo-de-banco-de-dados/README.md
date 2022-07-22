@@ -1,6 +1,10 @@
-### Transformando ideias em um modelo de banco de dados
+###  Atividade de fixação 3:
+> Para realizar os requisitos abaixo utiliza as tabelas fornecidas:
 
-####  Atividade de fixação:
-> Crie as pastas `exercise-01`, `exercise-02` e `exercise-03` para conter o exercício.
+Requisito 1 - Utilizando a primeira tabela fornecida, converta a tabela desnormalizada para a `1ª Forma Normal`.
 
-Observação: Os README’s destes exercícios constam todos os requisitos necessários para realização.
+Requisito 2 - Utilizando a segunda tabela fornecida, converta a tabela desnormalizada (que já está nos padrões da `1ª Forma Normal`) para a `2ª Forma Normal.
+
+Requisito 3 - Utilizando a primeira tabela fornecida (que já está nos moldes das duas primeiras formas), faça a conversão para a 3ª Forma Normal.
+
+
