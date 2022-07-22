@@ -8,7 +8,7 @@
 
 Imagem - Podium and prizes final structure
 
-![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/html-css/images/podium-final-fdcdc425aade8216b9e3c4b0eab234fc.png)
+![alt text](https://assets.app.betrybe.com/fundamentals/html-css/images/podium-final-fdcdc425aade8216b9e3c4b0eab234fc.png)
 
 #### Atividade de fixação 2:
 > Utilize os arquivos `index-02.html` e `style-02.css`
