@@ -1,5 +1,5 @@
 ###  Atividade de fixação 3:
-> Para realizar os requisitos abaixo utiliza as tabelas fornecidas:
+> Para realizar os requisitos abaixo, utilize as tabelas fornecidas:
 
 Requisito 1 - Utilizando a primeira tabela fornecida, converta a tabela desnormalizada para a `1ª Forma Normal`.
 

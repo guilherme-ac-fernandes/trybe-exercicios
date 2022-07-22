@@ -1,5 +1,5 @@
 ###  Atividade de fixação 1:
-> Para realizar os requisitos abaixo utiliza a tabela fornecida:
+> Para realizar os requisitos abaixo, utilize a tabela fornecida:
 
 Requisito 1 - Normalize a tabela para a `1ª Forma Normal`.
 
