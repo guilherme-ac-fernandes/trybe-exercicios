@@ -28,7 +28,7 @@ Requisito 3 - Agora vamos utilizar um pouco de javascript, para isso crie o arqu
 Requisito 4 - Crie um botão que limpe as informações contidas nos campos;
 
 #### Atividade de fixação 2:
-> Utilizando os arquivos `form-02.html` e `form-02.js`
+> Utilizando os arquivos `form-01.html` e `form-01.js`
 
 Requisito 1 - A `TrybeTrip` precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar o uso de imagens possa enviar suas informações.
 
