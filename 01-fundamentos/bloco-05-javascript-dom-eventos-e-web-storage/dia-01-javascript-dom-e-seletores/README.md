@@ -24,7 +24,7 @@ Requisito 7 - Recupere o subtítulo e altere a cor dele usando a função `getEl
 
 Realize manipulações nos elementos HTML , colocando a cor do Administrador de Tempo da Trybe como na imagem abaixo usando apenas o JavaScript!
 
-![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/javascript/images/time-exercise-808be0ece63a2ab6b8801ce6f5e5636c.png)
+![alt text](https://assets.app.betrybe.com/fundamentals/javascript/images/time-exercise-808be0ece63a2ab6b8801ce6f5e5636c.png)
 
 
 #### Atividade de fixação 3:
