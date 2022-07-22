@@ -4,7 +4,7 @@
 > Utilize os arquivos `index-01.html` e `style-01.css`
 1. Reproduzir o esquema de itens no browser seguindo a imagem, por meio do código fornecido (copie o código abaixo e modifique utilizando o VS Code).
 
-![alt text](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/fundamentals/html-css/images/css-box-model-example-a9ff30a667b5b5ac7e412931ed9b2afc.png)
+![alt text](https://assets.app.betrybe.com/fundamentals/html-css/images/css-box-model-example-a9ff30a667b5b5ac7e412931ed9b2afc.png)
 
 #### Atividade de fixação 2:
 > Utilize os arquivos `index-02.html` e `style-02.css`
