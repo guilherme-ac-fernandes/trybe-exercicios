@@ -1,0 +1,15 @@
+{
+  "name": "exercise-03",
+  "version": "1.0.0",
+  "description": "Script de uma game de adivinhação",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sorteio": "node sorteio.js"
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

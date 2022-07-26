@@ -1,0 +1,15 @@
+{
+  "name": "exercise-04",
+  "version": "1.0.0",
+  "description": "Script com os exercícios de 1 a 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

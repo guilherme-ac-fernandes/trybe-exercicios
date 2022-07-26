@@ -1,0 +1,15 @@
+{
+  "name": "exercise-02",
+  "version": "1.0.0",
+  "description": "Script para calcular velocidade média de um carro de corrida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "velocidade": "node velocidade.js"
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
