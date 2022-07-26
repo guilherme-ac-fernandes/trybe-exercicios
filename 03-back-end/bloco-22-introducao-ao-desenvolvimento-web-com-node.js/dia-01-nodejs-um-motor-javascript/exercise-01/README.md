@@ -26,6 +26,6 @@ Requisito 4 - Agora temos um problema: peso não é um número inteiro! Isso que
 Requisito 5 - Vamos sofisticar um pouco mais nosso script. Além de imprimir o `IMC` na tela, imprima também em qual categoria da tabela abaixo aquele `IMC` se enquadra:
 Considere a seguinte tabela para classificar a situação do `IMC`:
 
-![Tabela de IMC](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2HWUavM7CCkG1Vbrr9UMgMgS8ufb4Ww4Z0fuj2BQlyIa8WgMfQs9CbATl6XBWx6u4Pc0&usqp=CAU)
+![Tabela de IMC](https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/22.1/03-back-end/bloco-22-introducao-ao-desenvolvimento-web-com-node.js/dia-01-nodejs-um-motor-javascript/exercise-01/tabela-imc.png)
 
 
