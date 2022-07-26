@@ -19,7 +19,6 @@ const escolhendoScript = () => {
 
 const executeFunction = () => {
   const scriptParaExecutar = escolhendoScript();
-  console.log(scriptParaExecutar);
   if (!scriptParaExecutar) {
     return console.log('Número inválido. Saindo');
   }
