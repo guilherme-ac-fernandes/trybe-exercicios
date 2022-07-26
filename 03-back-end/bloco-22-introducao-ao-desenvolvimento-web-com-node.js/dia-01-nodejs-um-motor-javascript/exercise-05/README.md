@@ -11,4 +11,4 @@ Requisito 1 - Crie um `script` que realize o fatorial de um número `n`.
 
 * O `script` deve ser acionado através do comando `npm run fatorial`.
 
-* Adicione validações para garantir que o valor informado seja um inteiro maior que 0.
+* Adicione validações para garantir que o valor informado seja um inteiro maior que `0`.
