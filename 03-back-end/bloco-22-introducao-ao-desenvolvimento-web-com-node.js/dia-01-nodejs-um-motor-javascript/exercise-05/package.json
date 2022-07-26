@@ -1,0 +1,15 @@
+{
+  "name": "exercise-05",
+  "version": "1.0.0",
+  "description": "Script para mostrar o fatorial do número informado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fatorial": "node fatorial.js"
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
