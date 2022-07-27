@@ -46,7 +46,7 @@
     "name": "Milhouse Van Houten"
   }
 ]
-``
+```
 
 Requisito 1 - Crie uma função que leia todos os dados do arquivo e imprima cada personagem no formato `id - Nome`.
 
