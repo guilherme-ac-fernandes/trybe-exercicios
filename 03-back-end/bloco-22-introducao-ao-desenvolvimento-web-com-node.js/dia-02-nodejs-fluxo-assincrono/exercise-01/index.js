@@ -15,12 +15,12 @@ const calc50 = (num1, num2, num3) => {
 
 calc50(1, 6, 10)
   .then((result) => console.log(`sucesso: ${result}`))
-  .catch((err) => console.log(`erro: ${err.message}`));
+  .catch((err) => console.log(`Erro: ${err.message}`));
 
 calc50(1, 6, 2)
-  .then((result) => console.log(`sucesso: ${result}`))
-  .catch((err) => console.log(`erro: ${err.message}`));
+  .then((result) => console.log(`Sucesso: ${result}`))
+  .catch((err) => console.log(`Erro: ${err.message}`));
 
 calc50(1, 6, '10')
-  .then((result) => console.log(`sucesso: ${result}`))
-  .catch((err) => console.log(`erro: ${err.message}`));
+  .then((result) => console.log(`Sucesso: ${result}`))
+  .catch((err) => console.log(`Erro: ${err.message}`));
