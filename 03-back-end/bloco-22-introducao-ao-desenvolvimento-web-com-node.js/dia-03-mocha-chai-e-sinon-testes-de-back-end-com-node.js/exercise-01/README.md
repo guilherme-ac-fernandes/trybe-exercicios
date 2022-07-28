@@ -15,7 +15,7 @@ Requisito 1 - Fazendo uso de `mocha` e `chai`, estruture os testes para uma fun�
 
 Requisito 2 - Implemente a função apresentada no requisito 1, garantindo que ela vai passar em todos os testes que você escreveu.
 
-**Obs.:** Lembre-se de adicionar o script de test no package.json e de instalar as dependências.
+**Obs.:** Lembre-se de adicionar o `script` de teste no `package.json e de instalar as dependências.
 
 Requisito 3 - Adicione à função do requisito 1, um tratamento para casos em que o parâmetro informado não seja do tipo `Number`.
 
