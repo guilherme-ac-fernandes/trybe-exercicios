@@ -7,7 +7,7 @@ Requisito 1 - Fazendo uso de `mocha` e `chai`, estruture os testes para uma fun�
 
 * Quando o número passado for maior que `0` deverá retornar `positivo`, quando for menor que `0` deverá retornar `negativo` e quando igual a `0` deverá retornar `neutro`.
 
-* Descreva todos os cenário de teste utilizando describes.
+* Descreva todos os cenário de teste utilizando `describes.
 
 * Descreva todos os testes que serão feitos utilizando `its`.
 
