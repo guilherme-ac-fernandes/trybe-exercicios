@@ -176,7 +176,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 22.2: Node.js - Fluxo Assíncrono
 - [X] 22.3: Mocha, Chai e Sinon - Testes de Back-end com Node.js
 - [X] 22.4: Express - HTTP com Node.js
-- [ ] 22.5: Express - Middlewares
+- [X] 22.5: Express - Middlewares
 - [ ] 22.6: Projeto - Talker Manager
 
 #### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
