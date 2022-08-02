@@ -6,9 +6,9 @@ services:
     container_name: user_express_middleware
     ports:
       - 3301:3301
-    restart: always
-    working_dir: .
+    # restart: always
+    working_dir: /app
     volumes:
-      - ./:./
-    command: bash "npm install && node index.js"
+      - ./:/app
+    command: bash -c "npm install && node index.js"
     tty: true
