@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  node:
+    image: node:16
+    container_name: user_express_middleware
+    ports:
+      - 3301:3301
+    restart: always
+    working_dir: .
+    volumes:
+      - ./:./
+    command: bash "npm install && node index.js"
+    tty: true
