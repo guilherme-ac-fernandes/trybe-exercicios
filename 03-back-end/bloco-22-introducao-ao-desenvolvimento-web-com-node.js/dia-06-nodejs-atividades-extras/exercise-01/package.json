@@ -9,7 +9,7 @@
     "dev": "nodemon ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Guilherme Fernandes",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
