@@ -16,4 +16,4 @@ services:
 
 networks:
   default:
-    name: talker_manager_net
+    name: user_express_middleware_net
