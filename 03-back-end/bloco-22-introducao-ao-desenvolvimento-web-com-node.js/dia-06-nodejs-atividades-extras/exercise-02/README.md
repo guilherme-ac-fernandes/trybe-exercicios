@@ -9,7 +9,7 @@ Requisito 1 - Crie uma rota `GET /btc/price` que receba uma requisição com um 
 
 * Caso tenha sucesso deve ser feito um `fetch` em uma API externa de sua preferência e retorne os dados da API como resposta.
 
-* Sugestão deAPI [CoinDesk](https://api.coindesk.com/v1/bpi/currentprice/BTC.json).
+* Sugestão de API [CoinDesk](https://api.coindesk.com/v1/bpi/currentprice/BTC.json).
 
 
 Requisito 2 - Faça a `conteinerização` da sua aplicação.
