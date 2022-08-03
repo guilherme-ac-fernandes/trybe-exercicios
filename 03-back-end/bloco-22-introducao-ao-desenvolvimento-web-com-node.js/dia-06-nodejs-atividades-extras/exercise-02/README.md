@@ -19,5 +19,6 @@ Requisito 2 - Faça a `conteinerização` da sua aplicação.
 * As alterações realizadas no código devem ser refletidas sem a necessidade de reinicialização do `container`.
 
 **Dica 1:** O `token` será passado pelo `header` da seguinte forma: `authorization: 86567349784e`. 
+
 **Dica 2:** Para fazer uma requisição a uma API externa utilize o `NODE-FETCH` ou `AXIOS`.
 
