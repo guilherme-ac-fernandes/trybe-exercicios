@@ -4,11 +4,16 @@ services:
   node:
     image: node:16
     container_name: user_express_middleware
-    ports:
-      - 3301:3301
-    # restart: always
+    tty: true
+    stdin_open: true
+    command: bash
+    restart: always
     working_dir: /app
     volumes:
       - ./:/app
-    command: bash -c "npm install && node index.js"
-    tty: true
+    ports:
+      - 3001:3001
+
+networks:
+  default:
+    name: talker_manager_net
