@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  node:
+    image: node:16
+    container_name: user_express_middleware
+    tty: true
+    stdin_open: true
+    command: bash
+    restart: always
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - 3001:3001
+
+networks:
+  default:
+    name: user_express_middleware_net
