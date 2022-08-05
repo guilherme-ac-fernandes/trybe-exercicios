@@ -14,7 +14,7 @@ Requisito 1 - Crie o endpoint `POST /user`:
 	"email": "calebe.junior@gmail.com",
 	"password": "d496d5ea2442"
 }
-``
+```
 
 * Todos os campos são obrigatórios.
 
