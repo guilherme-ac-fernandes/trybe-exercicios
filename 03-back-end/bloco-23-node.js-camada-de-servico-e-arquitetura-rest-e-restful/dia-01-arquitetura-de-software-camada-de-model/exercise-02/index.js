@@ -18,5 +18,5 @@ app.put('/user/:id', middlewares.updateUserById);
 app.use(middlewares.error);
 
 app.listen(PORT, () => {
-	console.log(`Ouvindo a porta ${PORT}`);
+  console.log(`Ouvindo a porta ${PORT}`);
 });
