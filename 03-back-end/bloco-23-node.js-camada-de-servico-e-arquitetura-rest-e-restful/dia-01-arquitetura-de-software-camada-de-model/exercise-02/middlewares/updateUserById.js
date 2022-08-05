@@ -14,6 +14,6 @@ module.exports = [
     if (!updatedUser) {
     return res.status(404).json({ message: 'User not Found' });
     }
-    return res.status(200).json(updatedUser);
+   return res.status(200).json(updatedUser);
   }),
 ];
