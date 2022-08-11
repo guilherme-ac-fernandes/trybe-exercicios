@@ -3,7 +3,7 @@ const MoviesModel = require('../models/movieModel');
 const validateTitle = (title) => (title && typeof title === 'string');
 const validateReleaseYear = (releaseYear) => (releaseYear && typeof releaseYear === 'number');
 const validateDirectedBy = (directedBy) => (directedBy && typeof directedBy === 'string');
-const validateIdMovie = (id) => (id && !isNaN(Number('1')));
+const validateIdMovie = (id) => (id && !isNaN(Number(id)));
 
 const isValid = (title, directedBy, releaseYear) => {
   const isValidTitle = validateTitle(title);
