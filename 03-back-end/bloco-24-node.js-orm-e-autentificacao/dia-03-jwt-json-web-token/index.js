@@ -1,3 +1,6 @@
+// Resolução proveniente do gabarito presente no course da Trybe
+// source: https://app.betrybe.com/course/back-end/nodejs-orm-autenticacao/nodejs-jwt-json-web-token-gabarito/solutions/553b9052-a328-4cf9-9e64-27b03709fb2a/gabarito-dos-exercicios/eb2792d0-de58-45f8-a57c-6c7185627d6f?use_case=calendar
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -31,6 +34,7 @@ app.get('/top-secret',
   middlewares.isAdmin,
   controllers.topSecret,
 );
+app.post('/signup', controllers.signup);
 
 
 app.use(middlewares.error);

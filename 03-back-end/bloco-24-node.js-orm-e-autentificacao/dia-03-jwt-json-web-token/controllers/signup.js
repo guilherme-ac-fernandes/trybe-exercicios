@@ -20,16 +20,15 @@ module.exports = async (req, res, next) => {
 
   const { error } = loginSchema.validate({ username, password });
   if (error !== undefined) return next(error);
+  
+  const result = await UserService.create(username, password);
 
-  const { error: serviceError, token } = await UserService.login(username, password);
-
-  if (serviceError && serviceError.code === 'invalidCredentials') {
-    return next({ statusCode: 401, message: serviceError.message });
+  if (!result.error) {
+    return res.status(201).json(result);
   }
 
-  if (serviceError) {
-    return next(serviceError);
+  if (result.error.code === 'usernameExists') {
+    return res.status(409).json({ message: result.error.message });
   }
 
-  return res.status(200).json({ token });
 };

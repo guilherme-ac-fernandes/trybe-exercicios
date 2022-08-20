@@ -3,8 +3,6 @@ const jwt = require('jsonwebtoken');
 
 const { JWT_SECRET } = process.env;
 
-
-
 module.exports = (req, _res, next) => {
   const { authorization: token } = req.headers;
 
@@ -16,6 +14,7 @@ module.exports = (req, _res, next) => {
 
   try {
     const payload = jwt.verify(token, JWT_SECRET);
+    console.log(payload);
     req.user = payload;
     return next();
   } catch (err) {

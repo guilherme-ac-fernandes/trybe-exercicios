@@ -1,0 +1,17 @@
+[
+  {
+    "username": "Maria",
+    "password": "%9!%ec0c5w,q%%h9n3k",
+    "admin": false
+  },
+  {
+    "username": "Guilherme",
+    "password": "s3nh4S?",
+    "admin": false
+  },
+  {
+    "username": "admin",
+    "password": "s3nh4S3gur4???",
+    "admin": true
+  }
+]
