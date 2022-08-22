@@ -23,8 +23,18 @@ const create = rescue(async (req, res) => {
   return res.status(201).json(newBook);
 });
 
+const update = rescue(async (req, res) => {
+  const { id } = req.params;
+  const updateBook = await BooksService.update(id, req.body);
+  if (!updateBook) {
+    return res.status(404).json({ message: 'Book not found!' });
+  }
+  return res.status(201).json({ message: 'Book updated!' });
+});
+
 module.exports = {
   getAll,
   getById,
   create,
+  update,
 };

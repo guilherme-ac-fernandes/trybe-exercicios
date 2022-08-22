@@ -67,4 +67,12 @@ Requisito 10 - No `controller` `BooksController` crie o método `create` sendo u
 
 Requisito 11 - Vincule a rota `POST /books` para acessar seu `controller`.
 
+Requisito 12 - No `service` `BooksService` crie um método `update` que recebe dois parâmetros: o `id` do livro a ser alterado e um objeto com os atributos `title, author, pageQuantity` e atualize o livro utilizando o `model` `Book`.
+
+Requisito 13 - No `controller` `BooksController` crie o método `update` sendo um `middleware` que recebe o `id` como parâmetro de rota e os atributos `title, author, pageQuantity` do `body` da requisição e salve os dados por meio do service. A requisição deve retornar o status `201` e a mensagem `’Book updated!’`. Se o livro não for encontrado retornar a mensagem `’Book not found!'`.
+
+Requisito 14 - Vincule a rota `PUT /books/:id` para acessar seu `controller`.
+
+
+
 
