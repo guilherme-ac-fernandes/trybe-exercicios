@@ -32,9 +32,19 @@ const update = rescue(async (req, res) => {
   return res.status(201).json({ message: 'Book updated!' });
 });
 
+const remove = rescue(async (req, res) => {
+  const { id } = req.params;
+  const removeBook = await BooksService.remove(id);
+  if (!removeBook) {
+    return res.status(404).json({ message: 'Book not found!' });
+  }
+  return res.status(200).json({ message: 'Book removed!' });
+});
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
+  remove,
 };

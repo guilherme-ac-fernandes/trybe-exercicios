@@ -73,6 +73,12 @@ Requisito 13 - No `controller` `BooksController` crie o método `update` sendo u
 
 Requisito 14 - Vincule a rota `PUT /books/:id` para acessar seu `controller`.
 
+Requisito 15 - No `service` `BooksService` crie um método `remove` que recebe o `id` do livro a ser removido e remova o mesmo utilizando o `model` `Book`.
 
+Requisito 16 - No `controller` `BooksController` crie o método `remove` sendo um `middleware` que recebe o `id` como parâmetro de rota e remova o livro por meio do `service`.
+
+Requisito 17 - Vincule a rota `DELETE /books/:id` para acessar seu `controller`.
+
+**Obs.:** Em caso de erro, os `endpoints` devem retornar status `500 com a mensagem: 'Something went wrong'.
 
 
