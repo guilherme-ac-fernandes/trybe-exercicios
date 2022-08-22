@@ -49,4 +49,9 @@ Requisito 1 - Crie uma `migration` para criar uma tabela `books` com as seguinte
 
 Requisito 2 - Crie o `model` `Book` utilizando a API do Sequelize.
 
+Requisito 3 - Crie um `service` `BooksService` com o método `getAll` para retornar uma lista de livros por meio do `model` `Book`.
+
+Requisito 4 - Crie um `controller` `BooksController` com o método `getAll` sendo um `middleware` para retornar a lista de livros por meio do método `getAll` de `BookService`.
+
+Requisito 5 - Vincule a rota `GET /books` para acessar seu `controller`.
 
