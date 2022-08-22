@@ -59,3 +59,12 @@ Requisito 6 - No service `BooksService` crie um método `getById` que recebe um 
 
 Requisito 7 - No `controller` `BooksController` crie o método `getById` sendo um `middleware` que recebe o `id` como parâmetro de rota e buscar o livro por meio do service. Se o livro não existir a resposta da requisição deve ter o status `404` e o `json { "message": "Book not found" }`.
 
+Requisito 8 - Vincule a rota `GET /books/:id` para acessar seu `controller`.
+
+Requisito 9 - No `service` `BooksService` crie um método `create` que recebe um objeto com os atributos `title, author, pageQuantity` e salve um novo livro utilizando o `model` `Book`.
+
+Requisito 10 - No `controller` `BooksController` crie o método `create` sendo um `middleware` que recebe os atributos `title, author, pageQuantity` do `body` da requisição e salve os dados por meio do `service`.
+
+Requisito 11 - Vincule a rota `POST /books` para acessar seu `controller`.
+
+
