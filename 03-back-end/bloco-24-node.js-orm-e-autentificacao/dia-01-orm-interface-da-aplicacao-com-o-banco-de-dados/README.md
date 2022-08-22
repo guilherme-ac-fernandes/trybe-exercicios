@@ -55,3 +55,7 @@ Requisito 4 - Crie um `controller` `BooksController` com o método `getAll` send
 
 Requisito 5 - Vincule a rota `GET /books` para acessar seu `controller`.
 
+Requisito 6 - No service `BooksService` crie um método `getById` que recebe um `id` como parâmetro e use o `model` `Book` para buscar esse livro. Retorne o objeto encontrado pelo `model`.
+
+Requisito 7 - No `controller` `BooksController` crie o método `getById` sendo um `middleware` que recebe o `id` como parâmetro de rota e buscar o livro por meio do service. Se o livro não existir a resposta da requisição deve ter o status `404` e o `json { "message": "Book not found" }`.
+

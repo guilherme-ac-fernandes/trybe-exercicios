@@ -5,6 +5,12 @@ const getAll = async () => {
   return books;
 };
 
+const getById = async (id) => {
+  const book = await Book.findByPk(id);
+  return book;
+}
+
 module.exports = {
   getAll,
+  getById,
 };
