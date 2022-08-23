@@ -93,5 +93,5 @@ Requisito 22 - Crie uma `migration` para adicionar a coluna `publisher` (editora
 
 Requisito 23 - Escreva testes unitários para o `model`.
 
-Requisito 34 - Escreva testes unitários para o `service` criado, isolando a camada de `models`.
+Requisito 24 - Escreva testes unitários para o `service` criado, isolando a camada de `models`.
 
