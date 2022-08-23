@@ -81,4 +81,17 @@ Requisito 17 - Vincule a rota `DELETE /books/:id` para acessar seu `controller`.
 
 **Obs.:** Em caso de erro, os `endpoints` devem retornar status `500 com a mensagem: 'Something went wrong'.
 
+Requisito 18 - Crie um `seeder` usando o `Sequelize-CLI`, populando a sua base com pelo menos um livro.
+
+Requisito 19 - Crie um método `getByAuthor` em `BooksService` para buscar uma lista de livros por `author`.
+
+Requisito 20 - Refatore o método `getAll` de forma que ser for enviado uma `query string` `author` ele seja capaz de pegar a lista usando o método `getByAuthor` de `BooksService`.
+
+Requisito 21 - Refatore os métodos `getAll` e `getByAuthor` para que a lista de livros seja ordenada pelo título em ordem alfabética.
+
+Requisito 22 - Crie uma `migration` para adicionar a coluna `publisher` (editora) na tabela `Books`. Modifique as camadas de serviço para que esse campo seja utilizado no cadastro e na edição.
+
+Requisito 23 - Escreva testes unitários para o `model`.
+
+Requisito 34 - Escreva testes unitários para o `service` criado, isolando a camada de `models`.
 
