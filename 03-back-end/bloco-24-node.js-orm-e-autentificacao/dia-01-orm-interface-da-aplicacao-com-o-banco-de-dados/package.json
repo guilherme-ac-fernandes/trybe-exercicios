@@ -1,0 +1,29 @@
+{
+  "name": "dia-01-orm-interface-da-aplicacao-com-o-banco-de-dados",
+  "version": "1.0.0",
+  "description": "Api de Livros",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-rescue": "^1.1.32",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1",
+    "sequelize-test-helpers": "^1.4.3",
+    "sinon": "^14.0.0"
+  }
+}
