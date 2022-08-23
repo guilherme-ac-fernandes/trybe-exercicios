@@ -191,8 +191,8 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 24.1: Introdução - Node.js: ORM e Autenticação
-- [ ] 24.1: ORM: Interface da aplicação com o banco de dados
+- [X] 24.1: Introdução - Node.js: ORM e Autenticação
+- [X] 24.1: ORM: Interface da aplicação com o banco de dados
 - [ ] 24.2: ORM: Associations
 - [X] 24.3: JWT - (JSON Web Token)
 - [ ] 24.4: Testando APIs com Testes de Integração
