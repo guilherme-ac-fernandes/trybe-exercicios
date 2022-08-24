@@ -1,3 +1,6 @@
+// Resolução baseada no gabarito presente no course da Trybe
+// source: https://app.betrybe.com/course/back-end/nodejs-orm-autenticacao/orm-associations-gabarito/solutions/50847e35-e189-400e-a3f0-3c16ed3f2139/gabarito-dos-exercicios/b08ff550-9b05-4124-92e4-8a3d0342f961?use_case=calendar
+
 const { Patients, Plans, Surgeries } = require('../models');
 
 const getAllPatientsPlans = async (_req, res) => {
