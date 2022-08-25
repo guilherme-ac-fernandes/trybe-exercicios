@@ -1,14 +1,13 @@
 const chai = require('chai');
 const sinon = require('sinon');
 const chaiHttp = require('chai-http');
+const { expect } = chai;
 
-const { User } = require('../models');
 const server = require('../api/app');
+const { User } = require('../models');
 const { User: userMock }  = require('./mock/models');
 
 chai.use(chaiHttp);
-
-const { expect } = chai;
 
 const FAKE_USER = require('./mock/models/Users.json');
 
@@ -16,27 +15,14 @@ describe('Testes de autenticação em /api/users/:id', () => {
   let loginResponse;
 
   before(() => {
-    sinon.stub(User, 'findByPk')
-      .callsFake(userMock.findByPk);
+    sinon.stub(User, 'findByPk').callsFake(userMock.findByPk);
+    sinon.stub(User, 'findOne').callsFake(userMock.findOne);
   });
 
   after(() => {
     User.findByPk.restore();
+    User.findOne.restore();
   });
-
-  // it('A requisição POST /api/users deve realizar a criação do usuário', async () => {
-  //   loginResponse = await chai
-  //     .request(server)
-  //     .post("/api/users")
-  //     .send({
-  //       username: FAKE_USER[0].username,
-  //       password: FAKE_USER[0].password
-  //     });
-
-  //   expect(loginResponse).to.have.status(201);
-  //   expect(loginResponse.body.message)
-  //     .to.be.equal('Novo usuário criado com sucesso');
-  // });
 
   it('A requisição POST /api/login deve retornar os dados esperados', async () => {
     loginResponse = await chai
@@ -69,11 +55,32 @@ describe('Testes de autenticação em /api/users/:id', () => {
       .get("/api/users/1");
 
     expect(userResponse).to.have.status(400);
-    expect(userResponse.body.message)
-      .to.be.equal('Token não encontrado ou informado');
+    expect(userResponse.body.message).to.be.equal('Token não encontrado ou informado');
   });
 
+  it('Ainda que com um token válido, a pessoa usuária logada não pode ter acesso aos dados de outra pessoa usuária', async () => {
+    const { token } = loginResponse.body;
 
+    const userResponse = await chai
+      .request(server)
+      .get("/api/users/2")
+      .set('authorization', token);
+
+    expect(userResponse).to.have.status(401);
+    expect(userResponse.body.message).to.be.equal('Acesso negado');
+  });
+
+  it('Ainda que com um token válido, a pessoa usuária logada pode acessar seu dados', async () => {
+    const { token } = loginResponse.body;
+
+    const userResponse = await chai
+      .request(server)
+      .get("/api/users/1")
+      .set('authorization', token);
+
+    expect(userResponse).to.have.status(200);
+    expect(userResponse.body).to.contain(FAKE_USER[0]);
+  });
 });
 
 // Resolução proveniente do course da Trybe

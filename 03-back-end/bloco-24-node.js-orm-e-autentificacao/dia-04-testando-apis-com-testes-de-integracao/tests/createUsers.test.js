@@ -27,17 +27,12 @@ describe('Rota /api/users', () => {
     let response;
 
     before(async () => {
-      response = await chai
-        .request(server)
-        .get('/api/users');
+      response = await chai.request(server).get('/api/users');
     });
 
-    it('A requisição GET para a rota traz uma lista inicial ' +
-      'contendo dois registros de pessoas usuárias',
-      () => {
-        expect(response.body).to.have.length(2);
-      }
-    );
+    it('A requisição GET para a rota traz uma lista inicial contendo dois registros de pessoas usuárias', () => {
+      expect(response.body).to.have.length(2);
+    });
 
     it('Essa requisição deve retornar código de status 200', () => {
       expect(response).to.have.status(200);
@@ -81,16 +76,12 @@ describe('Rota /api/users', () => {
     });
 
     it('createRequest: O objeto possui a propriedade "message"', () => {
-      expect(createRequest.body)
-        .to.have.property('message');
+      expect(createRequest.body).to.have.property('message');
     });
 
-    it('createRequest: A propriedade "message" possui o texto "Novo usuário criado com sucesso"',
-      () => {
-        expect(createRequest.body.message)
-          .to.be.equal('Novo usuário criado com sucesso');
-      }
-    );
+    it('createRequest: A propriedade "message" possui o texto "Novo usuário criado com sucesso"', () => {
+      expect(createRequest.body.message).to.be.equal('Novo usuário criado com sucesso');
+    });
 
     it('secondUserList: A segunda requisição GET para rota deve retornar, por tanto, 3 registros', () => {
       expect(secondUserList).to.have.length(3);

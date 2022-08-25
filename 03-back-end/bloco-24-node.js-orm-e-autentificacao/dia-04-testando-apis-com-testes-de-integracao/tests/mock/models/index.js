@@ -4,7 +4,6 @@ const mockCreate = (Instance, data) => {
   if(!data){
     return;
   }
-
   const newData = data;
   if(!!Instance[0].id) {
     newData.id = Date.now();
@@ -19,10 +18,8 @@ const mockFindOne = (Instance, where) => {
   if(!where){
     return Instance[0];
   }
-
   const entries = Object.entries(where);
   let result;
-
   entries.forEach(entry => {
     const [key, value] = [entry[0], entry[1]];
 
@@ -32,9 +29,22 @@ const mockFindOne = (Instance, where) => {
       result = Instance[index];
     }
   });
-
   return result;
 };
+
+// Função de mock presente no Live Lectures da Trybe - Referente a aula do dia 24.4
+// source: https://github.com/tryber/sd-020-a-live-lectures/blob/lecture/24.4/node-jwt-base-project/tests/mock/models/index.js
+// const mockFindOne = (Instance, where) => {
+//   if (!where) {
+//         return Instance[0];
+//   }
+//   const whereFields = Object.keys(where);
+//   const result = Instance.filter(item => {
+//     const onlyMatch = whereFields.map( key => item[key] === where[key]);
+//     return onlyMatch.filter(v=>v).length === whereFields.length;
+//   });
+//   return result[0];
+// }
 
 const User = {
   create: async (data) => mockCreate(Users, data),
