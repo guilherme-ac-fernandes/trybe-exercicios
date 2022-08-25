@@ -91,19 +91,19 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 10.1: ‘Hello, world!’ no React!
 - [X] 10.2: Componentes React
-- [X] 10.3: Projeto - Sistema Solar
+- [X] 10.3: [Projeto - Sistema Solar](https://github.com/guilherme-ac-fernandes/solar-system)
 
 #### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
 - [X] 11.1: Componentes com estado e eventos
 - [X] 11.2: Formulários no React
-- [X] 11.3: Projeto - Tryunfo
+- [X] 11.3: [Projeto - Tryunfo](https://github.com/guilherme-ac-fernandes/tryunfo)
 
 #### Bloco 12: Ciclo de Vida de Componentes e React Router
 
 - [X] 12.1: Ciclo de vida de componentes
 - [X] 12.2: React Router
-- [X] 12.3: Projeto - TrybeTunes
+- [X] 12.3: [Projeto - TrybeTunes](https://github.com/guilherme-ac-fernandes/trybetunes)
 
 #### Bloco 13: Metodologias Ágeis
 
