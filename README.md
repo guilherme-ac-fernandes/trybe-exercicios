@@ -196,7 +196,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 24.2: ORM: Associations
 - [X] 24.3: JWT - (JSON Web Token)
 - [X] 24.4: Testando APIs com Testes de Integração
-- [ ] 24.5: Projeto - API de Blogs
+- [X] 24.5: Projeto - API de Blogs
 
 #### Bloco 25: Deployment
 
