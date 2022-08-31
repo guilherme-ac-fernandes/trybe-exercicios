@@ -1,0 +1,3 @@
+heroku create message-star-wars // para inicializar o heroku
+heroku config:set MESSAGE='Star Star é melhor que Star Trek!' --app message-star-wars // para configura um variável de ambiente
+git push heroku master // para publicar no heroku
