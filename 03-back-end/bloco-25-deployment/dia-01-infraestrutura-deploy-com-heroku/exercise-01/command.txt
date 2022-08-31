@@ -1,0 +1,2 @@
+heroku create its-is-alive // para inicializar o heroku
+git push heroku <nome-da-branch>:master // para publicar no heroku
