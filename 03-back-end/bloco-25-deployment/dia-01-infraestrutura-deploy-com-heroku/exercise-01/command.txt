@@ -1,0 +1,6 @@
+// Requisito 1
+- Para inicializar o heroku:
+  heroku create its-is-alive
+
+- Para publicar no heroku:
+  git push heroku master

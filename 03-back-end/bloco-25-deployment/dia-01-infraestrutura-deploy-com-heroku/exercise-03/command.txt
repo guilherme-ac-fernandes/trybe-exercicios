@@ -1,0 +1,9 @@
+// Requisito 1
+- Para inicializar o heroku utilizando um buildpack:
+  heroku create guilherme-react-app -b mars/create-react-app
+
+- Comando para trocar a Heroku para versão 20, suportada pelo buildpack utilizado:
+  heroku stack:set heroku-20
+
+- Para fazer o deploy :
+  git push heroku master 
