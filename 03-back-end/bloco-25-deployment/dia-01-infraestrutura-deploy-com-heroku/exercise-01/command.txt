@@ -1,2 +1,6 @@
-heroku create its-is-alive // para inicializar o heroku
-git push heroku master // para publicar no heroku
+// Requisito 1
+- Para inicializar o heroku:
+  heroku create its-is-alive
+
+- Para publicar no heroku:
+  git push heroku master
