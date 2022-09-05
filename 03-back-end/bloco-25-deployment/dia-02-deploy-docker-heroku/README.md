@@ -19,7 +19,7 @@ Requisito 5 - Conecte sua aplicação back-end ao banco de dados.
 
 Requisito 6 - Popule o banco de dados com informações de pessoas usuárias ou qualquer tipo de dados que viram uma tabela.
 
-* Valide os próximos passos pela interface do SUPABASE`.
+* Valide os próximos passos pela interface do `SUPABASE`.
 
 * Use `npx sequelize-cli db:migrate` para fazer a migração e criar as tabelas no banco.
 
