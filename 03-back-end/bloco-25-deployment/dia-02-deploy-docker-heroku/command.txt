@@ -1,0 +1,39 @@
+// Resolução dos requisito 9 a 12 baseada na resolução proveniente do course da Trybe
+// source: https://app.betrybe.com/course/back-end/deployment/deploy-docker-heroku-gabarito/solutions/04581f03-9abe-43ee-8f65-6b3025212ed2/gabarito-dos-exercicios/c9dd737b-1eff-4f62-8b44-1a6c5e611034?use_case=calendar
+
+// Requisito 1
+- Para inicializar o heroku utilizando um buildpack:
+  git init // para iniciar um repositório git
+  heroku create guilherme-react-app -b mars/create-react-app
+- Comando para trocar a Heroku para versão 20, suportada pelo buildpack utilizado:
+  heroku stack:set heroku-20
+- Para fazer o deploy :
+  git add .
+  git commit -m "feat: adiciona arquivos para realizar o deploy"
+  git push heroku master 
+
+// Requisito 2
+- Para inicializar o heroku utilizando docker:
+  git init // para iniciar um repositório git
+  heroku create guilherme-back-end
+  heroku stack:set container -a guilherme-back-end
+  git add .
+  git commit -m "feat: adiciona arquivos para realizar o deploy do back"
+  git push heroku master
+
+// Requisito 4
+  heroku config:set PASSWORD_POSTGRES=XXdbcX7Pv4omy229 HOST=db.nihdbzurbmziillfulei.supabase.co DATABASE=postgres DB_USERNAME=postgres DB_PORT=5432
+
+// Requisito 5
+  npx run utils/testSequelizeConnection.js
+
+// Requisito 6
+  npm install -D sequelize-cli
+  npx sequelize-cli db:migrate
+  npx sequelize-cli db:seed:all
+
+// Requisito 12
+- comando para criar o pipeline do backend com o ambiente de production
+  heroku pipelines:create newpipeline -a guilherme-back-end
+- comando para adicionar o front na pipeline criada
+  heroku pipelines:add newpipeline -a nome-do-app-frontend
