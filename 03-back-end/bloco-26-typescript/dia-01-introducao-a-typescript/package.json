@@ -1,0 +1,20 @@
+{
+  "name": "dia-01-introducao-a-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.16",
+    "@types/readline-sync": "^1.4.4",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
