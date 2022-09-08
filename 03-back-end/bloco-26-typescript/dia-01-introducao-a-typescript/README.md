@@ -95,3 +95,154 @@ Requisito 4 - Utilizando as `enums` criadas nos exercícios anteriores e o pacot
 | Primavera | 22 de setembro | 21 de dezembro |
 | Verão | 21 de dezembro | 20 de março |
 
+
+Requisito 5 - Crie um `script` para converter unidades de medida de comprimento:
+
+* Esse script deverá se chamar `Length.ts`.
+
+* Ele deverá possuir uma função chamada `convert` que recebe como parâmetro:
+
+```
+valor: number
+unidade base: string
+unidade para a conversão: string
+```
+
+* Tabela de conversão:
+
+| Nome | Símbolo | Valor |
+|---|---|---|
+| Quilômetro | km | 1000m |
+| Hectômetro | hm | 100m |
+| Decâmetro | dam | 10m |
+| Metro | m | 1m |
+| Decímetro | dm | 0,1m |
+| Centímetro | cm | 0,01m |
+| Milímetro | mm | 0,001m |
+
+Requisito 6 - Crie um `script` para converter unidades de medida de massa:
+
+* Esse script deverá se chamar `Mass.ts`.
+
+* Ele deverá possuir uma função chamada `convert` que recebe como parâmetro:
+
+```
+valor: number
+unidade base: string
+unidade para a conversão: string
+```
+
+* Tabela de conversão:
+
+| Nome | Símbolo | Valor |
+|---|---|---|
+| Quilograma | kg | 1000g |
+| Hectograma | hg | 100g |
+| Decagrama | dag | 10g |
+| Grama | g | 1g |
+| Decigrama | dg | 0,1g |
+| Centigrama | cg | 0,01g |
+| Miligrama | mg | 0,001g |
+
+
+Requisito 7 - Crie um `script` para converter unidades de medida de capacidade:
+
+* Esse script deverá se chamar `Capacity.ts`.
+
+* Ele deverá possuir uma função chamada `convert` que recebe como parâmetro:
+
+```
+valor: number
+unidade base: string
+unidade para a conversão: string
+```
+
+* Tabela de conversão:
+
+| Nome | Símbolo | Valor |
+|---|---|---|
+| Quilolitro | kl | 1000l |
+| Hectolitro | hl | 100l |
+| Decalitro	 | dal | 10l |
+| Litro | l | 1l |
+| Decilitro | dl | 0,1l |
+| Centilitro | cl | 0,01l |
+| Mililitro | ml | 0,001l |
+
+
+Requisito 8 - Crie um `script` para converter unidades de medida de área:
+
+* Esse script deverá se chamar `Area.ts`.
+
+* Ele deverá possuir uma função chamada `convert` que recebe como parâmetro:
+
+```
+valor: number
+unidade base: string
+unidade para a conversão: string
+```
+* Obs: atente-se à conversão de metros quadrados, que deve ser realizada de 100 em 100.
+
+* Tabela de conversão:
+
+| Nome | Símbolo | Valor |
+|---|---|---|
+| Quilômetro quadrado | km² | 10⁶ m² |
+| Hectômetro quadrado | hm² | 10⁴ m² |
+| Decâmetro quadrado | dam² | 10² m² |
+| Metro quadrado | m² | 1m² |
+| Decímetro quadrado | dm² | 10⁻² m² |
+| Centímetro quadrado | cm² | 10⁻⁴ m² |
+| Milímetro quadrado | mm² | 10⁻⁶ m² |
+
+
+Requisito 9 - Crie um `script` para converter unidades de medida de volume:
+
+* Esse script deverá se chamar `Volume.ts`.
+
+* Ele deverá possuir uma função chamada `convert` que recebe como parâmetro:
+
+```
+valor: number
+unidade base: string
+unidade para a conversão: string
+```
+* Obs: atente-se à conversão de metros quadrados, que deve ser realizada de 1000 em 1000.
+
+* Tabela de conversão:
+
+| Nome | Símbolo | Valor |
+|---|---|---|
+| Quilômetro cúbico | km³ | 10⁹ m³ |
+| Hectômetro cúbico | hm³ | 10⁶ m³ |
+| Decâmetro cúbico | dam³ | 10³ m³ |
+| Metro cúbico | m³ | 1m³ |
+| Decímetro cúbico | dm³ | 10⁻³ m³ |
+| Centímetro cúbico | cm³ | 10⁻⁶ m³ |
+| Milímetro cúbico | mm³ | 10⁻⁹ m³ |
+
+
+Requisito 10 - Vamos tornar nossos `scripts` de unidades de medida mais interativos! Vamos adicionar `input` de quem usa o `script`. Para isso, utilize o pacote `readline-sync`.
+
+* Em cada `script` criado nos requisitos 5 a 9, crie uma função chamada `exec` que:
+
+1. Capta as entradas da pessoa usuária via terminal.
+
+2. Chama a função de conversão passando as entradas da pessoa usuária como parâmetro.
+
+3. Exibe uma mensagem com o resultado. `Ex: “1km é igual a 1000m.”`.
+
+4. Não se esqueça de chamar a função `exec` ao final do `script`.
+
+
+Requisito 11 - Crie um arquivo `index_units.ts` que pergunta qual conversão a pessoa usuária deseja realizar, e chama o `script` correspondente:
+
+1. O `script` deve ser acionado por meio do comando `npm run start:units` no `package.json`.
+
+2. Utilize o `readline-sync` para realizar o `input` de dados.
+
+3. Quando executado, o `script` deve exibir uma lista numerada dos scripts disponíveis.
+
+4. Você pode utilizar o `require` para executar o script em questão.
+
+
