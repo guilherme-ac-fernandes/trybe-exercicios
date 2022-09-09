@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:gol": "npx tsc && node dist/Gol.js",
+    "start:pizza": "npx tsc && node dist/Pizza.js"
   },
   "author": "Guilherme Fernandes",
   "license": "ISC",
