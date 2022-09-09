@@ -23,7 +23,8 @@ touch tsconfig.json
 
 ####  Atividade de fixação:
 
-> Crie o arquivo `Character.ts`
+> Crie o arquivo `Character.ts`.
+
 Requisito 1 - Temos um array `characters` que agrupa dados de jogadores em um MMORPG (“Jogo de representação de papéis online, multijogador em massa”) usado para manter o registro de uma guilda (grupo de jogadores) no acompanhamento da evolução do grupo. Esses dados foram adicionados sem se atentar para sua correta tipagem, o que pode ocasionar um bug no futuro. Faça a correta tipagem do array por meio do tipo `Character` e da função usada para imprimir as informações básicas de todos os jogadores.
 
 ```
@@ -62,15 +63,18 @@ createdAt: ${createdAt}`);
 characters.forEach(printCharacter);
 ```
 
-> Crie o arquivo `Months.ts`
+> Crie o arquivo `Months.ts`.
+
 Requisito 2 - Crie uma `enum` que represente os meses do ano.
 
 
-> Crie o arquivo `Seasons.ts`
+> Crie o arquivo `Seasons.ts`.
+
 Requisito 3 - Crie uma `enum` que represente as estações climáticas do ano.
 
 
-> Crie o arquivo `index.ts`
+> Crie o arquivo `index.ts`.
+
 Requisito 4 - Utilizando as `enums` criadas nos exercícios anteriores e o pacote `readline-sync`, que cria uma interface para ler o que for inserido no console, crie um programa que quando a pessoa usuária escolher o mês do ano e o hemisfério no terminal:
 
 * Retorne em que estação aquele mês se encontra.
