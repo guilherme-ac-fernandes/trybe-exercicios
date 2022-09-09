@@ -1,0 +1,16 @@
+{
+  "name": "dia-02-tipagem-estatica-e-generics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Fernandes",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.16",
+    "typescript": "^4.8.3"
+  }
+}
