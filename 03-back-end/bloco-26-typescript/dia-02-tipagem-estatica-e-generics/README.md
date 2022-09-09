@@ -25,6 +25,7 @@ touch tsconfig.json
 ####  Atividade de fixação:
 
 > Crie o arquivo `Car.ts` e uma pasta `./enum` para auxiliar na criação dos `enum’s`.
+
 Requisito 1 - Crie uma classe Car cujo objeto representará um carro.
 
 **Propriedades:**
@@ -60,6 +61,7 @@ Requisito 1 - Crie uma classe Car cujo objeto representará um carro.
 
 
 > Crie o arquivo `Gol.ts`.
+
 Requisito 2 - Vamos agora utilizar a classe `Car` que criamos no requisito anterior. Uma pessoa motorista de aplicativo fará uma viagem para pegar sua nova pessoa passageira. Ela então entra em seu `volkswagen gol prata` de `4 portas`, liga seu carro e começa o trajeto:
 
 * Siga em frente;
