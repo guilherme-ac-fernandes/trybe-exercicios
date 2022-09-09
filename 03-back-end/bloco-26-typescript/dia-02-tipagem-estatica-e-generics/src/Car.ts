@@ -1,21 +1,6 @@
-enum Colors {
-  BLACK = "Preta",
-  WHITE = "Branca",
-  RED = "Vermelha",
-  SILVER = "Prata"
-}
-
-enum Doors {
-  DRIVER = "da pessoa motorista",
-  PASSENGER = "do passageiro ao lado do motorista",
-  BEHIND_DRIVER = "do passageiro atrás do motorista",
-  BEHIND_PASSENGER = "do passageiro oposto transversalmente ao motorista",
-}
-
-enum Directions {
-  LEFT = "esquerda",
-  RIGHT = "direita",
-}
+import Colors from "./enum/Colors";
+import Doors from "./enum/Doors";
+import Directions from "./enum/Directions";
 
 class Car {
   brand: string;
@@ -57,6 +42,4 @@ class Car {
   }
 }
 
-// const
-// console.log(new Car('Fiat', Colors.WHITE, 4).honk());
-
+export default Car;
