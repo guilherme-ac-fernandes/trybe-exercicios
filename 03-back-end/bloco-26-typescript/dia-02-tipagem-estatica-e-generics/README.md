@@ -110,4 +110,67 @@ Agora você deve desenvolver um script capaz de automatizar todo o cenário desc
 
 
 
+> Crie o arquivo `Pizza.ts` e uma pasta `./type` para auxiliar na criação dos `type’s`. 
+
+Requisito 3 - Crie uma `interface` que represente uma pizza. Ela deve conter:
+
+* Uma propriedade do tipo `string` chamada `flavor` que representa o sabor.
+
+* Uma propriedade chamada `slices` cujo tipo é a `união` entre os possíveis números de fatias da pizza.
+
+> O número de fatias pode ser 4, 6 ou 8.
+> 
+> Utilize um `type alias` para armazenar o tipo dessa propriedade.
+
+a) Crie uma pizza sabor Calabresa de 8 fatias;
+
+b) Crie uma pizza sabor Marguerita de 6 fatias;
+
+c) Crie uma pizza sabor Nutela de 4 fatias.
+
+
+> Crie o arquivo `NewPizza.ts`. 
+
+Requisito 4 - Vamos agora estender nossa `interface` Pizza com novos tipos de pizza. São eles:
+
+> Pizza Comum - seus sabores são “Calabresa”, “Frango” e “Pepperoni”, podem ter 4, 6 ou 8 pedaços.
+>
+> Pizza Vegetariana - seus sabores são “Marguerita”, “Palmito” e “Cogumelo”, podem ter 4, 6 ou 8 pedaços.
+>
+> Pizza Doce - seus sabores são “Nutela”, “Goiabada com Queijo” e “Marshmallow”, podem ter somente 4 pedaços.
+
+Você deve usar `type alias` e `type unions` para criar os possíveis sabores de cada tipo de pizza.
+
+Agora crie:
+
+* 3 pizzas do tipo comum.
+
+* 2 pizzas do tipo vegetariana.
+
+* 1 pizza do tipo doce.
+
+
+
+> Crie o arquivo `Filter.ts`. 
+
+Requisito 5 - Em JavaScript, temos a `High Order Function` `**filter**`. Ela funciona da seguinte forma:
+
+* Recebe como primeiro parâmetro um `array` que pode ser de qualquer tipo.
+
+* Recebe como segundo parâmetro uma função de `callback`.
+
+* Retorna um novo `array` removendo os itens que não atendem a condição da função de `callback`.
+
+* A função de `callback` recebe como primeiro parâmetro um item do tipo do `array`.
+
+* A função de `callback` pode receber como segundo parâmetro um `index` do tipo inteiro.
+
+* A função de `callback` pode receber como terceiro parâmetro o próprio `array`.
+
+* A função de `callback` devolve um `booleano`.
+
+Usando `generics` e os demais conceitos aprendidos em `TypeScript`, recrie a função `filter` e nomeie-a como `myFilter`.
+
+
+
 
