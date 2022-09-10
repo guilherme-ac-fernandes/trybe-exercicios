@@ -208,7 +208,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 #### Bloco 26: TypeScript
 
 - [X] 26.1: Introdução ao TypeScript
-- [ ] 26.2: Tipagem Estática e Generics
+- [X] 26.2: Tipagem Estática e Generics
 - [ ] 26.3: Express com TypeScript
 - [ ] 26.4: Projeto - Trybe Smith
 

@@ -1,0 +1,1 @@
+export type Slices = 4 | 6 | 8;
