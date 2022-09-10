@@ -6,7 +6,8 @@
   "scripts": {
     "start:gol": "npx tsc && node dist/Gol.js",
     "start:pizza": "npx tsc && node dist/Pizza.js",
-    "start:new:pizza": "npx tsc && node dist/NewPizza.js"
+    "start:new:pizza": "npx tsc && node dist/NewPizza.js",
+    "start:filter": "npx tsc && node dist/Filter.js"
   },
   "author": "Guilherme Fernandes",
   "license": "ISC",
