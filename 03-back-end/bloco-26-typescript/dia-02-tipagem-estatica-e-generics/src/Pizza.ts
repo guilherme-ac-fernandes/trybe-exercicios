@@ -1,4 +1,4 @@
-type Slices = 4 | 6 | 8;
+import { Slices } from "./type/Slices";
 
 interface Pizza {
   flavor: string,
@@ -22,3 +22,4 @@ const Nutela: Pizza = {
 
 console.table([Calabresa, Marguerita, Nutela]);
 
+export default Pizza;
