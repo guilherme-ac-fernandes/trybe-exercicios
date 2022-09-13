@@ -203,7 +203,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 25.1: Introdução - Deploy
 - [X] 25.1: Infraestrutura - Deploy com Heroku
 - [X] 25.2: Deploy Docker & Heroku
-- [X] 25.3: Projeto - Stranger Things [BackEnd](https://github.com/guilherme-ac-fernandes/stranger-things-backend) e [FrontEnd](https://github.com/guilherme-ac-fernandes/stranger-things-frontend)
+- [X] 25.3: [Projeto - Stranger Things BackEnd](https://github.com/guilherme-ac-fernandes/stranger-things-backend) e [FrontEnd](https://github.com/guilherme-ac-fernandes/stranger-things-frontend)
 
 #### Bloco 26: TypeScript
 
