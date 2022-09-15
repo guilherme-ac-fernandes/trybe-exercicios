@@ -214,7 +214,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 27.1: Introdução à Orientação a Objetos
+- [X] 27.1: Introdução à Orientação a Objetos
 - [ ] 27.2: Herança e Interfaces
 - [ ] 27.3: Polimorfismo
 - [ ] 27.4: SOLID - Introdução e Princípios S, O e D
