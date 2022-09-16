@@ -6,7 +6,8 @@
   "scripts": {
     "person": "npx ts-node src/Person.ts",
     "student": "npx ts-node src/Student.ts",
-    "employee": "npx ts-node src/Employee.ts"
+    "employee": "npx ts-node src/Employee.ts",
+    "subject": "npx ts-node src/Subject.ts"
   },
   "keywords": [],
   "author": "Guilherme Fernandes",
