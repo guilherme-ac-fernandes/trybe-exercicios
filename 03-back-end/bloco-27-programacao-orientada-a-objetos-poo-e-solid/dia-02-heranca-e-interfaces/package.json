@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "person": "npx ts-node src/Person.ts",
-    "student": "npx ts-node src/Student.ts"
+    "student": "npx ts-node src/Student.ts",
+    "employee": "npx ts-node src/Employee.ts"
   },
   "keywords": [],
   "author": "Guilherme Fernandes",
