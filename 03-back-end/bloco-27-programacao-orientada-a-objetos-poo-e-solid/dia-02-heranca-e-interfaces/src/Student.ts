@@ -1,14 +1,13 @@
-class Student {
-  private _enrollment: string;
-  private _name: string;
-  private _examsGrades: number[];
-  private _worksGrades: number[];
+import Person from './Person';
 
-  constructor(enrollment: string, name: string) {
-    this._enrollment = enrollment;
-    this._name = name;
-    this._examsGrades = [];
-    this._worksGrades = [];
+export default class Student extends Person {
+  private _enrollment = String();
+  private _examsGrades: number[] = [];
+  private _worksGrades: number[] = [];
+
+  constructor(name: string, birthDate: Date) {
+    super(name, birthDate)
+    this._enrollment = this.generateEnrollment();
   }
 
   get enrollment(): string {
@@ -16,18 +15,10 @@ class Student {
   }
 
   set enrollment(value: string) {
-    this._enrollment = value;
-  }
-
-  get name(): string {
-    return this._name;
-  }
-
-  set name(value: string) {
-    if (value.length < 3) {
-      throw new Error('O nome deve conter no mínimo 3 caracteres!')
+    if (value.length < 16) {
+      throw new Error('A matrícula deve possuir no mínimo 16 caracteres.');
     }
-    this._name = value;
+    this._enrollment = value;
   }
 
   get examsGrades(): number[] {
@@ -66,17 +57,17 @@ class Student {
     const sumGrades = this.getSum();
     return Math.round(sumGrades/allGrades.length);
   }
+
+  generateEnrollment(): string {
+    const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
+    return `STU${randomStr}`;
+  }
 }
 
-const Gui = new Student('123456', 'Guilherme Fernandes');
-const Felipe = new Student('654321', 'Felipe Martins');
-
-console.log(Gui);
-console.log(Felipe);
-
-Gui.examsGrades = [25, 20, 23, 23];
-Gui.worksGrades = [45, 45];
-
-console.log('Estudante: ', Gui.name)
-console.log('Soma de todas as notas: ', Gui.getSum());
-console.log('Média de todas as notas: ', Gui.getAvg());
+// const Gui = new Student('Guilherme Fernandes', new Date('1994-08-28'));
+// console.log(Gui);
+// Gui.examsGrades = [25, 20, 23, 23];
+// Gui.worksGrades = [45, 45];
+// console.log('Estudante: ', Gui.name)
+// console.log('Soma de todas as notas: ', Gui.getSum());
+// console.log('Média de todas as notas: ', Gui.getAvg());

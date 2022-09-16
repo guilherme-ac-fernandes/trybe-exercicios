@@ -44,10 +44,10 @@ export default class Person {
   }
 }
 
-const person1 = new Person('Jon Snow', new Date('1983-05-02'));
-const person2 = new Person('Jon Snow', new Date('2000-12-24'));
-const person3 = new Person('Jon Snow', new Date('2021-02-21'));
+// const person1 = new Person('Jon Snow', new Date('1983-05-02'));
+// const person2 = new Person('Jon Snow', new Date('2000-12-24'));
+// const person3 = new Person('Jon Snow', new Date('2021-02-21'));
 
-console.log(person1);
-console.log(person2);
-console.log(person3);
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
