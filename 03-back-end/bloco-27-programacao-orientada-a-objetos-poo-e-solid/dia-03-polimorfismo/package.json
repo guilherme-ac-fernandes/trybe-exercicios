@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "school": "npx ts-node school/index.ts"
+    "school": "npx ts-node school/index.ts",
+    "dinner": "npx ts-node dinner/index.ts"
   },
   "author": "Guilherme Fernandes",
   "license": "ISC",
