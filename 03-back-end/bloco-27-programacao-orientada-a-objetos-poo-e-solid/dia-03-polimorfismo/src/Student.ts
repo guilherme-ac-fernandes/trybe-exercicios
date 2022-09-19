@@ -1,4 +1,5 @@
 import Person from "./Person";
+import EvaluationResult from "./EvaluationResult";
 
 interface Enrollable {
   enrollment: string;
@@ -8,12 +9,12 @@ interface Enrollable {
 
 class Student extends Person implements Enrollable {
   private _enrollment = String();
-  private _examsGrades: number[] = [];
-  private _worksGrades: number[] = [];
+  private _evaluationsResults: EvaluationResult[];
 
   constructor(name: string, birthDate: Date) {
     super(name, birthDate)
     this._enrollment = this.generateEnrollment();
+    this._evaluationsResults = [];
   }
 
   get enrollment(): string {
@@ -27,46 +28,30 @@ class Student extends Person implements Enrollable {
     this._enrollment = value;
   }
 
-  get examsGrades(): number[] {
-    return this._examsGrades;
-  }
-
-  set examsGrades(value: number[]) {
-    if (value.length < 4) {
-      throw new Error('A pessoa estudante só pode possuir 4 notas de provas!')
-    }
-    this._examsGrades = value;
-  }
-
-  get worksGrades(): number[] {
-    return this._worksGrades;
-  }
-
-  set worksGrades(value: number[]) {
-    if (value.length < 2) {
-      throw new Error('A pessoa estudante só pode possuir 2 notas de trabalhos!')
-    }
-    this._worksGrades = value;
+  get evaluationsResults(): EvaluationResult[] {
+    return this._evaluationsResults;
   }
 
   getSum() {
-    const allGrades = [...this._examsGrades, ...this._worksGrades];
-    const sumGrades = allGrades.reduce((acc, curr) => {
-      acc += curr;
+    const sumGrades = this.evaluationsResults.reduce((acc, curr) => {
+      acc += curr.score;
       return acc;
     }, 0);
     return sumGrades;
   }
 
   getAvg() {
-    const allGrades = [...this._examsGrades, ...this._worksGrades];
     const sumGrades = this.getSum();
-    return Math.round(sumGrades/allGrades.length);
+    return Math.round(sumGrades/this.evaluationsResults.length);
   }
 
   generateEnrollment(): string {
     const randomStr = String(Date.now() * (Math.random() + 1)).replace(/\W/g, '');
     return `STU${randomStr}`;
+  }
+
+  addEvaluationsResults(newValue: EvaluationResult): void {
+    this._evaluationsResults.push(newValue);
   }
 }
 

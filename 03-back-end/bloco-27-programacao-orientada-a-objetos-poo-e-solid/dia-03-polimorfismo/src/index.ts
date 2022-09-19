@@ -1,3 +1,5 @@
+import Evaluation from "./Evaluation";
+import EvaluationResult from "./EvaluationResult";
 import Student from "./Student";
 import Subject from "./Subject";
 import Teacher from "./Teacher";
@@ -14,3 +16,9 @@ const marta = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math);
 const joao = new Teacher('João Antônio da Costa', new Date('1982/04/21'), 2000, history);
 console.log(marta);
 console.log(joao);
+
+const test = new Evaluation(marta, 20, 'prova');
+const newTest = new EvaluationResult(test, 19);
+lucas.addEvaluationsResults(newTest);
+
+console.log(lucas);
