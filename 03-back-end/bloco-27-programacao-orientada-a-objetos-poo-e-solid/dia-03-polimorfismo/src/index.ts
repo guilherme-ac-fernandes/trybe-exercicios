@@ -1,24 +1,38 @@
-import Evaluation from "./Evaluation";
-import EvaluationResult from "./EvaluationResult";
 import Student from "./Student";
-import Subject from "./Subject";
 import Teacher from "./Teacher";
+import Subject from "./Subject";
+import Exam from "./Exam";
+import Work from "./Work";
+import EvaluationResult from "./EvaluationResult";
 
 const carolina = new Student('Carolina da Silva', new Date('2005/03/17'));
 const lucas = new Student('Lucas Peixoto Salgueiro', new Date('2006/07/19'));
-console.log(carolina);
-console.log(lucas);
 
 const math = new Subject('Matemática');
 const history = new Subject('História');
 
 const marta = new Teacher('Marta da Silva', new Date('1980/03/30'), 2000, math);
 const joao = new Teacher('João Antônio da Costa', new Date('1982/04/21'), 2000, history);
-console.log(marta);
-console.log(joao);
 
-const test = new Evaluation(marta, 20, 'prova');
-const newTest = new EvaluationResult(test, 19);
-lucas.addEvaluationsResults(newTest);
+const examMath = new Exam(marta, 25);
+const workMath = new Work(marta, 50);
+const examHistory = new Exam(joao, 25);
+const workHistory = new Work(joao, 50);
 
-console.log(lucas);
+carolina.addEvaluationsResults(new EvaluationResult(examMath, 23, 'exam'));
+carolina.addEvaluationsResults(new EvaluationResult(workMath, 42, 'work'));
+carolina.addEvaluationsResults(new EvaluationResult(examHistory, 25, 'exam'));
+carolina.addEvaluationsResults(new EvaluationResult(workHistory, 50, 'work'));
+
+console.log('Avaliações: ', carolina.evaluationsResults);
+console.log('Soma das notas: ', carolina.getSum());
+console.log('Média das notas: ', carolina.getAvg());
+
+lucas.addEvaluationsResults(new EvaluationResult(examMath, 25, 'exam'));
+lucas.addEvaluationsResults(new EvaluationResult(workMath, 49, 'work'));
+lucas.addEvaluationsResults(new EvaluationResult(examHistory, 20, 'exam'));
+lucas.addEvaluationsResults(new EvaluationResult(workHistory, 50, 'work'));
+
+console.log('Avaliações: ', lucas.evaluationsResults);
+console.log('Soma das notas: ', lucas.getSum());
+console.log('Média das notas: ', lucas.getAvg());

@@ -1,12 +1,15 @@
 import Evaluation from './Evaluation';
 
+
 class EvaluationResult {
   constructor(
     private _evaluation: Evaluation,
     private _score: number,
+    public type: 'exam' | 'work',
     ) {
     this.evaluation = _evaluation;
     this.score = _score;
+    this.type = type;
   }
 
   get evaluation(): Evaluation {
@@ -25,10 +28,10 @@ class EvaluationResult {
     if (newValue < 0) {
       throw new Error('A pontução deve ser positiva.');
     }
-    if (this.evaluation.type === 'prova' && newValue > 25) {
+    if (this.type === 'exam' && newValue > 25) {
       throw new Error(`A pontução deve ser menor que 25 pontos.`);
     }
-    if (this.evaluation.type === 'trabalho' && newValue > 50) {
+    if (this.type === 'work' && newValue > 50) {
       throw new Error(`A pontução deve ser menor que 50 pontos.`);
     }
     this._score = newValue;
