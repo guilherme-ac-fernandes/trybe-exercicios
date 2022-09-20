@@ -3,7 +3,7 @@
 ####  Atividade de fixação:
 Configure o ambiente de desenvolvimento com os seguintes arquivos:
 
-** package.json **
+**package.json**
 ```
 {
   "name": "solid-1-exercises",
@@ -40,7 +40,7 @@ Configure o ambiente de desenvolvimento com os seguintes arquivos:
 }
 ```
 
-** .eslintrc.json **
+**.eslintrc.json**
 
 ```
 {
@@ -68,7 +68,7 @@ Configure o ambiente de desenvolvimento com os seguintes arquivos:
 }
 ```
 
-** tsconfig.json **
+**tsconfig.json**
 
 ```
 {
@@ -83,7 +83,7 @@ Configure o ambiente de desenvolvimento com os seguintes arquivos:
 }
 ```
 
-** opsInfo.json **
+**opsInfo.json**
 
 ```
 {
@@ -91,7 +91,7 @@ Configure o ambiente de desenvolvimento com os seguintes arquivos:
 }
 ```
 
-** plantsData.json **
+**plantsData.json**
 
 ```
 [
@@ -115,7 +115,7 @@ Configure o ambiente de desenvolvimento com os seguintes arquivos:
 ]
 ```
 
-** Plants.ts **
+**Plants.ts**
 
 ```
 import fs from 'fs/promises';
