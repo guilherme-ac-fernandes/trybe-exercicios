@@ -1,17 +1,36 @@
 import Person from '../school/Person';
 import OrderItem from './OrderItem';
 
+export enum Payment {
+  CARD = 'Cartão',
+  MONEY = 'Dinheiro',
+  TICKET = 'Vale'
+}
+
 class Order {
+  private _id: number;
+  private _createdAt: Date;
+
   constructor(
     private _client: Person,
     private _itens: OrderItem[] = [],
-    private _paymentMethod: 'cartão' | 'dinheiro',
+    private _paymentMethod: Payment,
     private _discount = 0,
   ) {
+    this._id = Math.trunc(Date.now() * (Math.random() + 1));
+    this._createdAt = new Date();
     this.client = _client;
     this.itens =  _itens;
     this.paymentMethod = _paymentMethod;
     this.discount = _discount;
+  }
+
+  get id(): number {
+    return this._id;
+  }
+
+  get createdAt(): Date {
+    return this._createdAt;
   }
 
   get client(): Person {
@@ -33,11 +52,11 @@ class Order {
     this._itens = value;
   }
 
-  get paymentMethod(): 'cartão' | 'dinheiro' {
+  get paymentMethod(): Payment {
     return this._paymentMethod;
   }
 
-  set paymentMethod(value: 'cartão' | 'dinheiro') {
+  set paymentMethod(value: Payment) {
     this._paymentMethod = value;
   }
 
@@ -46,7 +65,7 @@ class Order {
   }
 
   set discount(value: number) {
-    if (value <= 0 || value > 1) {
+    if (value < 0 || value > 1) {
       throw new Error('O desconto deve estar entre 0 e 1.');
     }
     this._discount = value;
