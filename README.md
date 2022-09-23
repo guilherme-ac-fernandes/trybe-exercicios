@@ -219,7 +219,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 27.3: Polimorfismo
 - [X] 27.4: SOLID - Introdução e Princípios S, O e D
 - [X] 27.5: SOLID - Princípios L e I
-- [X] 27.6: Projeto - Trybers and Dragons
+- [X] 27.6: [Projeto - Trybers and Dragons](https://github.com/guilherme-ac-fernandes/trybers-and-dragons)
 
 #### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
