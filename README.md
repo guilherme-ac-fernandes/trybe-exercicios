@@ -223,7 +223,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-- [X] 28.1: [Projeto - TFC - Trybe Futebol Clube]()
+- [X] 28.1: [Projeto - TFC - Trybe Futebol Clube](https://github.com/guilherme-ac-fernandes/trybe-futebol-clube)
 
 #### Bloco 29: Introdução ao MongoDB
 
