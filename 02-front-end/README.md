@@ -11,5 +11,5 @@ O segundo módulo da minha jornada no desenvolvimento web foi focado em Front-En
 * Context API e React Hooks
 
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/28/02-front-end/front.png" alt="Imagem Front-End Development"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/02-front-end/front.png" alt="Imagem Front-End Development"/>
 </p>
