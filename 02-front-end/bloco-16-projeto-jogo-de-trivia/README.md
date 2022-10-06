@@ -1,6 +1,6 @@
 ## Projeto Jogo de Trivia
 
-O objetivo desse bloco foi em grupo, construir um jogo de Trivia a partir da _[API](https://opentdb.com)_, como forma de utilizar os conhecimentos de React, Redux e metodologias ágeis no desenvolvimento de aplicações.
+O objetivo desse bloco foi construir, em grupo, um jogo de Trivia a partir da _[API](https://opentdb.com)_, como forma de utilizar os conhecimentos de React, Redux e metodologias ágeis no desenvolvimento de aplicações.
 
 <br>
 
