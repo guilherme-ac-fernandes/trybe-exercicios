@@ -16,5 +16,5 @@ O terceiro módulo foi focado em Back-End, por meio do estudo sobre:
 * MasterClass - VPS, CI/CD
 
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/28/03-back-end/back.png" alt="Imagem Back-End Development"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/03-back-end/back.png" alt="Imagem Back-End Development"/>
 </p>
