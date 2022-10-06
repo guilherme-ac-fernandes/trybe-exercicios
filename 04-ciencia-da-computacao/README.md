@@ -9,5 +9,5 @@ O último módulo fdo curso foi abordado as seguintes conceitos:
 * Estruturas de Dados: Arrays, Listas, Filas, Pilhas, Hashmaps e Sets
 
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/28/04-ciencia-da-computacao/computacao.png" alt="Imagem Computer Science Development"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/computacao.png" alt="Imagem Computer Science Development"/>
 </p>
