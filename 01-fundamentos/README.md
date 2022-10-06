@@ -13,5 +13,5 @@ Neste primeiro módulo iniciei minha jornada no desenvolvimento web através da 
 * JavaScript e Testes Assíncronos
 
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/28/01-fundamentos/fundamentos.png" alt="Imagem Web Development"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/01-fundamentos/fundamentos.png" alt="Imagem Web Development"/>
 </p>
