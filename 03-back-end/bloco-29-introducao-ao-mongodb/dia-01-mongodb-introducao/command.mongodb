@@ -1,0 +1,66 @@
+use exercise_bio;
+
+Requisito 1:
+  db.bios.find({_id: 8 })
+
+Requisito 2:
+  db.bios.find({ _id: 8 }, { name: true })
+
+Requisito 3:
+  db.bios.find(
+    {
+      _id: 8,
+    },
+    {
+      name: true,
+      birth: true,
+      _id: false,
+    }
+  )
+
+Requisito 4:
+  db.bios.find({ 'name.first': 'John' }).pretty()
+
+Requisito 5:
+  db.bios.find({}).limit(3).pretty()
+
+Requisito 6:
+  db.bios.find({}).skip(5).limit(2)
+
+// docker run --name trybe-mongodb -p 27018:27017 -d mongo
+// docker exec -it trybe-mongodb mongosh
+// docker cp books.json trybe-mongodb:/tmp/books.json
+// docker exec -it trybe-mongodb bash
+// mongoimport -d class -c books --file /tmp/books.json
+// ou
+// docker exec -it trybe-mongodb mongoimport -d class -c books --file /tmp/books.json
+
+use class;
+
+Requisito 7:
+  db.books.countDocuments({})
+
+Requisito 8:
+  db.books.countDocuments({ status: 'PUBLISH' })
+
+Requisito 9:
+  db.books.find(
+    {},
+    {
+      title: true,
+      isbn: true,
+      pageCount: true,
+      _id: false,
+    }).limit(3).pretty()
+
+Requisito 10:
+  db.books.find(
+    {
+      status: 'MEAP',
+    },
+    {
+      title: true,
+      authors: true,
+      status: true,
+    }
+    ).skip(5).limit(10).pretty()
