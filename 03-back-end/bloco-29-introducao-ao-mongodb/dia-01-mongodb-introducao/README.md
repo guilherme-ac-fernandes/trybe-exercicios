@@ -15,7 +15,7 @@ Requisito 5 - Retorne os `3` primeiros documentos da coleção `bios` utilizando
 
 Requisito 6 - Retorne `2` documentos da coleção `bios` pulando os `5` primeiros documentos.
 
-> Utilizando o `mongoimport`, importe o arquivo `[books.json](https://lms-assets.betrybe.com/lms/books.json)` para a sua instância local do `MongoDB` e utilize a coleção `books` para construir as seguintes consultas, nos requisitos 7 a 10:
+> Utilizando o `mongoimport`, importe o arquivo [books.json](https://lms-assets.betrybe.com/lms/books.json) para a sua instância local do `MongoDB` e utilize a coleção `books` para construir as seguintes consultas, nos requisitos 7 a 10:
 
 Requisito 7 - Retorne a quantidade de documentos da coleção `books`.
 
