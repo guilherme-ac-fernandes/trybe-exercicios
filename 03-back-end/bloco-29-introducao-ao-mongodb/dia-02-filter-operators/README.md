@@ -1,7 +1,7 @@
 ###  Filter Operators
 
 ####  Atividade de fixação:
-> Utilizando o `mongoimport`, importe o arquivo `[superheroes.json](https://lms-assets.betrybe.com/lms/superheroes.json)` para a sua instância local do `MongoDB` e utilize a coleção `superheroes ` para construir das seguintes consultas, nos requisitos a seguir:
+> Utilizando o `mongoimport`, importe o arquivo [superheroes.json](https://lms-assets.betrybe.com/lms/superheroes.json) para a sua instância local do `MongoDB` e utilize a coleção `superheroes ` para construir das seguintes consultas, nos requisitos a seguir:
 
 Requisito 1 - Selecione todos os super-heróis com menos de `1.80m` de altura. Lembre-se de que essa informação está em centímetros.
 
