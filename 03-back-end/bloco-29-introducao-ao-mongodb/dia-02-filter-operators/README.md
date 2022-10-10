@@ -37,5 +37,5 @@ Requisito 16 - Retorne o total de documentos que contêm o campo `hairColor`.
 
 Requisito 17 - Remova apenas um documento publicado pela `Sony Pictures`.
 
-Requisito 18 - Remova todos os documentos publicados pelo `George Lucas.
+Requisito 18 - Remova todos os documentos publicados pelo `George Lucas`.
 
