@@ -1,0 +1,124 @@
+// docker run --name trybe-mongodb -p 27018:27017 -d mongo
+// docker cp superheroes.json trybe-mongodb:/tmp/superheroes.json
+// docker exec -it trybe-mongodb bash
+// mongoimport -d class -c superheroes --file /tmp/superheroes.json
+
+// Observação: exercício realizado utilizando a extensão MongoDB para o VSCode
+use ('class');
+db.superheroes.countDocuments({}); // validação
+
+// Requisito 1
+  use ('class');
+  db.superheroes.find({ 'aspects.height': { $lt: 180 } }).pretty();
+
+// Requisito 2
+  use ('class');
+  db.superheroes.countDocuments({ 'aspects.height': { $lt: 180 } });
+
+// Requisito 3
+  use ('class');
+  db.superheroes.countDocuments({ 'aspects.height': { $lte: 180 } });
+
+// Requisito 4
+  use ('class');
+  db.superheroes.findOne({ 'aspects.height': { $gte: 200 } });
+
+// Requisito 5
+  use ('class');
+  db.superheroes.countDocuments({ 'aspects.height': { $gte: 200 } });
+
+// Requisito 6
+  // sem operador $eq
+  use ('class');
+  db.superheroes.find({ 'aspects.eyeColor': 'green' });
+
+  // com operador $eq
+  use ('class');
+  db.superheroes.find({
+    "aspects.eyeColor": { $eq: "green" }
+  }).pretty();
+
+// Requisito 7
+  use ('class');
+  db.superheroes.countDocuments({ 'aspects.eyeColor': 'blue' });
+
+// Requisito 8
+  use ('class');
+  db.superheroes.find({
+    'aspects.hairColor': { $in: ['black', 'No Hair'] }
+  }).pretty();
+
+
+// Requisito 9
+  use ('class');
+  db.superheroes.countDocuments({
+    'aspects.hairColor': { $in: ['black', 'No Hair'] }
+  });
+
+// Requisito 10
+  use ('class');
+  db.superheroes.countDocuments({
+    'aspects.hairColor': { $nin: ['black', 'No Hair'] }
+  });
+
+// Requisito 11
+  use ('class');
+  db.superheroes.countDocuments({ 'aspects.height': { $not: { $gt: 180 } } });
+
+// Requisito 12
+  use ('class');
+  db.superheroes.find(
+    {
+      $nor: [
+        { 'aspects.height': { $gt: 180 } },
+        { race: 'Human' },
+      ]
+    }
+  );
+
+// Requisito 13
+  use ('class');
+  db.superheroes.find(
+    {
+      $and: [
+        { 'aspects.height': { $in: [180, 200] } },
+        { publisher: 'Marvel Comics' },
+      ]
+    }
+  );
+
+// Requisito 14
+  use ('class');
+  db.superheroes.find(
+    {
+      $and: [
+        { 'aspects.weight': { $gte: 80, $lte: 100 } },
+        { race: { $in: ['Human', 'Mutant'] } },
+        { publisher: { $ne: 'DC Comics'} },
+      ]
+    }
+  );
+
+// Requisito 15
+  use ('class');
+  db.superheroes.countDocuments({
+    race: { $exists: false }
+  });
+
+// Requisito 16
+  use ('class');
+  db.superheroes.countDocuments({
+    'aspects.hairColor': { $exists: true }
+  });
+
+// Requisito 17
+  use ('class');
+  db.superheroes.deleteOne({
+    publisher: 'Sony Pictures'
+  });
+
+// Requisito 18
+  use ('class');
+  db.superheroes.deleteMany({
+    publisher: 'George Lucas'
+  });
