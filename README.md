@@ -229,7 +229,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 29.1: Introdução - NoSQL
 - [X] 29.1: MongoDB - Introdução
-- [ ] 29.2: Filter Operators
+- [X] 29.2: Filter Operators
 - [ ] 29.3: Operadores de consulta
 - [ ] 29.4: Updates Simples
 - [ ] 29.5: Updates Complexos - Arrays
