@@ -1,0 +1,130 @@
+use ('cinema');
+db.movies.countDocuments({}); // validação
+
+// Requisito 1
+  use ('cinema');
+  db.movies.find({
+    category: { $all: ['action', 'adventure'] },
+  }).pretty();
+
+// Requisito 2
+  use ('cinema');
+  db.movies.find({
+    category: { $all: ['action', 'sci-fi'] },
+    imdbRating: { $gt: 7 }
+  }).pretty();
+
+// Requisito 3
+  use ('cinema');
+  db.movies.find({
+    ratings: {
+      $elemMatch: { $gt: 103 },
+    },
+  }, {
+    _id: false,
+    title: true,
+    ratings: true,
+  }).pretty();
+
+// Requisito 4
+  use ('cinema');
+  db.movies.find({
+    ratings: {
+      $elemMatch: { $gte: 100, $lte: 105 },
+    },
+  }, {
+    _id: false,
+    title: true,
+    ratings: true,
+  }).pretty();
+
+// Requisito 5
+  use ('cinema');
+  db.movies.find({
+    ratings: {
+      $elemMatch: {
+        $gte: 64,
+        $lte: 105,
+        $mod: [9, 0],
+      },
+    },
+  }, {
+    _id: false,
+    title: true,
+    ratings: true,
+  }).pretty();
+
+// Requisito 6
+  use ('cinema');
+  db.movies.find({
+    $and: [
+      { category: 'adventure' },
+      { ratings: { $elemMatch: { $gt: 103 } } },
+    ]
+  }, {
+    _id: false,
+    title: true,
+    ratings: true,
+    category: true,
+  }).pretty();
+
+// Requisito 7
+  use ('cinema');
+  db.movies.find({
+    category: { $size: 2 },
+  }, { _id: false, title: true }).pretty();
+
+// Requisito 8
+  use ('cinema');
+  db.movies.find({
+    ratings: { $size: 4 },
+  }, { _id: false, title: true }).pretty();
+
+// Requisito 9
+  use ('cinema');
+  db.movies.find({
+    $and: [
+      { category: { $size: 2 } },
+      { budget: { $mod: [5, 0] } },
+    ]
+  }).pretty();
+
+// Requisito 10
+  use ('cinema');
+  db.movies.find({
+    $or: [
+      { category: { $all: ["sci-fi"] } },
+      { ratings: { $elemMatch: { $gt: 199 } } },
+    ]
+  }, {
+    _id: false,
+    title: true,
+    ratings: true,
+    category: true,
+  }).pretty();
+
+// Requisito 11
+  use ('cinema');
+  db.movies.find({
+    $and: [
+      { ratings: { $size: 4 } },
+      { category: { $in: ["adventure", "family"] } },
+      { imdbRating: { $not: { $lt: 7 } } },
+    ]
+  }).pretty();
+
+// Requisito 12
+  use ('cinema');
+  db.movies.find({
+    description: { $regex: /^the/i },
+  }).pretty();
+
+// Requisito 13
+  use ('cinema');
+  db.movies.find({
+    description: { $regex: /humanity\.$/i },
+  }).pretty();
+
+
+
+
