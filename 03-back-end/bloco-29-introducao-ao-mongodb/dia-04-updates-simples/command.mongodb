@@ -1,0 +1,196 @@
+use ('class');
+db.movies.countDocuments({}); // validação
+
+// Requisito 1
+  use ('class');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $set: { "imdbRating": 7.7 }}
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 2
+  use ('class');
+  db.movies.updateOne(
+    { title: "Godzilla" },
+    { $set: { budget: 1 }}
+  );
+  db.movies.find({ title: "Godzilla" }).pretty();
+
+// Requisito 3
+  use ('class');
+  db.movies.updateOne(
+    { title: "Home Alone" },
+    { $set: { budget: 15, imdbRating: 5.5 }}
+  );
+  db.movies.find({ title: "Home Alone" }).pretty();
+
+// Requisito 4
+  use ('class');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $inc: { imdbRating: 2 }}
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 5
+  use ('class');
+  db.movies.updateOne(
+    { title: "Home Alone" },
+    { $inc: { budget: 5 }}
+  );
+  db.movies.find({ title: "Home Alone" }).pretty();
+
+// Requisito 6
+  use ('class');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $mul: { imdbRating: 4 }}
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 7
+  use ('class');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $rename: { budget: "estimatedBudget" }}
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 8
+  use ('class');
+  db.movies.updateOne(
+    { title: "Home Alone" },
+    { $min: { budget: 5 }}
+  );
+  db.movies.find({ title: "Home Alone" }).pretty();
+
+// Requisito 9
+  use ('class');
+  db.movies.updateOne(
+    { title: "Godzilla" },
+    {
+      $max: { imdbRating: 8.6 },
+      $set: { "category.1": "thriller" },
+    }
+  );
+  db.movies.find({ title: "Godzilla" }).pretty();
+
+// Requisito 10
+  use ('class');
+  db.movies.updateOne(
+    { title: "Home Alone" },
+    { $currentDate: { lastUpdated: { $type: "timestamp" } }}
+  );
+  db.movies.find({ title: "Home Alone" }).pretty();
+
+
+// Requisito 11
+  use ('class');
+  db.movies.updateMany({}, { $set: { sequels: 0 }});
+  db.movies.find().pretty();
+
+// Requisito 12
+  use ('class');
+  db.movies.updateMany(
+    {},
+    {
+      $unset: { budget: '', estimatedBudget: '' }
+    },
+  );
+  db.movies.find().pretty();
+
+// Requisito 13
+  use ('class');
+  db.movies.updateMany(
+    { title: { $in: ["Batman", "Home Alone"] } },
+    // como é menor que 17, ao atribuit o $max os valores
+    // menores que 17 terão o valor atualizado
+    { $max: { imdbRating: 17 }},
+  );
+  db.movies.find().pretty();
+
+use ('class');
+db.xmen.countDocuments({}); // validação
+
+use ('class');
+db.xmen.find().pretty(); // verificação
+
+// Requisito 14
+  use ('class');
+  db.xmen.updateMany(
+    { class: "unknown" },
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $unset: { class: '' },
+    },
+  );
+
+// Requisito 15
+  use ('class');
+  db.xmen.updateMany(
+    {},
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $rename: { name: "hero_name", "true_name": "full_name" },
+      $set: { power: 100 },
+    },
+  );
+
+// Requisito 16
+  use ('class');
+  db.xmen.updateMany(
+    { class: { $in: ["omega", "gama"] } },
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $max: { power: 500 },
+    },
+  );
+
+// Requisito 17
+  use ('class');
+  db.xmen.updateMany(
+    { class: "gama" },
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $min: { power: 300 },
+    },
+  );
+
+// Requisito 18
+  use ('class');
+  db.xmen.updateMany(
+    { class: { $exists: false } },
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $inc: { power: -100 },
+    },
+  );
+
+// Requisito 19
+  use ('class');
+  db.xmen.updateMany(
+    { $or: [
+      { occupation: 'Senior Staff', power: { $gt: 100 } },
+      { occupation: 'Junior Staff', power: { $gt: 200 } },
+    ],
+    },
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $set: { areas: ["Students Room"] },
+    },
+  );
+
+// Requisito 20
+  use ('class');
+  db.xmen.updateMany(
+    { occupation: 'Junior Staff', areas: { $exists: false } },
+    {
+      $currentDate: { lastUpdated: { $type: "timestamp" } },
+      $set: { areas: ["Outside"] },
+    },
+  );
+
+
+
+
