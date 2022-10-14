@@ -51,7 +51,7 @@ Requisito 13 - Para os filmes `Batman` ou `Home Alone`, atribua a `imdbRating` o
 
 > Para os demais requisitos, crie a coleção `xmen` no mesmo banco de dados:
 >
-> *Observação:* As informações abaixo são sobre a Escola Jean Grey de Ensino Superior. Para todas as alterações realizadas, devem sempre atualizar ou adicionar o campo `lastUpdate`, que armazena a data da última alteração com o tipo `timestamp`. Os requisitos devem ser realizados na ordem.
+> **Observação:** As informações abaixo são sobre a Escola Jean Grey de Ensino Superior. Para todas as alterações realizadas, devem sempre atualizar ou adicionar o campo `lastUpdate`, que armazena a data da última alteração com o tipo `timestamp`. Os requisitos devem ser realizados na ordem.
 
 ```
 use class;

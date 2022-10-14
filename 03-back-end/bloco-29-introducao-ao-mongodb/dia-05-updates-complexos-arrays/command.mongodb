@@ -1,0 +1,145 @@
+use ('cinema');
+db.movies.countDocuments({}); // validação
+
+use ('cinema');
+db.movies.find().pretty(); // verificação
+
+// Requisito 1
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $push: { category: "superhero" } }
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 2
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $push: { category: { $each: ["villain", "comic-based"] } } },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 3
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $pull: { category: "action" } },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 4
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $pop: { category: -1 } },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 5
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $pop: { category: 1 } },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 6
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $addToSet: { category: "action" } },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 7
+  use ('cinema');
+  db.movies.updateMany(
+    { title: { $in: ["Batman",  "Home Alone"] } },
+    { $push: { category: "90's" } },
+  );
+  db.movies.find().pretty();
+
+// Requisito 8
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Home Alone" },
+    { $push: {
+        cast: {
+          $each: [
+            {
+              actor: "Macaulay Culkin",
+              character: "Kevin"
+            },
+            {
+              actor: "Joe Pesci",
+              character: "Harry"
+            },
+            {
+              actor: "Daniel Stern"
+            },
+          ]
+        },
+      },
+    },
+  );
+  db.movies.find({ title: "Home Alone" }).pretty();
+
+// Requisito 9
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Home Alone", "cast.actor": "Daniel Stern" },
+    // The positional $ operator identifies an element in an array
+    // to update without explicitly specifying the position of
+    // the element in the array.
+    { $set: { "cast.$.character": "Marv" } },
+  );
+  db.movies.find({ title: "Home Alone" }).pretty();
+
+
+// Requisito 10
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman" },
+    { $push: {
+        cast: {
+          $each: [
+            { character: "Batman" },
+            { character: "Alfred" },
+            { character: "Coringa" },
+          ]
+        },
+      },
+    },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 11
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman", "cast.character": "Batman" },
+    { $push: { "cast.$.actor": "Christian Bale" } }, // push coloca dentro de um array
+  );
+  db.movies.updateOne(
+    { title: "Batman", "cast.character": "Alfred" },
+    { $push: { "cast.$.actor": "Michael Caine" } },
+  );
+  db.movies.updateOne(
+    { title: "Batman", "cast.character": "Coringa" },
+    { $push: { "cast.$.actor": "Heath Ledger" } },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
+
+// Requisito 12
+  use ('cinema');
+  db.movies.updateOne(
+    { title: "Batman", "cast.character": "Batman" },
+    { $push: {
+      "cast.$.actor": {
+        $each: ["Michael Keaton", "Val Kilmer", "George Clooney"],
+        $sort: 1,
+        },
+      },
+    },
+  );
+  db.movies.find({ title: "Batman" }).pretty();
