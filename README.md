@@ -232,7 +232,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 29.2: Filter Operators
 - [X] 29.3: Operadores de consulta
 - [X] 29.4: Updates Simples
-- [ ] 29.5: Updates Complexos - Arrays
+- [X] 29.5: Updates Complexos - Arrays
 - [ ] 29.6: Projeto - Commerce
 
 #### Bloco 30: MongoDB com Node.js e POO
