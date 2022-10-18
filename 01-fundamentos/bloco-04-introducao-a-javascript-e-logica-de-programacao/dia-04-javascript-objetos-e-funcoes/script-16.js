@@ -31,7 +31,7 @@ function findingRomanNumber (number) {
 		atual = prox;
 	}
 	console.log(soma)
-	// return soma;
+	return soma;
 }
 
 findingRomanNumber("XLIX"); //49
