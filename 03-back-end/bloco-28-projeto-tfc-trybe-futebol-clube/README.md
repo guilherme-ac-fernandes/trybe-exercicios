@@ -6,5 +6,5 @@ Como forma de utilizar os conhecimentos de Node.js, Express, Typescript, MySQL, 
 <br>
 
 <p align="center">
-  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/exercicios/28/03-back-end/bloco-28-projeto-tfc-trybe-futebol-clube/tfc_classificacao.png" alt="Projeto Trivia"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/03-back-end/bloco-28-projeto-tfc-trybe-futebol-clube/tfc_classificacao.png" alt="Projeto Trivia"/>
 </p>
