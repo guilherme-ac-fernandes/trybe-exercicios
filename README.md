@@ -233,7 +233,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 29.3: Operadores de consulta
 - [X] 29.4: Updates Simples
 - [X] 29.5: Updates Complexos - Arrays
-- [X] 29.6: [Projeto - Commerce](https://github.com/guilherme-ac-fernandes/mongodb-commerce)
+- [X] 29.6: [Projeto - MongoDB Commerce](https://github.com/guilherme-ac-fernandes/mongodb-commerce)
 
 #### Bloco 30: MongoDB com Node.js e POO
 
