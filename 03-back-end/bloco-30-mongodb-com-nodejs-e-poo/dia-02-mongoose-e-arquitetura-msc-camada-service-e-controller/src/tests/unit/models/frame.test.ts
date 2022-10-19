@@ -7,17 +7,17 @@ import { frameMock, frameMockWithId } from '../../mocks/frameMock';
 describe('Frame Model', () => {
   const frameModel = new FrameModel();
 
-	before(() => {
-		sinon.stub(Model, 'create').resolves(frameMockWithId);
-		sinon.stub(Model, 'findOne').resolves(frameMockWithId);
+  before(() => {
+    sinon.stub(Model, 'create').resolves(frameMockWithId);
+    sinon.stub(Model, 'findOne').resolves(frameMockWithId);
     sinon.stub(Model, 'find').resolves([frameMockWithId]);
     sinon.stub(Model, 'findByIdAndDelete').resolves(frameMockWithId);
     sinon.stub(Model, 'findByIdAndUpdate').resolves(frameMockWithId);
-	});
+  });
 
-	after(() => {
-		sinon.restore();
-	});
+  after(() => {
+    sinon.restore();
+  });
 
   describe('creating a frame', () => {
     it('successfully created', async () => {
