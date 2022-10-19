@@ -10,6 +10,7 @@ describe('Frame Model', () => {
 	before(() => {
 		sinon.stub(Model, 'create').resolves(frameMockWithId);
 		sinon.stub(Model, 'findOne').resolves(frameMockWithId);
+    sinon.stub(Model, 'find').resolves([frameMockWithId]);
 	});
 
 	after(() => {
@@ -26,7 +27,7 @@ describe('Frame Model', () => {
   describe('searching a frame', () => {
     it('successfully found', async () => {
     const framesFound = await frameModel.readOne('62cf1fc6498565d94eba52cd');
-      expect(framesFound).to.be.deep.equal(frameMockWithId);
+    expect(framesFound).to.be.deep.equal(frameMockWithId);
     });
 
     it('_id not found', async () => {
@@ -35,6 +36,13 @@ describe('Frame Model', () => {
       } catch (error: any) {
         expect(error.message).to.be.eq('InvalidMongoId');
       }
+    });
+  });
+
+  describe('searching all frames', () => {
+    it('successfully found', async () => {
+    const framesFound = await frameModel.read();
+    expect(framesFound).to.be.deep.equal([frameMockWithId]);
     });
   });
 
