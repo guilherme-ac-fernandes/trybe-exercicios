@@ -237,8 +237,8 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 30: MongoDB com Node.js e POO
 
-- [ ] 30.1: MongoDB e arquitetura MSC
-- [ ] 30.2: MongoDB e POO
+- [ ] 30.1: Mongoose e arquitetura MSC (Camada Model)
+- [ ] 30.2: Mongoose e arquitetura MSC (Camada Service e Controller)
 - [ ] 30.3: Projeto - Car Shop
 
 #### Bloco 31: Projeto - App de Delivery
@@ -248,7 +248,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 #### Bloco 33: MasterClass - VPS, CI/CD
 
 - [ ] 32.1: Dia 1 - VPS
-- [ ] 32.2: Dia 2
+- [ ] 32.2: Dia 2 - CI/CD
 
 
 ## Ciência da Computação :hourglass_flowing_sand:
@@ -256,7 +256,6 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 33: Introdução à Python
 
-- [ ] 33.1: Introdução - Ciência da Computação
 - [ ] 33.1: Aprendendo Python
 - [ ] 33.2: Entrada e Saída de Dados
 - [ ] 33.3: Testes
@@ -271,9 +270,10 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 35: Redes e Raspagem de Dados
 
-- [ ] 35.1: Arquitetura de redes, ferramentas e segurança
+- [ ] 35.1: Arquitetura de redes
 - [ ] 35.2: Raspagem de Dados
-- [ ] 35.3: Projeto - Tech News
+- [ ] 35.3: Outras Ferramentas de Raspagem de Dados
+- [ ] 35.4: Projeto - Tech News
 
 #### Bloco 36: Algoritmos
 
