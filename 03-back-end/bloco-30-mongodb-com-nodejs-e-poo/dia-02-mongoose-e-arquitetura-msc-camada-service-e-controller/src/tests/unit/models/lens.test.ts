@@ -36,7 +36,7 @@ describe('Lens Model', () => {
       try {
         await lensModel.readOne('123ERRADO');
       } catch (error: any) {
-        expect(error.message).to.be.eq('Id must be a 24 characters hexadecimal');
+        expect(error.message).to.be.eq('InvalidMongoId');
       }
     });
   });
@@ -58,7 +58,7 @@ describe('Lens Model', () => {
       try {
         await lensModel.destroy('123ERRADO');
       } catch (error: any) {
-        expect(error.message).to.be.eq('Id must be a 24 characters hexadecimal');
+        expect(error.message).to.be.eq('InvalidMongoId');
       }
     });
   });
@@ -73,7 +73,7 @@ describe('Lens Model', () => {
       try {
         await lensModel.update('123ERRADO', lensMock);
       } catch (error: any) {
-        expect(error.message).to.be.eq('Id must be a 24 characters hexadecimal');
+        expect(error.message).to.be.eq('InvalidMongoId');
       }
     });
   });

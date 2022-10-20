@@ -13,18 +13,18 @@ describe('Frame Service', () => {
 	before(() => {
 		sinon.stub(frameModel, 'create').resolves(frameMockWithId);
 		sinon.stub(frameModel, 'readOne')
-      // na chamada de index 0 `frameModel.readOne` vai responder um fakeFrame
 			.onCall(0).resolves(frameMockWithId) 
-      // já na próxima chamada ele vai mudar seu retorno, isso pode ser feito várias vezes
+			.onCall(1).resolves(null);
+		sinon.stub(frameModel, 'read')
+			.onCall(0).resolves([frameMockWithId]) 
 			.onCall(1).resolves(null); 
-	})
-	after(() => {
-		sinon.restore()
-	})
+	});
+
+	after(() => sinon.restore());
+
 	describe('Create Frame', () => {
 		it('Success', async () => {
 			const frameCreated = await frameService.create(frameMock);
-
 			expect(frameCreated).to.be.deep.equal(frameMockWithId);
 		});
 
@@ -35,7 +35,6 @@ describe('Frame Service', () => {
 			} catch (err) {
 				error = err
 			}
-
 			expect(error).to.be.instanceOf(ZodError);
 		});
 	});
@@ -43,19 +42,34 @@ describe('Frame Service', () => {
 	describe('ReadOne Frame', () => {
 		it('Success', async () => {
 			const frameCreated = await frameService.readOne(frameMockWithId._id);
-
 			expect(frameCreated).to.be.deep.equal(frameMockWithId);
 		});
 
 		it('Failure', async () => {
       let error;
 			try {
-        // a mesma chamada que o teste acima aqui vai gerar o erro por causa do nosso sinon.stub(...).onCall(1)
 				await frameService.readOne(frameMockWithId._id);
 			} catch (err:any) {
 				error = err
 			}
+			expect(error, 'error should be defined').not.to.be.undefined;
+			expect(error.message).to.be.deep.equal(ErrorTypes.EntityNotFound);
+		});
+	});
 
+	describe('Read Frame', () => {
+		it('Success', async () => {
+			const frameArray = await frameService.read();
+			expect(frameArray).to.be.deep.equal([frameMockWithId]);
+		});
+
+		it('Failure', async () => {
+      let error;
+			try {
+				await frameService.read();
+			} catch (err:any) {
+				error = err
+			}
 			expect(error, 'error should be defined').not.to.be.undefined;
 			expect(error.message).to.be.deep.equal(ErrorTypes.EntityNotFound);
 		});
