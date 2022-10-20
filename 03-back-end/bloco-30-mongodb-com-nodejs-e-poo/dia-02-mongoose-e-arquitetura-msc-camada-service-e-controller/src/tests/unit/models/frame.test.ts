@@ -12,7 +12,7 @@ describe('Frame Model', () => {
     sinon.stub(Model, 'findOne').resolves(frameMockWithId);
     sinon.stub(Model, 'find').resolves([frameMockWithId]);
     sinon.stub(Model, 'findByIdAndDelete').resolves(frameMockWithId);
-    sinon.stub(Model, 'findByIdAndUpdate').resolves(frameMockWithId);
+    sinon.stub(Model, 'findByIdAndUpdate').resolves({...frameMockWithId, material: 'Diamente'});
   });
 
   after(() => {
@@ -65,8 +65,11 @@ describe('Frame Model', () => {
 
   describe('updating a frame', () => {
     it('successfully update', async () => {
-      const frameUpdate = await frameModel.update('62cf1fc6498565d94eba52cd', frameMock);
-      expect(frameUpdate).to.be.deep.equal(frameMockWithId);
+      const frameUpdate = await frameModel.update(
+        '62cf1fc6498565d94eba52cd',
+        {...frameMock, material: 'Diamente'},
+      );
+      expect(frameUpdate).to.be.deep.equal({...frameMockWithId, material: 'Diamente'},);
     });
 
     it('_id not found', async () => {

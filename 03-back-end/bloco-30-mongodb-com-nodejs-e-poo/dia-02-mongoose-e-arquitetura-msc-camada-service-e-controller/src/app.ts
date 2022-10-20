@@ -5,7 +5,7 @@ import 'express-async-errors';
 
 const app = express();
 app.use(express.json());
-app.use(frameRouter);
+app.use('/frame', frameRouter);
 app.use(errorHandler);
 
 export default app;

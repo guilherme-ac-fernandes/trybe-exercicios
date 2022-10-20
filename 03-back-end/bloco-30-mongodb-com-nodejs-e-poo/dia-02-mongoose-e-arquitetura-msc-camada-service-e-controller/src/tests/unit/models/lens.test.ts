@@ -12,7 +12,7 @@ describe('Lens Model', () => {
     sinon.stub(Model, 'findOne').resolves(lensMockWithId);
     sinon.stub(Model, 'find').resolves([lensMockWithId]);
     sinon.stub(Model, 'findByIdAndDelete').resolves(lensMockWithId);
-    sinon.stub(Model, 'findByIdAndUpdate').resolves(lensMockWithId);
+    sinon.stub(Model, 'findByIdAndUpdate').resolves({...lensMockWithId, blueLightFilter: false});
   });
 
   after(() => {
@@ -65,8 +65,11 @@ describe('Lens Model', () => {
 
   describe('updating a lens', () => {
     it('successfully update', async () => {
-      const frameUpdate = await lensModel.update('62cf1fc6498565d94eba52cd', lensMock);
-      expect(frameUpdate).to.be.deep.equal(lensMockWithId);
+      const frameUpdate = await lensModel.update(
+        '62cf1fc6498565d94eba52cd',
+        {...lensMock, blueLightFilter: false},
+      );
+      expect(frameUpdate).to.be.deep.equal({...lensMockWithId, blueLightFilter: false});
     });
 
     it('_id not found', async () => {
