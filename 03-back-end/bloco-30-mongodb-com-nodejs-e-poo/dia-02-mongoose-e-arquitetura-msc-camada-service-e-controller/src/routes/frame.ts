@@ -12,5 +12,6 @@ const frameController = new FrameController(frameService);
 route.post('/frame', (req, res) => frameController.create(req, res));
 route.get('/frame/:id', (req, res) => frameController.readOne(req, res));
 route.get('/frame', (req, res) => frameController.read(req, res));
+route.delete('/frame/:id', (req, res) => frameController.destroy(req, res));
 
 export default route;
