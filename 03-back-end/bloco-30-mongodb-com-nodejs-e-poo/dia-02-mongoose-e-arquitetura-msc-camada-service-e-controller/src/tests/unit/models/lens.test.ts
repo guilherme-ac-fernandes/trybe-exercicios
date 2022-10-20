@@ -7,17 +7,17 @@ import { lensMock, lensMockWithId } from '../../mocks/lensMock';
 describe('Lens Model', () => {
   const lensModel = new LensModel();
 
-	before(() => {
-		sinon.stub(Model, 'create').resolves(lensMockWithId);
-		sinon.stub(Model, 'findOne').resolves(lensMockWithId);
+  before(() => {
+    sinon.stub(Model, 'create').resolves(lensMockWithId);
+    sinon.stub(Model, 'findOne').resolves(lensMockWithId);
     sinon.stub(Model, 'find').resolves([lensMockWithId]);
     sinon.stub(Model, 'findByIdAndDelete').resolves(lensMockWithId);
     sinon.stub(Model, 'findByIdAndUpdate').resolves(lensMockWithId);
-	});
+  });
 
-	after(() => {
-		sinon.restore();
-	});
+  after(() => {
+    sinon.restore();
+  });
 
   describe('creating a lens', () => {
     it('successfully created', async () => {

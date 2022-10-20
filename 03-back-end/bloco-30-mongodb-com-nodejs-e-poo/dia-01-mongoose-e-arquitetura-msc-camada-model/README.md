@@ -1,4 +1,4 @@
-###  MongoDB e arquitetura MSC
+###  Mongoose e arquitetura MSC (Camada Model)
 
 ####  Atividade de fixação:
 > A partir do exemplo construído durante a matéria do dia, aonde foi construído a model de uma API CRUD para gerenciar óculos, contendo duas entidades `frame` (armação) e `lens` (lentes), realize os seguintes requisitos:
