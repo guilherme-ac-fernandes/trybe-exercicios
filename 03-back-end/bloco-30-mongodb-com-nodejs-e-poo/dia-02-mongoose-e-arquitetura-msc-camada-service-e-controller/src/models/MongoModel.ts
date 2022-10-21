@@ -35,6 +35,10 @@ abstract class MongoModel<T> implements IModel<T> {
       { new: true },
     );
   }
+
+  // public async insertMany(array: T[]):Promise<T[] | null> {
+  //   return this._model.insertMany(array);
+  // }
 }
 
 export default MongoModel;

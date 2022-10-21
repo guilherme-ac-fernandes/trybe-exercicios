@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import { NextFunction, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { frameMock, frameMockWithId } from '../../mocks/frameMock';
 import FrameController from '../../../controllers/Frame';
 import FrameService from '../../../services/Frame';
@@ -14,7 +14,6 @@ describe('Frame Controller', () => {
   
   const req = {} as Request; 
   const res = {} as Response;
-  const next = {} as NextFunction;
 
   before(() => {
     sinon.stub(frameService, 'create').resolves(frameMockWithId);
