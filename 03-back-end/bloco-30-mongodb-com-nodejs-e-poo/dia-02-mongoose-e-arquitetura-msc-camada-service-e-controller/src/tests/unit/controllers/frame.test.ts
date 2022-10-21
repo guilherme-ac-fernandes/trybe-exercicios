@@ -17,10 +17,11 @@ describe('Frame Controller', () => {
   const next = {} as NextFunction;
 
   before(() => {
-    sinon.stub(frameService, 'create').resolves(frameMock);
-    sinon.stub(frameService, 'readOne').resolves(frameMock);
+    sinon.stub(frameService, 'create').resolves(frameMockWithId);
+    sinon.stub(frameService, 'readOne').resolves(frameMockWithId);
     sinon.stub(frameService, 'read').resolves([frameMockWithId]);
     sinon.stub(frameService, 'destroy').resolves(frameMockWithId);
+    sinon.stub(frameService, 'update').resolves(frameMockWithId);
 
     res.status = sinon.stub().returns(res);
     res.json = sinon.stub().returns(res);
@@ -33,7 +34,7 @@ describe('Frame Controller', () => {
       req.body = frameMock;
       await frameController.create(req, res);
       expect((res.status as sinon.SinonStub).calledWith(201)).to.be.true;
-      expect((res.json as sinon.SinonStub).calledWith(frameMock)).to.be.true;
+      expect((res.json as sinon.SinonStub).calledWith(frameMockWithId)).to.be.true;
     });
   });
 
@@ -43,11 +44,11 @@ describe('Frame Controller', () => {
       await frameController.readOne(req, res);
 
       expect((res.status as sinon.SinonStub).calledWith(200)).to.be.true;
-      expect((res.json as sinon.SinonStub).calledWith(frameMock)).to.be.true;
+      expect((res.json as sinon.SinonStub).calledWith(frameMockWithId)).to.be.true;
     });
   });
 
-  describe('Read', () => {
+  describe('Read Frame', () => {
     it('Success', async () => {
       await frameController.read(req, res);
       
@@ -56,10 +57,21 @@ describe('Frame Controller', () => {
     });
   });
 
-  describe('Read', () => {
+  describe('Destroy Frame', () => {
     it('Success', async () => {
       req.params = { id: frameMockWithId._id };
       await frameController.destroy(req, res);
+      
+      expect((res.status as sinon.SinonStub).calledWith(200)).to.be.true;
+      expect((res.json as sinon.SinonStub).calledWith(frameMockWithId)).to.be.true;
+    });
+  });
+
+  describe('Update Frame', () => {
+    it('Success', async () => {
+      req.params = { id: frameMockWithId._id };
+      req.body = { ...frameMock };
+      await frameController.update(req, res);
       
       expect((res.status as sinon.SinonStub).calledWith(200)).to.be.true;
       expect((res.json as sinon.SinonStub).calledWith(frameMockWithId)).to.be.true;
