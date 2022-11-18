@@ -243,7 +243,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 31: Projeto - App de Delivery
 
-- [X] 31.1: [Projeto - App de Delivery]()
+- [X] 31.1: [Projeto - App de Delivery](https://github.com/guilherme-ac-fernandes/delivery-app)
 
 #### Bloco 32: MasterClass - VPS, CI/CD
 
