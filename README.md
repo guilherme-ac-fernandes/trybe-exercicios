@@ -142,7 +142,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 18.1: [Projeto - App de Receitas](https://github.com/guilherme-ac-fernandes/recipes-app)
 
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
 
 #### Bloco 19: Docker: Utilizando Containers
