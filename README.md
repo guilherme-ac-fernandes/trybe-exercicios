@@ -247,8 +247,8 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 32: MasterClass - VPS, CI/CD
 
-- [ ] 32.1: Dia 1 - VPS
-- [ ] 32.2: Dia 2 - CI/CD
+- [X] 32.1: Dia 1 - VPS
+- [X] 32.2: Dia 2 - CI/CD
 
 
 ## Ciência da Computação :hourglass_flowing_sand:
