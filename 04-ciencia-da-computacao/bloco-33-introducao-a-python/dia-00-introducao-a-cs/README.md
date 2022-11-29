@@ -1,7 +1,7 @@
 ###  Introdução a Ciência da Computação
 
 ####  Atividade extras:
-> Os exercícios relacionados às operações básicas na linguagem Python podem ser encontrados no arquivo `exercises/basic_operations.py`, contendo as funções que:
+> As atividades relacionados às operações básicas na linguagem Python podem ser encontrados no arquivo `exercises/basic_operations.py`, contendo as funções que:
 
 1. Recebe dois números e retornar o valor correspondente à soma dos mesmos.
 
@@ -18,7 +18,7 @@
 7. Recebe dois números e retornar o valor correspondente ao primeiro número elevado ao segundo.
 
 
-> Os exercícios relacionados aos tipos de dados na linguagem Python podem ser encontrados no arquivo: exercises/python_data_types.py`, contendo as funções que:
+> As atividades relacionados aos tipos de dados na linguagem Python podem ser encontrados no arquivo: exercises/python_data_types.py`, contendo as funções que:
 
 1. Verifica se o valor recebido como parâmetro é do tipo booleano.
 
@@ -51,7 +51,7 @@
 15. Recebe um elemento e um conjunto como parâmetros e deve retornar o mesmo conjunto removendo o elemento passado como parâmetro
 
 
-> Os exercícios relacionados às estruturas condicionais na linguagem Python podem ser encontrados no arquivo: exercises/conditionals.py`, contendo as funções que:
+> As atividades relacionados às estruturas condicionais na linguagem Python podem ser encontrados no arquivo: exercises/conditionals.py`, contendo as funções que:
 
 1. Verifica se a string passada como parâmetro possui 4 ou mais caracteres, em caso positivo, deve retornar True, em caso negativo, retornar False.
 
@@ -62,7 +62,7 @@
 4. Recebe um elemento e uma lista como parâmetros e deve verificar se o elemento está contido na lista, em caso positivo, deve retornar True, em caso negativo, retornar False.
 
 
-> Os exercícios relacionados às estruturas de repetição na linguagem Python podem ser encontrados no arquivo: `exercises/repetition.py`, contendo as funções que:
+> As atividades relacionados às estruturas de repetição na linguagem Python podem ser encontrados no arquivo: `exercises/repetition.py`, contendo as funções que:
 
 
 1. Recebe uma string como parâmetro e deve retornar uma lista contendo cada um dos caracteres da string. A ordem dos caracteres na lista deve ser a mesma ordem da string.
