@@ -1,6 +1,9 @@
 def draw_square(size: int):
-    for row in range(size):
-        print(size * '*')
+    if size > 0:
+        for row in range(size):
+            print(size * '*')
+    else:
+        print('Tamanho inválido')
 
 
 draw_square(5)
