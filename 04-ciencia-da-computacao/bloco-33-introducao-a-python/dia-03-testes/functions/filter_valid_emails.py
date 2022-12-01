@@ -16,7 +16,7 @@ def filter_valid_emails(emails: list):
 
 # para executar sem ter problemas com a realização dos testes
 # podemos utilizar o comando: python3 -m function.validate_email
-# outra forma seria a alteração da variável do Python e alterar o 
+# outra forma seria a alteração da variável do Python e alterar o
 # PythonPath para raiz do repositório
 if __name__ == "__main__":
     print(filter_valid_emails(['g_u_i@gui1.com', '1g_u_i@gui1.com']))
