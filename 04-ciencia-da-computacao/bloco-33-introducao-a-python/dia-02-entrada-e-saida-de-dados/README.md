@@ -26,7 +26,7 @@ Requisito 2 - Jogo da palavra embaralhada. Desenvolva um jogo em que a pessoa us
 * O sorteio de uma palavra aleatória pode ser feito utilizando o método choice: `random.choice(["word1", "word2", "word3"]) -> "word2”`.
 
 
-Requisito 3 - Modifique o exercício anterior para que as palavras sejam lidas de um arquivo. Considere que o arquivo terá cada palavra em uma linha.
+Requisito 3 - Modifique o requisito anterior para que as palavras sejam lidas de um arquivo. Considere que o arquivo terá cada palavra em uma linha.
 
 Requisito 4 - Dado o arquivo `data/books.json` no formato `JSON`, leia seu conteúdo e calcule a porcentagem de livros em cada categoria em relação ao número total de livros. O resultado deve ser escrito em um arquivo no formato `CSV` como o exemplo abaixo.
 
