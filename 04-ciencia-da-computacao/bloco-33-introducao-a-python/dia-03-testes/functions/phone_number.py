@@ -49,6 +49,6 @@ def phone_number(phone: str):
 
 
 if __name__ == "__main__":
-    # print(phone_number('1-HOME-SWEET-HOME'))  # 1-4663-79338-4663
-    # print(phone_number('MY-MISERABLE-JOB'))  # 69-647372253-562
+    print(phone_number('1-HOME-SWEET-HOME'))  # 1-4663-79338-4663
+    print(phone_number('MY-MISERABLE-JOB'))  # 69-647372253-562
     print(phone_number(''))  # ValueError: Invalid phone number
