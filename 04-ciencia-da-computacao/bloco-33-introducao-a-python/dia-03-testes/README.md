@@ -47,7 +47,7 @@ Requisito 3 - Faça uma função que valide um `email`, lançando uma exceção 
 
 * O tamanho máximo da extensão é de `3` caracteres.
 
-*Dica*: As funções `isalpha`, `isdigit` e `isnumeric` podem ser utilizadas para verificar se uma letra ou palavra são compostas de somente caracteres ou dígitos. Exemplo: `”1”.isalpha() = False`, `”a”.isalpha() = True`, `”123".isnumeric() = True`.
+**Dica**: As funções `isalpha`, `isdigit` e `isnumeric` podem ser utilizadas para verificar se uma letra ou palavra são compostas de somente caracteres ou dígitos. Exemplo: `”1”.isalpha() = False`, `”a”.isalpha() = True`, `”123".isnumeric() = True`.
 
 
 Requisito 4 - Baseado no requisito anterior, escreva uma função que, dado uma lista de `emails`, deve retornar somente os emails válidos. Caso uma exceção ocorra, apenas a escreva na tela.
