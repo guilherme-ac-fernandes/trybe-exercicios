@@ -1,4 +1,4 @@
-def create_fizz_buzz(size: int):
+def fizz_buzz(size: int):
     number_list = []
     for number in range(1, size + 1):
         if number % 3 == 0 and number % 5 == 0:
@@ -13,4 +13,4 @@ def create_fizz_buzz(size: int):
 
 
 if __name__ == "__main__":
-    print(create_fizz_buzz(-2))
+    print(fizz_buzz(-2))
