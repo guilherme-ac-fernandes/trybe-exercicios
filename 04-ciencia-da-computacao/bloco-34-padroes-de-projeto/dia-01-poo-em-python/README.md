@@ -31,6 +31,8 @@ Requisito 1 - Implemente o diagrama abaixo:
 > 
 > `ligar_desligar` - alterna o estado da TV entre ligado e desligado (`True/False`)
 
+<br />
+
 Requisito 2 - Defina uma classe `Estatistica` que calcule média, mediana e moda de uma lista de números.
 
 <p align="center">
