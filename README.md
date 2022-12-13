@@ -265,7 +265,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 #### Bloco 34: Padrões de Projeto
 
 - [X] 34.1: POO em Python
-- [ ] 34.2: Padrões - Iterator, Adapter, Strategy
+- [X] 34.2: Padrões - Iterator, Adapter, Strategy
 - [ ] 34.3: Padrões - Decorator, Observer, Factory 
 - [ ] 34.4: Projeto - Relatórios de Estoque
 
