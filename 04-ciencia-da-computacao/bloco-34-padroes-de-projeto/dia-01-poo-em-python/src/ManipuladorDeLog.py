@@ -54,3 +54,9 @@ class Log:
     def __formatar(self, nivel, msg):
         data = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
         return f"[{nivel} - {data}]: {msg}"
+
+
+if __name__ == "__main__":
+    log_em_tela = LogEmTela()
+    log = Log([log_em_tela])
+    log.erro('ZeroDivisionError: division by zero')
