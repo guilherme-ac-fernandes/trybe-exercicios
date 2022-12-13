@@ -66,12 +66,12 @@ Requisito 3 - Com o baralho tradicional pronto, implemente uma subclasse de Bara
 
 Requisito 4 - Agora que você tem duas formas diferentes de dar cartas para o seu baralho, refatore o código para não precisar mais de dois baralhos e dois `iteradores` isolados, mas sim usar um único `iterador` com duas estratégias diferentes de iteração.
 
-*Dica:* Você pode receber a estratégia na inicialização do baralho e passá-la para frente no `__iter__`.
+**Dica:** Você pode receber a estratégia na inicialização do baralho e passá-la para frente no `__iter__`.
 
 
 Requisito 5 - Você tem a implementação de uma classe capaz de renderizar imagens através de uma interface que utiliza o método `draw`. Porém, no momento ela só suporta formato `PNG` e você também precisa ser capaz de renderizar imagens em `SVG`. Altere o código, sem modificar a classe `SvgImage`, para que isso seja possível.
 
-*Dica:* Se você garantir que a imagem `SVG` seja renderizada utilizando a mesma interface que a imagem `PNG`, a imagem se tornará compatível.
+**Dica:** Se você garantir que a imagem `SVG` seja renderizada utilizando a mesma interface que a imagem `PNG`, a imagem se tornará compatível.
 
 ```
 from abc import ABC, abstractmethod
