@@ -128,6 +128,6 @@ print(f"ICMS: {orcamento.calcular_imposto('ICMS')}")
 
 
 ####  Extra:
-Na pasta `star_wars` contém as classes desenvolvidas para criação de persongens da franquia Star Wars, contendo Jedi’s e Sith’s. Código desenvolvido durante a mentoria estruturada desenvolvida pela [Maria Carolina](https://www.linkedin.com/in/maria-carolina-francisco-amaral/)
+Na pasta `star_wars` contém as classes desenvolvidas para criação de persongens da franquia Star Wars, contendo Jedi’s e Sith’s. Código desenvolvido durante a mentoria estruturada desenvolvida pela [Maria Carolina](https://www.linkedin.com/in/maria-carolina-francisco-amaral/).
 
 
