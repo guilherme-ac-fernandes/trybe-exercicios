@@ -5,7 +5,9 @@
 
 Requisito 1 - Implemente o diagrama abaixo:
 
-![Diagrama de classes da TV](https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/bloco-34-padroes-de-projeto/dia-01-poo-em-python/images/diagrama-TV.png)
+<p align="center">
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/bloco-34-padroes-de-projeto/dia-01-poo-em-python/images/diagrama-TV.png" alt="Diagrama de classes da TV" width="40%"/>
+</p>
 
 > Atributos:
 > 
@@ -31,8 +33,9 @@ Requisito 1 - Implemente o diagrama abaixo:
 
 Requisito 2 - Defina uma classe `Estatistica` que calcule média, mediana e moda de uma lista de números.
 
-![Diagrama de classes da Estatística](https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/bloco-34-padroes-de-projeto/dia-01-poo-em-python/images/diagrama-estatistica.png)
-
+<p align="center">
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/bloco-34-padroes-de-projeto/dia-01-poo-em-python/images/diagrama-estatistica.png" alt="Diagrama de classes da Estatística" width="40%"/>
+</p>
 
 Requisito 3 - Implementar os objetos das seguintes figuras geométricas:
 
