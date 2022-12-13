@@ -56,4 +56,3 @@ if __name__ == "__main__":
     circle = Circulo(4)
     rectangle = Retangulo(4, 3)
     square = Quadrado(5)
-
