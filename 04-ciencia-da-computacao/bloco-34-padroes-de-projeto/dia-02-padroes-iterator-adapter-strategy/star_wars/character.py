@@ -1,4 +1,13 @@
-class Character:
+from abc import ABC, abstractmethod
+
+
+class CharacterInterface(ABC):
+    @abstractmethod
+    def speak(self):
+        pass
+
+
+class Character(CharacterInterface):
     def __init__(self, name, specie, hp, side):
         self.name = name
         self.specie = specie
@@ -20,3 +29,6 @@ class Character:
             self.__hp = 0
         else:
             self.__hp = heath_points
+
+    def speak(self):
+        pass
