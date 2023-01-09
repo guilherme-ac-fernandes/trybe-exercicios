@@ -267,7 +267,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 34.1: POO em Python
 - [X] 34.2: Padrões - Iterator, Adapter, Strategy
 - [X] 34.3: Padrões - Decorator, Observer, Factory 
-- [X] 34.4: [Projeto - Relatórios de Estoque]()
+- [X] 34.4: [Projeto - Relatórios de Estoque](https://github.com/guilherme-ac-fernandes/inventory-report)
 
 #### Bloco 35: Redes e Raspagem de Dados
 
