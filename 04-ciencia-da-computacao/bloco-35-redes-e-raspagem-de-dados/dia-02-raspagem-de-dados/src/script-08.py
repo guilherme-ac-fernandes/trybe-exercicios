@@ -5,7 +5,6 @@
 # 070/section/7e82ac53-a588-412b-95a5-19727d70ed3a/day/9488d307
 # -4a72-4c82-887f-d860ad20a1af/lesson/42a3402a-8e7c-400f-a1ca-8
 # dfa7e56be59/solution
-
 from parsel import Selector
 import requests
 
