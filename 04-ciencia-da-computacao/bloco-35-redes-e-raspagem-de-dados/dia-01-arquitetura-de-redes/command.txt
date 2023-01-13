@@ -1,0 +1,87 @@
+// Resolução proveniente do gabarito presente no course da Trybe
+// https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c
+// 936530fd326/module/290e715d-73e3-4b2d-a3c7-4fe113474070/sectio
+// n/7e82ac53-a588-412b-95a5-19727d70ed3a/day/8e345627-55f4-4fb0-8
+// 196-86c8243eed11/lesson/a4f131bf-54a4-40b6-bc93-a98a7a20affa/solution
+
+Requisito 1:
+    1. curl localhost:3001 ou curl -X GET localhost:3001
+    2. curl -X POST \
+        -H 'Content-Type: application/json' \
+        -d '{}' \
+        localhost:3001
+    3. curl --request POST \
+        --header 'Content-Type: application/json' \
+        --header 'Authorization: ApiKey EXAMPLE-TOKEN' \
+        --data '{}' \
+        localhost:3001
+
+Requisito 2:
+    1. curl google.com
+    2. curl google.com -L
+
+
+Requisito 3:
+    - wget betrybe.com
+
+
+Requisito 4:
+    - python3 -m camada-transporte
+
+
+Requisito 5:
+    - nc -t 127.0.0.1 8085
+
+
+Requisito 6:
+    - curl localhost:8085
+    - curl --request POST \
+        --data "{ \"foo\": \"bar\" }" \
+        --header 'Content-Type: application/json' \
+        --header 'Foo-Bar-Header: foo-bar' \
+        localhost:8085/foo-bar
+
+Requisito 7:
+    - python3 -m camada-transporte-2
+
+
+Requisito 8:
+    - nc -u 127.0.0.1 8084
+
+
+Requisito 9:
+    - curl localhost:8084
+
+
+Requisito 10:
+    // ngrok: https://www.openssl.org
+    - mkdir server && cd server
+    - python3 -m http.server 80
+    - unzip /path/to/ngrok.zip
+    - ./ngrok http 80
+    - ./ngrok http 80
+
+
+Requisito 11 e 12:
+    - curl ifconfig.me
+
+
+Requisito 13:
+    <-- no linux -->
+    // instalação e verificação do openssl
+    - apt-get update && apt-get install python3 openssl
+    - openssl -v
+    // para gerar os certificados
+    - openssl genrsa -out key.pem
+    - openssl req -new -key key.pem -out csr.pem
+    - openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+    - rm csr.pem
+    // mover os arquivos gerados
+    - mkdir /some-dir/https-server
+    - mv key.pem /some-dir/https-server
+    - mv cert.pem /some-dir/https-server
+    - cd /some-dir/https-server
+    <-- servidor no arquivo https.py -->
+    // acessar pelos comandos:
+    - curl https://localhost:8000
+    - curl --insecure https://localhost:8000
