@@ -26,6 +26,7 @@ Requisito 3:
 
 
 Requisito 4:
+    // Arquivo: camada-transporte.py
     - python3 -m camada-transporte
 
 
@@ -42,6 +43,7 @@ Requisito 6:
         localhost:8085/foo-bar
 
 Requisito 7:
+    // Arquivo: camada-transporte.py-2
     - python3 -m camada-transporte-2
 
 
@@ -54,6 +56,7 @@ Requisito 9:
 
 
 Requisito 10:
+    // Arquivo: https.py
     // ngrok: https://www.openssl.org
     - mkdir server && cd server
     - python3 -m http.server 80
