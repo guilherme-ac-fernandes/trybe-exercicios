@@ -4,5 +4,5 @@ Este bloco foi desenvolvido mais informações sobre a `Internet`, abordando con
 
 
 <p align="center">
-  <img src="" alt="Imagem Data Scraping"/>
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/bloco-35-redes-e-raspagem-de-dados/data_scraping.png" alt="Imagem Data Scraping"/>
 </p>
