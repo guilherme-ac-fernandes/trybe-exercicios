@@ -29,4 +29,7 @@ def scrape(url):
     return posts
 
 
-print(scrape('https://diolinux.com.br/'))
+posts = scrape('https://diolinux.com.br/')
+
+for post in posts:
+    print(post)
