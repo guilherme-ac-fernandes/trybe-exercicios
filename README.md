@@ -274,7 +274,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 35.1: Arquitetura de redes
 - [X] 35.2: Raspagem de Dados
 - [X] 35.3: Outras Ferramentas de Raspagem de Dados
-- [X] 35.4: [Projeto - Tech News]()
+- [X] 35.4: [Projeto - Tech News](https://github.com/guilherme-ac-fernandes/tech-news)
 
 #### Bloco 36: Algoritmos
 
