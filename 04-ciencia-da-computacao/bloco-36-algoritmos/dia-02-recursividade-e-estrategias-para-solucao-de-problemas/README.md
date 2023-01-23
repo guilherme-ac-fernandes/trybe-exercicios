@@ -21,4 +21,6 @@ Requisito 7 - Escreva um algoritmo recursivo que resolva o problema da `torre de
 
 * Os discos começam alinhados na primeira coluna, e devem ser organizados respeitando a ordem de tamanho, na última coluna.
 
-
+<p align="center">
+  <img src="https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/04-ciencia-da-computacao/bloco-36-algoritmos/dia-02-recursividade-e-estrategias-para-solucao-de-problemas/hanoi_tower.gif" alt="Hanoi Tower Gif"/>
+</p>
