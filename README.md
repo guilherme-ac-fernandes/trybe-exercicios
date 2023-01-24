@@ -280,7 +280,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 36.1: Complexidade de Algoritmos
 - [X] 36.2: Recursividade e Estratégias para solução de problemas
-- [ ] 36.3: Algoritmos de ordenação e busca
+- [X] 36.3: Algoritmos de ordenação e busca
 - [ ] 36.4: Projeto - Algoritmos
 
 #### Bloco 37: Estrutura de Dados I: Array, Listas, Filas e Pilhas
