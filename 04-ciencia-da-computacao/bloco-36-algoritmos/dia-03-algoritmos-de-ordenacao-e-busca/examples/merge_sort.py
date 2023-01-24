@@ -46,6 +46,7 @@ def merge(numbers, start, mid, end):
             right_index = right_index + 1
 
 
-numbers = [6, 5, 3, 1, 8, 7, 2, 4]
-merge_sort(numbers, 0, len(numbers))
-print(numbers)
+if __name__ == "__main__":
+    numbers = [6, 5, 3, 1, 8, 7, 2, 4]
+    merge_sort(numbers, 0, len(numbers))
+    print(numbers)

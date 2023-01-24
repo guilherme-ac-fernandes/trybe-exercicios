@@ -39,7 +39,8 @@ def selection_sort_2(numbers):
     return numbers
 
 
-numbers = [7, 5, 9, 2, 6, 8]
-print(f"Lista inicial: {numbers}")
-ordered_numbers = selection_sort_2(numbers)
-print(f"Lista final: {ordered_numbers}")
+if __name__ == "__main__":
+    numbers = [7, 5, 9, 2, 6, 8]
+    print(f"Lista inicial: {numbers}")
+    ordered_numbers = selection_sort_2(numbers)
+    print(f"Lista final: {ordered_numbers}")

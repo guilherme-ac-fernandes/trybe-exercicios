@@ -26,6 +26,7 @@ def partition(numbers, start, end):
     return delimiter + 1
 
 
-numbers = [6, 5, 3, 1, 8, 7, 2, 4]
-quick_sort(numbers, 0, len(numbers) - 1)
-print(numbers)
+if __name__ == "__main__":
+    numbers = [6, 5, 3, 1, 8, 7, 2, 4]
+    quick_sort(numbers, 0, len(numbers) - 1)
+    print(numbers)
