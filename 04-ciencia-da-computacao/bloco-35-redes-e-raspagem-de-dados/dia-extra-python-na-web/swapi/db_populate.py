@@ -1,8 +1,6 @@
-import json
-
 from sqlmodel import SQLModel, Session, select
-
 from swapi.model import Planet
+import json
 
 
 def populate_table_planet(session):
