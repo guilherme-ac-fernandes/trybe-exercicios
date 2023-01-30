@@ -285,7 +285,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 37: Estrutura de Dados I: Array, Listas, Filas e Pilhas
 
-- [ ] 37.1: Arquitetura de Computadores
+- [X] 37.1: Arquitetura de Computadores
 - [ ] 37.2: Arrays
 - [ ] 37.3: Nó e Listas Encadeadas
 - [ ] 37.4: Pilhas e Filas
