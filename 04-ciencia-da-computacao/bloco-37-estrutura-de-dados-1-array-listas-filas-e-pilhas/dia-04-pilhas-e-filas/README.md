@@ -49,7 +49,9 @@ Requisito 6 - Dada a função que faz a resolução de expressões pós fixas, a
 
 Nota: transforme as expressões em pós fixas e atribua valores. Caso seja necessário, faça o cast do valor para ponto flutuante.
 
-<img alt="api" src=“./“list_math.png width="200px"/>
+<p align="center">
+  <img src="./list_math.png" width="200px" alt="tabela cálculos"/>
+</p>
 
 **Observação**: Faça a análise de complexidade de tempo da solução do requisito acima.
 
