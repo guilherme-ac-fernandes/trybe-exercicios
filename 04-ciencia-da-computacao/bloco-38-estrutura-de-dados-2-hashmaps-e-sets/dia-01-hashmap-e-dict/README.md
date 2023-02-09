@@ -2,8 +2,8 @@
 
 ####  Atividade de fixação:
 > Dentro da pasta `src` crie os arquivos necessários para resolução dos requisitos:
-
-Os requisitos foram retirados do banco de questões utilizadas em processos de contratação de grandes empresas (questões liberadas para estudo).
+>
+>Os requisitos foram retirados do banco de questões utilizadas em processos de contratação de grandes empresas (questões liberadas para estudo).
 
 **Observação**: Faça a análise de complexidade de tempo da solução dos requisitos abaixo.
 
