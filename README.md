@@ -293,6 +293,6 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 #### Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 38.1: Hashmap e Dict
+- [X] 38.1: Hashmap e Dict
 - [ ] 38.2: Set
 - [ ] 38.3: Projeto - Restaurant Orders
