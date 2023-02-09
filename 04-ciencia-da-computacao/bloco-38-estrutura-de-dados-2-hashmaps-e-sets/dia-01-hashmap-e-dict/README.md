@@ -3,9 +3,11 @@
 ####  Atividade de fixação:
 > Dentro da pasta `src` crie os arquivos necessários para resolução dos requisitos:
 
+Os requisitos foram retirados do banco de questões utilizadas em processos de contratação de grandes empresas (questões liberadas para estudo).
+
 **Observação**: Faça a análise de complexidade de tempo da solução dos requisitos abaixo.
 
-Requisito 1 - Você receberá uma lista de palavras e uma string. Escreva uma função que decida quais palavras podem ser formadas com os caracteres da string (cada caractere só pode ser utilizado uma vez). Retorne a soma do comprimento das palavras escolhidas.
+Requisito 1 (Facebook) - Você receberá uma lista de palavras e uma string. Escreva uma função que decida quais palavras podem ser formadas com os caracteres da string (cada caractere só pode ser utilizado uma vez). Retorne a soma do comprimento das palavras escolhidas.
 
 ```
 Exemplo 1:
@@ -25,7 +27,7 @@ words = ["hello", "world", "students"], chars = "welldonehoneyr"
                são "hello" (tamanho 5) e "world" (tamanho 5)."""
 ```
 
-Requisito 2 - Uma certa empresa tem uma estrutura hierarquizada onde cada pessoa reporta a uma única outra pessoa. Cada pessoa tem um `score` que é o total de pessoas que estão abaixo dela, incluindo subordinados de seus subordinados, além dela própria. Isso significa que uma pessoa que não tem nenhuma equipe tem `score 1`. Uma pessoa com apenas um subordinado e esse subordinado não tem equipe, tem `score 2`.
+Requisito 2 (Google) - Uma certa empresa tem uma estrutura hierarquizada onde cada pessoa reporta a uma única outra pessoa. Cada pessoa tem um `score` que é o total de pessoas que estão abaixo dela, incluindo subordinados de seus subordinados, além dela própria. Isso significa que uma pessoa que não tem nenhuma equipe tem `score 1`. Uma pessoa com apenas um subordinado e esse subordinado não tem equipe, tem `score 2`.
 
 Escreva um método que calcule o `score` de uma determinada pessoa.
 
