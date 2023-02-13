@@ -295,4 +295,4 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 38.1: Hashmap e Dict
 - [X] 38.2: Set
-- [X] 38.3: [Projeto - Restaurant Orders](https://github.com/guilherme-ac-fernandes/restaurant-orders
+- [X] 38.3: [Projeto - Restaurant Orders](https://github.com/guilherme-ac-fernandes/restaurant-orders)
