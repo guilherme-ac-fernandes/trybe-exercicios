@@ -251,7 +251,7 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 - [X] 32.2: Dia 2 - CI/CD
 
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 
 #### Bloco 33: Introdução à Python
@@ -295,4 +295,4 @@ O programa conta com mais de 1500 horas de aulas presenciais e online, aborda in
 
 - [X] 38.1: Hashmap e Dict
 - [X] 38.2: Set
-- [ ] 38.3: Projeto - Restaurant Orders
+- [X] 38.3: [Projeto - Restaurant Orders](https://github.com/guilherme-ac-fernandes/restaurant-orders
