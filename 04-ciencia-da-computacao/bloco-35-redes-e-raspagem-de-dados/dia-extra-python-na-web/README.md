@@ -20,24 +20,6 @@ Para rodar o servidor da aplicação:
 <-- na raiz do projeto -->
 uvicorn swapi.main:app --reload
 
-Aplicação estará disponível na url: http://127.0.0.1:8000 
+Aplicação estará disponível na url: http://127.0.0.1:8000
+Documentação estará disponível na url: http://127.0.0.1:8000/docs
 ```
-
-<!-- <br /> -->
-
-<!-- ### Endpoints
-
-| Endpoints | URL |
-|---|---|
-| `admin` | `http://127.0.0.1:8000/admin/` |
-| `api` | `http://127.0.0.1:8000/api/` |
-
-
-No endpoint `/api` contém as seguintes rotas:
-
-```
-{
-    "users": "http://127.0.0.1:8000/api/users/",
-    "tasks": "http://127.0.0.1:8000/api/tasks/"
-}
-``` -->
